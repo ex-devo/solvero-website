@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Initialize particles.js */
 document.addEventListener('DOMContentLoaded', function() {
+    // The service page has no hero particles; reduced-motion users see the static hero.
+    if (!document.getElementById('particles-js') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     // Initialize particles for hero section
     particlesJS('particles-js', {
         "particles": {
