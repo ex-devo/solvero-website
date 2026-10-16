@@ -5,7 +5,8 @@ const path = require('node:path');
 const { JSDOM } = require('jsdom');
 
 const root = path.resolve(__dirname, '..');
-const pages = ['index.html', 'services/workflow-automation/index.html'];
+const articles = JSON.parse(fs.readFileSync(path.join(root, '_content/blog/metadata.json'), 'utf8'));
+const pages = ['index.html', 'services/workflow-automation/index.html', 'blog/index.html', ...articles.map(a => `blog/${a.slug}/index.html`), 'authors/jateen-narsai/index.html'];
 const source = file => fs.readFileSync(path.join(root, file), 'utf8');
 const urlFor = file => `https://solvero.co.za/${file.replace(/index\.html$/, '')}`;
 
@@ -21,7 +22,7 @@ for (const file of pages) {
     const description = doc.querySelector('meta[name="description"]').content;
     assert.ok(description.length > 50);
     const graph = JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
-    const page = graph.find(item => item['@type'] === 'WebPage');
+    const page = graph.find(item => ['WebPage', 'CollectionPage', 'ProfilePage'].includes(item['@type']));
     assert.equal(page.url, urlFor(file));
     assert.equal(page.name, doc.title);
     assert.equal(page.description, description);
@@ -38,7 +39,8 @@ for (const file of pages) {
     assert.equal(organization.aggregateRating, undefined);
     assert.equal(organization.review, undefined);
     assert.equal(organization.priceRange, undefined);
-    assert.equal(doc.querySelector('meta[name="robots"][content*="noindex"]'), null);
+    const robots = doc.querySelector('meta[name="robots"]');
+    assert.ok(!robots || !robots.content.includes('noindex'));
     dom.window.close();
   });
 
@@ -62,12 +64,55 @@ for (const file of pages) {
   });
 }
 
-test('sitemap covers both canonical pages and robots points to it', () => {
+test('sitemap covers indexable canonical pages and robots points to it', () => {
   const sitemap = new JSDOM(source('sitemap.xml'), { contentType: 'text/xml' });
-  assert.deepEqual([...sitemap.window.document.querySelectorAll('loc')].map(item => item.textContent), pages.map(urlFor));
+  const indexablePages = pages.filter(file => {
+    const dom = new JSDOM(source(file));
+    const noindex = dom.window.document.querySelector('meta[name="robots"][content*="noindex"]');
+    dom.window.close();
+    return !noindex;
+  });
+  assert.deepEqual([...sitemap.window.document.querySelectorAll('loc')].map(item => item.textContent), indexablePages.map(urlFor));
   assert.match(source('robots.txt'), /Sitemap: https:\/\/solvero\.co\.za\/sitemap\.xml/);
   assert.doesNotMatch(source('robots.txt'), /Disallow:\s*\//);
   sitemap.window.close();
+});
+
+test('articles identify the visible author, publisher and actual publication date consistently', () => {
+  const author = JSON.parse(source('_content/author.json'));
+  const downloadNames = new Set();
+  for (const article of articles) {
+    const doc = new JSDOM(source(`blog/${article.slug}/index.html`)).window.document;
+    const graph = JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
+    const post = graph.find(n => n['@type'] === 'BlogPosting');
+    const person = graph.find(n => n['@type'] === 'Person');
+    assert.equal(post.headline, doc.querySelector('h1').textContent);
+    assert.equal(post.author['@id'], person['@id']);
+    assert.equal(person.name, author.name);
+    assert.equal(person.url, author.canonical);
+    assert.deepEqual(person.sameAs, [author.linkedin]);
+    assert.ok(doc.querySelector('.article-body').textContent.includes(person.description));
+    assert.equal(doc.querySelector('[rel="author"]').getAttribute('href'), '/authors/jateen-narsai/');
+    assert.equal(post.publisher['@id'], 'https://solvero.co.za/#organization');
+    assert.notEqual(post.publisher['@id'], post.author['@id']);
+    assert.equal(post.datePublished, doc.querySelector('time').dateTime);
+    assert.ok(Date.parse(post.datePublished) <= Date.now());
+    assert.ok(Date.parse(post.dateModified) >= Date.parse(post.datePublished));
+    assert.doesNotMatch(doc.body.textContent, /Draft for review|publication not approved|Planned URL:/i);
+    assert.doesNotMatch(doc.documentElement.innerHTML, /127\.0\.0\.1|localhost|\{\{/);
+    const downloads = [...doc.querySelectorAll('a[href^="/blog/downloads/"]')];
+    assert.equal(new Set(downloads.map(a => a.getAttribute('href'))).size, 2);
+    downloads.forEach(a => downloadNames.add(a.getAttribute('href')));
+  }
+  assert.equal(downloadNames.size, 20);
+  assert.equal(fs.readdirSync(path.join(root, 'blog/downloads')).length, 20);
+  const bio = new JSDOM(source('authors/jateen-narsai/index.html')).window.document;
+  const graph = JSON.parse(bio.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
+  assert.equal(graph.find(n => n['@type'] === 'ProfilePage').mainEntity['@id'], author.canonical + '#person');
+  assert.ok(bio.querySelector('main').textContent.includes(author.biography));
+  const index = new JSDOM(source('blog/index.html')).window.document;
+  assert.equal(index.querySelectorAll('main article').length, 10);
+  for (const article of articles) assert.ok(index.querySelector(`h3 a[href="/blog/${article.slug}/"]`));
 });
 
 function formHarness(fetch) {

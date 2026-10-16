@@ -1,0 +1,9 @@
+requirement,mandatory_or_preference,acceptance_evidence_required,n8n_evidence,power_automate_evidence,owner_decision
+Required system actions,Mandatory,Specific create read update operations and fields work with approved access,,,
+Authority rules,Mandatory,Eligible approvers current revision correct spending boundaries,,,
+Uncertain execution recovery,Mandatory,Confirmed outcome before repeating a business action,,,
+Deployment policy,Mandatory where applicable,Data paths runtime location and required operating controls accepted,,,
+Plan entitlements,Mandatory,Current edition and rights cover selected actions and users,,,
+Operator experience,Preference after gates,A second operator diagnoses and changes a test case with documentation,,,
+Total cost,Preference after gates,Setup usage hosting review support and internal ownership modelled,,,
+Handover,Mandatory,Accounts documentation configuration and recovery ownership agreed,,,

@@ -1,13 +1,13 @@
 # Solvero website
 
-Static site for Solvero, with a homepage and workflow automation service page. The content/SEO branch starts at remote commit `c8b4e5a` and preserves its colours, typography, section layouts, hero particles and technology carousel.
+Static site for Solvero, with a homepage, workflow automation service page and blog section. The content/SEO branch starts at remote commit `c8b4e5a` and preserves its colours, typography, section layouts, hero particles and technology carousel.
 
 ## Local development
 
 Use Node.js 20.19 or newer and Python 3.
 
 1. Run `npm ci` to install the pinned development tools.
-2. Run `npm run build` after editing HTML or utility classes to regenerate the committed stylesheet.
+2. Run `npm run build` after editing HTML or utility classes to regenerate the committed stylesheet and refresh its content-based version in page links. This prevents cached CSS from hiding updated styles.
 3. Run `npm test` to check search metadata, structured-data references, links and enquiry handling. All form requests in these tests are mocked.
 4. Run `npm run preview` and open `http://127.0.0.1:8080/` to review the site.
 
@@ -18,6 +18,12 @@ Use Node.js 20.19 or newer and Python 3.
 The committed HTML, CSS, JavaScript, images, robots.txt and sitemap.xml can be served as static files. Node is a development dependency, not a production runtime. The canonical site is `https://solvero.co.za/`; deployment must serve the service page at `/services/workflow-automation/`.
 
 The offer is business workflow improvement and automation, from analysis through implementation. Financial services remains a specialist sector; software team productivity is a secondary service. Case-study results, testimonials, prices and turnaround promises require confirmed source material before publication. Blog work remains separate.
+
+The blog index is at `/blog/`, with ten articles, twenty CSV worksheets and a separate author profile at `/authors/jateen-narsai/`. Jateen Narsai is the author; Solvero is the publisher. All fourteen canonical pages are indexable and included in the sitemap. Examples and worked figures are explicitly illustrative, rather than claimed client results.
+
+Edit article Markdown and metadata in `_content/blog/`, author details in `_content/`, and the shared blog/author page shell in `_templates/editorial.html`. Run `npm run build` to regenerate committed pages, sitemap and styles. Publication dates remain stable in metadata; update `dateModified` only when an article changes materially. The build uses Python's standard library and the existing Node dependencies.
+
+GitHub Pages serves the committed static output from `main` at the repository root, with `CNAME` pointing to `solvero.co.za`. Build and test locally before publishing; Pages does not run the local content generator.
 
 After deployment, verify the public pages in Search Console and test a real enquiry with the site owner's approval. The automated checks do not establish email delivery, indexing or ranking improvements.
 

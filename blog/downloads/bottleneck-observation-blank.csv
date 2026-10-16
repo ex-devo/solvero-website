@@ -1,0 +1,2 @@
+case_reference,stage,entered_at_with_timezone,work_started_at_with_timezone,completed_at_with_timezone,waiting_minutes,active_minutes,elapsed_minutes,evidence_and_unknowns
+Your case,Your stage,,,,,,,Record observed events; leave unknown times blank

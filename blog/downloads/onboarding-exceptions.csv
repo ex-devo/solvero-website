@@ -1,0 +1,9 @@
+id,scenario,event_or_condition,expected_outcome,actual_result,evidence,reviewer
+O01,Missing required information,Submission omits authorised technical contact,Specific correction request; readiness remains incomplete,,,
+O02,Invalid submission,Uploaded document does not satisfy the required check,Receipt recorded; validation not marked accepted,,,
+O03,Repeated trigger,Agreement event delivered twice,One onboarding request for the intended service setup,,,
+O04,Scope change,New service scope requires different access,Reassess affected checks against current scope,,,
+O05,Start date before readiness,Date reached while required access missing,Owner decision required; no silent waiver,,,
+O06,Receiving update uncertain,Delivery record may have been created before timeout,Reconcile before another create; visible incomplete handoff,,,
+O07,Reminder after acceptance,Previously missing item now accepted,Reminder for that item stops,,,
+O08,Credential supplied in ordinary form,Customer includes a password in free text,Follow approved handling process; do not forward credential through notifications,,,

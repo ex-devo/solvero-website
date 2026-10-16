@@ -1,0 +1,11 @@
+input,your_value,unit,evidence_required,counting_note
+Baseline volume,,cases / month,Observed case count and period,Use comparable work
+Baseline handling,,active minutes / case,Observation including defined rework,Do not add included rework twice
+Coverage,,fraction 0 to 1,Eligible-case rules and observed pilot coverage,Uncovered cases remain manual
+Remaining covered-case effort,,minutes / case,Review and correction time,Include checking effort
+Internal support,,hours / month,Expected monitoring and maintenance,Already deducted from released hours
+Planning labour rate,,your currency / hour,Agreed loaded cost assumption,Capacity valuation is separate from cash savings
+One-time cost,,your currency,Discovery build internal setup testing training,Do not repeat monthly
+Recurring external cost,,your currency / month,Platform usage external support hosting,Exclude internal support already in hours
+Cash benefit,,your currency / month,Specific spending reduction or avoided cost,Do not double count the same released hours
+Rollout profile,,month-by-month assumptions,Expected adoption and usage ramp,Steady-state twelve-month example assumes immediate operation

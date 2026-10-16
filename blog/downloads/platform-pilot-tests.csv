@@ -1,0 +1,11 @@
+id,scenario,common_expected_outcome,n8n_actual_result,power_automate_actual_result,evidence,reviewer
+P01,Complete request below agreed limit,Current-revision request reaches eligible department approver then creates one test purchasing record,,,,
+P02,Missing required field,Specific correction state; no purchasing record,,,,
+P03,Amount above agreed limit,All required sequential decisions collected,,,,
+P04,Self-approval or invalid delegate,No unauthorised decision; eligible alternate or hold,,,,
+P05,Changed request with old response,Old response cannot release revised request,,,,
+P06,Repeated event,Same intended action has one confirmed result,,,,
+P07,Write timeout,Outcome reconciled before retry; visible uncertainty,,,,
+P08,Required access unavailable,Visible failure and approved recovery owner,,,,
+P09,Absent approver and overdue request,Agreed delegation or escalation; no implicit approval,,,,
+P10,Operator handover,Second operator explains failure and makes an approved test change using documentation,,,,

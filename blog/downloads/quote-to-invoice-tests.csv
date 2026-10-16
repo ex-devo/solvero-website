@@ -1,0 +1,10 @@
+id,scenario,event_or_condition,expected_outcome,actual_result,evidence,reviewer
+Q01,Complete milestone,Agreed milestone and evidence accepted,Check eligible unbilled amount; prepare one draft,,,
+Q02,Partial milestone,Only part completed; partial billing terms unresolved,Commercial review; no inferred partial invoice,,,
+Q03,Extra work unapproved,Site note requests additional work,Hold additional amount until approved change linked,,,
+Q04,Repeated completion event,Same job milestone and billing revision delivered again,Original billing outcome recognised; no extra draft,,,
+Q05,Changed quote after approval,Material amount change with old approval response,Current revision requires applicable review; obsolete response cannot release,,,
+Q06,Draft creation timeout,Write may have succeeded before lost response,Reconcile by stable operation reference before retry,,,
+Q07,Already billed milestone,Event repeats after confirmed issue,No second billing for the same intended amount,,,
+Q08,Missing sign-off,Delivery evidence lacks required acceptance,Hold affected item for owner,,,
+Q09,Cancelled or disputed work,Job flagged after work recorded,Agreed commercial review before further billing action,,,

@@ -1,0 +1,6 @@
+condition,responsible_role,acceptance_evidence,blocked_if,your_rule_or_owner
+Scope and start conditions,Account owner,Accepted agreement and current scope reference,No accepted scope,
+Customer and billing records,Finance contact,Correct billing entity and linked records,Identity unresolved,
+Support contacts and escalation,Service coordinator,Approved contact list and responsibilities,Authorised contact unclear,
+Required access,Authorised technical owner,Access verified through approved secure process,Required access not verified,
+Delivery handoff,Support lead,Current-scope readiness accepted,Required check incomplete without authorised exception,

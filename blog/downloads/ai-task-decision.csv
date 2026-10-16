@@ -1,0 +1,6 @@
+task,input,expected_output,starting_method_to_assess,required_checks,human_owner,success_measure
+Required field check,Submitted form,Valid or specific missing-field result,Explicit rule,Blank and format cases,,
+Spending limit comparison,Approved comparable total and policy,Correct eligible approval route,Deterministic rule,Currency scope revision boundary,,
+Request categorisation,Varied request text,Allowed category with supporting evidence,AI assistance or a clearer request form,Wrong routes and reviewer effort,,
+Order detail extraction,Message or document,Stated reference date total with source text,AI assistance or suitable parser,Missing conflicting ambiguous values,,
+Disputed authority,Conflicting business evidence,Accountable decision,Responsible human review,Applicable policy and authority,,
