@@ -1,0 +1,7 @@
+dimension,scope_A_example,scope_B_example,your_scope,evidence_or_open_question
+Records,New approved customers,New records and historical duplicates,,
+Direction,Defined fields one way,Field ownership plus approved return updates,,
+Interface,Approved required actions verified,Some actions require investigation,,
+Business rules,Matching and exception route agreed,Ownership and identity rules disputed,,
+Operation,Reviewer and support arrangement known,Ownership and operating requirements undefined,,
+Acceptance,Agreed normal duplicate failure cases,Additional cleanup and conflict cases needed,,

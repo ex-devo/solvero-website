@@ -1,0 +1,6 @@
+information,owning_role,owning_system_after_handoff,initial_handoff,later_changes,validation_to_agree,blank_value_policy_to_agree
+Trading name,Sales,CRM,Map to agreed destination field if supported,CRM to designated destination field,Confirm compatible field and allowed format,Choose preserve / clear / reject
+Legal billing name,Finance,Accounting,CRM proposes; finance verifies,Finance-controlled correction; return only to designated CRM field,Confirm billing entity and required evidence,Reject missing required value
+Invoice address,Finance,Accounting,Validate proposed address,Finance-approved changes to designated CRM field,Agree required components and address type,Reject incomplete required address
+Account manager,Sales,CRM,Share where business use and field are agreed,CRM controls assignment,Confirm mapping uses supported destination reference,Choose preserve / clear / reject
+Payment terms and credit status,Finance,Accounting,Finance sets approved values,Approved read-only status may be shared to CRM,Agree allowed values and permitted visibility,CRM cannot overwrite finance values

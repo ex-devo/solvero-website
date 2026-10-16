@@ -1,0 +1,12 @@
+id,scenario,setup_or_event,expected_outcome,actual_result,evidence,reviewer
+D01,New approved customer,No mapping; checks complete; no verified existing match,One account created; destination identifier and operation outcome recorded,,,
+D02,Repeated creation event,Deliver D01 event again with same operation identity,Original outcome recognised; no second create,,,
+D03,Existing verified match,No mapping but one candidate verified under matching policy,Link existing account; retain identifier; only permitted fields updated,,,
+D04,Ambiguous match,Two plausible existing billing accounts,Review queue; no create or update until resolved,,,
+D05,Missing required field,Approved event lacks verified billing identity,Reject or hold with specific reason; no partial account silently treated as complete,,,
+D06,Timeout after write,Destination creates account but response is lost,Mark uncertain; reconcile recorded operation reference before any repeated create,,,
+D07,Access revoked,Credentials cannot perform required action,Visible exception to owner; no success status; recover through approved access process,,,
+D08,Ownership conflict,CRM event tries to change finance-owned payment terms,Preserve finance authority; block or review conflicting change,,,
+D09,Clear optional field,Source supplies empty value,Apply agreed preserve / clear / reject policy; record outcome,,,
+D10,Out-of-order updates,New revision processed before an old address event,Older event cannot overwrite newer approved address,,,
+D11,Concurrent creates,Two workers handle same intended creation concurrently,One business outcome; stable mapping; no duplicate account,,,

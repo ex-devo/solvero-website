@@ -1,0 +1,10 @@
+state,entry_condition,responsible_role,allowed_next_state,exception_route
+Quote accepted,Current quote acceptance recorded,Account owner,Job created,Commercial review
+Job created,One job linked to accepted quote revision,Coordinator,Work scheduled,Integration review
+Work scheduled,Delivery arrangement agreed,Coordinator,Work recorded,Scheduling review
+Work recorded,Milestone activity recorded,Delivery lead,Evidence and scope checked,Delivery review
+Evidence and scope checked,Required evidence current; approved changes linked,Delivery lead,Invoice ready,Hold for missing evidence or commercial review
+Invoice ready,Eligible amount and prior billing position checked,Billing reviewer,Invoice draft,Commercial review
+Invoice draft,One draft for job milestone billing revision,Billing reviewer,Approved issue,Correction or commercial review
+Approved issue,Authorised release completed,Billing reviewer,Reconciled,Execution recovery
+Reconciled,Destination invoice reference and outcome confirmed,Finance owner,Closed,Reconciliation review

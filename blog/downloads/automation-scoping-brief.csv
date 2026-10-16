@@ -1,0 +1,12 @@
+section,question,your_answer,evidence_or_example,owner
+Outcome,What starts the process and what counts as complete?,,,
+Boundary,Which actions and decisions stay manual?,,,
+Systems,Which exact products editions and actions are required?,,,
+Data,Who owns required fields and record matching?,,,
+Volume,What are ordinary and peak case volumes?,,,
+Exceptions,Which recent failures or ambiguous cases must be handled?,,,
+Access,What approved permissions and data handling are required?,,,
+Acceptance,Who signs off which representative outcomes?,,,
+Costs,Which setup internal operating and usage costs are included?,,,
+Handover,Who owns accounts configuration documentation and support?,,,
+Commercial terms,Which assumptions exclusions and change terms need agreement?,,,

@@ -1,0 +1,6 @@
+case,amount_rule,route,completion,authority_inputs_to_confirm
+Standard purchase,At or below configured L,Department approver,Current revision accepted by eligible approver,Define L; base currency; role membership; comparable total rule
+Standard purchase,Above configured L,Department approver then budget owner,Both accept current revision in order,Define budget owner and required scope; rejection closes route
+Restricted category,Any amount,Specialist then normal amount-based route,Specialist and normal route accept current revision,Define restricted categories and specialist authority
+Requester is routed approver,Any amount,Authorised independent alternate replaces that role,Current revision accepted within alternate authority,No self-approval; verify scope and limit
+No eligible approver or unresolved currency rule,Any amount,Process-owner review,Hold until valid route exists,Define owner; conversion method where needed; no timeout approval

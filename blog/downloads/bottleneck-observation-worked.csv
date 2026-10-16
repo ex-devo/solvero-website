@@ -1,0 +1,5 @@
+case_reference,stage,entered_at_with_timezone,work_started_at_with_timezone,completed_at_with_timezone,waiting_minutes,active_minutes,elapsed_minutes,evidence_and_unknowns
+EX-01,Check request details,2026-04-06T09:00:00+00:00,2026-04-06T09:30:00+00:00,2026-04-06T09:40:00+00:00,30,10,40,Invented sequential timeline; no overlap
+EX-01,Assess the change,2026-04-06T09:40:00+00:00,2026-04-06T11:40:00+00:00,2026-04-06T11:55:00+00:00,120,15,135,Invented sequential timeline; no overlap
+EX-01,Obtain approval,2026-04-06T11:55:00+00:00,2026-04-06T15:55:00+00:00,2026-04-06T16:15:00+00:00,240,20,260,Invented sequential timeline; longest wait is a hypothesis to investigate
+EX-01,Prepare delivery handoff,2026-04-06T16:15:00+00:00,2026-04-06T16:25:00+00:00,2026-04-06T16:30:00+00:00,10,5,15,Invented sequential timeline; not a measured client result
