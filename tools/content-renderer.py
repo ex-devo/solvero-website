@@ -2,6 +2,7 @@ import html
 import re
 
 LINKS = {}
+IMAGE_SIZES = {}
 
 def inline(text):
     text = html.escape(text)
@@ -33,6 +34,18 @@ def render(markdown):
                 i += 1
             out.append('<pre><code>' + html.escape('\n'.join(code)) + '</code></pre>')
             i += 1
+        elif re.fullmatch(r'!\[([^\]]+)\]\(([^)]+)\)', line):
+            alt, target = re.fullmatch(r'!\[([^\]]+)\]\(([^)]+)\)', line).groups()
+            width, height = IMAGE_SIZES[target]
+            figure = f'<figure><img src="{html.escape(target, quote=True)}" alt="{html.escape(alt, quote=True)}" width="{width}" height="{height}" loading="lazy" decoding="async" />'
+            i += 1
+            caption_at = i
+            while caption_at < len(lines) and not lines[caption_at].strip():
+                caption_at += 1
+            if caption_at < len(lines) and re.fullmatch(r'\*[^*]+\*', lines[caption_at]):
+                figure += '<figcaption>' + inline(lines[caption_at][1:-1]) + '</figcaption>'
+                i = caption_at + 1
+            out.append(figure + '</figure>')
         elif line.startswith('|'):
             rows = []
             while i < len(lines) and lines[i].startswith('|'):

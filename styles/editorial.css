@@ -1,4 +1,10 @@
 /* Article typography uses the site's existing colours and system font. */
+.editorial-hero { padding-top: 2rem; padding-bottom: 2rem; }
+.editorial-hero h1 { font-size: 2rem; line-height: 1.2; }
+@media (min-width: 768px) {
+  .editorial-hero { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .editorial-hero h1 { font-size: 2.5rem; }
+}
 .article-body { color: #374151; font-size: 1.125rem; line-height: 1.8; }
 .article-body > * + * { margin-top: 1.5rem; }
 .article-body h2 { color: #1f2937; font-size: 1.75rem; font-weight: 600; line-height: 1.3; margin-top: 3rem; }
@@ -10,6 +16,8 @@
 .article-body blockquote { border-left: 4px solid #1985ce; padding: .75rem 1.25rem; background: #f3f4f6; }
 .article-body pre { overflow: auto; padding: 1.25rem; background: #f3f4f6; font-size: .875rem; line-height: 1.6; }
 .article-body code { font-size: .9em; }
+.article-body figure img { display: block; width: 100%; height: auto; }
+.article-body figcaption { color: #4b5563; font-size: .9375rem; line-height: 1.6; margin-top: .75rem; }
 .article-body .table-scroll { overflow-x: auto; max-width: 100%; }
 .article-body table { min-width: 600px; width: 100%; border-collapse: collapse; font-size: .9375rem; line-height: 1.6; }
 .article-body th, .article-body td { border: 1px solid #d1d5db; padding: .875rem; text-align: left; vertical-align: top; }

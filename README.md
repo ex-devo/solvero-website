@@ -19,7 +19,11 @@ The committed HTML, CSS, JavaScript, images, robots.txt and sitemap.xml can be s
 
 The offer is business workflow improvement and automation, from analysis through implementation. Financial services remains a specialist sector; software team productivity is a secondary service. Case-study results, testimonials, prices and turnaround promises require confirmed source material before publication. Blog work remains separate.
 
-The blog index is at `/blog/`, with ten articles, twenty CSV worksheets and a separate author profile at `/authors/jateen-narsai/`. Jateen Narsai is the author; Solvero is the publisher. All fourteen canonical pages are indexable and included in the sitemap. Examples and worked figures are explicitly illustrative, rather than claimed client results.
+The blog index is at `/blog/`, with eleven articles, twenty CSV worksheets and a separate author profile at `/authors/jateen-narsai/`. Jateen Narsai is the author; Solvero is the publisher. All fifteen canonical pages are indexable and included in the sitemap. Examples and worked figures are explicitly illustrative, rather than claimed client results.
+
+All blog pages use the shared editorial hero: 40px titles and 40px top/bottom padding on desktop, and 32px titles and 32px top/bottom padding on mobile. Breadcrumb-to-title and title-to-byline gaps remain 32px and 24px. Set this standard in `styles/editorial.css` and the shared `hero()` generator so the index, articles and author page remain consistent.
+
+Article images use a Markdown image followed by a single italic caption paragraph. Register each image's root-relative path, width and height in the article metadata's `images` list. Optional `image` and `image_alt` fields select its absolute social-sharing and structured-data image. The AI operating model article uses six lossless WebP illustrations.
 
 Edit article Markdown and metadata in `_content/blog/`, author details in `_content/`, and the shared blog/author page shell in `_templates/editorial.html`. Run `npm run build` to regenerate committed pages, sitemap and styles. Publication dates remain stable in metadata; update `dateModified` only when an article changes materially. The build uses Python's standard library and the existing Node dependencies.
 

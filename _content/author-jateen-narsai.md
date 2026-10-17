@@ -22,3 +22,4 @@ He collaborates with developers, solution architects and test analysts to connec
 - [Quote-to-invoice automation for service businesses: connect the handoffs](08-quote-to-invoice-automation.md)
 - [AI or rules-based automation? How to choose for each workflow step](09-ai-vs-rules-based-automation.md)
 - [n8n vs Power Automate: how to choose for your business workflow](10-n8n-vs-power-automate.md)
+- [Designing operations around AI: the organisational work behind productivity](11-ai-operating-model.md)

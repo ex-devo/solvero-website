@@ -18,6 +18,7 @@ renderer = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(renderer)
 renderer.LINKS = {a['file'] + '.md': '/blog/' + a['slug'] + '/' for a in META}
 renderer.LINKS['author-jateen-narsai.md'] = '/authors/jateen-narsai/'
+renderer.IMAGE_SIZES = {image['src']: (image['width'], image['height']) for a in META for image in a.get('images', [])}
 template = (ROOT / '_templates/editorial.html').read_text()
 homepage = (ROOT / 'index.html').read_text()
 graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', homepage, re.S)[1])['@graph']
@@ -40,10 +41,10 @@ def hero(title, subtitle, article=False, trail_label=None):
     if article:
         trail += '<a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> '
     trail += '<span aria-current="page">' + ('Article' if article else html.escape(trail_label or title)) + '</span>'
-    return f'''<header class="bg-brand-gradient text-white py-14 md:py-20">
+    return f'''<header class="editorial-hero bg-brand-gradient text-white">
       <div class="container mx-auto px-6 max-w-4xl">
         <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto">{trail}</nav>
-        <h1 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">{html.escape(title)}</h1>
+        <h1 class="font-semibold mb-6">{html.escape(title)}</h1>
         <p class="text-lg leading-relaxed">{subtitle}</p>
       </div></header>'''
 
@@ -53,9 +54,10 @@ def date_label(value):
     return f'{parsed.day} {parsed.strftime("%B %Y")}'
 
 
-def write_page(relative, title, description, url, nodes, main, extra_head=''):
+def write_page(relative, title, description, url, nodes, main, extra_head='', image=None):
     schema = json.dumps({'@context': 'https://schema.org', '@graph': shared + nodes}, ensure_ascii=False, indent=2).replace('</', '<\\/')
     values = {'TITLE': html.escape(title), 'DESCRIPTION': html.escape(description, quote=True), 'URL': url, 'SCHEMA': schema, 'MAIN': main, 'EXTRA_HEAD': extra_head, 'EDITORIAL_VERSION': hashlib.sha256((ROOT / 'styles/editorial.css').read_bytes()).hexdigest()[:12]}
+    values.update({'IMAGE_URL': image['url'] if image else SITE + 'images/optimised/solvero-logo.webp', 'IMAGE_ALT': html.escape(image['alt'], quote=True) if image else 'Solvero logo', 'TWITTER_CARD': 'summary_large_image' if image else 'summary'})
     page = template
     for key, value in values.items():
         page = page.replace('{{' + key + '}}', value)
@@ -70,13 +72,18 @@ for a in META:
     url = a['canonical']
     page = {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': a['title'], 'description': a['description'], 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'mainEntity': {'@id': url + '#article'}, 'breadcrumb': {'@id': url + '#breadcrumb'}}
     post = {'@type': 'BlogPosting', '@id': url + '#article', 'url': url, 'headline': a['headline'], 'description': a['description'], 'inLanguage': 'en', 'articleSection': a['section'], 'author': {'@id': person['@id']}, 'publisher': {'@id': SITE + '#organization'}, 'mainEntityOfPage': {'@id': page['@id']}, 'isPartOf': {'@id': SITE + '#website'}, 'datePublished': a['datePublished'], 'dateModified': a['dateModified']}
+    if 'image' in a:
+        lead_image = next(image for image in a['images'] if SITE.rstrip('/') + image['src'] == a['image'])
+        post['image'] = {'@type': 'ImageObject', 'url': a['image'], 'width': lead_image['width'], 'height': lead_image['height'], 'caption': a['image_alt']}
     markdown = (CONTENT / 'blog' / (a['file'] + '.md')).read_text()
     # The title and byline are displayed in the site's branded article header.
     body = re.sub(r'^# .*?\n\nBy .*?\n\n', '', markdown, count=1)
     subtitle = f'{html.escape(a["section"])} · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">{html.escape(AUTHOR["name"])}</a> · Published <time datetime="{a["datePublished"]}">{date_label(a["datePublished"])}</time>'
     main = '<article>' + hero(a['headline'], subtitle, True) + '<div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl">' + renderer.render(body) + '</div></div></article>'
     extra = f'<meta name="author" content="{html.escape(AUTHOR["name"])}" /><meta property="article:published_time" content="{a["datePublished"]}" /><meta property="article:modified_time" content="{a["dateModified"]}" />'
-    write_page('blog/' + a['slug'] + '/index.html', a['title'], a['description'], url, [person, page, post, breadcrumbs(url, a['headline'], True)], main, extra)
+    if 'image' in a:
+        extra += f'<meta property="og:image:width" content="{lead_image["width"]}" /><meta property="og:image:height" content="{lead_image["height"]}" />'
+    write_page('blog/' + a['slug'] + '/index.html', a['title'], a['description'], url, [person, page, post, breadcrumbs(url, a['headline'], True)], main, extra, image={'url': a['image'], 'alt': a['image_alt']} if 'image' in a else None)
 
 url = AUTHOR['canonical']
 profile = {'@type': 'ProfilePage', '@id': url + '#webpage', 'url': url, 'name': AUTHOR['name'] + ' | Solvero', 'description': AUTHOR['description'], 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'mainEntity': {'@id': person['@id']}, 'publisher': {'@id': SITE + '#organization'}, 'breadcrumb': {'@id': url + '#breadcrumb'}}
@@ -94,4 +101,4 @@ main = hero('Better workflows. Less manual work.', 'Practical guides for the peo
 write_page('blog/index.html', title, description, url, [collection, listing, breadcrumbs(url, 'Blog')], main)
 urls = [SITE, SITE + 'services/workflow-automation/', url] + [a['canonical'] for a in META] + [AUTHOR['canonical']]
 (ROOT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join('  <url><loc>' + u + '</loc></url>\n' for u in urls) + '</urlset>\n')
-print('Generated ten articles, the biography, blog index and 14-page sitemap.')
+print(f'Generated {len(META)} articles, the biography, blog index and {len(urls)}-page sitemap.')

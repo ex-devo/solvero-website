@@ -101,7 +101,8 @@ test('articles identify the visible author, publisher and actual publication dat
     assert.doesNotMatch(doc.body.textContent, /Draft for review|publication not approved|Planned URL:/i);
     assert.doesNotMatch(doc.documentElement.innerHTML, /127\.0\.0\.1|localhost|\{\{/);
     const downloads = [...doc.querySelectorAll('a[href^="/blog/downloads/"]')];
-    assert.equal(new Set(downloads.map(a => a.getAttribute('href'))).size, 2);
+    const expectedDownloads = [...source(`_content/blog/${article.file}.md`).matchAll(/\]\(assets\/([^)]+)\)/g)].map(match => '/blog/downloads/' + match[1]);
+    assert.deepEqual([...new Set(downloads.map(a => a.getAttribute('href')))].sort(), expectedDownloads.sort());
     downloads.forEach(a => downloadNames.add(a.getAttribute('href')));
   }
   assert.equal(downloadNames.size, 20);
@@ -111,8 +112,47 @@ test('articles identify the visible author, publisher and actual publication dat
   assert.equal(graph.find(n => n['@type'] === 'ProfilePage').mainEntity['@id'], author.canonical + '#person');
   assert.ok(bio.querySelector('main').textContent.includes(author.biography));
   const index = new JSDOM(source('blog/index.html')).window.document;
-  assert.equal(index.querySelectorAll('main article').length, 10);
+  assert.equal(index.querySelectorAll('main article').length, articles.length);
   for (const article of articles) assert.ok(index.querySelector(`h3 a[href="/blog/${article.slug}/"]`));
+});
+
+test('all blog pages use one compact hero standard with the original internal gaps', () => {
+  const blogPages = ['blog/index.html', ...articles.map(a => `blog/${a.slug}/index.html`)];
+  for (const file of blogPages) {
+    const dom = new JSDOM(source(file));
+    const hero = dom.window.document.querySelector('main header.editorial-hero');
+    assert.ok(hero, `${file}: shared editorial hero`);
+    assert.ok(hero.querySelector('[aria-label="Breadcrumb"]').classList.contains('mb-8'));
+    assert.ok(hero.querySelector('h1').classList.contains('mb-6'));
+    assert.doesNotMatch(hero.className, /py-14|py-20/);
+    dom.window.close();
+  }
+});
+
+test('the AI operating model article publishes all six illustrations and matching image metadata', () => {
+  const article = articles.find(a => a.slug === 'ai-operating-model');
+  assert.ok(article);
+  const dom = new JSDOM(source(`blog/${article.slug}/index.html`));
+  const doc = dom.window.document;
+  const figures = [...doc.querySelectorAll('.article-body figure')];
+  assert.equal(figures.length, 6);
+  assert.deepEqual(figures.map(f => f.querySelector('img').getAttribute('src')), article.images.map(i => i.src));
+  for (const [i, figure] of figures.entries()) {
+    const image = figure.querySelector('img');
+    assert.ok(image.alt.length > 30);
+    assert.equal(image.width, article.images[i].width);
+    assert.equal(image.height, article.images[i].height);
+    assert.ok(figure.querySelector('figcaption').textContent.length > 20);
+    assert.equal(figure.querySelector('a'), null);
+  }
+  assert.doesNotMatch(doc.querySelector('.article-body').textContent, /!\[|\*Improving|\*Investment/);
+  const graph = JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
+  assert.equal(graph.find(n => n['@type'] === 'BlogPosting').image.url, article.image);
+  assert.equal(doc.querySelector('meta[property="og:image"]').content, article.image);
+  assert.equal(doc.querySelector('meta[name="twitter:image"]').content, article.image);
+  assert.equal(doc.querySelector('meta[name="twitter:card"]').content, 'summary_large_image');
+  assert.ok(doc.querySelector('.article-body').textContent.includes('The following example is fictional.'));
+  dom.window.close();
 });
 
 function formHarness(fetch) {

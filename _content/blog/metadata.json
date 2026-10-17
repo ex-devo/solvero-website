@@ -148,5 +148,54 @@
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
     "dateModified": "2026-10-16"
+  },
+  {
+    "file": "11-ai-operating-model",
+    "slug": "ai-operating-model",
+    "title": "AI Operating Model: Redesigning Business Workflows | Solvero",
+    "description": "Design operations around AI with clear ownership, connected systems and practical controls. Learn what organisational change turns faster tasks into business value.",
+    "query": "AI operating model",
+    "section": "Process improvement",
+    "headline": "Designing operations around AI: the organisational work behind productivity",
+    "canonical": "https://solvero.co.za/blog/ai-operating-model/",
+    "byline": "Jateen Narsai",
+    "language": "en",
+    "author_url": "https://solvero.co.za/authors/jateen-narsai/",
+    "datePublished": "2026-10-17",
+    "dateModified": "2026-10-17",
+    "image": "https://solvero.co.za/images/blog/ai-operating-model/ai-bottleneck.webp",
+    "image_alt": "AI speeds preparation while review remains queued; workflow redesign addresses validation, routing and completion.",
+    "images": [
+      {
+        "src": "/images/blog/ai-operating-model/ai-bottleneck.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/ai-operating-model/dont-pave-the-cow-paths.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/ai-operating-model/electricity-and-factory-redesign.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/ai-operating-model/productivity-j-curve.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/ai-operating-model/automate-the-coordination.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/ai-operating-model/human-contributions.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ]
   }
 ]

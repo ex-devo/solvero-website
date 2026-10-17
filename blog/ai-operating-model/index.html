@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Operating Model: Redesigning Business Workflows | Solvero</title>
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Design operations around AI with clear ownership, connected systems and practical controls. Learn what organisational change turns faster tasks into business value." />
+  <link rel="canonical" href="https://solvero.co.za/blog/ai-operating-model/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Solvero" />
+  <meta property="og:url" content="https://solvero.co.za/blog/ai-operating-model/" />
+  <meta property="og:title" content="AI Operating Model: Redesigning Business Workflows | Solvero" />
+  <meta property="og:description" content="Design operations around AI with clear ownership, connected systems and practical controls. Learn what organisational change turns faster tasks into business value." />
+  <meta property="og:image" content="https://solvero.co.za/images/blog/ai-operating-model/ai-bottleneck.webp" />
+  <meta property="og:image:alt" content="AI speeds preparation while review remains queued; workflow redesign addresses validation, routing and completion." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://solvero.co.za/blog/ai-operating-model/" />
+  <meta name="twitter:title" content="AI Operating Model: Redesigning Business Workflows | Solvero" />
+  <meta name="twitter:description" content="Design operations around AI with clear ownership, connected systems and practical controls. Learn what organisational change turns faster tasks into business value." />
+  <meta name="twitter:image" content="https://solvero.co.za/images/blog/ai-operating-model/ai-bottleneck.webp" />
+  <meta name="twitter:image:alt" content="AI speeds preparation while review remains queued; workflow redesign addresses validation, routing and completion." />
+  <link rel="icon" type="image/png" href="/images/optimised/solvero-icon.png" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=5586a231091c" />
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://solvero.co.za/#organization",
+      "name": "Solvero",
+      "legalName": "Solvero Tech (Pty) Ltd",
+      "url": "https://solvero.co.za/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://solvero.co.za/images/optimised/solvero-logo.webp",
+        "width": 480,
+        "height": 170
+      },
+      "description": "Solvero helps businesses reduce manual work through process analysis, systems integration and workflow automation, from discovery to implementation.",
+      "email": "solutions@solvero.co.za",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Johannesburg",
+        "addressCountry": "ZA"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://solvero.co.za/#website",
+      "name": "Solvero",
+      "url": "https://solvero.co.za/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://solvero.co.za/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://solvero.co.za/authors/jateen-narsai/#person",
+      "name": "Jateen Narsai",
+      "url": "https://solvero.co.za/authors/jateen-narsai/",
+      "description": "Jateen Narsai is an IT professional with over 15 years’ experience in business and systems analysis, process improvement and software solution design. His work includes customer onboarding, approval workflows and reporting automation. He works across requirements, solution documentation, testing and implementation support, with a focus on reducing manual effort and making systems easier to use.",
+      "sameAs": [
+        "https://www.linkedin.com/in/jnarsai/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://solvero.co.za/blog/ai-operating-model/#webpage",
+      "url": "https://solvero.co.za/blog/ai-operating-model/",
+      "name": "AI Operating Model: Redesigning Business Workflows | Solvero",
+      "description": "Design operations around AI with clear ownership, connected systems and practical controls. Learn what organisational change turns faster tasks into business value.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://solvero.co.za/#website"
+      },
+      "mainEntity": {
+        "@id": "https://solvero.co.za/blog/ai-operating-model/#article"
+      },
+      "breadcrumb": {
+        "@id": "https://solvero.co.za/blog/ai-operating-model/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://solvero.co.za/blog/ai-operating-model/#article",
+      "url": "https://solvero.co.za/blog/ai-operating-model/",
+      "headline": "Designing operations around AI: the organisational work behind productivity",
+      "description": "Design operations around AI with clear ownership, connected systems and practical controls. Learn what organisational change turns faster tasks into business value.",
+      "inLanguage": "en",
+      "articleSection": "Process improvement",
+      "author": {
+        "@id": "https://solvero.co.za/authors/jateen-narsai/#person"
+      },
+      "publisher": {
+        "@id": "https://solvero.co.za/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://solvero.co.za/blog/ai-operating-model/#webpage"
+      },
+      "isPartOf": {
+        "@id": "https://solvero.co.za/#website"
+      },
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-17",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://solvero.co.za/images/blog/ai-operating-model/ai-bottleneck.webp",
+        "width": 1672,
+        "height": 941,
+        "caption": "AI speeds preparation while review remains queued; workflow redesign addresses validation, routing and completion."
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://solvero.co.za/blog/ai-operating-model/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://solvero.co.za/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://solvero.co.za/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Designing operations around AI: the organisational work behind productivity",
+          "item": "https://solvero.co.za/blog/ai-operating-model/"
+        }
+      ]
+    }
+  ]
+}</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;display=swap"
+    rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.1s ease-in;
+    }
+
+    /* Mobile: Simple gradient (your original) */
+    .bg-brand-gradient {
+      background: linear-gradient(90deg, #1985ce, #1dc5ff, #35b0ed);
+    }
+
+    /* Desktop: Textured background with overlay */
+    @media (min-width: 768px) {
+      .bg-brand-gradient {
+        background-image:
+          linear-gradient(135deg,
+            rgba(25, 133, 206, 0.8),
+            rgba(29, 197, 255, 0.7)),
+          url('/images/hero-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    }
+
+    .text-brand-primary {
+      color: #1985ce;
+    }
+
+    .text-brand-secondary {
+      color: #1dc5ff;
+    }
+
+    .text-brand-tertiary {
+      color: #35b0ed;
+    }
+
+    .border-brand-primary {
+      border-color: #1985ce;
+    }
+
+    .hover-bg-brand-primary-darker:hover {
+      background-color: #136aa1;
+    }
+
+    .bg-brand-primary {
+      background-color: #1985ce;
+    }
+
+    .bg-brand-secondary {
+      background-color: #1dc5ff;
+    }
+
+    .bg-brand-tertiary {
+      background-color: #35b0ed;
+    }
+
+    /* For particles background */
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Mobile menu animations */
+    #mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transform: translateY(-20px);
+      transition: max-height 0.25s ease-out, transform 0.25s ease-out, padding 0.25s ease-out;
+      background-color: white;
+      padding: 0 1.5rem;
+      text-align: center;
+      position: fixed;
+      top: 92px;
+      left: 0;
+      right: 0;
+      z-index: 40;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #mobile-menu.show {
+      max-height: 24rem;
+      transform: translateY(0);
+      padding: 1rem 1.5rem;
+    }
+
+    /* Hamburger icon animation */
+    .hamburger-icon {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      font-size: 24px;
+    }
+
+    .hamburger-icon.active {
+      transform: rotate(90deg);
+    }
+
+    /* Ensure consistent nav height across all screen sizes */
+    nav {
+      height: 92px;
+      position: relative;
+    }
+
+    nav .container {
+      height: 100%;
+    }
+
+    /* Technology Stack Carousel Animation */
+    .tech-carousel-wrapper {
+      width: 90%;
+      max-width: 1200px;
+      margin: 4rem auto 0;
+      /* Increased top margin */
+      position: relative;
+      height: 100px;
+      overflow: hidden;
+      mask-image: linear-gradient(to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0));
+      background: white;
+    }
+
+    /* Marquee animation will be generated by JavaScript */
+    .tech-carousel-track {
+      display: flex;
+      gap: 6rem;
+    }
+
+    .tech-carousel-wrapper:hover .tech-carousel-track {
+      animation-play-state: paused;
+    }
+
+    .tech-logo {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tech-logo img {
+      height: 72px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .skip-link { position: absolute; left: 1rem; top: 0; z-index: 100; padding: .75rem; background: white; color: #1985ce; transform: translateY(-150%); }
+    .skip-link:focus { transform: translateY(0); }
+    #mobile-menu:not(.show) { visibility: hidden; }
+    .tech-carousel-wrapper:focus-within .tech-carousel-track { animation-play-state: paused; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      #particles-js { display: none; }
+      .tech-carousel-wrapper { overflow-x: auto; mask-image: none; }
+      .tech-carousel-track > [aria-hidden="true"] { display: none; }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles/editorial.css?v=3c3a3e172fec" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-17" /><meta property="article:modified_time" content="2026-10-17" /><meta property="og:image:width" content="1672" /><meta property="og:image:height" content="941" />
+</head>
+<body class="bg-gray-100">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
+    <div class="container mx-auto px-6 py-1.5 flex justify-between items-center">
+      <a class="flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
+        <img alt="Solvero logo" class="h-20 w-auto" src="/images/optimised/solvero-logo.webp" width="480" height="170" decoding="async" />
+      </a>
+      <div class="hidden lg:flex items-center gap-12">
+        <div class="flex items-center gap-8">
+        <a class="text-gray-600 hover:text-brand-primary" href="/#services">Services</a>
+        <a class="text-gray-600 hover:text-brand-primary" href="/#about">About Us</a>
+        <a class="text-gray-600 hover:text-brand-primary" href="/#expertise">Expertise</a>
+        <a class="text-gray-600 hover:text-brand-primary" href="/blog/">Blog</a>
+        </div>
+        <a class="bg-brand-primary text-white px-6 py-2 rounded-md hover-bg-brand-primary-darker transition duration-300 whitespace-nowrap"
+          href="/#contact">Get in Touch</a>
+      </div>
+      <div class="lg:hidden">
+        <button class="text-gray-600 focus:outline-none" id="mobile-menu-button" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="material-icons hamburger-icon" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="lg:hidden space-y-4" id="mobile-menu">
+    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#services">Services</a>
+    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#about">About Us</a>
+    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#expertise">Expertise</a>
+    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/blog/">Blog</a>
+    <a class="block w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
+      href="/#contact">Get in Touch</a>
+  </div>
+  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
+        <h1 class="font-semibold mb-6">Designing operations around AI: the organisational work behind productivity</h1>
+        <p class="text-lg leading-relaxed">Process improvement · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-17">17 October 2026</time></p>
+      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><p>Designing operations around AI means changing how work moves, who can make decisions and how systems support delivery. A useful AI operating model connects people, automation, information and controls around a business outcome. Introducing the technology is one part of that work; the organisation also needs time, ownership and investment to change its processes.</p>
+<p>An AI tool might prepare a request in minutes. The customer can still wait days while someone checks it, finds an approver and copies the result into another system. The preparation step has improved, but the business has yet to deliver a faster service.</p>
+<p>The opportunity is to redesign that complete journey. That requires looking beyond the task AI performs to the coordination, infrastructure and human judgement surrounding it.</p>
+<figure><img src="/images/blog/ai-operating-model/ai-bottleneck.webp" alt="Two workflow rows show AI speeding preparation while review remains queued, followed by a redesigned process with validation, rule-based routing and confirmed completion." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Improving preparation alone can leave the next stage overloaded. Workflow redesign connects validation, routing and completion.</figcaption></figure>
+<h2>Faster output exposes the next constraint</h2>
+<p>In its October 2026 <a href="https://www.anthropic.com/engineering/redesigning-source-control">account of redesigning source control</a>, Anthropic reports that daily merged code changes increased from around 2,500 in May to more than 30,000 in September. Source control—the system coordinating changes to shared code—became a constraint.</p>
+<p>Anthropic built Scion around largely online agents and automated jobs, shifting work to servers and retrieving files as needed. A seven-person team delivered it, related tools and the migration in five months. The company reports a 200-fold reduction in CPU and memory requirements compared with its previous Git-mirroring infrastructure.</p>
+<p>The surrounding practices changed too: engineers reviewed the intent of changes, and concurrent merging depended on stronger testing after merge and before deployment. Anthropic explicitly describes an unusual workload and says Scion is unsuitable as a general replacement for Git.</p>
+<p>For other businesses, the useful question is which assumptions become limiting as AI increases activity. More code changes are not, by themselves, a measure of business value. Equally, more proposals, processed documents or drafted responses only help when they lead to reliable completed outcomes.</p>
+<h2>Question the process before accelerating it</h2>
+<p>The warning about “paving the cow paths” applies when a business automates the route work has historically followed without asking why that route exists.</p>
+<p>An approval meeting might exist because information used to arrive in separate spreadsheets. A coordinator might retype details because two systems cannot share a record. A weekly batch might reflect the time it once took to assemble a report. Each arrangement deserves examination when those conditions change.</p>
+<p>Start with the outcome and work backwards. Which information is needed? Which decision creates authority? Which steps protect customers or the business? Which handoffs exist simply to move information?</p>
+<p>Some controls will remain necessary. Independent approval of a financial commitment serves a different purpose from manually forwarding its supporting documents. Redesign the information flow while preserving the required authority.</p>
+<figure><img src="/images/blog/ai-operating-model/dont-pave-the-cow-paths.webp" alt="A paved road follows a winding cow track between a barn and a field gate. Beside it, a redesigned route connects the same destination more directly while retaining a necessary checkpoint." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Begin with the destination and the constraints that matter. Making an inherited route faster can preserve unnecessary detours.</figcaption></figure>
+<p>An organisation chart alone cannot describe the new arrangement. Add automated steps and agents to the process map, showing their inputs, permissions, dependencies and responsible human owners. One person may own an outcome supported by several automated activities; putting an agent in every existing job box can preserve unnecessary handoffs.</p>
+<h2>Learn from factory electrification</h2>
+<p>The productivity paradox associated with economist Robert Solow captures a recurring problem: widespread technology adoption can coexist with disappointing measured productivity. Installing a capability and learning to organise work around it are different achievements.</p>
+<p>Factory electrification offers a historical parallel. Individual electric drives allowed manufacturers to rethink machine placement and production flow beyond the constraints of shared mechanical power. The wider gains involved changes to the organisation of production. <a href="https://www.nber.org/system/files/working_papers/w28076/revisions/w28076.rev0.pdf">Research on manufacturing electrification</a> discusses that relationship between technology and factory design.</p>
+<figure><img src="/images/blog/ai-operating-model/electricity-and-factory-redesign.webp" alt="Two factory layouts use electric power. One retains a central shaft and belts with machines clustered around them; the other gives machines individual drives and arranges them in a clearer production sequence." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Individual electric drives created freedom to reorganise the factory floor. AI similarly creates reasons to question how work is arranged.</figcaption></figure>
+<h2>Fund the organisational work behind the technology</h2>
+<p>Erik Brynjolfsson, Daniel Rock and Chad Syverson&#x27;s <a href="https://www.nber.org/papers/w25148">productivity J-curve research</a> explains how technologies such as AI require complementary investments in processes, skills and organisational knowledge. Much of that investment is intangible and poorly reflected in conventional productivity measures, so measured gains can lag behind the work of adoption.</p>
+<p>For a business planning an AI workflow, the practical implication is to budget for discovery, data preparation, integration, training, testing and operational support. Staff may temporarily run the existing process while helping design and evaluate its replacement. That creates real demands on their capacity.</p>
+<p>Assign time for that work and agree checkpoints for continuing, changing or stopping the initiative. The J-curve offers an explanation for delayed measured gains; it does not guarantee an eventual return or justify an indefinitely unsuccessful project.</p>
+<figure><img src="/images/blog/ai-operating-model/productivity-j-curve.webp" alt="Productivity J-curve showing a flat starting level, a dip during investment, redesign and learning, and a rise as organisational changes take hold." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Investment in skills, processes and systems can precede measurable productivity gains.</figcaption></figure>
+<h2>Make five operating decisions before scaling</h2>
+<p>An AI operating model becomes useful when it resolves decisions people otherwise have to improvise. The following five areas connect organisational intent to daily operation.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Operating decision</th><th scope="col">What needs to be agreed</th><th scope="col">Evidence that makes it concrete</th></tr></thead><tbody><tr><td>Outcome and ownership</td><td>The result being improved, its process owner and the sponsor who can resolve cross-team conflicts</td><td>A defined start and finish, baseline measures and named decision makers</td></tr><tr><td>Work and authority</td><td>What AI proposes or executes, what rules enforce and what people authorise</td><td>A process map with permitted actions, review conditions and escalation routes</td></tr><tr><td>Information and systems</td><td>Which records are authoritative, what access is permitted and how updates are confirmed</td><td>Agreed data definitions, interfaces, access limits and reconciliation arrangements</td></tr><tr><td>People and adoption</td><td>How roles, skills, workload and incentives change</td><td>Protected learning time, revised responsibilities and a way to report problems</td></tr><tr><td>Ongoing operation</td><td>Who monitors quality, supports failures, approves changes and funds continued use</td><td>Acceptance criteria, an operating owner, support arrangements and a release process</td></tr></tbody></table></div>
+<p>Bring the people doing the work into these decisions alongside business, technology and relevant control specialists. A process owner needs enough authority to change the handoffs; an implementation team needs access to the people who understand exceptions.</p>
+<p>For a smaller business, several responsibilities may sit with the same person. They still need to be explicit. A separate AI department is not a prerequisite for improving one workflow.</p>
+<h2>Automate coordination while keeping accountability visible</h2>
+<p>Coordination is often hidden inside apparently productive work: finding the current document, asking who owns a request, chasing a missing attachment or holding a meeting to exchange status updates.</p>
+<p>A shared case record can replace repeated status enquiries. Rules can route complete requests to the appropriate owner. AI can help interpret varied messages or assemble a review summary with links to the evidence. Notifications can explain what is missing and what action is needed.</p>
+<p>Work that is genuinely independent may run in parallel. Work that depends on an earlier decision must retain that sequence. Parallel processing also needs controls for two activities trying to change the same record.</p>
+<p>Give reviewers a defined decision and the information needed to make it. A requirement to “check everything” can create an unmanageable queue and unclear responsibility. Review should have a purpose, an owner and a practical workload.</p>
+<p>Whether every case needs approval, selected cases need review or some actions can proceed automatically depends on the consequences and observed reliability. Reducing review requires evidence and an authorised policy decision. An AI-generated confidence score alone does not establish that an action is safe.</p>
+<p>The <a href="https://solvero.co.za/blog/approval-workflow-automation/">approval workflow guide</a> covers authority and escalation in more detail. The <a href="https://solvero.co.za/blog/ai-vs-rules-based-automation/">AI and rules-based automation guide</a> helps decide which method fits each individual step.</p>
+<figure><img src="/images/blog/ai-operating-model/automate-the-coordination.webp" alt="People pass information between disconnected work areas. In a redesigned workflow, validation and routing move routine information while people handle exceptions, decisions and relationships." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>When the workflow carries information reliably, people can give more attention to the decisions and relationships that need them.</figcaption></figure>
+<h2>Design the systems for the volume you intend to create</h2>
+<p>An AI-assisted intake process can produce work faster than a receiving application or team can handle it. Test the full route into delivery, including system limits, processing capacity and the demand on exception reviewers.</p>
+<p>Establish a shared case reference and agreed data ownership. Decide how the workflow handles repeated events, conflicting updates, unavailable services and uncertainty about whether an action succeeded. A timeout after an account update needs reconciliation before another write is attempted.</p>
+<p>Limit an agent&#x27;s access to the information and actions its task requires. Treat instructions found inside emails or documents as untrusted content. Define how sensitive information is handled, which providers may process it and how long records are retained. Requirements will depend on the business, its contracts and the jurisdictions involved.</p>
+<p>Monitoring should show which cases are progressing, blocked or unresolved, alongside service health, errors and operating cost. Automated monitoring can help identify unusual patterns; give someone responsibility and authority to investigate and respond.</p>
+<p>Build evaluations around representative ordinary cases and known failures. Retest material changes to models, instructions, rules or connected systems. Keep a controlled way to pause automated actions and reconcile unfinished cases. <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST&#x27;s voluntary AI Risk Management Framework</a> provides a broader reference for incorporating trustworthiness into design, use and evaluation.</p>
+<p>The appropriate response to a constraint may be a clearer form, an existing connector or a changed approval policy. Bespoke infrastructure needs a demonstrated requirement and a business case covering its future support.</p>
+<h2>An illustrative example: redesigning service-change requests</h2>
+<p><strong>The following example is fictional. It describes a possible design, not a Solvero client implementation or a measured result.</strong></p>
+<p>A service business receives customer change requests by email. A coordinator reads each message, checks the agreement, asks delivery for an estimate, finds an approver and updates the job record.</p>
+<p>Adding AI to summarise the email helps with reading. The wider redesign addresses how a request becomes an authorised, deliverable change.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Part of the journey</th><th scope="col">Proposed operating design</th></tr></thead><tbody><tr><td>Receive and identify</td><td>Create one case reference and preserve the original request. AI suggests structured details with supporting source text.</td></tr><tr><td>Establish readiness</td><td>Rules check required fields and the agreement reference. Missing or contradictory information goes to an owner for resolution.</td></tr><tr><td>Assess feasibility</td><td>Delivery receives a complete request and records its estimate. Independent checks run together where appropriate.</td></tr><tr><td>Authorise the change</td><td>A designated person approves scope, price or commitments under the agreed policy, against the current request revision.</td></tr><tr><td>Complete the handoff</td><td>The workflow updates the job system once, confirms the result and routes unresolved cases to a named owner.</td></tr></tbody></table></div>
+<p>The coordinator&#x27;s knowledge helps define what a complete request looks like and which exceptions need attention. Their role may shift towards resolving unusual cases, maintaining process quality and supporting customers.</p>
+<p>Evaluate the design from receipt to confirmed handoff. Include incorrect extraction, review time, incomplete requests, failed updates and the workload arriving in delivery. A faster first stage is useful only if the complete service improves.</p>
+<h2>Plan how people&#x27;s work will change</h2>
+<p>Removing coordination effort can allow a team to handle more completed work with similar staffing. That is a possibility to test. It does not establish a universal productivity multiplier or determine what should happen to headcount.</p>
+<p>The “post-labour” argument in discussions of AI imagines human effort becoming less of a constraint on output. That remains a broader economic proposition. Individual firms still face limits in demand, capital, infrastructure, judgement and responsibility.</p>
+<p>Before reducing coordination roles, understand the work those people actually do. Following up a request may include interpreting an unwritten policy, protecting a customer relationship or spotting an error that no formal check captures. Removing the role before redesigning those functions can leave the process without its essential support.</p>
+<p>Four human contributions need deliberate provision:</p>
+<ul><li><strong>Accountability:</strong> someone owns the outcome and can intervene when the system acts incorrectly.</li><li><strong>Long-term direction:</strong> leaders choose priorities, acceptable trade-offs and what the business should achieve.</li><li><strong>Relationships and trust:</strong> people handle negotiation, sensitive conversations and commitments to customers and colleagues.</li><li><strong>Context and tacit knowledge:</strong> experienced staff explain exceptions and judgement that procedures have yet to capture.</li></ul>
+<figure><img src="/images/blog/ai-operating-model/human-contributions.webp" alt="Four human contributions: accountability to own the outcome, long-term direction to choose priorities, relationships and trust to handle sensitive conversations, and tacit knowledge to understand exceptions." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>An AI operating model needs to make room for accountability, direction, relationships and tacit knowledge.</figcaption></figure>
+<p>Use real cases to document that knowledge, test the resulting rules and keep disputed interpretations visible. Documentation helps AI and people work more consistently; it does not make every judgement reducible to a rule.</p>
+<p>Give staff training in evaluating outputs, recognising failures and escalating concerns. Adjust performance measures so people are rewarded for reliable completion and useful problem reporting. If the incentive is simply to generate more items, quality and downstream workload can suffer.</p>
+<p>Leaders should explain the intended use of released capacity—such as improving service, absorbing growth or changing responsibilities—and be candid about workforce decisions. Participation is harder to sustain when staff are expected to redesign their work without understanding the implications.</p>
+<h2>Measure completed outcomes and keep redesigning</h2>
+<p>Before a pilot, agree what would count as improvement. Use a small set of measures covering the complete workflow:</p>
+<ul><li><strong>Completion and delay:</strong> completed cases, elapsed time, open work and the age of unresolved cases.</li><li><strong>Quality and control:</strong> correct outcomes, rework and consequential errors that escaped checks.</li><li><strong>Human effort:</strong> handling, review, exception resolution and ongoing support.</li><li><strong>Economics:</strong> implementation effort, recurring charges and cost per correctly completed case.</li><li><strong>Service:</strong> whether customers and receiving teams get what they need, when they need it.</li></ul>
+<p>Compare similar work and record changes in volume or complexity. Released staff time represents capacity; cash savings depend on an actual change in spending. The <a href="https://solvero.co.za/blog/workflow-automation-roi/">workflow automation ROI guide</a> explains that distinction.</p>
+<p>As one stage improves, another may become the constraint. Review the process again rather than continuing to optimise the same task. The <a href="https://solvero.co.za/blog/identify-process-bottlenecks/">bottleneck guide</a> provides a practical observation method.</p>
+<p>Start with one bounded workflow. Map the current journey, agree the intended design, test it with representative cases and widen use only when the evidence supports doing so. Keep an owner and budget for what happens after the initial implementation.</p>
+<h2>Discuss the operating changes your AI workflow needs</h2>
+<p>Bring one workflow where AI is being considered or already used, together with a recent ordinary case and an exception. Include the people who understand how it reaches completion.</p>
+<p>Solvero helps businesses analyse workflows, reduce manual work and connect systems, from requirements and process design through implementation. That work can clarify where AI adds value, what must change around it and how the resulting operation will be supported.</p>
+<p><a href="https://solvero.co.za/#contact">Discuss your workflow with Solvero</a>.</p>
+<h2>About the author</h2>
+<p>Jateen Narsai is an IT professional with over 15 years’ experience in business and systems analysis, process improvement and software solution design. His work includes customer onboarding, approval workflows and reporting automation. He works across requirements, solution documentation, testing and implementation support, with a focus on reducing manual effort and making systems easier to use.</p>
+<p><a href="https://solvero.co.za/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+  <footer class="bg-gray-800 text-gray-300 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="mb-4">
+            <img alt="Solvero logo" class="h-20 w-auto mx-auto md:mx-0 brightness-0 invert"
+              src="/images/optimised/solvero-logo.webp" width="480" height="170" decoding="async" />
+          </div>
+          <p class="text-sm">Technology, Solved. Business process improvement and workflow automation, from analysis to implementation.</p>
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-4">Quick Links</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-brand-tertiary" href="/#home">Home</a></li>
+            <li><a class="hover:text-brand-tertiary" href="/#services">Services</a></li>
+            <li><a class="hover:text-brand-tertiary" href="/#about">About Us</a></li>
+            <li><a class="hover:text-brand-tertiary" href="/#expertise">Expertise</a></li>
+            <li><a class="hover:text-brand-tertiary" href="/blog/">Blog</a></li>
+            <li><a class="hover:text-brand-tertiary" href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-4">Connect With Us</h2>
+          <p class="text-sm"><a class="hover:text-brand-tertiary underline" href="mailto:solutions@solvero.co.za">solutions@solvero.co.za</a></p>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-center text-sm">
+        <p>© 2026, Solvero Tech (Pty) Ltd, Johannesburg, South Africa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = mobileMenuButton.querySelector('.hamburger-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+      hamburgerIcon.classList.toggle('active');
+      const open = mobileMenu.classList.contains('show');
+      mobileMenuButton.setAttribute('aria-expanded', String(open));
+      mobileMenuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+
+      if (mobileMenu.classList.contains('show')) {
+        hamburgerIcon.textContent = 'close';
+      } else {
+        hamburgerIcon.textContent = 'menu';
+      }
+    });
+
+  </script>
+</body>
+</html>
