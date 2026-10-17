@@ -6,6 +6,10 @@ To reduce duplicate data entry, define which system owns each field, agree how r
 
 Start with one repeated task, such as creating a billing record after a customer is approved. Expanding to every customer field and both directions at once makes ownership conflicts harder to resolve.
 
+![A CRM owns the account manager while accounting owns verified billing details and payment terms, linked by an explicit record relationship.](/images/blog/reduce-duplicate-data-entry/field-ownership.webp)
+
+*Agree ownership field by field before connecting customer records.*
+
 ## Find the repeated capture
 
 Follow several customer records from sales approval to billing. Note who enters each field, which information is checked and what corrections happen later.
@@ -67,6 +71,10 @@ Consider a timeout immediately after creating a billing record. The accounting s
 Mark that case as uncertain. Reconcile the destination using the stored operation reference and supported lookup methods before attempting another create. If the result cannot be established safely, assign it for review. Repeating an unconfirmed create can produce the duplicate the integration was meant to prevent.
 
 Give exceptions a visible status and owner. A useful review item contains the customer reference, intended action, failure reason and last known outcome. Limit the customer information in notifications to what the reviewer needs.
+
+![After a connection times out, the workflow checks whether the destination record already exists before deciding what to do next.](/images/blog/reduce-duplicate-data-entry/uncertain-update.webp)
+
+*Confirm the first outcome before repeating a create action.*
 
 ## Test the handoff before extending it
 

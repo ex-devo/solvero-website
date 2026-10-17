@@ -23,7 +23,7 @@ The blog index is at `/blog/`, with eleven articles, twenty CSV worksheets and a
 
 All blog pages use the shared editorial hero: 40px titles and 40px top/bottom padding on desktop, and 32px titles and 32px top/bottom padding on mobile. Breadcrumb-to-title and title-to-byline gaps remain 32px and 24px. Set this standard in `styles/editorial.css` and the shared `hero()` generator so the index, articles and author page remain consistent.
 
-Article images use a Markdown image followed by a single italic caption paragraph. Register each image's root-relative path, width and height in the article metadata's `images` list. Optional `image` and `image_alt` fields select its absolute social-sharing and structured-data image. The AI operating model article uses six lossless WebP illustrations.
+Article images use a Markdown image followed by a single italic caption paragraph. Register each image's root-relative path, width and height in the article metadata's `images` list. The `image` and `image_alt` fields select its absolute social-sharing and structured-data image. Every article has topic-specific hand-drawn explainers: two each for the first ten guides and six for the AI operating model article, served as lossless WebP with lazy loading, alt text and captions.
 
 Edit article Markdown and metadata in `_content/blog/`, author details in `_content/`, and the shared blog/author page shell in `_templates/editorial.html`. Run `npm run build` to regenerate committed pages, sitemap and styles. Publication dates remain stable in metadata; update `dateModified` only when an article changes materially. The build uses Python's standard library and the existing Node dependencies.
 

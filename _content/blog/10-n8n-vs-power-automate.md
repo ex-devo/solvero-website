@@ -6,6 +6,10 @@ Choose between n8n and Power Automate by comparing the same workflow against you
 
 Power Automate is a practical candidate to assess when a workflow is closely tied to an existing Microsoft environment and its operating team. n8n is a practical candidate when its integration approach or self-hosting option matches the organisation's needs. Those are starting hypotheses for a pilot, rather than a performance ranking.
 
+![n8n and Power Automate are evaluated against the same workflow, system actions, approvals, ownership and cost assumptions.](/images/blog/n8n-vs-power-automate/compare-workflow-fit.webp)
+
+*Compare both platforms against the same operating requirements.*
+
 ## Write one workflow brief for both platforms
 
 Define the trigger, inputs, finishing condition and manual decisions. Name the applications and the specific actions needed in each. Include the expected volume, peak demand, sensitive-data handling and recovery owner.
@@ -59,6 +63,10 @@ The [shared pilot test brief](assets/platform-pilot-tests.csv) provides the same
 For each candidate, record the configuration, required entitlements and evidence that the expected business outcome occurred. Measure operator effort and recovery steps as well as successful execution. Use representative test data and approved access rather than a demonstration that creates real purchasing commitments.
 
 Assess whether another team member can diagnose a failure and maintain a small change using the handover documentation. The maintainable choice depends on who will actually operate it after the initial builder has left.
+
+![The same normal, repeated, incomplete and uncertain cases are tested on both platforms and their outcomes, review effort and support needs compared.](/images/blog/n8n-vs-power-automate/shared-pilot-tests.webp)
+
+*A shared pilot produces evidence that a feature list cannot provide.*
 
 ## Make a workflow-specific decision
 

@@ -6,6 +6,10 @@ Start with a recurring process that has clear rules, usable inputs and an owner 
 
 The process consuming the most time may need to be simplified before it can be automated reliably. Use the scorecard below to separate three decisions: automate a bounded step, improve the process first, or defer it.
 
+![A large vague automation idea is narrowed into one defined trigger, action and finishing condition, ready for evaluation.](/images/blog/which-processes-to-automate/choose-a-bounded-workflow.webp)
+
+*Define a manageable workflow before comparing readiness and value.*
+
 ## Define the work before choosing the tool
 
 “Automate customer onboarding” can mean anything from sending a welcome email to checking contracts and creating accounts across several systems. That scope is too broad to compare with another opportunity.
@@ -69,6 +73,10 @@ The customer-data handoff has an agreed trigger, field ownership, approved syste
 The report has different definitions of the same measures. Automating its assembly would preserve that disagreement. Clarifying which decisions the report supports may also remove unnecessary sections.
 
 The ten current handling hours in the customer-data example are **not ten promised hours saved**. Review, exceptions and maintenance will remain. Add implementation and operating costs before making an investment decision.
+
+![Readiness gates and business value are assessed separately before deciding whether to pilot, improve first or defer.](/images/blog/which-processes-to-automate/readiness-and-value.webp)
+
+*Readiness and value answer different questions; a high score cannot cancel a missing prerequisite.*
 
 ## Use the scorecard in a planning meeting
 

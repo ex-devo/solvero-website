@@ -155,6 +155,31 @@ test('the AI operating model article publishes all six illustrations and matchin
   dom.window.close();
 });
 
+test('every article has topic illustrations with captions and matching social metadata', () => {
+  for (const article of articles) {
+    assert.ok(article.images.length >= 2, `${article.slug}: at least two illustrations`);
+    const dom = new JSDOM(source(`blog/${article.slug}/index.html`));
+    const doc = dom.window.document;
+    const figures = [...doc.querySelectorAll('.article-body figure')];
+    assert.equal(figures.length, article.images.length, article.slug);
+    assert.deepEqual(figures.map(f => f.querySelector('img').getAttribute('src')), article.images.map(i => i.src));
+    for (const [i, figure] of figures.entries()) {
+      const image = figure.querySelector('img');
+      assert.ok(image.alt.length > 30);
+      assert.ok(figure.querySelector('figcaption').textContent.length > 20);
+      assert.equal(image.width, article.images[i].width);
+      assert.equal(image.height, article.images[i].height);
+      assert.equal(image.getAttribute('loading'), 'lazy');
+    }
+    const graph = JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
+    assert.equal(graph.find(n => n['@type'] === 'BlogPosting').image.url, article.image);
+    assert.equal(doc.querySelector('meta[property="og:image"]').content, article.image);
+    assert.equal(doc.querySelector('meta[name="twitter:image"]').content, article.image);
+    assert.equal(doc.querySelector('meta[name="twitter:card"]').content, 'summary_large_image');
+    dom.window.close();
+  }
+});
+
 function formHarness(fetch) {
   const dom = new JSDOM(source('index.html'), { url: urlFor('index.html'), runScripts: 'outside-only' });
   const { window } = dom;

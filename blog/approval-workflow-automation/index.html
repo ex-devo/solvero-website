@@ -12,14 +12,14 @@
   <meta property="og:url" content="https://solvero.co.za/blog/approval-workflow-automation/" />
   <meta property="og:title" content="Approval Workflow Automation Without Losing Control | Solvero" />
   <meta property="og:description" content="Design approval workflows with clear authority, revision checks, delegation and exception handling. Includes an editable approval matrix and acceptance checklist." />
-  <meta property="og:image" content="https://solvero.co.za/images/optimised/solvero-logo.webp" />
-  <meta property="og:image:alt" content="Solvero logo" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://solvero.co.za/images/blog/approval-workflow-automation/approval-route.webp" />
+  <meta property="og:image:alt" content="A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded." />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://solvero.co.za/blog/approval-workflow-automation/" />
   <meta name="twitter:title" content="Approval Workflow Automation Without Losing Control | Solvero" />
   <meta name="twitter:description" content="Design approval workflows with clear authority, revision checks, delegation and exception handling. Includes an editable approval matrix and acceptance checklist." />
-  <meta name="twitter:image" content="https://solvero.co.za/images/optimised/solvero-logo.webp" />
-  <meta name="twitter:image:alt" content="Solvero logo" />
+  <meta name="twitter:image" content="https://solvero.co.za/images/blog/approval-workflow-automation/approval-route.webp" />
+  <meta name="twitter:image:alt" content="A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded." />
   <link rel="icon" type="image/png" href="/images/optimised/solvero-icon.png" />
   <link rel="stylesheet" href="/assets/tailwind.css?v=5586a231091c" />
   <script type="application/ld+json">{
@@ -103,7 +103,14 @@
         "@id": "https://solvero.co.za/#website"
       },
       "datePublished": "2026-10-16",
-      "dateModified": "2026-10-16"
+      "dateModified": "2026-10-17",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://solvero.co.za/images/blog/approval-workflow-automation/approval-route.webp",
+        "width": 1672,
+        "height": 941,
+        "caption": "A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded."
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -306,7 +313,7 @@
     }
   </style>
   <link rel="stylesheet" href="/styles/editorial.css?v=3c3a3e172fec" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-16" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-17" /><meta property="og:image:width" content="1672" /><meta property="og:image:height" content="941" />
 </head>
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -347,6 +354,7 @@
         <p class="text-lg leading-relaxed">Workflow automation · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
       </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><p>Automate the routing, reminders and record keeping around an approval while keeping decision authority explicit. Define who can approve each request, what information they are approving and what happens when a request changes or gets stuck.</p>
 <p>Approval workflow automation works best when the policy can be translated into clear routes and exceptions. Email notifications alone leave important questions unanswered: whether a delegate has authority, whether all approvals are needed, and whether an old response still applies to a revised request.</p>
+<figure><img src="/images/blog/approval-workflow-automation/approval-route.webp" alt="A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Automate the coordination around a decision while keeping authority explicit.</figcaption></figure>
 <h2>Begin with one decision</h2>
 <p>Choose a bounded request, such as purchasing equipment. Specify what the approval authorises. Permission to buy equipment may be separate from supplier onboarding, release of payment or approval of a later invoice.</p>
 <p>For the initial request, agree the required information: requester, supplier, item or service, business reason, quote, currency, total and relevant budget. Define how tax, delivery and other charges enter that total according to the organisation&#x27;s policy.</p>
@@ -383,6 +391,7 @@ Current revision -&gt; Required decisions -&gt; All required approvals complete
 <p>Suppose someone approves a request and its total is then increased. Under this example policy, a material change creates a new revision and invalidates the old approval route. A delayed response to the earlier revision cannot authorise the revised purchase.</p>
 <p>Agree which changes are material. A supplier change, revised scope or amount may require fresh approval; a corrected internal note may follow a different rule. Keep that distinction explicit rather than inferring it from whichever fields a form happens to update.</p>
 <p>If a request changes during execution, the system must prevent an outdated approval from triggering the purchase. The implementation needs a controlled check and transition around the authorised action, not just a check made when an email was sent.</p>
+<figure><img src="/images/blog/approval-workflow-automation/approval-revisions.webp" alt="Approval belongs to the exact request revision that was reviewed; a material change requires a new approval." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>An earlier approval cannot authorise a materially changed request.</figcaption></figure>
 <h2>Handle absence and overdue requests</h2>
 <p>Delegation needs an authority rule. Record who may delegate, the delegate&#x27;s scope and limit, and when that authority begins and ends. Forwarding an approval email does not establish those permissions.</p>
 <p>For an overdue request, decide when reminders occur, who receives escalation and when the request pauses. Set the working calendar and time zone used for those deadlines. A person in another time zone should see an unambiguous due time.</p>

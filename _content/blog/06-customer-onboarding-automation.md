@@ -6,6 +6,10 @@ Customer onboarding automation should help a new client become ready for deliver
 
 A signed agreement is one milestone. Delivery may still need verified contacts, an agreed scope, billing details or authorised access to a system. Automating welcome messages while those dependencies remain unclear will leave the underlying chasing in place.
 
+![A signed agreement is followed by readiness checks for scope, billing, contacts, access and acceptance by the delivery team.](/images/blog/customer-onboarding-automation/onboarding-readiness.webp)
+
+*A signed agreement starts onboarding; readiness for delivery completes it.*
+
 ## Define what ready means
 
 Pick the service you are onboarding, because readiness varies with the work. Ask the receiving team what it needs to accept responsibility for delivery and what can safely arrive later.
@@ -59,6 +63,10 @@ The [exception checklist](assets/onboarding-exceptions.csv) covers missing infor
 If the client changes the service scope during onboarding, identify which accepted checks remain valid. New access requirements may need a new technical review. Do not carry old readiness forward merely because the agreement has a new attachment.
 
 If a start date arrives before readiness is confirmed, route that decision to the owner. An automatic calendar event should not silently waive required checks or promise delivery that the team cannot support.
+
+![A blocked onboarding case stays visible with its reason, owner and next action until it is ready for delivery handoff.](/images/blog/customer-onboarding-automation/blocked-onboarding.webp)
+
+*Give every blocked case a clear reason, owner and next action.*
 
 ## Close the receiving handoff
 

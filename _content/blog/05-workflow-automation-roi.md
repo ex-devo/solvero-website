@@ -6,6 +6,10 @@ Build a workflow automation business case from measured work, realistic remainin
 
 A claim that a task currently takes eighty hours does not establish that automation will save eighty hours. Some cases may stay manual, people may review the outputs, and someone will maintain the workflow. The useful calculation starts after those activities have been included.
 
+![A realistic automation estimate subtracts the review, corrections, exception handling and support that remain from the current handling effort.](/images/blog/workflow-automation-roi/remaining-work.webp)
+
+*Estimate released capacity after accounting for the work that remains.*
+
 ## Establish a baseline you can explain
 
 Record case volume, active handling time and rework for a defined period. Note how representative the period is. A seasonal peak or a batch of unusually difficult requests needs context.
@@ -37,6 +41,10 @@ At an invented planning rate of 25 currency units per hour, forty hours represen
 If salaries and other spending stay unchanged, that 1,000 is not a cash saving. Cash benefit needs separate evidence, such as reduced paid overtime or an avoided external service cost. Do not claim both the full value of the released hours and an additional cash saving for those same hours.
 
 Faster invoicing, lower error rates and improved customer experience may be useful outcomes. Include them as measured non-cash outcomes unless there is a defensible way to estimate an additional financial effect. Avoid assigning an arbitrary price to reduced regulatory or operational risk.
+
+![Released staff capacity can be used for service or growth, while cash savings require an actual reduction in spending.](/images/blog/workflow-automation-roi/capacity-and-cash.webp)
+
+*Capacity value and cash savings belong on separate lines in the business case.*
 
 ## Include build and operating costs
 

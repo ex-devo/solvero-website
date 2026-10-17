@@ -12,7 +12,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/which-processes-to-automate/choose-a-bounded-workflow.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/which-processes-to-automate/readiness-and-value.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/which-processes-to-automate/choose-a-bounded-workflow.webp",
+    "image_alt": "A large vague automation idea is narrowed into one defined trigger, action and finishing condition, ready for evaluation."
   },
   {
     "file": "02-reduce-duplicate-data-entry",
@@ -27,7 +41,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/reduce-duplicate-data-entry/field-ownership.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/reduce-duplicate-data-entry/uncertain-update.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/reduce-duplicate-data-entry/field-ownership.webp",
+    "image_alt": "A CRM owns the account manager while accounting owns verified billing details and payment terms, linked by an explicit record relationship."
   },
   {
     "file": "03-approval-workflow-automation",
@@ -42,7 +70,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/approval-workflow-automation/approval-route.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/approval-workflow-automation/approval-revisions.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/approval-workflow-automation/approval-route.webp",
+    "image_alt": "A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded."
   },
   {
     "file": "04-identify-process-bottlenecks",
@@ -57,7 +99,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/identify-process-bottlenecks/work-wait-rework.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/identify-process-bottlenecks/growing-queue.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/identify-process-bottlenecks/work-wait-rework.webp",
+    "image_alt": "Active handling, waiting and rework are different parts of a process and should be observed separately."
   },
   {
     "file": "05-workflow-automation-roi",
@@ -72,7 +128,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/workflow-automation-roi/remaining-work.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/workflow-automation-roi/capacity-and-cash.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/workflow-automation-roi/remaining-work.webp",
+    "image_alt": "A realistic automation estimate subtracts the review, corrections, exception handling and support that remain from the current handling effort."
   },
   {
     "file": "06-customer-onboarding-automation",
@@ -87,7 +157,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/customer-onboarding-automation/onboarding-readiness.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/customer-onboarding-automation/blocked-onboarding.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/customer-onboarding-automation/onboarding-readiness.webp",
+    "image_alt": "A signed agreement is followed by readiness checks for scope, billing, contacts, access and acceptance by the delivery team."
   },
   {
     "file": "07-workflow-automation-project-cost",
@@ -102,7 +186,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/workflow-automation-project-cost/same-headline-different-scope.webp",
+        "width": 1671,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/workflow-automation-project-cost/whole-project-cost.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/workflow-automation-project-cost/same-headline-different-scope.webp",
+    "image_alt": "Two projects described as a customer-data integration can have different scope because cleanup, return updates and unresolved rules add work."
   },
   {
     "file": "08-quote-to-invoice-automation",
@@ -117,7 +215,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/quote-to-invoice-automation/evidence-before-invoice.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/quote-to-invoice-automation/approved-scope-changes.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/quote-to-invoice-automation/evidence-before-invoice.webp",
+    "image_alt": "An accepted quote leads to delivery and evidence checks before an eligible milestone becomes an invoice draft for billing review."
   },
   {
     "file": "09-ai-vs-rules-based-automation",
@@ -132,7 +244,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/ai-vs-rules-based-automation/extraction-with-evidence.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp",
+    "image_alt": "AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement."
   },
   {
     "file": "10-n8n-vs-power-automate",
@@ -147,7 +273,21 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-16"
+    "dateModified": "2026-10-17",
+    "images": [
+      {
+        "src": "/images/blog/n8n-vs-power-automate/compare-workflow-fit.webp",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "src": "/images/blog/n8n-vs-power-automate/shared-pilot-tests.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/n8n-vs-power-automate/compare-workflow-fit.webp",
+    "image_alt": "n8n and Power Automate are evaluated against the same workflow, system actions, approvals, ownership and cost assumptions."
   },
   {
     "file": "11-ai-operating-model",

@@ -6,6 +6,10 @@ To find a process bottleneck, follow real cases through the workflow and measure
 
 You can start with a spreadsheet and observations. A process-mining platform can help when reliable event data exists, but the first questions are the same: what entered the process, what completed, what remains open and why?
 
+![Active handling, waiting and rework are different parts of a process and should be observed separately.](/images/blog/identify-process-bottlenecks/work-wait-rework.webp)
+
+*Separate doing the work, waiting for it to move and correcting it.*
+
 ## Define a start and a finish
 
 Choose one recognisable item, such as a service-change request. Set the boundary from “complete request received” to “authorised change handed to delivery”. Keep incomplete submissions visible as a separate entry state so their delay is not lost.
@@ -55,6 +59,10 @@ Reconcile the counts for a fixed boundary:
 Record cancellations and transfers as other exits with a reason. In an illustrative period with six opening cases, ten arrivals, eight completions and one cancellation, seven remain open. A growing queue is evidence to investigate alongside workload and available capacity.
 
 Look at the distribution of completion times. A median describes a typical completed case; the longest waits show a different experience. Split ordinary cases from requests needing missing information, specialist review or correction. Keep the definition and sample size visible when comparing periods.
+
+![Incoming work and completed work are observed alongside the age and reasons for unresolved cases to identify a recurring constraint.](/images/blog/identify-process-bottlenecks/growing-queue.webp)
+
+*Inspect unfinished work as well as completed cases to understand the constraint.*
 
 ## Turn an observation into a testable cause
 

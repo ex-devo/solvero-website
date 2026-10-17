@@ -6,6 +6,10 @@ Choose AI or rules-based automation at the level of a specific task. Explicit ru
 
 Many useful workflows combine both approaches. The business decision is whether a method improves the outcome after checking, correction and operating effort have been included.
 
+![AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement.](/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp)
+
+*Choose the method for each task and keep decision authority explicit.*
+
 ## Separate interpretation from authority
 
 Consider an incoming service request. It may need to be read, categorised, linked to a customer, checked against the agreement and assigned to someone with the right responsibility.
@@ -55,6 +59,10 @@ For extraction, distinguish a value that appears in the source from a value some
 Decide how to represent missing and conflicting values. Define which errors require review and which make the whole result unusable. Include the supporting source text so the reviewer can check the claim without searching the entire document again.
 
 Structured output can help constrain the response format. It does not establish that the extracted content is correct. [OpenAI's Structured Outputs documentation](https://developers.openai.com/api/docs/guides/structured-outputs) explicitly notes that outputs can still contain mistakes. Treat format validation and content verification as separate checks.
+
+![An AI extraction proposal links each candidate field to source evidence, while missing or conflicting information is routed for review.](/images/blog/ai-vs-rules-based-automation/extraction-with-evidence.webp)
+
+*Require supporting evidence and a clear route for missing or conflicting information.*
 
 ## Use a test set that challenges the design
 

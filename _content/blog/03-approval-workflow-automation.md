@@ -6,6 +6,10 @@ Automate the routing, reminders and record keeping around an approval while keep
 
 Approval workflow automation works best when the policy can be translated into clear routes and exceptions. Email notifications alone leave important questions unanswered: whether a delegate has authority, whether all approvals are needed, and whether an old response still applies to a revised request.
 
+![A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded.](/images/blog/approval-workflow-automation/approval-route.webp)
+
+*Automate the coordination around a decision while keeping authority explicit.*
+
 ## Begin with one decision
 
 Choose a bounded request, such as purchasing equipment. Specify what the approval authorises. Permission to buy equipment may be separate from supplier onboarding, release of payment or approval of a later invoice.
@@ -74,6 +78,10 @@ Suppose someone approves a request and its total is then increased. Under this e
 Agree which changes are material. A supplier change, revised scope or amount may require fresh approval; a corrected internal note may follow a different rule. Keep that distinction explicit rather than inferring it from whichever fields a form happens to update.
 
 If a request changes during execution, the system must prevent an outdated approval from triggering the purchase. The implementation needs a controlled check and transition around the authorised action, not just a check made when an email was sent.
+
+![Approval belongs to the exact request revision that was reviewed; a material change requires a new approval.](/images/blog/approval-workflow-automation/approval-revisions.webp)
+
+*An earlier approval cannot authorise a materially changed request.*
 
 ## Handle absence and overdue requests
 

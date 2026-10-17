@@ -6,6 +6,10 @@ Workflow automation cost depends on the process boundary, the systems involved a
 
 The phrase “connect our CRM to accounting” can describe very different projects. Before comparing prices, agree what starts the handoff, what counts as a successful result and who will deal with an uncertain or failed action.
 
+![Two projects described as a customer-data integration can have different scope because cleanup, return updates and unresolved rules add work.](/images/blog/workflow-automation-project-cost/same-headline-different-scope.webp)
+
+*Compare the full scope rather than the number of connectors.*
+
 ## Define an outcome a provider can estimate
 
 Describe the work in plain language. Name the trigger, required inputs, destination and finishing condition. Include what should stay manual and the decisions that require approval.
@@ -54,6 +58,10 @@ Check that the proposed scope addresses the necessary areas:
 - Operating documentation, handover and support responsibilities.
 
 The exact deliverables should fit the project. A business user form, historical data cleanup or migration may need separate scope. The [data-entry guide](02-reduce-duplicate-data-entry.md) gives concrete test cases for a customer-record handoff.
+
+![A workflow project includes definition, build, testing, handover and ongoing operation, rather than just connecting two systems.](/images/blog/workflow-automation-project-cost/whole-project-cost.webp)
+
+*Include preparation, acceptance and ongoing operation when comparing proposals.*
 
 ## Separate setup from running costs
 

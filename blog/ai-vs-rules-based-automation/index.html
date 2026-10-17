@@ -12,14 +12,14 @@
   <meta property="og:url" content="https://solvero.co.za/blog/ai-vs-rules-based-automation/" />
   <meta property="og:title" content="AI vs Rules-Based Automation: Which Fits? | Solvero" />
   <meta property="og:description" content="Choose AI, rules or human review for each workflow step. Includes a task worksheet and labelled evaluation cases for testing extraction and handling uncertainty." />
-  <meta property="og:image" content="https://solvero.co.za/images/optimised/solvero-logo.webp" />
-  <meta property="og:image:alt" content="Solvero logo" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp" />
+  <meta property="og:image:alt" content="AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement." />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://solvero.co.za/blog/ai-vs-rules-based-automation/" />
   <meta name="twitter:title" content="AI vs Rules-Based Automation: Which Fits? | Solvero" />
   <meta name="twitter:description" content="Choose AI, rules or human review for each workflow step. Includes a task worksheet and labelled evaluation cases for testing extraction and handling uncertainty." />
-  <meta name="twitter:image" content="https://solvero.co.za/images/optimised/solvero-logo.webp" />
-  <meta name="twitter:image:alt" content="Solvero logo" />
+  <meta name="twitter:image" content="https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp" />
+  <meta name="twitter:image:alt" content="AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement." />
   <link rel="icon" type="image/png" href="/images/optimised/solvero-icon.png" />
   <link rel="stylesheet" href="/assets/tailwind.css?v=5586a231091c" />
   <script type="application/ld+json">{
@@ -103,7 +103,14 @@
         "@id": "https://solvero.co.za/#website"
       },
       "datePublished": "2026-10-16",
-      "dateModified": "2026-10-16"
+      "dateModified": "2026-10-17",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp",
+        "width": 1672,
+        "height": 941,
+        "caption": "AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement."
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -306,7 +313,7 @@
     }
   </style>
   <link rel="stylesheet" href="/styles/editorial.css?v=3c3a3e172fec" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-16" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-17" /><meta property="og:image:width" content="1672" /><meta property="og:image:height" content="941" />
 </head>
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -347,6 +354,7 @@
         <p class="text-lg leading-relaxed">Workflow automation · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
       </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><p>Choose AI or rules-based automation at the level of a specific task. Explicit rules suit agreed calculations, field checks and decision boundaries. AI can help interpret varied language or documents when its output can be checked and an uncertain result has a clear review route.</p>
 <p>Many useful workflows combine both approaches. The business decision is whether a method improves the outcome after checking, correction and operating effort have been included.</p>
+<figure><img src="/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp" alt="AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Choose the method for each task and keep decision authority explicit.</figcaption></figure>
 <h2>Separate interpretation from authority</h2>
 <p>Consider an incoming service request. It may need to be read, categorised, linked to a customer, checked against the agreement and assigned to someone with the right responsibility.</p>
 <p>Reading varied descriptions is different from deciding whether an extra charge has been approved. An AI-generated category can be a suggestion. Spending authority should follow the organisation&#x27;s agreed policy and eligible decision makers.</p>
@@ -373,6 +381,7 @@
 <p>For extraction, distinguish a value that appears in the source from a value someone could calculate or infer. If the task asks for the stated final total and none is present, a missing result may be correct.</p>
 <p>Decide how to represent missing and conflicting values. Define which errors require review and which make the whole result unusable. Include the supporting source text so the reviewer can check the claim without searching the entire document again.</p>
 <p>Structured output can help constrain the response format. It does not establish that the extracted content is correct. <a href="https://developers.openai.com/api/docs/guides/structured-outputs">OpenAI&#x27;s Structured Outputs documentation</a> explicitly notes that outputs can still contain mistakes. Treat format validation and content verification as separate checks.</p>
+<figure><img src="/images/blog/ai-vs-rules-based-automation/extraction-with-evidence.webp" alt="An AI extraction proposal links each candidate field to source evidence, while missing or conflicting information is routed for review." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Require supporting evidence and a clear route for missing or conflicting information.</figcaption></figure>
 <h2>Use a test set that challenges the design</h2>
 <p>The <a href="/blog/downloads/ai-intake-evaluation.csv">illustrative evaluation cases</a> contain invented messages and expected handling. They cover missing totals, conflicting references, ambiguous dates, irrelevant text and instructions embedded inside a document.</p>
 <p>The source message is data to inspect. A sentence telling the model to ignore its task or approve an order must not acquire authority over the workflow. Keep such cases in the evaluation and limit what an extraction step is allowed to do.</p>

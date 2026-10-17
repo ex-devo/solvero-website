@@ -6,6 +6,10 @@ Quote-to-invoice automation connects agreed work, delivery evidence and billing 
 
 An accepted quote gives the team a commercial reference. Whether it should produce a deposit request, a milestone invoice or a later completion invoice depends on the agreed terms. Keep that decision explicit in the workflow.
 
+![An accepted quote leads to delivery and evidence checks before an eligible milestone becomes an invoice draft for billing review.](/images/blog/quote-to-invoice-automation/evidence-before-invoice.webp)
+
+*Connect agreed work and delivery evidence to a reviewed invoice.*
+
 ## Define the work and the billing event
 
 Start with one service type and one billing arrangement. Identify the quote version the customer accepted, the job or project it creates, and the evidence required for each billable event.
@@ -55,6 +59,10 @@ Link work to the accepted quote revision. If the scope changes, record the new a
 An unapproved site note should not silently increase the invoice. The [approval workflow guide](03-approval-workflow-automation.md) describes how to bind an approval to the version of the request that was actually reviewed.
 
 Keep progress billing separate from final billing. The workflow should be able to identify the eligible amount, amounts already represented by invoice drafts or issued invoices, and any items requiring correction. Agree how cancelled drafts, credits and revised invoices affect that position in the accounting system.
+
+![An original accepted quote and a separately approved change remain linked to the job, with already billed work tracked before preparing the next invoice.](/images/blog/quote-to-invoice-automation/approved-scope-changes.webp)
+
+*Keep approved changes and amounts already billed visible before preparing the next invoice.*
 
 ## Handle repeated and uncertain events
 
