@@ -12,8 +12,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/which-processes-to-automate/which-processes-to-automate-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/which-processes-to-automate/which-processes-to-automate-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/which-processes-to-automate/choose-a-bounded-workflow.webp",
         "width": 1672,
@@ -23,10 +46,34 @@
         "src": "/images/blog/which-processes-to-automate/readiness-and-value.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/which-processes-to-automate/which-processes-to-automate-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/which-processes-to-automate/which-processes-to-automate-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/which-processes-to-automate/which-processes-to-automate-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/which-processes-to-automate/which-processes-to-automate-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/which-processes-to-automate/choose-a-bounded-workflow.webp",
-    "image_alt": "A large vague automation idea is narrowed into one defined trigger, action and finishing condition, ready for evaluation."
+    "image": "https://solvero.co.za/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp",
+    "image_alt": "Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions.",
+    "offer": "business-improvement-review"
   },
   {
     "file": "02-reduce-duplicate-data-entry",
@@ -41,8 +88,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/reduce-duplicate-data-entry/field-ownership.webp",
         "width": 1672,
@@ -52,10 +122,34 @@
         "src": "/images/blog/reduce-duplicate-data-entry/uncertain-update.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/reduce-duplicate-data-entry/field-ownership.webp",
-    "image_alt": "A CRM owns the account manager while accounting owns verified billing details and payment terms, linked by an explicit record relationship."
+    "image": "https://solvero.co.za/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp",
+    "image_alt": "Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys.",
+    "offer": "process-workflow-improvement"
   },
   {
     "file": "03-approval-workflow-automation",
@@ -70,8 +164,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/approval-workflow-automation/approval-workflow-automation-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/approval-workflow-automation/approval-workflow-automation-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/approval-workflow-automation/approval-route.webp",
         "width": 1672,
@@ -81,10 +198,34 @@
         "src": "/images/blog/approval-workflow-automation/approval-revisions.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/approval-workflow-automation/approval-workflow-automation-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/approval-workflow-automation/approval-workflow-automation-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/approval-workflow-automation/approval-workflow-automation-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/approval-workflow-automation/approval-workflow-automation-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/approval-workflow-automation/approval-route.webp",
-    "image_alt": "A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded."
+    "image": "https://solvero.co.za/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp",
+    "image_alt": "A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside.",
+    "offer": "process-workflow-improvement"
   },
   {
     "file": "04-identify-process-bottlenecks",
@@ -99,8 +240,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/identify-process-bottlenecks/work-wait-rework.webp",
         "width": 1672,
@@ -110,10 +274,34 @@
         "src": "/images/blog/identify-process-bottlenecks/growing-queue.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/identify-process-bottlenecks/work-wait-rework.webp",
-    "image_alt": "Active handling, waiting and rework are different parts of a process and should be observed separately."
+    "image": "https://solvero.co.za/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-featured-1536.webp",
+    "image_alt": "Document cards accumulate before a narrow bottle neck while a magnifier highlights the restriction.",
+    "offer": "business-improvement-review"
   },
   {
     "file": "05-workflow-automation-roi",
@@ -128,8 +316,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/workflow-automation-roi/workflow-automation-roi-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/workflow-automation-roi/workflow-automation-roi-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/workflow-automation-roi/remaining-work.webp",
         "width": 1672,
@@ -139,10 +350,34 @@
         "src": "/images/blog/workflow-automation-roi/capacity-and-cash.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/workflow-automation-roi/workflow-automation-roi-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/workflow-automation-roi/workflow-automation-roi-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/workflow-automation-roi/workflow-automation-roi-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/workflow-automation-roi/workflow-automation-roi-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/workflow-automation-roi/remaining-work.webp",
-    "image_alt": "A realistic automation estimate subtracts the review, corrections, exception handling and support that remain from the current handling effort."
+    "image": "https://solvero.co.za/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp",
+    "image_alt": "A pool of time is divided into review, manual work, support and capacity released for other work.",
+    "offer": "business-improvement-review"
   },
   {
     "file": "06-customer-onboarding-automation",
@@ -157,8 +392,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/customer-onboarding-automation/onboarding-readiness.webp",
         "width": 1672,
@@ -168,10 +426,34 @@
         "src": "/images/blog/customer-onboarding-automation/blocked-onboarding.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/customer-onboarding-automation/onboarding-readiness.webp",
-    "image_alt": "A signed agreement is followed by readiness checks for scope, billing, contacts, access and acceptance by the delivery team."
+    "image": "https://solvero.co.za/images/blog/customer-onboarding-automation/customer-onboarding-automation-featured-1536.webp",
+    "image_alt": "A paper aeroplane waits beside checks for scope, billing, contacts, access and delivery acceptance.",
+    "offer": "process-workflow-improvement"
   },
   {
     "file": "07-workflow-automation-project-cost",
@@ -186,8 +468,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/workflow-automation-project-cost/same-headline-different-scope.webp",
         "width": 1671,
@@ -197,10 +502,34 @@
         "src": "/images/blog/workflow-automation-project-cost/whole-project-cost.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/workflow-automation-project-cost/same-headline-different-scope.webp",
-    "image_alt": "Two projects described as a customer-data integration can have different scope because cleanup, return updates and unresolved rules add work."
+    "image": "https://solvero.co.za/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp",
+    "image_alt": "An iceberg shows the visible build above water and discovery, testing, handover and operation below.",
+    "offer": "solution-design-delivery"
   },
   {
     "file": "08-quote-to-invoice-automation",
@@ -215,8 +544,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/quote-to-invoice-automation/evidence-before-invoice.webp",
         "width": 1672,
@@ -226,10 +578,34 @@
         "src": "/images/blog/quote-to-invoice-automation/approved-scope-changes.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/quote-to-invoice-automation/evidence-before-invoice.webp",
-    "image_alt": "An accepted quote leads to delivery and evidence checks before an eligible milestone becomes an invoice draft for billing review."
+    "image": "https://solvero.co.za/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp",
+    "image_alt": "A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount.",
+    "offer": "process-workflow-improvement"
   },
   {
     "file": "09-ai-vs-rules-based-automation",
@@ -244,8 +620,31 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp",
         "width": 1672,
@@ -255,10 +654,34 @@
         "src": "/images/blog/ai-vs-rules-based-automation/extraction-with-evidence.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       }
     ],
-    "image": "https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp",
-    "image_alt": "AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement."
+    "image": "https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp",
+    "image_alt": "A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools.",
+    "offer": "solution-design-delivery"
   },
   {
     "file": "10-n8n-vs-power-automate",
@@ -273,12 +696,58 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-16",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "images": [
+      {
+        "src": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
       {
         "src": "/images/blog/n8n-vs-power-automate/compare-workflow-fit.webp",
         "width": 1672,
         "height": 941
+      },
+      {
+        "src": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
       },
       {
         "src": "/images/blog/n8n-vs-power-automate/shared-pilot-tests.webp",
@@ -286,8 +755,9 @@
         "height": 941
       }
     ],
-    "image": "https://solvero.co.za/images/blog/n8n-vs-power-automate/compare-workflow-fit.webp",
-    "image_alt": "n8n and Power Automate are evaluated against the same workflow, system actions, approvals, ownership and cost assumptions."
+    "image": "https://solvero.co.za/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp",
+    "image_alt": "Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership.",
+    "offer": "solution-design-delivery"
   },
   {
     "file": "11-ai-operating-model",
@@ -302,7 +772,7 @@
     "language": "en",
     "author_url": "https://solvero.co.za/authors/jateen-narsai/",
     "datePublished": "2026-10-17",
-    "dateModified": "2026-10-17",
+    "dateModified": "2026-10-19",
     "image": "https://solvero.co.za/images/blog/ai-operating-model/ai-bottleneck.webp",
     "image_alt": "AI speeds preparation while review remains queued; workflow redesign addresses validation, routing and completion.",
     "images": [
@@ -336,6 +806,7 @@
         "width": 1672,
         "height": 941
       }
-    ]
+    ],
+    "offer": "business-improvement-review"
   }
 ]

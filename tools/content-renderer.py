@@ -3,6 +3,7 @@ import re
 
 LINKS = {}
 IMAGE_SIZES = {}
+IMAGE_META = {}
 
 def inline(text):
     text = html.escape(text)
@@ -37,7 +38,13 @@ def render(markdown):
         elif re.fullmatch(r'!\[([^\]]+)\]\(([^)]+)\)', line):
             alt, target = re.fullmatch(r'!\[([^\]]+)\]\(([^)]+)\)', line).groups()
             width, height = IMAGE_SIZES[target]
-            figure = f'<figure><img src="{html.escape(target, quote=True)}" alt="{html.escape(alt, quote=True)}" width="{width}" height="{height}" loading="lazy" decoding="async" />'
+            metadata = IMAGE_META[target]
+            featured = metadata.get('role') == 'featured'
+            attributes = 'loading="eager" fetchpriority="high"' if featured else 'loading="lazy"'
+            if metadata.get('variants'):
+                srcset = ', '.join(f'{variant["src"]} {variant["width"]}w' for variant in metadata['variants'])
+                attributes += f' srcset="{html.escape(srcset, quote=True)}" sizes="(min-width: 896px) 848px, calc(100vw - 48px)"'
+            figure = f'<figure><img src="{html.escape(target, quote=True)}" alt="{html.escape(alt, quote=True)}" width="{width}" height="{height}" {attributes} decoding="async" />'
             i += 1
             caption_at = i
             while caption_at < len(lines) and not lines[caption_at].strip():

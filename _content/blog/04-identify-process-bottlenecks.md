@@ -2,13 +2,15 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![Document cards accumulate before a narrow bottle neck while a magnifier highlights the restriction.](/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-featured-1536.webp)
+
+*Follow the work to find the point holding up completion.*
+
 To find a process bottleneck, follow real cases through the workflow and measure where work accumulates. Separate active handling from waiting and repeated work. Then check whether the suspected stage limits completed output, rather than choosing the task that looks busiest.
 
 You can start with a spreadsheet and observations. A process-mining platform can help when reliable event data exists, but the first questions are the same: what entered the process, what completed, what remains open and why?
 
-![Active handling, waiting and rework are different parts of a process and should be observed separately.](/images/blog/identify-process-bottlenecks/work-wait-rework.webp)
-
-*Separate doing the work, waiting for it to move and correcting it.*
+The purpose of the investigation is to choose a useful change, which may involve responsibilities, process steps or supporting systems.
 
 ## Define a start and a finish
 
@@ -19,6 +21,10 @@ Give every case a reference. Record the time it enters a stage, when work starts
 Include people doing the work in this observation. Ask them to show a recent ordinary case and one that needed correction. The written procedure may leave out the spreadsheet, missing attachment or second review they use to get the job finished.
 
 ## Separate three kinds of time
+
+![Active handling, waiting and rework are different parts of a process and should be observed separately.](/images/blog/identify-process-bottlenecks/work-wait-rework.webp)
+
+*Separate doing the work, waiting for it to move and correcting it.*
 
 | Measure | What it tells you | Common measurement mistake |
 |---|---|---|
@@ -50,6 +56,10 @@ Use the [observation worksheet](assets/bottleneck-observation-blank.csv) and [wo
 
 ## Inspect the queue as well as completed work
 
+![Incoming work and completed work are observed alongside the age and reasons for unresolved cases to identify a recurring constraint.](/images/blog/identify-process-bottlenecks/growing-queue.webp)
+
+*Inspect unfinished work as well as completed cases to understand the constraint.*
+
 A report containing only finished cases can hide the requests that have been stuck longest. At each review, record arrivals, completions, open cases and the age of the oldest unresolved case.
 
 Reconcile the counts for a fixed boundary:
@@ -60,11 +70,11 @@ Record cancellations and transfers as other exits with a reason. In an illustrat
 
 Look at the distribution of completion times. A median describes a typical completed case; the longest waits show a different experience. Split ordinary cases from requests needing missing information, specialist review or correction. Keep the definition and sample size visible when comparing periods.
 
-![Incoming work and completed work are observed alongside the age and reasons for unresolved cases to identify a recurring constraint.](/images/blog/identify-process-bottlenecks/growing-queue.webp)
-
-*Inspect unfinished work as well as completed cases to understand the constraint.*
-
 ## Turn an observation into a testable cause
+
+![Colleagues investigate a queue by checking review schedules and the completeness of incoming requests.](/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-section-1536.webp)
+
+*A visible queue is the start of the investigation; test the conditions causing it.*
 
 “Approvals are slow” is a symptom. A more useful explanation identifies a condition you can check: requests wait for the weekly meeting, the authorised approver is unclear, or reviewers must ask for information the form never collects.
 
@@ -82,11 +92,13 @@ Once the cause is clearer, use the [automation scorecard](01-which-processes-to-
 
 ## Discuss a workflow that keeps getting stuck
 
-Bring a recent request, the stages it passed through and whatever timing evidence you have. Solvero can help analyse the delay, agree a practical change and implement the supporting workflow or system connections.
+Our Business Improvement Review turns a suspected bottleneck into a practical decision about what to change. We trace real cases, separate waiting from active work and investigate the handoffs or decisions causing repeated delays.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+We can help implement the chosen improvement, from clearer ownership and fewer steps to a supporting tool or system connection. We agree measures and check the change in use. Bring a recent request and whatever timing evidence you have.
 
-[Discuss your process bottleneck with Solvero](https://solvero.co.za/#contact).
+[Explore our Business Improvement Review](/services/business-improvement-review/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss your process bottleneck with Solvero](/#contact).
 
 
 ## About the author

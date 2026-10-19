@@ -2,13 +2,15 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside.](/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp)
+
+*A reminder can prompt a decision; it cannot supply authority.*
+
 Automate the routing, reminders and record keeping around an approval while keeping decision authority explicit. Define who can approve each request, what information they are approving and what happens when a request changes or gets stuck.
 
 Approval workflow automation works best when the policy can be translated into clear routes and exceptions. Email notifications alone leave important questions unanswered: whether a delegate has authority, whether all approvals are needed, and whether an old response still applies to a revised request.
 
-![A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded.](/images/blog/approval-workflow-automation/approval-route.webp)
-
-*Automate the coordination around a decision while keeping authority explicit.*
+The improvement may start with removing a redundant handoff or clarifying a decision, before any software changes are made.
 
 ## Begin with one decision
 
@@ -19,6 +21,10 @@ For the initial request, agree the required information: requester, supplier, it
 Incomplete requests should return to the requester with a specific reason. Sending them through the approval chain simply moves the missing-information problem to another person.
 
 ## Write the approval matrix
+
+![A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded.](/images/blog/approval-workflow-automation/approval-route.webp)
+
+*Automate the coordination around a decision while keeping authority explicit.*
 
 The matrix below is an **illustrative policy for an equipment purchase**, not a statement of legal requirements or a client engagement. Each organisation must agree its own authority and controls.
 
@@ -71,6 +77,10 @@ This diagram is a design aid. Detailed transitions still need to be agreed and t
 
 ## Bind each decision to a request revision
 
+![Approval belongs to the exact request revision that was reviewed; a material change requires a new approval.](/images/blog/approval-workflow-automation/approval-revisions.webp)
+
+*An earlier approval cannot authorise a materially changed request.*
+
 An approval should identify exactly what was accepted. Store the request revision, amount, supplier and quote reference presented to the approver.
 
 Suppose someone approves a request and its total is then increased. Under this example policy, a material change creates a new revision and invalidates the old approval route. A delayed response to the earlier revision cannot authorise the revised purchase.
@@ -79,11 +89,11 @@ Agree which changes are material. A supplier change, revised scope or amount may
 
 If a request changes during execution, the system must prevent an outdated approval from triggering the purchase. The implementation needs a controlled check and transition around the authorised action, not just a check made when an email was sent.
 
-![Approval belongs to the exact request revision that was reviewed; a material change requires a new approval.](/images/blog/approval-workflow-automation/approval-revisions.webp)
-
-*An earlier approval cannot authorise a materially changed request.*
-
 ## Handle absence and overdue requests
+
+![A waiting request is routed from an absent reviewer to an authorised backup while its history stays visible.](/images/blog/approval-workflow-automation/approval-workflow-automation-section-1536.webp)
+
+*Absence and escalation rules should preserve the authority behind the decision.*
 
 Delegation needs an authority rule. Record who may delegate, the delegate's scope and limit, and when that authority begins and ends. Forwarding an approval email does not establish those permissions.
 
@@ -115,11 +125,13 @@ Measure waiting time by stage, requests returned for missing information, manual
 
 Use the [automation scorecard](01-which-processes-to-automate.md) if you need to choose between several approval processes. Start with a scope whose rules and owner can be established.
 
-Solvero can help analyse the current process and implement the routing, system connections and exception handling. Bring one approval type, the current authority rules and examples of where requests stall.
+We help teams spend less time chasing approvals by investigating where requests wait and what a reviewer needs to decide. We work with the process owner to simplify the route and clarify authority before implementing the agreed workflow.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+That can include clearer responsibilities, better request information, routing and system connections. We test ordinary and exception cases with your team and establish ownership for ongoing use. Bring one approval type, its current rules and a request that stalled.
 
-[Discuss your approval workflow with Solvero](https://solvero.co.za/#contact).
+[Explore our Process & Workflow Improvement service](/services/process-workflow-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss your approval workflow with Solvero](/#contact).
 
 
 ## About the author

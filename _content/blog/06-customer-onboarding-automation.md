@@ -2,15 +2,21 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![A paper aeroplane waits beside checks for scope, billing, contacts, access and delivery acceptance.](/images/blog/customer-onboarding-automation/customer-onboarding-automation-featured-1536.webp)
+
+*Confirm readiness before handing work into delivery.*
+
 Customer onboarding automation should help a new client become ready for delivery. Define that readiness first, then connect the information collection, checks and internal handoffs needed to reach it.
 
 A signed agreement is one milestone. Delivery may still need verified contacts, an agreed scope, billing details or authorised access to a system. Automating welcome messages while those dependencies remain unclear will leave the underlying chasing in place.
 
+Making the process easier can involve clearer requests, better ownership and fewer repeated checks, alongside any automation.
+
+## Define what ready means
+
 ![A signed agreement is followed by readiness checks for scope, billing, contacts, access and acceptance by the delivery team.](/images/blog/customer-onboarding-automation/onboarding-readiness.webp)
 
 *A signed agreement starts onboarding; readiness for delivery completes it.*
-
-## Define what ready means
 
 Pick the service you are onboarding, because readiness varies with the work. Ask the receiving team what it needs to accept responsibility for delivery and what can safely arrive later.
 
@@ -56,6 +62,10 @@ Reminders should stop when the relevant item is accepted, waived under policy or
 
 ## Make blocked cases visible
 
+![A blocked onboarding case stays visible with its reason, owner and next action until it is ready for delivery handoff.](/images/blog/customer-onboarding-automation/blocked-onboarding.webp)
+
+*Give every blocked case a clear reason, owner and next action.*
+
 Give each exception a reason and a next action. “Waiting for client” is too broad when the team has not told the client which contact must authorise access.
 
 The [exception checklist](assets/onboarding-exceptions.csv) covers missing information, invalid submissions, duplicates, scope changes and a failed receiving-system update. Its expected outcomes are proposed acceptance criteria, with actual results left for implementation testing.
@@ -64,11 +74,11 @@ If the client changes the service scope during onboarding, identify which accept
 
 If a start date arrives before readiness is confirmed, route that decision to the owner. An automatic calendar event should not silently waive required checks or promise delivery that the team cannot support.
 
-![A blocked onboarding case stays visible with its reason, owner and next action until it is ready for delivery handoff.](/images/blog/customer-onboarding-automation/blocked-onboarding.webp)
-
-*Give every blocked case a clear reason, owner and next action.*
-
 ## Close the receiving handoff
+
+![An onboarding coordinator and delivery owner jointly check a customer folder and confirm the matching application record.](/images/blog/customer-onboarding-automation/customer-onboarding-automation-section-1536.webp)
+
+*A completed handoff includes confirmation from the team receiving the work.*
 
 The delivery team should be able to see the current scope, relevant customer references, accepted checks and any explicitly agreed outstanding items. Record who accepted the handoff and when.
 
@@ -84,11 +94,13 @@ Review open and stalled onboardings as well as completed ones. If the slowest ca
 
 ## Improve the handoff causing the most chasing
 
-Start with one service and its current onboarding checklist. Solvero can help clarify readiness, map responsibilities and implement the collection and system handoffs needed to support delivery.
+We help make onboarding easier for clients and the teams receiving their work. We examine a real onboarding journey, identify repeated requests and unclear handoffs, and agree what readiness means with the people responsible for delivery.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+We can introduce the revised process, configure information collection or build the required connections, then test the handoff and establish ownership. Bring one service, its onboarding checklist and a recent case that needed repeated follow-up.
 
-[Discuss your customer onboarding workflow with Solvero](https://solvero.co.za/#contact).
+[Explore our Process & Workflow Improvement service](/services/process-workflow-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss your customer onboarding workflow with Solvero](/#contact).
 
 
 ## About the author

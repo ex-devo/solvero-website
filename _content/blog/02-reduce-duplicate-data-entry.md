@@ -2,13 +2,15 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys.](/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp)
+
+*Link the customer records while keeping field ownership clear.*
+
 To reduce duplicate data entry, define which system owns each field, agree how records will be matched, and automate a specific handoff. Include a way to detect failed or uncertain updates. Connecting two applications helps only when both agree which customer and which information an update refers to.
 
 Start with one repeated task, such as creating a billing record after a customer is approved. Expanding to every customer field and both directions at once makes ownership conflicts harder to resolve.
 
-![A CRM owns the account manager while accounting owns verified billing details and payment terms, linked by an explicit record relationship.](/images/blog/reduce-duplicate-data-entry/field-ownership.webp)
-
-*Agree ownership field by field before connecting customer records.*
+A useful integration removes work from the whole handoff, including the checks and corrections people currently perform.
 
 ## Find the repeated capture
 
@@ -23,6 +25,10 @@ Define a starting scope such as:
 > An approved customer account in the CRM creates or updates the corresponding billing account. Finance retains ownership of verified billing details and payment terms.
 
 ## Assign ownership at field level
+
+![A CRM owns the account manager while accounting owns verified billing details and payment terms, linked by an explicit record relationship.](/images/blog/reduce-duplicate-data-entry/field-ownership.webp)
+
+*Agree ownership field by field before connecting customer records.*
 
 “The CRM is the source of truth” leaves too much unspecified. Sales may own the account manager while finance owns payment terms. Name the owner of each field and decide which edits are allowed to travel between systems.
 
@@ -66,17 +72,21 @@ An update to the same customer may be a legitimate new action. Preserve the even
 
 ## Handle uncertainty before retrying
 
+![After a connection times out, the workflow checks whether the destination record already exists before deciding what to do next.](/images/blog/reduce-duplicate-data-entry/uncertain-update.webp)
+
+*Confirm the first outcome before repeating a create action.*
+
 Consider a timeout immediately after creating a billing record. The accounting system may have completed the write even though the workflow never received confirmation.
 
 Mark that case as uncertain. Reconcile the destination using the stored operation reference and supported lookup methods before attempting another create. If the result cannot be established safely, assign it for review. Repeating an unconfirmed create can produce the duplicate the integration was meant to prevent.
 
 Give exceptions a visible status and owner. A useful review item contains the customer reference, intended action, failure reason and last known outcome. Limit the customer information in notifications to what the reviewer needs.
 
-![After a connection times out, the workflow checks whether the destination record already exists before deciding what to do next.](/images/blog/reduce-duplicate-data-entry/uncertain-update.webp)
-
-*Confirm the first outcome before repeating a create action.*
-
 ## Test the handoff before extending it
+
+![A tester checks ordinary, repeated, mismatched and failed customer-record updates before extending an integration.](/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-1536.webp)
+
+*Test normal and difficult handoffs before extending the connection.*
 
 Use the [acceptance checklist](assets/customer-integration-tests.csv) with representative test records. It describes expected outcomes; it is not evidence that a live connector has passed them.
 
@@ -96,11 +106,13 @@ Roll out the first handoff with reconciliation checks. Someone should be able to
 
 If several repeated tasks compete for attention, use the [automation scorecard](01-which-processes-to-automate.md) to compare scope, readiness and effort. Where a customer change requires approval, define that decision using the [approval workflow guide](03-approval-workflow-automation.md).
 
-Solvero helps analyse business workflows and implement the connections between systems. Start by naming the applications, the information your team enters twice and who checks it before it can be used.
+We help reduce repeated capture by examining the process around the data as well as the applications. We map where information is created and checked, agree ownership with the business and define the handoff that needs to change.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+We can then build the agreed integration or adjust the workflow, test matching and exception cases, and hand over a process your team can operate. Bring the applications involved, the information entered twice and a recent example of a mismatch.
 
-[Discuss your repeated data entry with Solvero](https://solvero.co.za/#contact).
+[Explore our Process & Workflow Improvement service](/services/process-workflow-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss your repeated data entry with Solvero](/#contact).
 
 
 ## About the author

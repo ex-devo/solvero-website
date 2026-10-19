@@ -1,0 +1,786 @@
+{
+  "generation": "built-in imagegen; 14 new and 6 retained illustrations",
+  "approval": "Approved for publication on 19 October 2026",
+  "articles": [
+    {
+      "slug": "which-processes-to-automate",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "which-processes-to-automate-featured.png",
+        "alt": "Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions.",
+        "caption": "Choose a useful change whose prerequisites can be established.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "which-processes-to-automate-section.png",
+        "afterHeading": "Define success before implementing the pilot",
+        "alt": "Compare the same kinds of cases before and during a pilot, including exceptions and completed outcomes.",
+        "caption": "Check the pilot against a baseline that includes quality and remaining work."
+      },
+      "existingFirstImageMoveToHeading": "Check five conditions before scoring",
+      "existingSecondImageMoveToHeading": "Compare three candidates",
+      "images": [
+        {
+          "kind": "featured",
+          "file": "which-processes-to-automate-featured.png",
+          "alt": "Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions.",
+          "caption": "Choose a useful change whose prerequisites can be established.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "which-processes-to-automate-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 44234
+            },
+            {
+              "file": "which-processes-to-automate-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 81766
+            },
+            {
+              "file": "which-processes-to-automate-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 144750
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "which-processes-to-automate-section.png",
+          "afterHeading": "Define success before implementing the pilot",
+          "alt": "Compare the same kinds of cases before and during a pilot, including exceptions and completed outcomes.",
+          "caption": "Check the pilot against a baseline that includes quality and remaining work.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "which-processes-to-automate-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 30868
+            },
+            {
+              "file": "which-processes-to-automate-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 57204
+            },
+            {
+              "file": "which-processes-to-automate-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 96090
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reduce-duplicate-data-entry",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "reduce-duplicate-data-entry-featured.png",
+        "alt": "Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys.",
+        "caption": "Link the customer records while keeping field ownership clear.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "reduce-duplicate-data-entry-section.png",
+        "afterHeading": "Test the handoff before extending it",
+        "alt": "A tester checks ordinary, repeated, mismatched and failed customer-record updates before extending an integration.",
+        "caption": "Test normal and difficult handoffs before extending the connection."
+      },
+      "existingFirstImageMoveToHeading": "Assign ownership at field level",
+      "existingSecondImageMoveToHeading": "Handle uncertainty before retrying",
+      "images": [
+        {
+          "kind": "featured",
+          "file": "reduce-duplicate-data-entry-featured.png",
+          "alt": "Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys.",
+          "caption": "Link the customer records while keeping field ownership clear.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "reduce-duplicate-data-entry-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 22614
+            },
+            {
+              "file": "reduce-duplicate-data-entry-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 40160
+            },
+            {
+              "file": "reduce-duplicate-data-entry-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 69272
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "reduce-duplicate-data-entry-section.png",
+          "afterHeading": "Test the handoff before extending it",
+          "alt": "A tester checks ordinary, repeated, mismatched and failed customer-record updates before extending an integration.",
+          "caption": "Test normal and difficult handoffs before extending the connection.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "reduce-duplicate-data-entry-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 26632
+            },
+            {
+              "file": "reduce-duplicate-data-entry-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 48592
+            },
+            {
+              "file": "reduce-duplicate-data-entry-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 82650
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "approval-workflow-automation",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "approval-workflow-automation-featured.png",
+        "alt": "A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside.",
+        "caption": "A reminder can prompt a decision; it cannot supply authority.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "approval-workflow-automation-section.png",
+        "afterHeading": "Handle absence and overdue requests",
+        "alt": "A waiting request is routed from an absent reviewer to an authorised backup while its history stays visible.",
+        "caption": "Absence and escalation rules should preserve the authority behind the decision."
+      },
+      "existingFirstImageMoveToHeading": "Write the approval matrix",
+      "existingSecondImageMoveToHeading": "Bind each decision to a request revision",
+      "images": [
+        {
+          "kind": "featured",
+          "file": "approval-workflow-automation-featured.png",
+          "alt": "A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside.",
+          "caption": "A reminder can prompt a decision; it cannot supply authority.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "approval-workflow-automation-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 24472
+            },
+            {
+              "file": "approval-workflow-automation-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 43900
+            },
+            {
+              "file": "approval-workflow-automation-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 74302
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "approval-workflow-automation-section.png",
+          "afterHeading": "Handle absence and overdue requests",
+          "alt": "A waiting request is routed from an absent reviewer to an authorised backup while its history stays visible.",
+          "caption": "Absence and escalation rules should preserve the authority behind the decision.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "approval-workflow-automation-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 24748
+            },
+            {
+              "file": "approval-workflow-automation-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 43694
+            },
+            {
+              "file": "approval-workflow-automation-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 72720
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "identify-process-bottlenecks",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "identify-process-bottlenecks-featured.png",
+        "alt": "Document cards accumulate before a narrow bottle neck while a magnifier highlights the restriction.",
+        "caption": "Follow the work to find the point holding up completion.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "identify-process-bottlenecks-section.png",
+        "afterHeading": "Turn an observation into a testable cause",
+        "alt": "Colleagues investigate a queue by checking review schedules and the completeness of incoming requests.",
+        "caption": "A visible queue is the start of the investigation; test the conditions causing it."
+      },
+      "existingFirstImageMoveToHeading": "Separate three kinds of time",
+      "existingSecondImageMoveToHeading": "Inspect the queue as well as completed work",
+      "images": [
+        {
+          "kind": "featured",
+          "file": "identify-process-bottlenecks-featured.png",
+          "alt": "Document cards accumulate before a narrow bottle neck while a magnifier highlights the restriction.",
+          "caption": "Follow the work to find the point holding up completion.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "identify-process-bottlenecks-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 26840
+            },
+            {
+              "file": "identify-process-bottlenecks-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 49622
+            },
+            {
+              "file": "identify-process-bottlenecks-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 86246
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "identify-process-bottlenecks-section.png",
+          "afterHeading": "Turn an observation into a testable cause",
+          "alt": "Colleagues investigate a queue by checking review schedules and the completeness of incoming requests.",
+          "caption": "A visible queue is the start of the investigation; test the conditions causing it.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "identify-process-bottlenecks-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 27188
+            },
+            {
+              "file": "identify-process-bottlenecks-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 49684
+            },
+            {
+              "file": "identify-process-bottlenecks-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 82860
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "workflow-automation-roi",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "workflow-automation-roi-featured.png",
+        "alt": "A pool of time is divided into review, manual work, support and capacity released for other work.",
+        "caption": "Count the work that remains before valuing the capacity released.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "workflow-automation-roi-section.png",
+        "afterHeading": "Test the assumptions that change the decision",
+        "alt": "Three labelled knobs for coverage, review effort and support connect to a basket of released capacity.",
+        "caption": "Coverage, review effort and support change the capacity available."
+      },
+      "existingFirstImageMoveToHeading": "Model the work that remains",
+      "existingSecondImageMoveToHeading": null,
+      "images": [
+        {
+          "kind": "featured",
+          "file": "workflow-automation-roi-featured.png",
+          "alt": "A pool of time is divided into review, manual work, support and capacity released for other work.",
+          "caption": "Count the work that remains before valuing the capacity released.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "workflow-automation-roi-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 41928
+            },
+            {
+              "file": "workflow-automation-roi-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 77980
+            },
+            {
+              "file": "workflow-automation-roi-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 137920
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "workflow-automation-roi-section.png",
+          "afterHeading": "Test the assumptions that change the decision",
+          "alt": "Three labelled knobs for coverage, review effort and support connect to a basket of released capacity.",
+          "caption": "Coverage, review effort and support change the capacity available.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "workflow-automation-roi-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 28280
+            },
+            {
+              "file": "workflow-automation-roi-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 51030
+            },
+            {
+              "file": "workflow-automation-roi-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 87432
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "customer-onboarding-automation",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "customer-onboarding-automation-featured.png",
+        "alt": "A paper aeroplane waits beside checks for scope, billing, contacts, access and delivery acceptance.",
+        "caption": "Confirm readiness before handing work into delivery.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "customer-onboarding-automation-section.png",
+        "afterHeading": "Close the receiving handoff",
+        "alt": "An onboarding coordinator and delivery owner jointly check a customer folder and confirm the matching application record.",
+        "caption": "A completed handoff includes confirmation from the team receiving the work."
+      },
+      "existingFirstImageMoveToHeading": "Define what ready means",
+      "existingSecondImageMoveToHeading": "Make blocked cases visible",
+      "images": [
+        {
+          "kind": "featured",
+          "file": "customer-onboarding-automation-featured.png",
+          "alt": "A paper aeroplane waits beside checks for scope, billing, contacts, access and delivery acceptance.",
+          "caption": "Confirm readiness before handing work into delivery.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "customer-onboarding-automation-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 24454
+            },
+            {
+              "file": "customer-onboarding-automation-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 44820
+            },
+            {
+              "file": "customer-onboarding-automation-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 77542
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "customer-onboarding-automation-section.png",
+          "afterHeading": "Close the receiving handoff",
+          "alt": "An onboarding coordinator and delivery owner jointly check a customer folder and confirm the matching application record.",
+          "caption": "A completed handoff includes confirmation from the team receiving the work.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "customer-onboarding-automation-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 26154
+            },
+            {
+              "file": "customer-onboarding-automation-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 46702
+            },
+            {
+              "file": "customer-onboarding-automation-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 78134
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "workflow-automation-project-cost",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "workflow-automation-project-cost-featured.png",
+        "alt": "An iceberg shows the visible build above water and discovery, testing, handover and operation below.",
+        "caption": "The visible build is one part of the work and commitment to plan.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "workflow-automation-project-cost-section.png",
+        "afterHeading": "Separate setup from running costs",
+        "alt": "Two labelled groups separate definition, build, testing and handover from usage, hosting, support and review.",
+        "caption": "Separate the setup commitment from the work and costs of running it."
+      },
+      "existingFirstImageMoveToHeading": "Compare two scopes with the same headline",
+      "existingSecondImageMoveToHeading": "Ask what implementation includes",
+      "images": [
+        {
+          "kind": "featured",
+          "file": "workflow-automation-project-cost-featured.png",
+          "alt": "An iceberg shows the visible build above water and discovery, testing, handover and operation below.",
+          "caption": "The visible build is one part of the work and commitment to plan.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "workflow-automation-project-cost-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 28694
+            },
+            {
+              "file": "workflow-automation-project-cost-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 53418
+            },
+            {
+              "file": "workflow-automation-project-cost-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 92964
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "workflow-automation-project-cost-section.png",
+          "afterHeading": "Separate setup from running costs",
+          "alt": "Two labelled groups separate definition, build, testing and handover from usage, hosting, support and review.",
+          "caption": "Separate the setup commitment from the work and costs of running it.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "workflow-automation-project-cost-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 35748
+            },
+            {
+              "file": "workflow-automation-project-cost-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 65052
+            },
+            {
+              "file": "workflow-automation-project-cost-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 109892
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "quote-to-invoice-automation",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "quote-to-invoice-automation-featured.png",
+        "alt": "A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount.",
+        "caption": "Evidence connects delivery to an invoice-ready amount.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "quote-to-invoice-automation-section.png",
+        "afterHeading": "Handle repeated and uncertain events",
+        "alt": "Repeated matching events lead to one invoice, while an uncertain event goes to a review tray.",
+        "caption": "Repeated and uncertain events need different handling."
+      },
+      "existingFirstImageMoveToHeading": "Define the work and the billing event",
+      "existingSecondImageMoveToHeading": "Preserve the quote and change history",
+      "images": [
+        {
+          "kind": "featured",
+          "file": "quote-to-invoice-automation-featured.png",
+          "alt": "A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount.",
+          "caption": "Evidence connects delivery to an invoice-ready amount.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "quote-to-invoice-automation-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 31594
+            },
+            {
+              "file": "quote-to-invoice-automation-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 55960
+            },
+            {
+              "file": "quote-to-invoice-automation-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 96112
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "quote-to-invoice-automation-section.png",
+          "afterHeading": "Handle repeated and uncertain events",
+          "alt": "Repeated matching events lead to one invoice, while an uncertain event goes to a review tray.",
+          "caption": "Repeated and uncertain events need different handling.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "quote-to-invoice-automation-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 21040
+            },
+            {
+              "file": "quote-to-invoice-automation-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 36058
+            },
+            {
+              "file": "quote-to-invoice-automation-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 62412
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ai-vs-rules-based-automation",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "ai-vs-rules-based-automation-featured.png",
+        "alt": "A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools.",
+        "caption": "Match the method to the task and keep judgement explicit.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "ai-vs-rules-based-automation-section.png",
+        "afterHeading": "Use a test set that challenges the design",
+        "alt": "Clear, missing, conflicting and unexpected document inputs sit beside a magnifier and review tray.",
+        "caption": "Include difficult inputs as well as the tidy example."
+      },
+      "existingFirstImageMoveToHeading": "Compare the task with the available methods",
+      "existingSecondImageMoveToHeading": "Define correctness before running examples",
+      "images": [
+        {
+          "kind": "featured",
+          "file": "ai-vs-rules-based-automation-featured.png",
+          "alt": "A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools.",
+          "caption": "Match the method to the task and keep judgement explicit.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "ai-vs-rules-based-automation-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 34084
+            },
+            {
+              "file": "ai-vs-rules-based-automation-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 63700
+            },
+            {
+              "file": "ai-vs-rules-based-automation-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 108136
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "ai-vs-rules-based-automation-section.png",
+          "afterHeading": "Use a test set that challenges the design",
+          "alt": "Clear, missing, conflicting and unexpected document inputs sit beside a magnifier and review tray.",
+          "caption": "Include difficult inputs as well as the tidy example.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "ai-vs-rules-based-automation-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 28950
+            },
+            {
+              "file": "ai-vs-rules-based-automation-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 53420
+            },
+            {
+              "file": "ai-vs-rules-based-automation-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 90500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "n8n-vs-power-automate",
+      "targetImageCount": 4,
+      "featured": {
+        "file": "n8n-vs-power-automate-featured.png",
+        "alt": "Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership.",
+        "caption": "Choose for the workflow and the people who will operate it.",
+        "placement": "Immediately after the shared title/byline header, before the introduction"
+      },
+      "section": {
+        "file": "n8n-vs-power-automate-section.png",
+        "afterHeading": "Compare the operating fit",
+        "alt": "Business and technical colleagues agree workflow ownership using an error notification, execution history, access key and operating guide.",
+        "caption": "Include ownership, access and recovery responsibilities in the platform decision."
+      },
+      "existingFirstImageMoveToHeading": "Write one workflow brief for both platforms",
+      "existingSecondImageMoveToHeading": null,
+      "images": [
+        {
+          "kind": "featured",
+          "file": "n8n-vs-power-automate-featured.png",
+          "alt": "Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership.",
+          "caption": "Choose for the workflow and the people who will operate it.",
+          "placement": "Immediately after the shared title/byline header, before the introduction",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "n8n-vs-power-automate-featured-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 30902
+            },
+            {
+              "file": "n8n-vs-power-automate-featured-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 57166
+            },
+            {
+              "file": "n8n-vs-power-automate-featured-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 97806
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "n8n-vs-power-automate-section.png",
+          "afterHeading": "Compare the operating fit",
+          "alt": "Business and technical colleagues agree workflow ownership using an error notification, execution history, access key and operating guide.",
+          "caption": "Include ownership, access and recovery responsibilities in the platform decision.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "file": "n8n-vs-power-automate-section-600.webp",
+              "width": 600,
+              "height": 400,
+              "bytes": 30086
+            },
+            {
+              "file": "n8n-vs-power-automate-section-960.webp",
+              "width": 960,
+              "height": 640,
+              "bytes": 54066
+            },
+            {
+              "file": "n8n-vs-power-automate-section-1536.webp",
+              "width": 1536,
+              "height": 1024,
+              "bytes": 90138
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

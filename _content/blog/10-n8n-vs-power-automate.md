@@ -2,15 +2,21 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership.](/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp)
+
+*Choose for the workflow and the people who will operate it.*
+
 Choose between n8n and Power Automate by comparing the same workflow against your required system actions, approval rules, operating arrangements and total cost. Both deserve evaluation where they fit those requirements; the choice depends on the actual design and the people who will support it.
 
 Power Automate is a practical candidate to assess when a workflow is closely tied to an existing Microsoft environment and its operating team. n8n is a practical candidate when its integration approach or self-hosting option matches the organisation's needs. Those are starting hypotheses for a pilot, rather than a performance ranking.
 
+The useful result is a maintainable process that does what the business needs. Platform selection is one decision within that delivery.
+
+## Write one workflow brief for both platforms
+
 ![n8n and Power Automate are evaluated against the same workflow, system actions, approvals, ownership and cost assumptions.](/images/blog/n8n-vs-power-automate/compare-workflow-fit.webp)
 
 *Compare both platforms against the same operating requirements.*
-
-## Write one workflow brief for both platforms
 
 Define the trigger, inputs, finishing condition and manual decisions. Name the applications and the specific actions needed in each. Include the expected volume, peak demand, sensitive-data handling and recovery owner.
 
@@ -27,6 +33,10 @@ Where a required action needs an API call or another integration approach, inclu
 Use the [platform evaluation matrix](assets/platform-evaluation-matrix.csv) to record evidence and unresolved questions. Keep a mandatory requirement as a gate: a high overall preference score cannot compensate for a required action that has not been shown to work.
 
 ## Compare the operating fit
+
+![Business and technical colleagues agree workflow ownership using an error notification, execution history, access key and operating guide.](/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-1536.webp)
+
+*Include ownership, access and recovery responsibilities in the platform decision.*
 
 | Consideration | n8n evaluation | Power Automate evaluation |
 |---|---|---|
@@ -76,11 +86,13 @@ Document why the selected option fits the requirements and what remains unresolv
 
 ## Discuss the workflow before selecting a tool
 
-Bring the systems involved, the required decisions and the person who will support the result. Solvero can help analyse the workflow and implement an approach that fits those constraints.
+We help you turn a platform comparison into a decision about a working business solution. We define the workflow and acceptance criteria with your team, check the system actions and trial the options against the same cases.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+After the approach is agreed, we can implement the workflow or integration through testing and handover. Where your development team is involved, we make requirements, dependencies and acceptance decisions clear. Bring the systems, the required outcome and the people who will operate the solution.
 
-[Discuss your automation platform choice with Solvero](https://solvero.co.za/#contact).
+[Explore our Solution Design & Delivery service](/services/solution-design-delivery/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss your automation platform choice with Solvero](/#contact).
 
 
 ## About the author

@@ -2,13 +2,15 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![A pool of time is divided into review, manual work, support and capacity released for other work.](/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp)
+
+*Count the work that remains before valuing the capacity released.*
+
 Build a workflow automation business case from measured work, realistic remaining effort and the full cost of implementation and operation. Separate cash savings from staff capacity released. Both can matter, but they support different decisions.
 
 A claim that a task currently takes eighty hours does not establish that automation will save eighty hours. Some cases may stay manual, people may review the outputs, and someone will maintain the workflow. The useful calculation starts after those activities have been included.
 
-![A realistic automation estimate subtracts the review, corrections, exception handling and support that remain from the current handling effort.](/images/blog/workflow-automation-roi/remaining-work.webp)
-
-*Estimate released capacity after accounting for the work that remains.*
+Use the same discipline to compare a simpler process or a better handoff with a software build. The chosen improvement should earn its implementation effort.
 
 ## Establish a baseline you can explain
 
@@ -19,6 +21,10 @@ Define what the timing includes. If eight minutes already covers checking and co
 Use your own labour-cost assumptions. For planning, a loaded hourly cost can represent salary and agreed employer costs. Multiplying hours by that rate values capacity; it does not prove payroll or other cash spending will fall.
 
 ## Model the work that remains
+
+![A realistic automation estimate subtracts the review, corrections, exception handling and support that remain from the current handling effort.](/images/blog/workflow-automation-roi/remaining-work.webp)
+
+*Estimate released capacity after accounting for the work that remains.*
 
 **Illustrative example with invented inputs:** a recurring administrative workflow processes 600 cases a month, each taking eight active minutes. Its baseline is 80 handling hours.
 
@@ -64,6 +70,10 @@ Under an unchanged-spending cash view, no cash benefit has yet been established.
 
 ## Test the assumptions that change the decision
 
+![Three labelled knobs for coverage, review effort and support connect to a basket of released capacity.](/images/blog/workflow-automation-roi/workflow-automation-roi-section-1536.webp)
+
+*Coverage, review effort and support change the capacity available.*
+
 The [editable scenario worksheet](assets/automation-roi-scenarios.csv) contains these checked examples. All retain the same baseline, planning rate and cost assumptions.
 
 | Scenario | Coverage | Review minutes per covered case | Internal support hours | Capacity released per month | Monthly capacity value after external costs |
@@ -84,11 +94,13 @@ If the business case depends on a benefit nobody can measure or use, narrow the 
 
 ## Discuss the assumptions before committing
 
-Solvero can help analyse a workflow and implement a scoped improvement. Bring the case volume, current handling steps, systems involved and the outcome you want to measure.
+We help connect a proposed improvement to the work and costs behind its business case. We examine the current process, identify what would change and define a practical scope with assumptions your team can check.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+Where a pilot is worthwhile, we can design and implement the agreed process or system change, then compare the observed result with the baseline. Bring current volumes, handling steps, operating costs and the outcome you want to improve.
 
-[Discuss your automation business case with Solvero](https://solvero.co.za/#contact).
+[Explore our Business Improvement Review](/services/business-improvement-review/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss your automation business case with Solvero](/#contact).
 
 
 ## About the author

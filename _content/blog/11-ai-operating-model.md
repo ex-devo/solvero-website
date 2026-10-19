@@ -88,7 +88,7 @@ Give reviewers a defined decision and the information needed to make it. A requi
 
 Whether every case needs approval, selected cases need review or some actions can proceed automatically depends on the consequences and observed reliability. Reducing review requires evidence and an authorised policy decision. An AI-generated confidence score alone does not establish that an action is safe.
 
-The [approval workflow guide](https://solvero.co.za/blog/approval-workflow-automation/) covers authority and escalation in more detail. The [AI and rules-based automation guide](https://solvero.co.za/blog/ai-vs-rules-based-automation/) helps decide which method fits each individual step.
+The [approval workflow guide](/blog/approval-workflow-automation/) covers authority and escalation in more detail. The [AI and rules-based automation guide](/blog/ai-vs-rules-based-automation/) helps decide which method fits each individual step.
 
 ![People pass information between disconnected work areas. In a redesigned workflow, validation and routing move routine information while people handle exceptions, decisions and relationships.](/images/blog/ai-operating-model/automate-the-coordination.webp)
 
@@ -163,9 +163,9 @@ Before a pilot, agree what would count as improvement. Use a small set of measur
 - **Economics:** implementation effort, recurring charges and cost per correctly completed case.
 - **Service:** whether customers and receiving teams get what they need, when they need it.
 
-Compare similar work and record changes in volume or complexity. Released staff time represents capacity; cash savings depend on an actual change in spending. The [workflow automation ROI guide](https://solvero.co.za/blog/workflow-automation-roi/) explains that distinction.
+Compare similar work and record changes in volume or complexity. Released staff time represents capacity; cash savings depend on an actual change in spending. The [workflow automation ROI guide](/blog/workflow-automation-roi/) explains that distinction.
 
-As one stage improves, another may become the constraint. Review the process again rather than continuing to optimise the same task. The [bottleneck guide](https://solvero.co.za/blog/identify-process-bottlenecks/) provides a practical observation method.
+As one stage improves, another may become the constraint. Review the process again rather than continuing to optimise the same task. The [bottleneck guide](/blog/identify-process-bottlenecks/) provides a practical observation method.
 
 Start with one bounded workflow. Map the current journey, agree the intended design, test it with representative cases and widen use only when the evidence supports doing so. Keep an owner and budget for what happens after the initial implementation.
 
@@ -173,12 +173,16 @@ Start with one bounded workflow. Map the current journey, agree the intended des
 
 Bring one workflow where AI is being considered or already used, together with a recent ordinary case and an exception. Include the people who understand how it reaches completion.
 
-Solvero helps businesses analyse workflows, reduce manual work and connect systems, from requirements and process design through implementation. That work can clarify where AI adds value, what must change around it and how the resulting operation will be supported.
+We help turn an AI initiative into a practical business improvement. We map the complete journey with your team, investigate where work waits and agree the responsibilities, decisions and system changes needed to reach the intended outcome.
 
-[Discuss your workflow with Solvero](https://solvero.co.za/#contact).
+Our work can continue through process redesign, solution implementation, testing and handover. That gives the initiative a defined route into everyday use, with an owner and measures for assessing the result. AI is one possible part of that solution.
+
+[Explore our Business Improvement Review](/services/business-improvement-review/), with a route into [process and workflow improvement](/services/process-workflow-improvement/) and [solution design and delivery](/services/solution-design-delivery/).
+
+[Discuss the improvement you need](/#contact).
 
 ## About the author
 
 Jateen Narsai is an IT professional with over 15 years’ experience in business and systems analysis, process improvement and software solution design. His work includes customer onboarding, approval workflows and reporting automation. He works across requirements, solution documentation, testing and implementation support, with a focus on reducing manual effort and making systems easier to use.
 
-[More about Jateen Narsai](https://solvero.co.za/authors/jateen-narsai/).
+[More about Jateen Narsai](/authors/jateen-narsai/).

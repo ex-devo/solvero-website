@@ -2,15 +2,21 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount.](/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp)
+
+*Evidence connects delivery to an invoice-ready amount.*
+
 Quote-to-invoice automation connects agreed work, delivery evidence and billing preparation. Define when work becomes eligible for invoicing before connecting the tools, especially where jobs can be partly completed or changed.
 
 An accepted quote gives the team a commercial reference. Whether it should produce a deposit request, a milestone invoice or a later completion invoice depends on the agreed terms. Keep that decision explicit in the workflow.
 
+Clear responsibilities and visible delivery evidence are part of the solution. Connecting the software follows those operating decisions.
+
+## Define the work and the billing event
+
 ![An accepted quote leads to delivery and evidence checks before an eligible milestone becomes an invoice draft for billing review.](/images/blog/quote-to-invoice-automation/evidence-before-invoice.webp)
 
 *Connect agreed work and delivery evidence to a reviewed invoice.*
-
-## Define the work and the billing event
 
 Start with one service type and one billing arrangement. Identify the quote version the customer accepted, the job or project it creates, and the evidence required for each billable event.
 
@@ -54,17 +60,21 @@ Invoice readiness is a state supported by evidence. A job being marked â€œdoneâ€
 
 ## Preserve the quote and change history
 
+![An original accepted quote and a separately approved change remain linked to the job, with already billed work tracked before preparing the next invoice.](/images/blog/quote-to-invoice-automation/approved-scope-changes.webp)
+
+*Keep approved changes and amounts already billed visible before preparing the next invoice.*
+
 Link work to the accepted quote revision. If the scope changes, record the new agreement and distinguish the revised amount from what has already been billed.
 
 An unapproved site note should not silently increase the invoice. The [approval workflow guide](03-approval-workflow-automation.md) describes how to bind an approval to the version of the request that was actually reviewed.
 
 Keep progress billing separate from final billing. The workflow should be able to identify the eligible amount, amounts already represented by invoice drafts or issued invoices, and any items requiring correction. Agree how cancelled drafts, credits and revised invoices affect that position in the accounting system.
 
-![An original accepted quote and a separately approved change remain linked to the job, with already billed work tracked before preparing the next invoice.](/images/blog/quote-to-invoice-automation/approved-scope-changes.webp)
-
-*Keep approved changes and amounts already billed visible before preparing the next invoice.*
-
 ## Handle repeated and uncertain events
+
+![Repeated matching events lead to one invoice, while an uncertain event goes to a review tray.](/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-1536.webp)
+
+*Repeated and uncertain events need different handling.*
 
 A delivery event may be sent again after a retry, or two people may mark the same milestone complete. Use a stable reference for the job, milestone and billing revision so the same intended billing action produces one result.
 
@@ -88,11 +98,13 @@ Keep payment timing separate. Earlier invoice preparation may help the billing p
 
 ## Connect the handoff causing repeated chasing
 
-Bring an accepted quote, a completed job record and the steps someone follows to prepare the invoice. Solvero can help analyse those handoffs and implement the agreed checks and system connections.
+We help reduce the chasing between accepted work, delivery and billing. We trace one job through the process, clarify who confirms completion and agree the evidence needed to make the work invoice-ready.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+We can then introduce the process changes and implement the agreed checks or system connections, with testing for partial work, changes and repeated events. Bring an accepted quote, a completed job record and the current billing preparation steps.
 
-[Discuss your quote-to-invoice workflow with Solvero](https://solvero.co.za/#contact).
+[Explore our Process & Workflow Improvement service](/services/process-workflow-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss your quote-to-invoice workflow with Solvero](/#contact).
 
 
 ## About the author

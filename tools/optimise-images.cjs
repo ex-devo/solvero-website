@@ -21,6 +21,21 @@ async function optimise() {
     if (name.endsWith('.png')) await image.png().toFile(path.join(output, name));
     else await image.webp({ quality }).toFile(path.join(output, name));
   }
+  const illustrations = path.join(root, 'images', 'illustrations');
+  const approved = [
+    ['about-practical-improvement', [600, 900, 1200]],
+    ['financial-services-clear-decisions', [480, 768, 960, 1200]],
+    ['connected-client-information', [480, 768, 960, 1200]],
+    ['process-visibility-bottleneck', [480, 768, 960, 1200]]
+  ];
+  for (const [name, widths] of approved) {
+    for (const width of widths) {
+      await sharp(path.join(illustrations, 'source', `${name}.png`))
+        .resize({ width, withoutEnlargement: true })
+        .webp({ quality: 86, effort: 6 })
+        .toFile(path.join(illustrations, `${name}-${width}.webp`));
+    }
+  }
   for (const name of await fs.readdir(path.join(root, 'images', 'Logos'))) {
     if (!name.endsWith('.png')) continue;
     await sharp(path.join(root, 'images', 'Logos', name))

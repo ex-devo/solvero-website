@@ -2,13 +2,15 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions.](/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp)
+
+*Choose a useful change whose prerequisites can be established.*
+
 Start with a recurring process that has clear rules, usable inputs and an owner who can handle exceptions. Compare its potential value with the effort required to build and maintain it. A manageable first project gives you a way to test the approach before extending it to more work.
 
 The process consuming the most time may need to be simplified before it can be automated reliably. Use the scorecard below to separate three decisions: automate a bounded step, improve the process first, or defer it.
 
-![A large vague automation idea is narrowed into one defined trigger, action and finishing condition, ready for evaluation.](/images/blog/which-processes-to-automate/choose-a-bounded-workflow.webp)
-
-*Define a manageable workflow before comparing readiness and value.*
+The aim is to make work easier to complete. Choosing the first automation is one possible route to that improvement.
 
 ## Define the work before choosing the tool
 
@@ -23,6 +25,10 @@ This boundary makes volume, effort and failures easier to measure. It also expos
 Observe actual cases. Record the inputs people receive, the systems they touch and the reasons they stop. A process diagram based only on the intended procedure can miss the rework consuming the team's time.
 
 ## Check five conditions before scoring
+
+![A large vague automation idea is narrowed into one defined trigger, action and finishing condition, ready for evaluation.](/images/blog/which-processes-to-automate/choose-a-bounded-workflow.webp)
+
+*Define a manageable workflow before comparing readiness and value.*
 
 Use these as gates. An unknown answer needs investigation before implementation.
 
@@ -58,6 +64,10 @@ Use active work time here. Waiting time matters too, but reducing a two-day queu
 
 ## Compare three candidates
 
+![Readiness gates and business value are assessed separately before deciding whether to pilot, improve first or defer.](/images/blog/which-processes-to-automate/readiness-and-value.webp)
+
+*Readiness and value answer different questions; a high score cannot cancel a missing prerequisite.*
+
 **Illustrative example with invented inputs:** an equipment distributor compares three recurring workflows. The readiness scores assume the evidence described below has been collected; they are not client results.
 
 | Candidate | Monthly volume | Active minutes per case | Current handling hours | Readiness | First decision |
@@ -74,10 +84,6 @@ The report has different definitions of the same measures. Automating its assemb
 
 The ten current handling hours in the customer-data example are **not ten promised hours saved**. Review, exceptions and maintenance will remain. Add implementation and operating costs before making an investment decision.
 
-![Readiness gates and business value are assessed separately before deciding whether to pilot, improve first or defer.](/images/blog/which-processes-to-automate/readiness-and-value.webp)
-
-*Readiness and value answer different questions; a high score cannot cancel a missing prerequisite.*
-
 ## Use the scorecard in a planning meeting
 
 Download the [blank scorecard](assets/automation-scorecard-blank.csv) and [completed illustrative scorecard](assets/automation-scorecard-worked.csv). Open them in a spreadsheet and replace the example inputs with observed work.
@@ -87,6 +93,10 @@ Ask the people doing the work to challenge the numbers and assumptions. Include 
 Choose one next action for each candidate: define a pilot, fix an input or rule, investigate a dependency, or defer it. This produces a useful decision even when no automation is ready to build.
 
 ## Define success before implementing the pilot
+
+![Compare the same kinds of cases before and during a pilot, including exceptions and completed outcomes.](/images/blog/which-processes-to-automate/which-processes-to-automate-section-1536.webp)
+
+*Check the pilot against a baseline that includes quality and remaining work.*
 
 Set an observation period that includes ordinary cases and known exceptions. Agree what the workflow must do, who checks the outputs and when it should pause for review.
 
@@ -103,11 +113,13 @@ For decisions involving judgement or spending authority, define the human review
 
 ## Need help choosing the first workflow?
 
-Bring two or three recurring processes to a conversation with Solvero. Describe what starts each one, where people repeat work and what happens when it goes wrong. Solvero can help analyse the options and implement a scoped improvement, with ownership and success measures agreed before the build.
+Our Business Improvement Review helps you decide which change is worth making first. We follow real cases with your team, investigate repeated effort and prioritise options against the result you need. A useful recommendation may be a simpler process, a clearer decision or a solution to build.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+When the change is agreed, we can help introduce it through process redesign, software or integration work, with testing and handover included in the scope. Bring two or three recurring processes and an example of where work gets stuck.
 
-[Discuss your workflow with Solvero](https://solvero.co.za/#contact).
+[Explore our Business Improvement Review](/services/business-improvement-review/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss the improvement you need](/#contact).
 
 
 ## About the author

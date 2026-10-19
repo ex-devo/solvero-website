@@ -2,13 +2,15 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools.](/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp)
+
+*Match the method to the task and keep judgement explicit.*
+
 Choose AI or rules-based automation at the level of a specific task. Explicit rules suit agreed calculations, field checks and decision boundaries. AI can help interpret varied language or documents when its output can be checked and an uncertain result has a clear review route.
 
 Many useful workflows combine both approaches. The business decision is whether a method improves the outcome after checking, correction and operating effort have been included.
 
-![AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement.](/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp)
-
-*Choose the method for each task and keep decision authority explicit.*
+Process redesign belongs in that comparison too: clearer inputs or decision rules can remove the problem a new tool was meant to solve.
 
 ## Separate interpretation from authority
 
@@ -19,6 +21,10 @@ Reading varied descriptions is different from deciding whether an extra charge h
 Write down the input, expected output and consequence of a mistake for each step. If those are unclear, clarify the process before selecting a model or platform.
 
 ## Compare the task with the available methods
+
+![AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement.](/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp)
+
+*Choose the method for each task and keep decision authority explicit.*
 
 | Task | Starting approach to assess | What needs checking |
 |---|---|---|
@@ -54,17 +60,21 @@ This is a proposed evaluation flow, not a report of an executed model test or cl
 
 ## Define correctness before running examples
 
+![An AI extraction proposal links each candidate field to source evidence, while missing or conflicting information is routed for review.](/images/blog/ai-vs-rules-based-automation/extraction-with-evidence.webp)
+
+*Require supporting evidence and a clear route for missing or conflicting information.*
+
 For extraction, distinguish a value that appears in the source from a value someone could calculate or infer. If the task asks for the stated final total and none is present, a missing result may be correct.
 
 Decide how to represent missing and conflicting values. Define which errors require review and which make the whole result unusable. Include the supporting source text so the reviewer can check the claim without searching the entire document again.
 
 Structured output can help constrain the response format. It does not establish that the extracted content is correct. [OpenAI's Structured Outputs documentation](https://developers.openai.com/api/docs/guides/structured-outputs) explicitly notes that outputs can still contain mistakes. Treat format validation and content verification as separate checks.
 
-![An AI extraction proposal links each candidate field to source evidence, while missing or conflicting information is routed for review.](/images/blog/ai-vs-rules-based-automation/extraction-with-evidence.webp)
-
-*Require supporting evidence and a clear route for missing or conflicting information.*
-
 ## Use a test set that challenges the design
+
+![Clear, missing, conflicting and unexpected document inputs sit beside a magnifier and review tray.](/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-1536.webp)
+
+*Include difficult inputs as well as the tidy example.*
 
 The [illustrative evaluation cases](assets/ai-intake-evaluation.csv) contain invented messages and expected handling. They cover missing totals, conflicting references, ambiguous dates, irrelevant text and instructions embedded inside a document.
 
@@ -92,11 +102,13 @@ For the surrounding workflow, the [onboarding guide](06-customer-onboarding-auto
 
 ## Assess the task before choosing the technology
 
-Bring examples of the input, the decision or output you need, and the current checking effort. Solvero can help analyse the process and implement an approach suited to the work, including the review and system handoffs it needs.
+We help you choose a practical solution for the business task. We examine the input, the required outcome and the surrounding process, then compare approaches using examples your team recognises.
 
-[Explore Solvero's workflow automation service](https://solvero.co.za/services/workflow-automation/).
+We can build and test the agreed solution, including the review steps, integration and operating responsibilities it needs. Bring ordinary inputs, a difficult case and the current checking effort so the evaluation reflects the work people actually do.
 
-[Discuss where AI could help your workflow with Solvero](https://solvero.co.za/#contact).
+[Explore our Solution Design & Delivery service](/services/solution-design-delivery/), or explore our broader [business improvement and solution delivery services](/#services).
+
+[Discuss where AI could help your workflow with Solvero](/#contact).
 
 
 ## About the author

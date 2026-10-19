@@ -6,7 +6,8 @@ const { JSDOM } = require('jsdom');
 
 const root = path.resolve(__dirname, '..');
 const articles = JSON.parse(fs.readFileSync(path.join(root, '_content/blog/metadata.json'), 'utf8'));
-const pages = ['index.html', 'services/workflow-automation/index.html', 'blog/index.html', ...articles.map(a => `blog/${a.slug}/index.html`), 'authors/jateen-narsai/index.html'];
+const offers = JSON.parse(fs.readFileSync(path.join(root, '_content/services.json'), 'utf8'));
+const pages = ['index.html', 'services/workflow-automation/index.html', ...offers.map(o => `services/${o.slug}/index.html`), 'blog/index.html', ...articles.map(a => `blog/${a.slug}/index.html`), 'authors/jateen-narsai/index.html'];
 const source = file => fs.readFileSync(path.join(root, file), 'utf8');
 const urlFor = file => `https://solvero.co.za/${file.replace(/index\.html$/, '')}`;
 
@@ -76,6 +77,26 @@ test('sitemap covers indexable canonical pages and robots points to it', () => {
   assert.match(source('robots.txt'), /Sitemap: https:\/\/solvero\.co\.za\/sitemap\.xml/);
   assert.doesNotMatch(source('robots.txt'), /Disallow:\s*\//);
   sitemap.window.close();
+});
+
+test('core offers are discoverable from the homepage and relevant article conclusions', () => {
+  const home = new JSDOM(source('index.html'));
+  const offerSlugs = new Set(offers.map(offer => offer.slug));
+  for (const offer of offers) {
+    assert.ok(home.window.document.querySelector(`#services a[href="/services/${offer.slug}/"]`), offer.name);
+    const page = new JSDOM(source(`services/${offer.slug}/index.html`));
+    assert.ok(page.window.document.querySelector('#deliverables'));
+    assert.ok(page.window.document.querySelector('#delivery'));
+    assert.ok(page.window.document.querySelector('main a[href="/#contact"]'));
+    page.window.close();
+  }
+  for (const article of articles) {
+    assert.ok(offerSlugs.has(article.offer), `${article.slug}: a valid primary offer`);
+    const page = new JSDOM(source(`blog/${article.slug}/index.html`));
+    assert.ok(page.window.document.querySelector(`.article-body a[href="/services/${article.offer}/"]`), `${article.slug}: relevant offer link`);
+    page.window.close();
+  }
+  home.window.close();
 });
 
 test('articles identify the visible author, publisher and actual publication date consistently', () => {
@@ -157,7 +178,7 @@ test('the AI operating model article publishes all six illustrations and matchin
 
 test('every article has topic illustrations with captions and matching social metadata', () => {
   for (const article of articles) {
-    assert.ok(article.images.length >= 2, `${article.slug}: at least two illustrations`);
+    assert.equal(article.images.length, article.slug === 'ai-operating-model' ? 6 : 4, `${article.slug}: planned illustration count`);
     const dom = new JSDOM(source(`blog/${article.slug}/index.html`));
     const doc = dom.window.document;
     const figures = [...doc.querySelectorAll('.article-body figure')];
@@ -169,7 +190,20 @@ test('every article has topic illustrations with captions and matching social me
       assert.ok(figure.querySelector('figcaption').textContent.length > 20);
       assert.equal(image.width, article.images[i].width);
       assert.equal(image.height, article.images[i].height);
-      assert.equal(image.getAttribute('loading'), 'lazy');
+      const featured = article.images[i].role === 'featured';
+      assert.equal(image.getAttribute('loading'), featured ? 'eager' : 'lazy');
+      if (featured) {
+        assert.equal(i, 0, 'Featured illustration appears before section illustrations');
+        assert.equal(image.getAttribute('fetchpriority'), 'high');
+      }
+      if (article.images[i].variants) {
+        assert.ok(image.getAttribute('sizes'));
+        for (const variant of article.images[i].variants) {
+          assert.ok(image.getAttribute('srcset').includes(`${variant.src} ${variant.width}w`));
+          assert.ok(fs.existsSync(path.join(root, variant.src)), variant.src);
+          assert.ok(fs.statSync(path.join(root, variant.src)).size < 160000, 'Illustration stays within its compressed size budget');
+        }
+      }
     }
     const graph = JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
     assert.equal(graph.find(n => n['@type'] === 'BlogPosting').image.url, article.image);
