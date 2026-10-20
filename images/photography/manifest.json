@@ -1,0 +1,148 @@
+{
+  "mode": "built-in imagegen",
+  "status": "Approved for publication on 20 October 2026",
+  "images": [
+    {
+      "section": "About Solvero",
+      "slug": "about-solvero-process-review",
+      "alt": "A process review workspace with a printed workflow, practical checklist and laptop.",
+      "purpose": "Retained from the preceding non-personal proposal set.",
+      "master": {
+        "file": "about-solvero-process-review.png",
+        "width": 1536,
+        "height": 1024
+      },
+      "variants": [
+        {
+          "file": "about-solvero-process-review-600.webp",
+          "width": 600,
+          "height": 400,
+          "bytes": 29446
+        },
+        {
+          "file": "about-solvero-process-review-900.webp",
+          "width": 900,
+          "height": 600,
+          "bytes": 49276
+        },
+        {
+          "file": "about-solvero-process-review-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 71380
+        }
+      ]
+    },
+    {
+      "section": "Financial Services Expertise",
+      "slug": "financial-services-expertise-credit-risk",
+      "alt": "Corporate credit and credit-risk working papers beside an insurance policy administration folder.",
+      "purpose": "Shows corporate lending, credit risk and insurance policy administration as specific financial-services disciplines.",
+      "master": {
+        "file": "financial-services-expertise-credit-risk.png",
+        "width": 1536,
+        "height": 1024
+      },
+      "variants": [
+        {
+          "file": "financial-services-expertise-credit-risk-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 21844
+        },
+        {
+          "file": "financial-services-expertise-credit-risk-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 40336
+        },
+        {
+          "file": "financial-services-expertise-credit-risk-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 54870
+        },
+        {
+          "file": "financial-services-expertise-credit-risk-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 74080
+        }
+      ]
+    },
+    {
+      "section": "Integrate Disparate Systems",
+      "slug": "integrate-disparate-systems-architecture",
+      "alt": "A system integration design connects CRM, ERP and legacy applications with shared master data.",
+      "purpose": "Shows application integration across different systems, with shared master data as one supported initiative.",
+      "master": {
+        "file": "integrate-disparate-systems-architecture.png",
+        "width": 1536,
+        "height": 1024
+      },
+      "variants": [
+        {
+          "file": "integrate-disparate-systems-architecture-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20174
+        },
+        {
+          "file": "integrate-disparate-systems-architecture-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 36178
+        },
+        {
+          "file": "integrate-disparate-systems-architecture-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 47624
+        },
+        {
+          "file": "integrate-disparate-systems-architecture-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 62234
+        }
+      ]
+    },
+    {
+      "section": "Process Improvement",
+      "slug": "process-improvement-redesign",
+      "alt": "A workshop compares the current process with a proposed simpler route while retaining a review step.",
+      "purpose": "Shows deliberate process redesign and fewer unnecessary handoffs, rather than visibility of a queue alone.",
+      "master": {
+        "file": "process-improvement-redesign.png",
+        "width": 1536,
+        "height": 1024
+      },
+      "variants": [
+        {
+          "file": "process-improvement-redesign-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 19152
+        },
+        {
+          "file": "process-improvement-redesign-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 35226
+        },
+        {
+          "file": "process-improvement-redesign-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 46438
+        },
+        {
+          "file": "process-improvement-redesign-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 61300
+        }
+      ]
+    }
+  ]
+}

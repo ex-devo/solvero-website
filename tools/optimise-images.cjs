@@ -36,6 +36,16 @@ async function optimise() {
         .toFile(path.join(illustrations, `${name}-${width}.webp`));
     }
   }
+  const photography = path.join(root, 'images', 'photography');
+  const photoManifest = JSON.parse(await fs.readFile(path.join(photography, 'manifest.json'), 'utf8'));
+  for (const image of photoManifest.images) {
+    for (const variant of image.variants) {
+      await sharp(path.join(photography, 'source', image.master.file))
+        .resize({ width: variant.width, withoutEnlargement: true })
+        .webp({ quality: 84, effort: 6 })
+        .toFile(path.join(photography, variant.file));
+    }
+  }
   for (const name of await fs.readdir(path.join(root, 'images', 'Logos'))) {
     if (!name.endsWith('.png')) continue;
     await sharp(path.join(root, 'images', 'Logos', name))
