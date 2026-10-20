@@ -59,7 +59,7 @@ def date_label(value):
 def write_page(relative, title, description, url, nodes, main, extra_head='', image=None, page_template=None):
     schema = json.dumps({'@context': 'https://schema.org', '@graph': shared + nodes}, ensure_ascii=False, indent=2).replace('</', '<\\/')
     values = {'TITLE': html.escape(title), 'DESCRIPTION': html.escape(description, quote=True), 'URL': url, 'SCHEMA': schema, 'MAIN': main, 'EXTRA_HEAD': extra_head, 'EDITORIAL_VERSION': hashlib.sha256((ROOT / 'styles/editorial.css').read_bytes()).hexdigest()[:12]}
-    values.update({'IMAGE_URL': image['url'] if image else SITE + 'images/optimised/solvero-logo.webp', 'IMAGE_ALT': html.escape(image['alt'], quote=True) if image else 'Solvero logo', 'TWITTER_CARD': 'summary_large_image' if image else 'summary'})
+    values.update({'IMAGE_URL': image['url'] if image else SITE + 'images/brand/solvero-social.png', 'IMAGE_ALT': html.escape(image['alt'], quote=True) if image else 'Solvero logo', 'TWITTER_CARD': 'summary_large_image' if image else 'summary'})
     page = page_template if page_template is not None else template
     for key, value in values.items():
         page = page.replace('{{' + key + '}}', value)

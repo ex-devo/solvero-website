@@ -13,7 +13,14 @@ function update(file) {
     /href="\/assets\/tailwind\.css(?:\?v=[a-f0-9]+)?"/g,
     `href="/assets/tailwind.css?v=${version}"`
   );
-  if (updated !== source) fs.writeFileSync(file, updated);
+  const brandVersion = createHash('sha256')
+    .update(fs.readFileSync(path.join(root, 'styles/brand.css')))
+    .digest('hex').slice(0, 12);
+  const withBrand = updated.replace(
+    /href="\/styles\/brand\.css(?:\?v=[a-f0-9]+)?"/g,
+    `href="/styles/brand.css?v=${brandVersion}"`
+  );
+  if (withBrand !== source) fs.writeFileSync(file, withBrand);
 }
 
 function walk(directory) {
