@@ -1,8 +1,9 @@
-/* Brand colours taken from the supplied S-symbol SVG. */
+/* Rubix palette: primary blue blended with its darker shade over the shared texture. */
 :root {
-  --brand-primary: #006bcb;
-  --brand-accent: #00aeff;
-  --brand-primary-dark: #0056a3;
+  --brand-primary: #1985ce;
+  --brand-accent: #1dc5ff;
+  --brand-tertiary: #35b0ed;
+  --brand-primary-dark: #136aa1;
 }
 
 .bg-brand-gradient {
@@ -12,7 +13,7 @@
 @media (min-width: 768px) {
   .bg-brand-gradient {
     background-image:
-      linear-gradient(135deg, rgba(0, 86, 163, .94), rgba(0, 107, 203, .92)),
+      linear-gradient(135deg, rgba(19, 106, 161, .94), rgba(25, 133, 206, .92)),
       url('/images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -22,9 +23,11 @@
 }
 
 .text-brand-primary { color: var(--brand-primary); }
-.text-brand-secondary, .text-brand-tertiary { color: var(--brand-accent); }
+.text-brand-secondary { color: var(--brand-accent); }
+.text-brand-tertiary { color: var(--brand-tertiary); }
 .border-brand-primary { border-color: var(--brand-primary); }
 .bg-brand-primary { background-color: var(--brand-primary); }
-.bg-brand-secondary, .bg-brand-tertiary { background-color: var(--brand-accent); }
+.bg-brand-secondary { background-color: var(--brand-accent); }
+.bg-brand-tertiary { background-color: var(--brand-tertiary); }
 .hover-bg-brand-primary-darker:hover { background-color: var(--brand-primary-dark); }
 .focus\:ring-brand-primary:focus { --tw-ring-color: var(--brand-primary); }

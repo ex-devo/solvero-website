@@ -59,7 +59,7 @@ def date_label(value):
 def write_page(relative, title, description, url, nodes, main, extra_head='', image=None, page_template=None):
     schema = json.dumps({'@context': 'https://schema.org', '@graph': shared + nodes}, ensure_ascii=False, indent=2).replace('</', '<\\/')
     values = {'TITLE': html.escape(title), 'DESCRIPTION': html.escape(description, quote=True), 'URL': url, 'SCHEMA': schema, 'MAIN': main, 'EXTRA_HEAD': extra_head, 'EDITORIAL_VERSION': hashlib.sha256((ROOT / 'styles/editorial.css').read_bytes()).hexdigest()[:12]}
-    values.update({'IMAGE_URL': image['url'] if image else SITE + 'images/brand/solvero-social.png', 'IMAGE_ALT': html.escape(image['alt'], quote=True) if image else 'Solvero logo', 'TWITTER_CARD': 'summary_large_image' if image else 'summary'})
+    values.update({'IMAGE_URL': image['url'] if image else SITE + 'images/brand/rubix/solvero-social.png', 'IMAGE_ALT': html.escape(image['alt'], quote=True) if image else 'Solvero logo', 'TWITTER_CARD': 'summary_large_image' if image else 'summary'})
     page = page_template if page_template is not None else template
     for key, value in values.items():
         page = page.replace('{{' + key + '}}', value)
@@ -131,10 +131,45 @@ url = SITE + 'blog/'
 title = 'Business Improvement & Solution Delivery Guides | Solvero'
 description = 'Practical guides to finding bottlenecks, improving business processes and delivering useful solutions, with examples and worksheets to help plan the work.'
 collection = {'@type': 'CollectionPage', '@id': url + '#webpage', 'url': url, 'name': title, 'description': description, 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'publisher': {'@id': SITE + '#organization'}, 'breadcrumb': {'@id': url + '#breadcrumb'}, 'mainEntity': {'@id': url + '#articles'}}
-listing = {'@type': 'ItemList', '@id': url + '#articles', 'numberOfItems': len(META), 'itemListElement': [{'@type': 'ListItem', 'position': i, 'name': a['headline'], 'url': a['canonical']} for i, a in enumerate(META, 1)]}
-cards = ''.join(f'''<article class="bg-gray-50 p-8 rounded-lg flex flex-col"><p class="text-sm text-gray-600 mb-3">{html.escape(a['section'])}</p><h3 class="text-2xl font-semibold text-gray-800 mb-4"><a class="hover:text-brand-primary underline underline-offset-4" href="/blog/{a['slug']}/">{html.escape(a['headline'])}</a></h3><p class="text-gray-700 mb-5">{html.escape(a['description'])}</p><p class="text-sm text-gray-600 mt-auto">By <a class="underline" href="/authors/jateen-narsai/">Jateen Narsai</a> · <time datetime="{a['datePublished']}">{date_label(a["datePublished"])}</time></p></article>''' for a in META)
-main = hero('Make work easier and get useful changes delivered.', 'Practical guides to finding bottlenecks, improving processes and delivering solutions across people and systems.', trail_label='Blog') + f'<section class="bg-white py-16" aria-labelledby="articles-heading"><div class="container mx-auto px-6 max-w-6xl"><h2 id="articles-heading" class="text-3xl font-bold text-gray-800 mb-8">Practical guides and worksheets</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8">{cards}</div></div></section>' + '''<section class="bg-brand-gradient text-white py-16"><div class="mx-auto px-6 max-w-4xl text-center"><h2 class="text-3xl font-bold mb-5">Where is manual work holding you back?</h2><p class="text-lg mb-8">We review how work happens, simplify the process and deliver the agreed change. Explore <a class="underline" href="/services/workflow-automation/">process improvement and business process automation</a>, or tell us about a broader <a class="underline" href="/#services">business improvement or solution delivery need</a>.</p><a class="inline-block bg-white text-brand-primary font-semibold px-7 py-4 rounded-md" href="/#contact">Discuss your challenge</a></div></section>'''
-write_page('blog/index.html', title, description, url, [collection, listing, breadcrumbs(url, 'Blog')], main)
+# Publication date controls the archive order; existing order breaks same-day ties.
+archive = sorted(META, key=lambda article: date.fromisoformat(article['datePublished']), reverse=True)
+listing = {'@type': 'ItemList', '@id': url + '#articles', 'numberOfItems': len(archive), 'itemListOrder': 'https://schema.org/ItemListOrderDescending', 'itemListElement': [{'@type': 'ListItem', 'position': i, 'name': a['headline'], 'url': a['canonical']} for i, a in enumerate(archive, 1)]}
+
+
+def archive_card(article, position):
+    image = next(image for image in article['images'] if SITE.rstrip('/') + image['src'] == article['image'])
+    thumb = article['thumbnail']
+    variants = thumb['variants']
+    responsive = ''
+    if variants:
+        responsive = ' srcset="' + ', '.join(f'{variant["src"]} {variant["width"]}w' for variant in variants) + '" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)"'
+    search_text = html.escape(' '.join(article[key] for key in ['headline', 'description', 'section', 'query']), quote=True)
+    loading = 'eager' if position < 3 else 'lazy'
+    return f'''<article class="blog-card" data-blog-card data-search-text="{search_text}">
+      <a class="blog-card-image" href="/blog/{article['slug']}/" tabindex="-1" aria-hidden="true"><img src="{thumb['src']}"{responsive} alt="{html.escape(article['image_alt'], quote=True)}" width="{thumb['width']}" height="{thumb['height']}" loading="{loading}" decoding="async" /></a>
+      <div class="blog-card-copy"><p class="blog-card-topic">{html.escape(article['section'])}</p>
+      <h3><a href="/blog/{article['slug']}/">{html.escape(article['headline'])}</a></h3>
+      <p class="blog-card-description">{html.escape(article['description'])}</p>
+      <p class="blog-card-meta"><time datetime="{article['datePublished']}">{date_label(article['datePublished'])}</time><span aria-hidden="true"> · </span>By <a rel="author" href="/authors/jateen-narsai/">{html.escape(AUTHOR['name'])}</a></p></div>
+    </article>'''
+
+
+cards = ''.join(archive_card(article, position) for position, article in enumerate(archive))
+main = hero('Make work easier and get useful changes delivered.', 'Practical guides to finding bottlenecks, improving processes and delivering solutions across people and systems.', trail_label='Blog') + f'''<section class="bg-white py-16" aria-labelledby="articles-heading"><div class="container mx-auto px-6 max-w-6xl">
+  <div class="blog-index-heading"><h2 id="articles-heading" class="text-3xl font-bold text-gray-800">Latest articles and practical guides</h2></div>
+  <form class="blog-search" role="search" data-blog-search hidden>
+    <label for="blog-search-input">Search articles</label><div class="blog-search-field">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+    <input id="blog-search-input" type="search" name="q" placeholder="Try automation or bottlenecks" aria-controls="articles-grid" aria-describedby="blog-search-help" autocomplete="off" />
+    <button type="button" class="blog-search-clear" data-search-clear hidden>Clear</button></div>
+    <p id="blog-search-help">Search titles, descriptions and topics.</p>
+  </form>
+  <p class="blog-results" data-blog-results role="status" aria-live="polite" aria-atomic="true">{len(archive)} articles · Newest first</p>
+  <div class="blog-grid" id="articles-grid">{cards}</div>
+  <div class="blog-empty" data-blog-empty hidden><h3>No matching articles</h3><p>Try a broader term, such as process, data or automation, or clear your search.</p></div>
+</div></section>''' + '''<section class="bg-brand-gradient text-white py-16"><div class="mx-auto px-6 max-w-4xl text-center"><h2 class="text-3xl font-bold mb-5">Where is manual work holding you back?</h2><p class="text-lg mb-8">We review how work happens, simplify the process and deliver the agreed change. Explore <a class="underline" href="/services/workflow-automation/">process improvement and business process automation</a>, or tell us about a broader <a class="underline" href="/#services">business improvement or solution delivery need</a>.</p><a class="inline-block bg-white text-brand-primary font-semibold px-7 py-4 rounded-md" href="/#contact">Discuss your challenge</a></div></section>'''
+search_version = hashlib.sha256((ROOT / 'assets/blog-search.js').read_bytes()).hexdigest()[:12]
+write_page('blog/index.html', title, description, url, [collection, listing, breadcrumbs(url, 'Blog')], main, extra_head=f'<script src="/assets/blog-search.js?v={search_version}" defer></script>')
 urls = [SITE, SITE + 'services/workflow-automation/'] + [SITE + 'services/' + offer['slug'] + '/' for offer in SERVICES] + [url] + [a['canonical'] for a in META] + [AUTHOR['canonical']]
 (ROOT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join('  <url><loc>' + u + '</loc></url>\n' for u in urls) + '</urlset>\n')
 print(f'Generated {len(SERVICES)} offer pages, {len(META)} articles, the biography, blog index and {len(urls)}-page sitemap.')

@@ -1,0 +1,338 @@
+{
+  "colour": "#040506",
+  "sizing": "Visible artwork bounds with a filled-area baseline and individual optical adjustments. Original proportions preserved.",
+  "images": [
+    {
+      "slug": "net",
+      "name": ".NET",
+      "file": "net.svg",
+      "sourceFile": "source/net.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/dotnet.svg",
+      "brandSource": "https://github.com/dotnet/brand/blob/c7d0f51b8ec59531332d05fb27a5b758a7a3d689/logo/dotnet-logo.svg",
+      "guidelines": "https://github.com/dotnet/brand/blob/c7d0f51b8ec59531332d05fb27a5b758a7a3d689/dotnet-styleGuide-2024.pdf",
+      "license": {
+        "type": "CC0-1.0"
+      },
+      "renderWidth": 56,
+      "renderHeight": 21.24,
+      "inkCoverage": 0.373,
+      "viewBox": [
+        -0.1341,
+        7.3972,
+        24.2681,
+        9.2056
+      ],
+      "opticalAdjustment": "Adjusted after desktop visual inspection; geometry and aspect ratio preserved."
+    },
+    {
+      "slug": "python",
+      "name": "Python",
+      "file": "python.svg",
+      "sourceFile": "source/python.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/python.svg",
+      "brandSource": "https://www.python.org/community/logos/",
+      "guidelines": "https://www.python.org/community/logos/",
+      "license": null,
+      "renderWidth": 34.0,
+      "renderHeight": 34,
+      "inkCoverage": 0.632,
+      "viewBox": [
+        -0.36,
+        -0.36,
+        24.72,
+        24.72
+      ],
+      "opticalAdjustment": "Adjusted after desktop visual inspection; geometry and aspect ratio preserved."
+    },
+    {
+      "slug": "nodejs",
+      "name": "Node.js",
+      "file": "nodejs.svg",
+      "sourceFile": "source/nodejs.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/nodedotjs.svg",
+      "brandSource": "https://nodejs.org/en/about/branding",
+      "guidelines": "https://nodejs.org/en/about/branding",
+      "license": null,
+      "renderWidth": 37.96,
+      "renderHeight": 42.6,
+      "inkCoverage": 0.334,
+      "viewBox": [
+        1.0241,
+        -0.3197,
+        21.9519,
+        24.6394
+      ]
+    },
+    {
+      "slug": "angular",
+      "name": "Angular",
+      "file": "angular.svg",
+      "sourceFile": "source/angular.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/angular.svg",
+      "brandSource": "https://angular.dev/press-kit",
+      "guidelines": "https://angular.dev/press-kit",
+      "license": {
+        "type": "CC-BY-4.0"
+      },
+      "renderWidth": 38.42,
+      "renderHeight": 40.58,
+      "inkCoverage": 0.346,
+      "viewBox": [
+        0.3159,
+        -0.3403,
+        23.3681,
+        24.6806
+      ]
+    },
+    {
+      "slug": "react",
+      "name": "React",
+      "file": "react.svg",
+      "sourceFile": "source/react.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/react.svg",
+      "brandSource": "https://github.com/facebook/create-react-app/blob/282c03f9525fdf8061ffa1ec50dce89296d916bd/test/fixtures/relative-paths/src/logo.svg",
+      "guidelines": null,
+      "license": null,
+      "renderWidth": 42.73,
+      "renderHeight": 38.18,
+      "inkCoverage": 0.331,
+      "viewBox": [
+        -0.3206,
+        0.9919,
+        24.6412,
+        22.0162
+      ]
+    },
+    {
+      "slug": "nextjs",
+      "name": "Next.js",
+      "file": "nextjs.svg",
+      "sourceFile": "source/nextjs.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/nextdotjs.svg",
+      "brandSource": "https://vercel.com/design/brands#next-js",
+      "guidelines": "https://vercel.com/design/brands#next-js",
+      "license": null,
+      "renderWidth": 32.0,
+      "renderHeight": 32,
+      "inkCoverage": 0.691,
+      "viewBox": [
+        -0.36,
+        -0.36,
+        24.72,
+        24.72
+      ],
+      "opticalAdjustment": "Adjusted after desktop visual inspection; geometry and aspect ratio preserved."
+    },
+    {
+      "slug": "tailwind",
+      "name": "Tailwind CSS",
+      "file": "tailwind.svg",
+      "sourceFile": "source/tailwind.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/tailwindcss.svg",
+      "brandSource": "https://tailwindcss.com/brand",
+      "guidelines": "https://tailwindcss.com/brand",
+      "license": null,
+      "renderWidth": 50.76,
+      "renderHeight": 30.89,
+      "inkCoverage": 0.341,
+      "viewBox": [
+        -0.2166,
+        4.5647,
+        24.4331,
+        14.8706
+      ]
+    },
+    {
+      "slug": "docker",
+      "name": "Docker",
+      "file": "docker.svg",
+      "sourceFile": "source/docker.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/docker.svg",
+      "brandSource": "https://www.docker.com/company/newsroom/media-resources",
+      "guidelines": null,
+      "license": null,
+      "renderWidth": 44.16,
+      "renderHeight": 32,
+      "inkCoverage": 0.525,
+      "viewBox": [
+        -0.2587,
+        3.1162,
+        24.5175,
+        17.7675
+      ],
+      "opticalAdjustment": "Adjusted after desktop visual inspection; geometry and aspect ratio preserved."
+    },
+    {
+      "slug": "mysql",
+      "name": "MySQL",
+      "file": "mysql.svg",
+      "sourceFile": "source/mysql.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/mysql.svg",
+      "brandSource": "https://www.mysql.com/about/legal/logos.html",
+      "guidelines": "https://www.mysql.com/about/legal/logos.html",
+      "license": null,
+      "renderWidth": 64.55,
+      "renderHeight": 44.29,
+      "inkCoverage": 0.158,
+      "viewBox": [
+        -0.2447,
+        3.5991,
+        24.4894,
+        16.8019
+      ]
+    },
+    {
+      "slug": "postgresql",
+      "name": "PostgreSQL",
+      "file": "postgresql.svg",
+      "sourceFile": "source/postgresql.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/postgresql.svg",
+      "brandSource": "https://wiki.postgresql.org/wiki/Logo",
+      "guidelines": "https://www.postgresql.org/about/policies/trademarks/",
+      "license": null,
+      "renderWidth": 42.79,
+      "renderHeight": 44.25,
+      "inkCoverage": 0.198,
+      "viewBox": [
+        0.0584,
+        -0.3478,
+        23.8831,
+        24.6956
+      ]
+    },
+    {
+      "slug": "aws",
+      "name": "AWS",
+      "file": "aws.svg",
+      "sourceFile": "source/aws.svg",
+      "collection": "Devicon",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+      "brandSource": null,
+      "guidelines": null,
+      "license": null,
+      "renderWidth": 52.56,
+      "renderHeight": 31.91,
+      "inkCoverage": 0.319,
+      "viewBox": [
+        -0.4733,
+        24.86,
+        128.9467,
+        78.28
+      ]
+    },
+    {
+      "slug": "azure",
+      "name": "Azure",
+      "file": "azure.svg",
+      "sourceFile": "source/azure.svg",
+      "collection": "Devicon",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/azure/azure-plain.svg",
+      "brandSource": null,
+      "guidelines": null,
+      "license": null,
+      "renderWidth": 36.04,
+      "renderHeight": 34,
+      "inkCoverage": 0.656,
+      "viewBox": [
+        -0.9517,
+        2.715,
+        129.9033,
+        122.57
+      ],
+      "opticalAdjustment": "Adjusted after desktop visual inspection; geometry and aspect ratio preserved."
+    },
+    {
+      "slug": "google-cloud",
+      "name": "Google Cloud",
+      "file": "google-cloud.svg",
+      "sourceFile": "source/google-cloud.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/googlecloud.svg",
+      "brandSource": "https://cloud.google.com",
+      "guidelines": null,
+      "license": null,
+      "renderWidth": 39.68,
+      "renderHeight": 32,
+      "inkCoverage": 0.546,
+      "viewBox": [
+        -0.2888,
+        2.0863,
+        24.5775,
+        19.8275
+      ],
+      "opticalAdjustment": "Adjusted after desktop visual inspection; geometry and aspect ratio preserved."
+    },
+    {
+      "slug": "camunda",
+      "name": "Camunda",
+      "file": "camunda.svg",
+      "sourceFile": "source/camunda.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/camunda.svg",
+      "brandSource": "https://camunda.com/brand",
+      "guidelines": "https://camunda.com/brand",
+      "license": null,
+      "renderWidth": 32.0,
+      "renderHeight": 32,
+      "inkCoverage": 0.88,
+      "viewBox": [
+        -0.36,
+        -0.36,
+        24.72,
+        24.72
+      ],
+      "opticalAdjustment": "Adjusted after desktop visual inspection; geometry and aspect ratio preserved."
+    },
+    {
+      "slug": "n8n",
+      "name": "n8n",
+      "file": "n8n.svg",
+      "sourceFile": "source/n8n.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/n8n.svg",
+      "brandSource": "https://n8n.io/press",
+      "guidelines": null,
+      "license": null,
+      "renderWidth": 61.34,
+      "renderHeight": 32.72,
+      "inkCoverage": 0.266,
+      "viewBox": [
+        -0.1894,
+        5.4981,
+        24.3788,
+        13.0038
+      ]
+    },
+    {
+      "slug": "mcp",
+      "name": "MCP",
+      "file": "mcp.svg",
+      "sourceFile": "source/mcp.svg",
+      "collection": "Simple Icons",
+      "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/c71c69e3a27e4436936b831c72643e6513b9f49b/icons/modelcontextprotocol.svg",
+      "brandSource": "https://github.com/modelcontextprotocol/docs/blob/573dc60c2e7aab2605b29d0bf27194aa7b02e4fb/logo/light.svg",
+      "guidelines": null,
+      "license": null,
+      "renderWidth": 37.05,
+      "renderHeight": 41,
+      "inkCoverage": 0.297,
+      "viewBox": [
+        0.8631,
+        -0.3244,
+        22.2737,
+        24.6487
+      ],
+      "opticalAdjustment": "Adjusted after desktop visual inspection; geometry and aspect ratio preserved."
+    }
+  ]
+}
