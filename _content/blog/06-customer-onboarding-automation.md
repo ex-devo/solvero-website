@@ -98,7 +98,7 @@ We help make onboarding easier for clients and the teams receiving their work. W
 
 We can introduce the revised process, configure information collection or build the required connections, then test the handoff and establish ownership. Bring one service, its onboarding checklist and a recent case that needed repeated follow-up.
 
-[Explore our Process & Workflow Improvement service](/services/process-workflow-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we improve onboarding handoffs](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your customer onboarding workflow with Solvero](/#contact).
 

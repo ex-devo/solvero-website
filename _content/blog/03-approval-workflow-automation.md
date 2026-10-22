@@ -129,7 +129,7 @@ We help teams spend less time chasing approvals by investigating where requests 
 
 That can include clearer responsibilities, better request information, routing and system connections. We test ordinary and exception cases with your team and establish ownership for ongoing use. Bring one approval type, its current rules and a request that stalled.
 
-[Explore our Process & Workflow Improvement service](/services/process-workflow-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we improve decisions and handoffs](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your approval workflow with Solvero](/#contact).
 

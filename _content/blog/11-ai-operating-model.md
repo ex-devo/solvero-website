@@ -177,7 +177,7 @@ We help turn an AI initiative into a practical business improvement. We map the 
 
 Our work can continue through process redesign, solution implementation, testing and handover. That gives the initiative a defined route into everyday use, with an owner and measures for assessing the result. AI is one possible part of that solution.
 
-[Explore our Business Improvement Review](/services/business-improvement-review/), with a route into [process and workflow improvement](/services/process-workflow-improvement/) and [solution design and delivery](/services/solution-design-delivery/).
+[See how we improve business operations](/services/business-operations-improvement/), [deliver new business capabilities](/services/new-business-capabilities/) or [help delivery teams work more effectively](/services/delivery-team-effectiveness/).
 
 [Discuss the improvement you need](/#contact).
 

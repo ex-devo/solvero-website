@@ -73,7 +73,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp",
     "image_alt": "Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions.",
-    "offer": "business-improvement-review",
+    "offer": "business-operations-improvement",
     "thumbnail": {
       "source": "/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp",
       "src": "/images/blog/thumbnails/which-processes-to-automate-480.webp",
@@ -167,7 +167,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp",
     "image_alt": "Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys.",
-    "offer": "process-workflow-improvement",
+    "offer": "business-operations-improvement",
     "thumbnail": {
       "source": "/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp",
       "src": "/images/blog/thumbnails/reduce-duplicate-data-entry-480.webp",
@@ -261,7 +261,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp",
     "image_alt": "A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside.",
-    "offer": "process-workflow-improvement",
+    "offer": "business-operations-improvement",
     "thumbnail": {
       "source": "/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp",
       "src": "/images/blog/thumbnails/approval-workflow-automation-480.webp",
@@ -355,7 +355,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-featured-1536.webp",
     "image_alt": "Document cards accumulate before a narrow bottle neck while a magnifier highlights the restriction.",
-    "offer": "business-improvement-review",
+    "offer": "business-operations-improvement",
     "thumbnail": {
       "source": "/images/blog/identify-process-bottlenecks/identify-process-bottlenecks-featured-1536.webp",
       "src": "/images/blog/thumbnails/identify-process-bottlenecks-480.webp",
@@ -449,7 +449,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp",
     "image_alt": "A pool of time is divided into review, manual work, support and capacity released for other work.",
-    "offer": "business-improvement-review",
+    "offer": "business-operations-improvement",
     "thumbnail": {
       "source": "/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp",
       "src": "/images/blog/thumbnails/workflow-automation-roi-480.webp",
@@ -543,7 +543,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/customer-onboarding-automation/customer-onboarding-automation-featured-1536.webp",
     "image_alt": "A paper aeroplane waits beside checks for scope, billing, contacts, access and delivery acceptance.",
-    "offer": "process-workflow-improvement",
+    "offer": "business-operations-improvement",
     "thumbnail": {
       "source": "/images/blog/customer-onboarding-automation/customer-onboarding-automation-featured-1536.webp",
       "src": "/images/blog/thumbnails/customer-onboarding-automation-480.webp",
@@ -637,7 +637,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp",
     "image_alt": "An iceberg shows the visible build above water and discovery, testing, handover and operation below.",
-    "offer": "solution-design-delivery",
+    "offer": "new-business-capabilities",
     "thumbnail": {
       "source": "/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp",
       "src": "/images/blog/thumbnails/workflow-automation-project-cost-480.webp",
@@ -731,7 +731,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp",
     "image_alt": "A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount.",
-    "offer": "process-workflow-improvement",
+    "offer": "business-operations-improvement",
     "thumbnail": {
       "source": "/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp",
       "src": "/images/blog/thumbnails/quote-to-invoice-automation-480.webp",
@@ -825,7 +825,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp",
     "image_alt": "A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools.",
-    "offer": "solution-design-delivery",
+    "offer": "new-business-capabilities",
     "thumbnail": {
       "source": "/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp",
       "src": "/images/blog/thumbnails/ai-vs-rules-based-automation-480.webp",
@@ -919,7 +919,7 @@
     ],
     "image": "https://solvero.co.za/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp",
     "image_alt": "Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership.",
-    "offer": "solution-design-delivery",
+    "offer": "new-business-capabilities",
     "thumbnail": {
       "source": "/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp",
       "src": "/images/blog/thumbnails/n8n-vs-power-automate-480.webp",
@@ -987,7 +987,7 @@
         "height": 941
       }
     ],
-    "offer": "business-improvement-review",
+    "offer": "business-operations-improvement",
     "thumbnail": {
       "source": "/images/blog/ai-operating-model/ai-bottleneck.webp",
       "src": "/images/blog/thumbnails/ai-operating-model-480.webp",

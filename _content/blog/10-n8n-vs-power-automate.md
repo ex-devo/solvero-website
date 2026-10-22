@@ -90,7 +90,7 @@ We help you turn a platform comparison into a decision about a working business 
 
 After the approach is agreed, we can implement the workflow or integration through testing and handover. Where your development team is involved, we make requirements, dependencies and acceptance decisions clear. Bring the systems, the required outcome and the people who will operate the solution.
 
-[Explore our Solution Design & Delivery service](/services/solution-design-delivery/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we build around your systems and requirements](/services/new-business-capabilities/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your automation platform choice with Solvero](/#contact).
 

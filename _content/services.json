@@ -1,63 +1,99 @@
 [
   {
-    "slug": "business-improvement-review",
-    "name": "Business Improvement Review",
-    "title": "Business Process Improvement Review | Solvero",
-    "description": "Find what causes repeated work, delays and rework. We map real cases with your team and prioritise practical improvements with a clear route to implementation.",
-    "headline": "Find the changes that will make work easier.",
-    "intro": "Our Business Improvement Review helps you decide where to act first. We investigate how work happens, identify the causes of repeated effort and agree a practical improvement to take forward.",
-    "cta": "Discuss an improvement review",
-    "problemHeading": "Turn a recurring frustration into a decision about what to change.",
-    "problem": "Your team keeps chasing updates, correcting the same information or waiting for decisions. You can see the effort, but it is harder to tell which change would help most. Adding another tool before understanding the cause can leave the same problem in a new system.",
-    "investigation": "We follow recent examples from request to completion with the people doing the work. We examine handoffs, decisions and system dependencies, including the spreadsheets and workarounds that the written process misses. Together, we distinguish symptoms from causes and identify what needs further evidence.",
-    "outputsHeading": "A practical basis for choosing your next improvement.",
+    "slug": "business-operations-improvement",
+    "name": "Business Operations Improvement",
+    "title": "Business Operations & Process Improvement | Solvero",
+    "description": "Improve turnaround times, reduce repeated work and make business operations easier to run. We investigate, redesign and implement changes with your team.",
+    "cardHeading": "Improve how your business operates",
+    "cardDescription": "Help your team get work done with fewer delays and repeated steps. We examine the process, decisions and supporting systems, then implement the changes that will make a useful difference.",
+    "cardCta": "See how we improve business operations",
+    "icon": "analytics",
+    "colour": "primary",
+    "headline": "Help your business get work done with fewer delays.",
+    "intro": "Improve the work your business already does, from responding to customer enquiries to completing approvals and preparing reports. We investigate how it happens, agree useful changes and implement them with the people doing the work.",
+    "cta": "Discuss what you want to improve",
+    "problemHeading": "Start with the result you want from your operations.",
+    "problem": "You may want faster customer responses, shorter turnaround times or more capacity to handle demand. You do not need to know the cause of the delays or have a solution in mind. We help establish which changes could make the difference.",
+    "investigation": "We follow real cases across people and systems, including the spreadsheets and workarounds that process notes can miss. We examine waiting, repeated checks, incomplete information and decision ownership. We weigh the likely benefit of each change against effort, dependencies and disruption before agreeing what to implement.",
+    "outputsHeading": "An improvement your business can put into use.",
     "outputs": [
       [
-        "A shared picture of the work",
-        "A process map showing the agreed boundary, people, systems and decision points. It helps everyone discuss the same workflow and see where work waits or repeats."
+        "An agreed improvement design",
+        "A clear picture of the current work, the changes worth making and how the revised process should operate. We define responsibilities and the result the change needs to support."
       ],
       [
-        "Priorities grounded in examples",
-        "A list of improvement opportunities with their supporting observations, likely dependencies and unanswered questions. We compare the expected benefit with the effort and disruption involved."
+        "The changes introduced",
+        "The agreed changes to working practices, forms, tools or systems, introduced with your team. Where integration or automation is useful, we design, build and test it as part of the implementation scope."
       ],
       [
-        "A defined next step",
-        "A recommendation describing what to change, who needs to be involved and how to assess the result. Where implementation needs more investigation, that work is made explicit."
+        "A usable handover and measures",
+        "Instructions, ownership and checks for ordinary and difficult cases. We agree measures such as waiting, response times or repeated work so you can assess how the improvement performs."
       ]
     ],
     "steps": [
       [
-        "Set the boundary",
-        "Choose one business problem and agree what a useful outcome would look like. Identify the process owner, people involved and recent examples we can examine."
+        "Understand the work",
+        "Agree the outcome you want and examine recent cases with your team. Separate active work from waiting and rework, then investigate the causes."
       ],
       [
-        "Investigate real cases",
-        "Walk through ordinary and difficult cases. Separate active handling from waiting and rework, then check possible causes with your team and the available evidence."
+        "Design and introduce the change",
+        "Compare practical options, agree a manageable scope and implement the revised process or system changes. Work with the people responsible for decisions and handoffs."
       ],
       [
-        "Agree the next change",
-        "Compare practical options and their dependencies. Define a manageable next step, its owner and the measures that will help you decide whether it worked."
+        "Check the result in use",
+        "Test routine cases and exceptions, resolve gaps and hand over the agreed operating instructions. Compare the chosen measures with the starting point."
       ]
     ],
-    "exampleHeading": "Start with the problem your team already recognises.",
-    "examples": "A review might focus on approvals that keep circulating, repeated customer data entry, a difficult onboarding handoff or work that stalls between business and delivery teams. We can also examine how a proposed AI or automation initiative affects the wider process. The review follows the problem across people and systems.",
-    "scope": "The review produces a decision and a practical plan. Implementation is agreed separately, with responsibilities, access and acceptance criteria defined before the work begins. We can carry the chosen change through process redesign, solution delivery, testing and handover.",
+    "useCasesHeading": "Make everyday operations easier to complete.",
+    "useCasesIntro": "These are examples of existing business work we can improve through process changes, clearer decisions and appropriate technology.",
+    "useCases": [
+      {
+        "heading": "Approvals and requests",
+        "text": "Reduce time spent chasing decisions. We clarify approval authority, remove redundant steps and route requests to the right person with the information they need.",
+        "guide": "approval-workflow-automation",
+        "guideLabel": "See how approval workflows can work better"
+      },
+      {
+        "heading": "Documents and onboarding",
+        "text": "Make it clear when a customer is ready for the next step. We define required information and ownership, introduce completeness checks and connect the handoffs.",
+        "guide": "customer-onboarding-automation",
+        "guideLabel": "See how to improve onboarding handoffs"
+      },
+      {
+        "heading": "Connected customer information",
+        "text": "Reduce repeated data entry and conflicting records. We agree field ownership and matching rules, then implement and test the connection between systems. This can support a Single View of Party or a Master Client Record across applications.",
+        "guide": "reduce-duplicate-data-entry",
+        "guideLabel": "See how to keep information in sync"
+      },
+      {
+        "heading": "Recurring reports and updates",
+        "text": "Spend less time rebuilding the same report. We trace its inputs, simplify preparation and automate suitable collection and checks, with missing information brought to the owner for review."
+      }
+    ],
+    "exampleHeading": "Choose the change that fits the work.",
+    "examples": "A useful improvement may remove an unnecessary step, change the sequence of work or clarify who can make a decision. Better request forms, clearer handoffs and a more manageable queue can also reduce waiting and repeated effort.",
+    "scope": "Integration, automation or software may form part of the solution. We assess your existing systems and define how the change should behave, including ownership of information and how exceptions are handled. We agree the implementation responsibilities and any ongoing support before delivery.",
+    "support": {
+      "id": "improvement-methods",
+      "heading": "Analysis and review are part of the engagement.",
+      "text": "We help decide where to act, then carry the agreed improvement through design, implementation, testing and handover. The work can start with one business outcome or a focused process; the scope makes clear what we will deliver and what your team will own."
+    },
     "questions": [
       [
-        "What should we bring to the first conversation?",
-        "Bring one recurring problem, a recent example and the people who understand the work. Existing process notes or timings are useful; we can establish what further evidence is needed during the review."
+        "Do we need to know what is causing the problem?",
+        "Start with the result you want, such as faster responses or shorter turnaround times. Recent examples are useful, and we help identify what needs to change."
       ],
       [
-        "Does the answer have to involve new software?",
-        "A useful improvement might be a clearer decision, fewer steps, better information at the start or a system change. We choose the response after investigating the cause."
+        "Does improvement always involve automation?",
+        "A better process may need fewer steps, clearer decision authority, consistent inputs or a different handoff. We use automation where it supports the agreed outcome, alongside changes to how people organise and complete the work."
       ],
       [
-        "Can you implement the recommendation?",
-        "Yes. We can agree a separate implementation scope and deliver the chosen process change, tool or integration. The review does not commit you to a platform or a build."
+        "Can you implement the changes?",
+        "Yes. We can introduce the agreed process changes and deliver the tools, integrations or automation included in scope. We test the result and agree ownership and handover with your team."
       ],
       [
         "How do you agree cost and scope?",
-        "We establish the process boundary, available evidence, people involved and expected outputs before proposing the work. We agree the scope and commercial terms before starting."
+        "We establish the process boundary, available evidence, people involved and expected outputs before proposing the work. Dependencies, access and acceptance criteria are made clear before implementation."
       ]
     ],
     "guides": [
@@ -67,149 +103,105 @@
       ],
       [
         "which-processes-to-automate",
-        "How to choose the first workflow"
+        "How to choose a useful first improvement"
       ],
       [
         "workflow-automation-roi",
-        "How to assess the business case"
+        "How to assess an improvement business case"
       ]
-    ]
+    ],
+    "closingHeading": "What would you like your operations to do better?",
+    "closingIntro": "Tell us the outcome you want, such as faster responses, shorter turnaround times or less repeated work. We help you decide where to start and deliver the agreed improvement."
   },
   {
-    "slug": "process-workflow-improvement",
-    "name": "Process & Workflow Improvement",
-    "title": "Process & Workflow Improvement Services | Solvero",
-    "description": "Reduce chasing, repeated steps and unclear handoffs. We redesign business workflows with your team, introduce the changes and check how they work in practice.",
-    "headline": "Help work move with fewer delays and repeated steps.",
-    "intro": "Our Process & Workflow Improvement service turns a troublesome workflow into a clearer way of working. We simplify steps, clarify decisions and introduce the changes with the people responsible for the result.",
-    "cta": "Discuss your workflow",
-    "problemHeading": "Make the handoff clear enough for the next person to act.",
-    "problem": "Requests arrive with missing information. Approvals move between people who are unsure who can decide. Completed work waits because the receiving team does not know it is ready. These problems consume effort across several roles, even when each individual task is quick.",
-    "investigation": "We trace the workflow with your team and agree the outcome it should support. We examine what each stage needs, who makes its decisions and what happens when a case is incomplete or unusual. That gives us a basis for removing redundant steps and making the remaining handoffs workable.",
-    "outputsHeading": "A revised process your team can put into use.",
+    "slug": "new-business-capabilities",
+    "name": "New Business Capabilities",
+    "title": "New Business Capabilities & Solution Delivery | Solvero",
+    "description": "Put a new business capability into use. We define requirements, assess options and deliver the processes, tools, integrations or software your business needs.",
+    "cardHeading": "Deliver new business capabilities",
+    "cardDescription": "Put the processes and technology in place to support your next business goal. We define what is needed, assess the options and deliver the agreed tools, integrations or software through testing and handover.",
+    "cardCta": "See how we deliver new capabilities",
+    "icon": "account_tree",
+    "colour": "secondary",
+    "headline": "Make something new possible for your business.",
+    "intro": "Introduce a service or way of working that your current processes and systems cannot support. We work with your team to define what is needed, design the solution and deliver the agreed capability through testing and handover.",
+    "cta": "Discuss the capability you need",
+    "problemHeading": "Give your next business goal a practical route into use.",
+    "problem": "You may want customers to submit requests online, connect a new partner or support a new product. The goal is clear, but the required processes, information and technology still need to be worked out. We connect that ambition to a defined delivery scope.",
+    "investigation": "We establish who needs the capability, what they need to do and how success will be checked. We assess existing systems, business rules and dependencies, compare suitable options and define requirements and acceptance criteria with your team.",
+    "outputsHeading": "A capability defined, delivered and ready for its agreed use.",
     "outputs": [
       [
-        "Clear steps and decision ownership",
-        "A revised workflow defining the route, required information and responsibility at each stage. Approval authority and exception handling are agreed with the process owner."
+        "A clear design and delivery plan",
+        "Agreed requirements, process and system responsibilities, dependencies and acceptance criteria. We identify the decisions and access needed before building."
       ],
       [
-        "Practical working tools",
-        "The checklists, request forms, templates or work instructions included in the agreed scope. Where a system change is needed, we define the requirement and coordinate its delivery."
+        "The working capability",
+        "The agreed process, tool, integration or software change that lets the business do something new. We select a practical approach around the requirement and the systems it needs to work with."
       ],
       [
-        "An introduced and checked change",
-        "A trial using ordinary and difficult cases, feedback from the people involved and a documented handover. We agree measures for waiting, repeated work and completed outcomes."
+        "Testing and handover",
+        "Checks covering expected behaviour, missing information and important failure cases. We work through acceptance with your team and document how the capability is operated and supported."
       ]
     ],
     "steps": [
       [
-        "Understand the current route",
-        "Follow recent work through the process. Find the missing inputs, repeated checks and unclear decisions that prevent the next person from acting."
+        "Define what needs to become possible",
+        "Work through the business goal, intended users and real scenarios. Agree the required behaviour, priorities and delivery boundaries."
       ],
       [
-        "Design and introduce the change",
-        "Agree a simpler route with the process owner. Prepare the required instructions or system changes and work with the people affected to introduce them."
+        "Design and build the capability",
+        "Compare implementation options, establish the process and system design, and build the agreed solution. Resolve requirements and dependencies with your team as the work progresses."
       ],
       [
-        "Test and refine in use",
-        "Check routine cases and exceptions against the agreed outcome. Resolve gaps, document ownership and compare the chosen measures with the starting point."
+        "Test and introduce it",
+        "Check the capability against the agreed scenarios, prepare the handover and work with the people who will use and own it. Define any further support in the scope."
       ]
     ],
-    "exampleHeading": "Improve the work between teams and systems.",
-    "examples": "We can help clarify an approval route, make onboarding readiness visible, reduce duplicate data capture or connect delivery confirmation to billing. Development-team handoffs are another application: clearer requirements and acceptance criteria can reduce repeated clarification before and during delivery.",
-    "scope": "Some improvements change responsibilities and working practices. Others need a form, system connection or automation. We assess what your existing tools can support and agree any technical work as part of the implementation scope.",
+    "useCasesHeading": "Turn a business goal into a capability people can use.",
+    "useCasesIntro": "These examples describe possible engagements. We define the actual scope and implementation around your business goal.",
+    "useCases": [
+      {
+        "heading": "Customer self-service",
+        "text": "Give customers a new way to submit information, make a request or follow its progress. We define the journey and deliver the agreed forms, rules and system connections."
+      },
+      {
+        "heading": "Support for a new service or product",
+        "text": "Put the operating process and system behaviour in place for a new offering. We clarify the rules, information needs and handoffs before implementing the agreed changes."
+      },
+      {
+        "heading": "New partner or application connections",
+        "text": "Enable a new exchange of information between your business and another system or partner. We agree record ownership, interfaces, permissions and the behaviour when an update fails."
+      },
+      {
+        "heading": "A new business tool",
+        "text": "Give your team a purpose-built way to capture information, prepare a report or complete a task it cannot currently support. We define and test the useful behaviour with its users."
+      }
+    ],
+    "exampleHeading": "Build around the business requirement.",
+    "examples": "The capability may use an existing application feature, an integration, a purpose-built tool or a combination of process and software changes. AI can support suitable tasks when the inputs, checking effort and decision boundaries justify it. The required result guides the choice.",
+    "scope": "We can deliver an agreed scope or work alongside your existing delivery team. Responsibilities for environments, deployment, third-party services, acceptance and ongoing support are defined before implementation. The engagement can include analysis and planning where the goal is clear but the requirements still need to be established.",
+    "support": {
+      "id": "capability-planning",
+      "heading": "Work out what the business needs to be able to do.",
+      "text": "We assess the gap between the current operation and the capability you want to introduce. That includes the people, processes, information and systems involved, with dependencies and practical options made explicit. The resulting plan sets out how the agreed capability will be delivered."
+    },
     "questions": [
       [
-        "Do you only improve automated processes?",
-        "We improve how work is organised across people and systems. A manual process can benefit from clearer inputs, fewer steps and explicit ownership. Automation is included where it serves the agreed outcome."
+        "Can we start with a business goal rather than a specification?",
+        "Yes. We help define the required behaviour, assess options and agree a useful delivery scope. You do not need to arrive with a chosen platform or a finished set of requirements."
       ],
       [
-        "Can we start with one handoff?",
-        "Yes. We define a useful boundary around the handoff and inspect what comes before and after it. That helps prevent a local change from moving the problem to another team."
+        "Can you work with our existing systems and development team?",
+        "We check the relevant interfaces, permissions and ownership before agreeing the design. Where your team is involved, we define responsibilities, resolve business questions and check acceptance together."
       ],
       [
-        "How will our team be involved?",
-        "Your process owner helps resolve decisions, while the people doing and receiving the work explain current cases and test the revised route. We agree their involvement when defining the scope."
+        "Will the solution use AI or automation?",
+        "We compare methods against the task. Existing application features, explicit rules, an integration, automation or AI may fit different parts of the capability. The choice follows the required result and operating constraints."
       ],
       [
-        "What happens after the new process is introduced?",
-        "We hand over the agreed instructions, ownership and operating measures. Any further monitoring, refinements or support are defined in the scope so responsibilities remain clear."
-      ]
-    ],
-    "guides": [
-      [
-        "approval-workflow-automation",
-        "Clarifying an approval workflow"
-      ],
-      [
-        "customer-onboarding-automation",
-        "Improving customer onboarding handoffs"
-      ],
-      [
-        "quote-to-invoice-automation",
-        "Connecting accepted work to billing"
-      ]
-    ]
-  },
-  {
-    "slug": "solution-design-delivery",
-    "name": "Solution Design & Delivery",
-    "title": "Business Software Solution Design & Delivery | Solvero",
-    "description": "Turn a defined business problem into a working tool, integration or automation. We design, build, test and hand over solutions around the outcome your team needs.",
-    "headline": "Get a working solution to a defined business problem.",
-    "intro": "Our Solution Design & Delivery service connects business needs with implementation. We define what the solution must do, build the agreed tool or system connection and test it with the people who will use it.",
-    "cta": "Discuss the solution you need",
-    "problemHeading": "Carry the requirement through to something people can use.",
-    "problem": "You know what the business needs to achieve, but the route into delivery is unclear. Requirements leave room for different interpretations, system dependencies surface late or a finished feature still leaves people copying information by hand. The missing connection is often between the business process and the implementation decisions.",
-    "investigation": "We work through the task, inputs and intended result with your team. We examine existing systems, access constraints and exceptional cases before agreeing the design. Requirements and acceptance criteria describe the business behaviour the solution must support, including what happens when an update fails or information is incomplete.",
-    "outputsHeading": "A solution defined, built and checked for use.",
-    "outputs": [
-      [
-        "A clear design and delivery scope",
-        "Agreed requirements, system responsibilities and acceptance criteria. The design identifies dependencies, operating boundaries and the decisions your team needs to make before delivery."
-      ],
-      [
-        "The agreed working solution",
-        "A business tool, integration, reporting workflow or automation built around the chosen scope. We assess the existing systems and select a practical delivery approach for the task."
-      ],
-      [
-        "Test evidence and a usable handover",
-        "Checks covering everyday work and important failure cases, followed by acceptance with your team. Documentation explains the solution, operating responsibilities and the support arrangements you agree."
-      ]
-    ],
-    "steps": [
-      [
-        "Define the behaviour",
-        "Use real examples to agree inputs, outcomes and acceptance criteria. Check system access, dependencies and the decisions needed before building."
-      ],
-      [
-        "Build and check the solution",
-        "Implement the agreed design and test normal, missing-information and failure cases. Review the result with the people doing the work and address gaps against the scope."
-      ],
-      [
-        "Introduce and hand over",
-        "Agree how the solution will enter use, who owns it and how issues are handled. Hand over the operating documentation and check the business outcome against the agreed measures."
-      ]
-    ],
-    "exampleHeading": "Connect the business task to the right implementation.",
-    "examples": "The solution might connect customer records between applications, prepare a recurring report, collect information through a purpose-built form or automate a defined operational task. AI can support suitable interpretation tasks when the inputs, checking effort and decision boundaries justify it. The delivery approach follows the problem.",
-    "scope": "We can own an agreed delivery scope or work alongside your existing development team. When working with a team, we clarify requirements, resolve business questions and check acceptance together. We define responsibility for environments, deployment, third-party services and ongoing support before committing to delivery.",
-    "questions": [
-      [
-        "Can you work with our existing development team?",
-        "Yes. We can help define behaviour and acceptance criteria, resolve difficult handoffs or deliver an agreed component alongside your team. We establish responsibilities and access at the start."
-      ],
-      [
-        "Will the solution use AI?",
-        "We assess the task and compare suitable methods. Explicit rules, an existing application feature, a system integration or AI may each fit different parts of the work. The choice follows the required result and operating constraints."
-      ],
-      [
-        "Can you work with our existing systems?",
-        "We first check the relevant interfaces, permissions and system responsibilities. The agreed design reflects what those systems can reliably support and identifies any access or vendor dependencies."
-      ],
-      [
-        "How do you agree the cost and timeline?",
-        "We assess the required behaviour, integrations, exception cases and delivery responsibilities. We then propose the scope and commercial terms, making dependencies and any further investigation explicit."
+        "How do you agree cost and timing?",
+        "We assess the required behaviour, dependencies, exceptional cases and delivery responsibilities. We then propose the scope and commercial terms, making any further investigation explicit."
       ]
     ],
     "guides": [
@@ -219,12 +211,122 @@
       ],
       [
         "ai-vs-rules-based-automation",
-        "Choosing AI or explicit rules for a task"
+        "Choosing an approach for a task"
       ],
       [
         "n8n-vs-power-automate",
-        "Comparing workflow platforms against real requirements"
+        "Comparing platforms against real requirements"
       ]
-    ]
+    ],
+    "closingHeading": "What would you like your business to be able to do?",
+    "closingIntro": "Tell us the capability you want to introduce and what it needs to make possible. We help establish the requirements and deliver a practical solution."
+  },
+  {
+    "slug": "delivery-team-effectiveness",
+    "name": "Delivery Team Effectiveness",
+    "title": "Delivery Team Effectiveness & Workflow Improvement | Solvero",
+    "description": "Help delivery teams coordinate and complete work with less avoidable effort. We improve workflows, communication, information flow and visibility of tasks.",
+    "cardHeading": "Make your delivery team more effective",
+    "cardDescription": "Help your team spend less time chasing updates and waiting for answers. We improve delivery workflows and communication so everyone can see what needs doing, who owns it and where work is blocked.",
+    "cardCta": "See how we help delivery teams work better",
+    "icon": "groups",
+    "colour": "tertiary",
+    "headline": "Make your delivery team more effective.",
+    "intro": "Make work easier to coordinate and complete within an existing delivery team. We examine workflows and communication, then introduce practical changes to information flow, ownership and task visibility with the people doing the work.",
+    "cta": "Discuss how your team could work better",
+    "problemHeading": "Reduce the effort spent keeping delivery coordinated.",
+    "problem": "People can spend too much time chasing updates, finding context or waiting for answers. Work passes between roles without a clear next owner, and task boards do not always show what is ready or blocked. The team needs a more useful way to coordinate its existing skills and work.",
+    "investigation": "We follow real work items through the team and examine how priorities, decisions and information move between people. We look at handoffs, work in progress and where context is lost. With the team, we agree changes to the working practices and tools that support delivery.",
+    "outputsHeading": "Working practices that help the team complete work.",
+    "outputs": [
+      [
+        "Clearer workflows and ownership",
+        "An agreed route for work, with useful handoff criteria, decision responsibilities and priorities. The team can see what is needed before the next person can act."
+      ],
+      [
+        "A shared view of work and information",
+        "Practical changes to how tasks, progress, dependencies and blockers are recorded and shared. Relevant context is available where people coordinate and complete the work."
+      ],
+      [
+        "Improvements introduced with the team",
+        "Revised working agreements, templates or tool configurations included in scope, tried on real work. We review whether they reduce waiting and repeated effort and hand over the agreed practices."
+      ]
+    ],
+    "steps": [
+      [
+        "Understand how delivery happens",
+        "Trace recent work items and talk with the people involved. Examine waiting, handoffs, communication and the information needed for decisions."
+      ],
+      [
+        "Introduce focused improvements",
+        "Agree priorities with the team and change the relevant workflow, working agreements or tool setup. Make ownership, task status and required information clear."
+      ],
+      [
+        "Check and refine the practices",
+        "Review the changes on ordinary and difficult work. Use team feedback and agreed measures of waiting, progress or rework to refine how the team operates."
+      ]
+    ],
+    "useCasesHeading": "Make coordination support the work.",
+    "useCasesIntro": "The engagement follows the needs of your delivery team. These are examples of the areas we can improve together.",
+    "useCases": [
+      {
+        "heading": "Workflows and handoffs",
+        "text": "Reduce unnecessary steps and work that returns for clarification. Agree when an item is ready, who takes it next and what information needs to accompany it."
+      },
+      {
+        "heading": "Communication and information flow",
+        "text": "Make decisions and relevant context easier to find and use. Establish how questions are raised, answered and recorded so the team spends less time repeating conversations."
+      },
+      {
+        "heading": "Task visibility and priorities",
+        "text": "Make ownership, progress and blockers visible in the tools your team uses. Agree useful task states and a workable way to keep priorities and dependencies current."
+      },
+      {
+        "heading": "Requirements, feedback and acceptance",
+        "text": "Help people understand what needs to be delivered and how it will be accepted. Improve examples and acceptance criteria, and use timely feedback to reduce avoidable revisions."
+      }
+    ],
+    "exampleHeading": "Improve the way your existing team works together.",
+    "examples": "An engagement might focus on a difficult handoff, a backlog that is hard to act on or decisions that repeatedly hold up work. We can work across business analysis, development and testing to improve the flow from a business requirement to an accepted change.",
+    "scope": "We agree a focused area of improvement, the people involved and the working practices or tool changes to deliver. We work with the team and its existing responsibilities. Where a separate software build is needed, the implementation and ownership are defined in the scope.",
+    "support": {
+      "id": "delivery-practices",
+      "heading": "Make visibility useful for everyday decisions.",
+      "text": "Task visibility should help the team act. We connect status information to clear responsibilities and ways to resolve blockers. The team can use that information to decide what needs attention next. The changes are introduced with the team and checked against the coordination problems they are meant to address."
+    },
+    "questions": [
+      [
+        "Is this only about improving requirements?",
+        "The scope can cover workflows, handoffs, communication, information flow, task visibility and decision ownership. Requirements and acceptance practices are included where they affect how effectively the team delivers."
+      ],
+      [
+        "Do we need a new project-management tool?",
+        "We first examine how work is organised and what the existing tools can support. The improvement may involve working agreements, clearer task information or changes to the current configuration. Any new tooling is agreed as part of the scope."
+      ],
+      [
+        "Which teams can you work with?",
+        "We can work with business and technical people responsible for delivering change, including analysts, developers and testers. The engagement follows the work across the roles involved."
+      ],
+      [
+        "How will we know whether the changes help?",
+        "We agree useful measures and team feedback before introducing changes. Depending on the scope, we may examine waiting for answers, blocked work, repeated clarification or items returning for revision."
+      ]
+    ],
+    "guides": [
+      [
+        "identify-process-bottlenecks",
+        "Finding where work waits or repeats"
+      ],
+      [
+        "approval-workflow-automation",
+        "Clarifying decisions and handoffs"
+      ],
+      [
+        "ai-operating-model",
+        "Designing responsibilities around new ways of working"
+      ]
+    ],
+    "closingHeading": "Where could your team work together more effectively?",
+    "closingIntro": "Tell us what you want to improve about delivery, from clearer priorities to less time chasing updates. We work with your team to make practical changes to how work gets completed."
   }
 ]

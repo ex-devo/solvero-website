@@ -24,7 +24,7 @@
   <meta name="twitter:description"
     content="Reduce manual effort, delays and rework. We analyse processes, simplify workflows and deliver practical software, integrations and automation.">
   <meta name="twitter:image" content="https://solvero.co.za/images/brand/rubix/solvero-social.png">
-  <link rel="stylesheet" href="/assets/tailwind.css?v=65c6f0e138f0" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=082c6bd05969" />
 
   <!-- Structured Data (Schema.org) -->
   <script type="application/ld+json">
@@ -73,7 +73,71 @@
       },
       "about": {
         "@id": "https://solvero.co.za/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://solvero.co.za/#services"
       }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://solvero.co.za/services/business-operations-improvement/#service",
+      "url": "https://solvero.co.za/services/business-operations-improvement/",
+      "name": "Business Operations Improvement",
+      "serviceType": "Business Operations Improvement",
+      "description": "Improve turnaround times, reduce repeated work and make business operations easier to run. We investigate, redesign and implement changes with your team.",
+      "areaServed": "Worldwide",
+      "provider": {
+        "@id": "https://solvero.co.za/#organization"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://solvero.co.za/services/new-business-capabilities/#service",
+      "url": "https://solvero.co.za/services/new-business-capabilities/",
+      "name": "New Business Capabilities",
+      "serviceType": "New Business Capabilities",
+      "description": "Put a new business capability into use. We define requirements, assess options and deliver the processes, tools, integrations or software your business needs.",
+      "areaServed": "Worldwide",
+      "provider": {
+        "@id": "https://solvero.co.za/#organization"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://solvero.co.za/services/delivery-team-effectiveness/#service",
+      "url": "https://solvero.co.za/services/delivery-team-effectiveness/",
+      "name": "Delivery Team Effectiveness",
+      "serviceType": "Delivery Team Effectiveness",
+      "description": "Help delivery teams coordinate and complete work with less avoidable effort. We improve workflows, communication, information flow and visibility of tasks.",
+      "areaServed": "Worldwide",
+      "provider": {
+        "@id": "https://solvero.co.za/#organization"
+      }
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://solvero.co.za/#services",
+      "name": "Solvero services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "https://solvero.co.za/services/business-operations-improvement/#service"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "https://solvero.co.za/services/new-business-capabilities/#service"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "https://solvero.co.za/services/delivery-team-effectiveness/#service"
+          }
+        }
+      ]
     }
   ]
 }
@@ -224,58 +288,22 @@
   <section class="py-16 md:py-24 bg-white" id="services">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Business improvement and solution delivery</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-          <div class="flex items-center justify-center bg-brand-primary text-white rounded-full w-16 h-16 mb-6 mx-auto">
-            <span class="material-icons text-3xl">analytics</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Business Improvement Review</h3>
-          <p class="text-gray-600">Find out which changes will make a useful difference. We map the work with your team, investigate bottlenecks and prioritise improvements with clear next steps.</p>
-          <p class="mt-6"><a class="text-brand-primary underline font-semibold" href="/services/business-improvement-review/">Explore business improvement review</a></p>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-          <div
-            class="flex items-center justify-center bg-brand-secondary text-white rounded-full w-16 h-16 mb-6 mx-auto">
-            <span class="material-icons text-3xl">cloud_queue</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Process &amp; Workflow Improvement</h3>
-          <p class="text-gray-600">Reduce time spent chasing work and repeating steps. We simplify the process, clarify decisions and responsibilities, and introduce the changes with the people doing the work.</p>
-          <p class="mt-6"><a class="text-brand-primary underline font-semibold" href="/services/process-workflow-improvement/">Explore process &amp; workflow improvement</a></p>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-          <div
-            class="flex items-center justify-center bg-brand-tertiary text-white rounded-full w-16 h-16 mb-6 mx-auto">
-            <span class="material-icons text-3xl">code</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Solution Design &amp; Delivery</h3>
-          <p class="text-gray-600">Get a working solution to a defined business problem. We design and build tools, integrations or automation, then test the result and hand it over for use.</p>
-          <p class="mt-6"><a class="text-brand-primary underline font-semibold" href="/services/solution-design-delivery/">Explore solution design &amp; delivery</a></p>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-          <div class="flex items-center justify-center bg-brand-primary text-white rounded-full w-16 h-16 mb-6 mx-auto">
-            <span class="material-icons text-3xl">integration_instructions</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Business Capability Planning</h3>
-          <p class="text-gray-600">Turn a business goal into a practical plan. We identify gaps in processes and systems, assess dependencies and define the capabilities needed to deliver the change.</p>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-          <div
-            class="flex items-center justify-center bg-brand-secondary text-white rounded-full w-16 h-16 mb-6 mx-auto">
-            <span class="material-icons text-3xl">security</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Development Team Effectiveness</h3>
-          <p class="text-gray-600">Specialist support for development teams: reduce avoidable clarification and rework. We examine real work items, improve requirements and acceptance criteria, and resolve difficult handoffs with the team.</p>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-          <div
-            class="flex items-center justify-center bg-brand-tertiary text-white rounded-full w-16 h-16 mb-6 mx-auto">
-            <span class="material-icons text-3xl">account_tree</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Systems Integration &amp; Automation</h3>
-          <p class="text-gray-600">Reduce manual copying and repeated checks. We connect your systems, define which data each system owns and automate suitable tasks with checks for exceptions.</p>
-        </div>
-      </div>
-      <p class="text-center mt-10"><a class="text-brand-primary underline font-semibold" href="/services/workflow-automation/">Explore process improvement and business process automation</a></p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center flex flex-col">
+          <div class="flex items-center justify-center bg-brand-primary text-white rounded-full w-16 h-16 mb-6 mx-auto"><span class="material-icons text-3xl" aria-hidden="true">analytics</span></div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Improve how your business operates</h3>
+          <p class="text-gray-600 mb-6">Help your team get work done with fewer delays and repeated steps. We examine the process, decisions and supporting systems, then implement the changes that will make a useful difference.</p>
+          <p class="mt-auto"><a class="text-brand-primary underline font-semibold" href="/services/business-operations-improvement/">See how we improve business operations</a></p>
+        </div><div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center flex flex-col">
+          <div class="flex items-center justify-center bg-brand-secondary text-white rounded-full w-16 h-16 mb-6 mx-auto"><span class="material-icons text-3xl" aria-hidden="true">account_tree</span></div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Deliver new business capabilities</h3>
+          <p class="text-gray-600 mb-6">Put the processes and technology in place to support your next business goal. We define what is needed, assess the options and deliver the agreed tools, integrations or software through testing and handover.</p>
+          <p class="mt-auto"><a class="text-brand-primary underline font-semibold" href="/services/new-business-capabilities/">See how we deliver new capabilities</a></p>
+        </div><div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center flex flex-col">
+          <div class="flex items-center justify-center bg-brand-tertiary text-white rounded-full w-16 h-16 mb-6 mx-auto"><span class="material-icons text-3xl" aria-hidden="true">groups</span></div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Make your delivery team more effective</h3>
+          <p class="text-gray-600 mb-6">Help your team spend less time chasing updates and waiting for answers. We improve delivery workflows and communication so everyone can see what needs doing, who owns it and where work is blocked.</p>
+          <p class="mt-auto"><a class="text-brand-primary underline font-semibold" href="/services/delivery-team-effectiveness/">See how we help delivery teams work better</a></p>
+        </div></div>
     </div>
   </section>
 

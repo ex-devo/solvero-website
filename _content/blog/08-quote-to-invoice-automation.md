@@ -102,7 +102,7 @@ We help reduce the chasing between accepted work, delivery and billing. We trace
 
 We can then introduce the process changes and implement the agreed checks or system connections, with testing for partial work, changes and repeated events. Bring an accepted quote, a completed job record and the current billing preparation steps.
 
-[Explore our Process & Workflow Improvement service](/services/process-workflow-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we improve the handoff from accepted work to billing](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your quote-to-invoice workflow with Solvero](/#contact).
 

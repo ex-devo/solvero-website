@@ -92,11 +92,11 @@ Once the cause is clearer, use the [automation scorecard](01-which-processes-to-
 
 ## Discuss a workflow that keeps getting stuck
 
-Our Business Improvement Review turns a suspected bottleneck into a practical decision about what to change. We trace real cases, separate waiting from active work and investigate the handoffs or decisions causing repeated delays.
+We turn a suspected bottleneck into a practical decision about what to change, then introduce the agreed improvement. We trace real cases, separate waiting from active work and investigate the handoffs or decisions causing repeated delays.
 
 We can help implement the chosen improvement, from clearer ownership and fewer steps to a supporting tool or system connection. We agree measures and check the change in use. Bring a recent request and whatever timing evidence you have.
 
-[Explore our Business Improvement Review](/services/business-improvement-review/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we decide which improvements to prioritise](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your process bottleneck with Solvero](/#contact).
 

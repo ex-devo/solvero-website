@@ -7,7 +7,7 @@ const { JSDOM } = require('jsdom');
 const root = path.resolve(__dirname, '..');
 const articles = JSON.parse(fs.readFileSync(path.join(root, '_content/blog/metadata.json'), 'utf8'));
 const offers = JSON.parse(fs.readFileSync(path.join(root, '_content/services.json'), 'utf8'));
-const pages = ['index.html', 'services/workflow-automation/index.html', ...offers.map(o => `services/${o.slug}/index.html`), 'blog/index.html', ...articles.map(a => `blog/${a.slug}/index.html`), 'authors/jateen-narsai/index.html'];
+const pages = ['index.html', ...offers.map(o => `services/${o.slug}/index.html`), 'blog/index.html', ...articles.map(a => `blog/${a.slug}/index.html`), 'authors/jateen-narsai/index.html'];
 const source = file => fs.readFileSync(path.join(root, file), 'utf8');
 const urlFor = file => `https://solvero.co.za/${file.replace(/index\.html$/, '')}`;
 

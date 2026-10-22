@@ -113,11 +113,11 @@ For decisions involving judgement or spending authority, define the human review
 
 ## Need help choosing the first workflow?
 
-Our Business Improvement Review helps you decide which change is worth making first. We follow real cases with your team, investigate repeated effort and prioritise options against the result you need. A useful recommendation may be a simpler process, a clearer decision or a solution to build.
+Our operations improvement work helps you decide which changes are worth making and put them into use. We follow real cases with your team, investigate repeated effort and prioritise options against the result you need. A useful recommendation may be a simpler process, a clearer decision or a solution to build.
 
 When the change is agreed, we can help introduce it through process redesign, software or integration work, with testing and handover included in the scope. Bring two or three recurring processes and an example of where work gets stuck.
 
-[Explore our Business Improvement Review](/services/business-improvement-review/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we identify worthwhile improvements](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss the improvement you need](/#contact).
 

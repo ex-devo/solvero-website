@@ -110,7 +110,7 @@ We help reduce repeated capture by examining the process around the data as well
 
 We can then build the agreed integration or adjust the workflow, test matching and exception cases, and hand over a process your team can operate. Bring the applications involved, the information entered twice and a recent example of a mismatch.
 
-[Explore our Process & Workflow Improvement service](/services/process-workflow-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we reduce repeated work across your processes](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your repeated data entry with Solvero](/#contact).
 

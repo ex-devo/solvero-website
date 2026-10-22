@@ -98,7 +98,7 @@ We help connect a proposed improvement to the work and costs behind its business
 
 Where a pilot is worthwhile, we can design and implement the agreed process or system change, then compare the observed result with the baseline. Bring current volumes, handling steps, operating costs and the outcome you want to improve.
 
-[Explore our Business Improvement Review](/services/business-improvement-review/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we assess where to improve first](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your automation business case with Solvero](/#contact).
 

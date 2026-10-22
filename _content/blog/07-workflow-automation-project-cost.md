@@ -93,11 +93,11 @@ Our business improvement and solution delivery work uses that brief to connect t
 
 ## Discuss the workflow before selecting a package
 
-Our Solution Design & Delivery service connects the business problem to a defined implementation. We work through the required decisions, system dependencies and acceptance criteria so you can assess what the proposal will deliver.
+We connect the capability you need with a defined implementation, from requirements and solution design through delivery. We work through the required decisions, system dependencies and acceptance criteria so you can assess what the proposal will deliver.
 
 We can then implement the agreed process change, tool or integration through testing and handover. Bring one repeated process and a recent example of the problem; we can identify the investigation needed before agreeing scope and commercial terms.
 
-[Explore our Solution Design & Delivery service](/services/solution-design-delivery/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we scope, build and test automation](/services/new-business-capabilities/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your workflow and project scope with Solvero](/#contact).
 

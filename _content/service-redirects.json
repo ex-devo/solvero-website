@@ -1,0 +1,18 @@
+[
+  {
+    "from": "/services/business-improvement-review/",
+    "to": "/services/business-operations-improvement/"
+  },
+  {
+    "from": "/services/process-workflow-improvement/",
+    "to": "/services/business-operations-improvement/"
+  },
+  {
+    "from": "/services/workflow-automation/",
+    "to": "/services/business-operations-improvement/"
+  },
+  {
+    "from": "/services/solution-design-delivery/",
+    "to": "/services/new-business-capabilities/"
+  }
+]

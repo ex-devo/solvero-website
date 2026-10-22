@@ -106,7 +106,7 @@ We help you choose a practical solution for the business task. We examine the in
 
 We can build and test the agreed solution, including the review steps, integration and operating responsibilities it needs. Bring ordinary inputs, a difficult case and the current checking effort so the evaluation reflects the work people actually do.
 
-[Explore our Solution Design & Delivery service](/services/solution-design-delivery/), or explore our broader [business improvement and solution delivery services](/#services).
+[See how we design and deliver the right automation](/services/new-business-capabilities/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss where AI could help your workflow with Solvero](/#contact).
 
