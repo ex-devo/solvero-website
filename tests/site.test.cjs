@@ -134,11 +134,11 @@ test('articles identify the visible author, publisher and actual publication dat
   assert.ok(bio.querySelector('main').textContent.includes(author.biography));
   const index = new JSDOM(source('blog/index.html')).window.document;
   assert.equal(index.querySelectorAll('main article').length, articles.length);
-  for (const article of articles) assert.ok(index.querySelector(`h3 a[href="/blog/${article.slug}/"]`));
+  for (const article of articles) assert.ok(index.querySelector(`.blog-card-link[href="/blog/${article.slug}/"] h3`));
 });
 
-test('all blog pages use one compact hero standard with the original internal gaps', () => {
-  const blogPages = ['blog/index.html', ...articles.map(a => `blog/${a.slug}/index.html`)];
+test('article pages retain the shared hero standard and original internal gaps', () => {
+  const blogPages = articles.map(a => `blog/${a.slug}/index.html`);
   for (const file of blogPages) {
     const dom = new JSDOM(source(file));
     const hero = dom.window.document.querySelector('main header.editorial-hero');

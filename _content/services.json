@@ -5,9 +5,9 @@
     "title": "Business Operations & Process Improvement | Solvero",
     "description": "Improve turnaround times, reduce repeated work and make business operations easier to run. We investigate, redesign and implement changes with your team.",
     "cardHeading": "Improve how your business operates",
-    "cardDescription": "Help your team get work done with fewer delays and repeated steps. We examine the process, decisions and supporting systems, then implement the changes that will make a useful difference.",
+    "cardDescription": "Make existing operations easier to run, with shorter turnaround times and less repeated work. We examine the process, decisions and supporting systems, then implement improvements across working practices, tools and automation where useful.",
     "cardCta": "See how we improve business operations",
-    "icon": "analytics",
+    "icon": "/images/services/operations-growth.svg",
     "colour": "primary",
     "headline": "Help your business get work done with fewer delays.",
     "intro": "Improve the work your business already does, from responding to customer enquiries to completing approvals and preparing reports. We investigate how it happens, agree useful changes and implement them with the people doing the work.",
@@ -111,7 +111,13 @@
       ]
     ],
     "closingHeading": "What would you like your operations to do better?",
-    "closingIntro": "Tell us the outcome you want, such as faster responses, shorter turnaround times or less repeated work. We help you decide where to start and deliver the agreed improvement."
+    "closingIntro": "Tell us the outcome you want, such as faster responses, shorter turnaround times or less repeated work. We help you decide where to start and deliver the agreed improvement.",
+    "cardPoints": [
+      "Approval routing & escalation workflows",
+      "Customer onboarding & document checks",
+      "Recurring reports & data collection"
+    ],
+    "iconSize": 40
   },
   {
     "slug": "new-business-capabilities",
@@ -119,10 +125,10 @@
     "title": "New Business Capabilities & Solution Delivery | Solvero",
     "description": "Put a new business capability into use. We define requirements, assess options and deliver the processes, tools, integrations or software your business needs.",
     "cardHeading": "Deliver new business capabilities",
-    "cardDescription": "Put the processes and technology in place to support your next business goal. We define what is needed, assess the options and deliver the agreed tools, integrations or software through testing and handover.",
+    "cardDescription": "Give your business a new way to serve customers, exchange information or complete work. We turn the business goal into a usable solution, whether that means a new process, a purpose-built tool or connections between existing systems.",
     "cardCta": "See how we deliver new capabilities",
-    "icon": "account_tree",
-    "colour": "secondary",
+    "icon": "/images/services/capabilities-dashboard.svg",
+    "colour": "primary-dark",
     "headline": "Make something new possible for your business.",
     "intro": "Introduce a service or way of working that your current processes and systems cannot support. We work with your team to define what is needed, design the solution and deliver the agreed capability through testing and handover.",
     "cta": "Discuss the capability you need",
@@ -219,17 +225,23 @@
       ]
     ],
     "closingHeading": "What would you like your business to be able to do?",
-    "closingIntro": "Tell us the capability you want to introduce and what it needs to make possible. We help establish the requirements and deliver a practical solution."
+    "closingIntro": "Tell us the capability you want to introduce and what it needs to make possible. We help establish the requirements and deliver a practical solution.",
+    "cardPoints": [
+      "Customer self-service portals",
+      "API & business-system integrations",
+      "Custom internal tools & applications"
+    ],
+    "iconSize": 40
   },
   {
     "slug": "delivery-team-effectiveness",
     "name": "Delivery Team Effectiveness",
     "title": "Delivery Team Effectiveness & Workflow Improvement | Solvero",
     "description": "Help delivery teams coordinate and complete work with less avoidable effort. We improve workflows, communication, information flow and visibility of tasks.",
-    "cardHeading": "Make your delivery team more effective",
-    "cardDescription": "Help your team spend less time chasing updates and waiting for answers. We improve delivery workflows and communication so everyone can see what needs doing, who owns it and where work is blocked.",
+    "cardHeading": "Improve delivery team effectiveness",
+    "cardDescription": "Help your delivery team coordinate work, share information and resolve blockers with less chasing. We improve how priorities, decisions and responsibilities are managed, so people have the context they need to move work through to completion.",
     "cardCta": "See how we help delivery teams work better",
-    "icon": "groups",
+    "icon": "/images/services/delivery-team.svg",
     "colour": "tertiary",
     "headline": "Make your delivery team more effective.",
     "intro": "Make work easier to coordinate and complete within an existing delivery team. We examine workflows and communication, then introduce practical changes to information flow, ownership and task visibility with the people doing the work.",
@@ -327,6 +339,12 @@
       ]
     ],
     "closingHeading": "Where could your team work together more effectively?",
-    "closingIntro": "Tell us what you want to improve about delivery, from clearer priorities to less time chasing updates. We work with your team to make practical changes to how work gets completed."
+    "closingIntro": "Tell us what you want to improve about delivery, from clearer priorities to less time chasing updates. We work with your team to make practical changes to how work gets completed.",
+    "cardPoints": [
+      "Task boards & delivery dashboards",
+      "Team knowledge bases & decision logs",
+      "Requirements & acceptance templates"
+    ],
+    "iconSize": 44
   }
 ]

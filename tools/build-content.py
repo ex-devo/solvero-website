@@ -26,16 +26,25 @@ def service_schema(offer):
 
 
 def homepage_services():
-    cards = ''.join(f'''<div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center flex flex-col">
-          <div class="flex items-center justify-center bg-brand-{offer['colour']} text-white rounded-full w-16 h-16 mb-6 mx-auto"><span class="material-icons text-3xl" aria-hidden="true">{html.escape(offer['icon'])}</span></div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">{html.escape(offer['cardHeading'])}</h3>
-          <p class="text-gray-600 mb-6">{html.escape(offer['cardDescription'])}</p>
-          <p class="mt-auto"><a class="text-brand-primary underline font-semibold" href="/services/{offer['slug']}/">{html.escape(offer['cardCta'])}</a></p>
-        </div>''' for offer in SERVICES)
+    cards = []
+    for offer in SERVICES:
+        if len(offer['cardPoints']) != 3 or any(not isinstance(point, str) or not point.strip() for point in offer['cardPoints']):
+            raise ValueError(f"{offer['slug']}: each homepage offer must have three non-empty points")
+        points = '\n'.join(f'''<li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>{html.escape(point)}</span></li>''' for point in offer['cardPoints'])
+        cards.append(f'''<div class="service-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-left">
+          <div class="service-card-icon service-card-icon--{html.escape(offer['colour'])} flex items-center justify-center w-16 h-16 mb-6"><img src="{html.escape(offer['icon'])}" alt="" aria-hidden="true" width="{offer['iconSize']}" height="{offer['iconSize']}" decoding="async" /></div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">{html.escape(offer['cardHeading'])}</h3>
+          <p class="service-card-description text-left text-gray-600 mb-6">{html.escape(offer['cardDescription'])}</p>
+          <div class="service-card-examples border-t border-gray-200 pt-6 mb-6">
+            <ul role="list" class="space-y-2 text-left text-sm leading-relaxed text-gray-700">{points}</ul>
+            <p class="mt-3 pl-6 text-left text-sm text-gray-600">and more</p>
+          </div>
+          <p class="text-sm leading-relaxed"><a class="text-brand-primary underline font-semibold" href="/services/{offer['slug']}/">{html.escape(offer['cardCta'])}</a></p>
+        </div>''')
     return f'''<section class="py-16 md:py-24 bg-white" id="services">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Business improvement and solution delivery</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">{cards}</div>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8 md:mb-12">How we can help your business</h2>
+      <div class="service-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">{''.join(cards)}</div>
     </div>
   </section>'''
 
@@ -200,7 +209,7 @@ write_page('authors/jateen-narsai/index.html', profile['name'], AUTHOR['descript
 url = SITE + 'blog/'
 title = 'Business Improvement & Solution Delivery Guides | Solvero'
 description = 'Practical guides to finding bottlenecks, improving business processes and delivering useful solutions, with examples and worksheets to help plan the work.'
-collection = {'@type': 'CollectionPage', '@id': url + '#webpage', 'url': url, 'name': title, 'description': description, 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'publisher': {'@id': SITE + '#organization'}, 'breadcrumb': {'@id': url + '#breadcrumb'}, 'mainEntity': {'@id': url + '#articles'}}
+collection = {'@type': 'CollectionPage', '@id': url + '#webpage', 'url': url, 'name': title, 'description': description, 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'publisher': {'@id': SITE + '#organization'}, 'mainEntity': {'@id': url + '#articles'}}
 # Publication date controls the archive order; existing order breaks same-day ties.
 archive = sorted(META, key=lambda article: date.fromisoformat(article['datePublished']), reverse=True)
 listing = {'@type': 'ItemList', '@id': url + '#articles', 'numberOfItems': len(archive), 'itemListOrder': 'https://schema.org/ItemListOrderDescending', 'itemListElement': [{'@type': 'ListItem', 'position': i, 'name': a['headline'], 'url': a['canonical']} for i, a in enumerate(archive, 1)]}
@@ -213,33 +222,33 @@ def archive_card(article, position):
     responsive = ''
     if variants:
         responsive = ' srcset="' + ', '.join(f'{variant["src"]} {variant["width"]}w' for variant in variants) + '" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)"'
-    search_text = html.escape(' '.join(article[key] for key in ['headline', 'description', 'section', 'query']), quote=True)
     loading = 'eager' if position < 3 else 'lazy'
-    return f'''<article class="blog-card" data-blog-card data-search-text="{search_text}">
-      <a class="blog-card-image" href="/blog/{article['slug']}/" tabindex="-1" aria-hidden="true"><img src="{thumb['src']}"{responsive} alt="{html.escape(article['image_alt'], quote=True)}" width="{thumb['width']}" height="{thumb['height']}" loading="{loading}" decoding="async" /></a>
+    return f'''<article class="blog-card" data-blog-card data-topic="{html.escape(article['section'], quote=True)}">
+      <a class="blog-card-link" href="/blog/{article['slug']}/" aria-labelledby="card-title-{article['slug']}">
+      <div class="blog-card-image"><img src="{thumb['src']}"{responsive} alt="{html.escape(article['image_alt'], quote=True)}" width="{thumb['width']}" height="{thumb['height']}" loading="{loading}" decoding="async" /></div>
       <div class="blog-card-copy"><p class="blog-card-topic">{html.escape(article['section'])}</p>
-      <h3><a href="/blog/{article['slug']}/">{html.escape(article['headline'])}</a></h3>
+      <h3 id="card-title-{article['slug']}">{html.escape(article['headline'])}</h3>
       <p class="blog-card-description">{html.escape(article['description'])}</p>
-      <p class="blog-card-meta"><time datetime="{article['datePublished']}">{date_label(article['datePublished'])}</time><span aria-hidden="true"> · </span>By <a rel="author" href="/authors/jateen-narsai/">{html.escape(AUTHOR['name'])}</a></p></div>
+      <p class="blog-card-meta"><time datetime="{article['datePublished']}">{date_label(article['datePublished'])}</time><span aria-hidden="true"> · </span>By {html.escape(AUTHOR['name'])}</p>
+      <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
+      </a>
     </article>'''
 
 
 cards = ''.join(archive_card(article, position) for position, article in enumerate(archive))
-main = hero('Make work easier and get useful changes delivered.', 'Practical guides to finding bottlenecks, improving processes and delivering solutions across people and systems.', trail_label='Blog') + f'''<section class="bg-white py-16" aria-labelledby="articles-heading"><div class="container mx-auto px-6 max-w-6xl">
-  <div class="blog-index-heading"><h2 id="articles-heading" class="text-3xl font-bold text-gray-800">Latest articles and practical guides</h2></div>
-  <form class="blog-search" role="search" data-blog-search hidden>
-    <label for="blog-search-input">Search articles</label><div class="blog-search-field">
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
-    <input id="blog-search-input" type="search" name="q" placeholder="Try automation or bottlenecks" aria-controls="articles-grid" aria-describedby="blog-search-help" autocomplete="off" />
-    <button type="button" class="blog-search-clear" data-search-clear hidden>Clear</button></div>
-    <p id="blog-search-help">Search titles, descriptions and topics.</p>
-  </form>
+topics = list(dict.fromkeys(article['section'] for article in META))
+topic_buttons = '<button type="button" class="blog-filter" data-blog-filter data-topic="" aria-pressed="true" aria-controls="articles-grid">All</button>'
+topic_buttons += ''.join(f'<button type="button" class="blog-filter" data-blog-filter data-topic="{html.escape(topic, quote=True)}" aria-pressed="false" aria-controls="articles-grid">{html.escape(topic)}</button>' for topic in topics)
+main = f'''<header class="editorial-hero blog-index-hero bg-brand-gradient text-white"><div class="container mx-auto px-6 max-w-6xl">
+  <h1 class="font-semibold mb-3">Solvero Blog</h1><p>Ideas, insights and updates on business and technology.</p>
+</div></header><section class="blog-index-content bg-white" aria-labelledby="articles-heading"><div class="container mx-auto px-6 max-w-6xl">
+  <h2 id="articles-heading" class="sr-only">Articles and practical guides</h2>
+  <div class="blog-filters" data-blog-filters role="group" aria-label="Filter articles by topic" hidden><span class="blog-filter-label" aria-hidden="true">Topics</span>{topic_buttons}</div>
   <p class="blog-results" data-blog-results role="status" aria-live="polite" aria-atomic="true">{len(archive)} articles · Newest first</p>
   <div class="blog-grid" id="articles-grid">{cards}</div>
-  <div class="blog-empty" data-blog-empty hidden><h3>No matching articles</h3><p>Try a broader term, such as process, data or automation, or clear your search.</p></div>
 </div></section>''' + '''<section class="bg-brand-gradient text-white py-16"><div class="mx-auto px-6 max-w-4xl text-center"><h2 class="text-3xl font-bold mb-5">What would you like your business to do better?</h2><p class="text-lg mb-8">We help you <a class="underline" href="/services/business-operations-improvement/">improve business operations</a>, <a class="underline" href="/services/new-business-capabilities/">deliver new capabilities</a> and <a class="underline" href="/services/delivery-team-effectiveness/">strengthen delivery teams</a>. Tell us the result you want and we can agree a practical starting point.</p><a class="inline-block bg-white text-brand-primary font-semibold px-7 py-4 rounded-md" href="/#contact">Discuss what you want to achieve</a></div></section>'''
-search_version = hashlib.sha256((ROOT / 'assets/blog-search.js').read_bytes()).hexdigest()[:12]
-write_page('blog/index.html', title, description, url, [collection, listing, breadcrumbs(url, 'Blog')], main, extra_head=f'<script src="/assets/blog-search.js?v={search_version}" defer></script>')
+filter_version = hashlib.sha256((ROOT / 'assets/blog-filters.js').read_bytes()).hexdigest()[:12]
+write_page('blog/index.html', title, description, url, [collection, listing], main, extra_head=f'<script src="/assets/blog-filters.js?v={filter_version}" defer></script>')
 urls = [SITE] + [SITE + 'services/' + offer['slug'] + '/' for offer in SERVICES] + [url] + [a['canonical'] for a in META] + [AUTHOR['canonical']]
 (ROOT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join('  <url><loc>' + u + '</loc></url>\n' for u in urls) + '</urlset>\n')
 print(f'Generated {len(SERVICES)} offer pages, {len(META)} articles, the biography, blog index and {len(urls)}-page sitemap.')

@@ -22,7 +22,7 @@ test('each homepage service choice leads to one distinct canonical offer', () =>
   const section = document.querySelector('#services');
   const cards = [...section.querySelectorAll('.grid > div')];
   assert.equal(cards.length, 3, 'Show three main service choices');
-  assert.deepEqual(cards.map(card => card.querySelector('h3').textContent.trim()), ['Improve how your business operates', 'Deliver new business capabilities', 'Make your delivery team more effective']);
+  assert.deepEqual(cards.map(card => card.querySelector('h3').textContent.trim()), ['Improve how your business operates', 'Deliver new business capabilities', 'Improve delivery team effectiveness']);
   assert.deepEqual(cards.map(card => card.querySelector('a').getAttribute('href')), offerPaths);
   assert.deepEqual([...section.querySelectorAll('a[href^="/services/"]')].map(a => a.getAttribute('href')), offerPaths, 'Each need has one clear card link');
   for (const card of cards) assert.doesNotMatch(card.querySelector('a').textContent, /^Explore\b/);

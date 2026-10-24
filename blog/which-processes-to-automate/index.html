@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Choose your first automation project with a practical scorecard covering process readiness, handling effort, exceptions and ownership. Includes a worked example." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp" />
   <meta name="twitter:image:alt" content="Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=082c6bd05969" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=8af37fd91f2f" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -36,7 +36,7 @@
         "width": 243.78,
         "height": 66.2010526
       },
-      "description": "Solvero helps businesses reduce manual effort, delays and rework through process improvement, systems integration and practical solution delivery.",
+      "description": "Solvero helps businesses improve operations, introduce new capabilities and make delivery teams more effective through analysis, process changes and practical implementation.",
       "email": "solutions@solvero.co.za",
       "address": {
         "@type": "PostalAddress",
@@ -182,7 +182,9 @@
     }
 
     #mobile-menu.show {
-      max-height: 24rem;
+      max-height: min(24rem, calc(100dvh - 92px));
+      overflow-y: auto;
+      overscroll-behavior: contain;
       transform: translateY(0);
       padding: 1rem 1.5rem;
     }
@@ -259,33 +261,33 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=47e61de8339d" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=6bccfc9e8761" />
 <meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=e7db5fc6796b" />
+  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
 </head>
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
     <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
-      <a class="flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
+      <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
         <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
-        <a class="text-gray-600 hover:text-brand-primary" href="/#services">Services</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="/#about">About Us</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="/#expertise">Expertise</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="/blog/">Blog</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/#services">Services</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/#about">About Us</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/#expertise">Expertise</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/blog/">Blog</a>
         </div>
-        <a class="bg-brand-primary text-white px-6 py-2 rounded-md hover-bg-brand-primary-darker transition duration-300 whitespace-nowrap"
+        <a class="site-nav-action bg-brand-primary text-white px-6 py-2 rounded-md hover-bg-brand-primary-darker transition duration-300 whitespace-nowrap"
           href="/#contact">Get in Touch</a>
       </div>
-      <div class="lg:hidden">
+      <div class="shrink-0 lg:hidden">
         <button class="text-gray-600 focus:outline-none" id="mobile-menu-button" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false">
           <span class="material-icons hamburger-icon" aria-hidden="true">menu</span>
         </button>
@@ -293,11 +295,11 @@
     </div>
   </nav>
   <div class="lg:hidden space-y-4" id="mobile-menu">
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#services">Services</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#about">About Us</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#expertise">Expertise</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/blog/">Blog</a>
-    <a class="block w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/#services">Services</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/#about">About Us</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/#expertise">Expertise</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/blog/">Blog</a>
+    <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
   <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">

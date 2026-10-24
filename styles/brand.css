@@ -31,3 +31,85 @@
 .bg-brand-tertiary { background-color: var(--brand-tertiary); }
 .hover-bg-brand-primary-darker:hover { background-color: var(--brand-primary-dark); }
 .focus\:ring-brand-primary:focus { --tw-ring-color: var(--brand-primary); }
+
+/* Shared row tracks align the divider and link despite different copy lengths. */
+.service-card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 5;
+  row-gap: 0;
+  min-width: 0;
+}
+
+.service-card-icon {
+  border-radius: 1rem;
+  justify-self: start;
+}
+
+.service-card-icon--primary {
+  background-color: rgba(25, 133, 206, .08);
+}
+
+.service-card-icon--primary-dark {
+  background-color: rgba(19, 106, 161, .08);
+}
+
+.service-card-icon--tertiary {
+  background-color: rgba(53, 176, 237, .08);
+}
+
+.service-card-icon img {
+  display: block;
+  object-fit: contain;
+}
+
+/* Navigation feedback keeps the same geometry on hover and keyboard focus. */
+.site-nav-logo {
+  max-width: calc(100% - 60px);
+}
+
+.site-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .4em;
+  transition: color 160ms ease-out, text-decoration-color 160ms ease-out;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus-visible {
+  color: var(--brand-primary-dark);
+  text-decoration-color: currentColor;
+}
+
+.site-nav-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+}
+
+.site-nav-link:focus-visible,
+.site-nav-action:focus-visible,
+#mobile-menu-button:focus-visible {
+  outline: 2px solid var(--brand-primary-dark);
+  outline-offset: 4px;
+}
+
+#mobile-menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: .375rem;
+}
+
+#mobile-menu-button:hover {
+  color: var(--brand-primary-dark);
+  background-color: rgba(25, 133, 206, .08);
+}

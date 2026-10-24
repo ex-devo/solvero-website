@@ -7,14 +7,14 @@
   <title>Solvero - Business Process Improvement &amp; Solution Delivery</title>
   <link rel="canonical" href="https://solvero.co.za/" />
   <meta name="description"
-    content="Reduce manual effort, delays and rework. We analyse processes, simplify workflows and deliver practical software, integrations and automation.">
+    content="Improve business operations, deliver new capabilities and help delivery teams work better. Solvero combines business analysis with practical implementation.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://solvero.co.za/">
   <meta property="og:title" content="Solvero - Business Process Improvement &amp; Solution Delivery">
   <meta property="og:description"
-    content="Reduce manual effort, delays and rework. We analyse processes, simplify workflows and deliver practical software, integrations and automation.">
+    content="Improve business operations, deliver new capabilities and help delivery teams work better. Solvero combines business analysis with practical implementation.">
   <meta property="og:image" content="https://solvero.co.za/images/brand/rubix/solvero-social.png">
 
   <!-- Twitter -->
@@ -22,9 +22,9 @@
   <meta name="twitter:url" content="https://solvero.co.za/">
   <meta name="twitter:title" content="Solvero - Business Process Improvement &amp; Solution Delivery">
   <meta name="twitter:description"
-    content="Reduce manual effort, delays and rework. We analyse processes, simplify workflows and deliver practical software, integrations and automation.">
+    content="Improve business operations, deliver new capabilities and help delivery teams work better. Solvero combines business analysis with practical implementation.">
   <meta name="twitter:image" content="https://solvero.co.za/images/brand/rubix/solvero-social.png">
-  <link rel="stylesheet" href="/assets/tailwind.css?v=082c6bd05969" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=8af37fd91f2f" />
 
   <!-- Structured Data (Schema.org) -->
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
         "width": 243.78,
         "height": 66.2010526
       },
-      "description": "Solvero helps businesses reduce manual effort, delays and rework through process improvement, systems integration and practical solution delivery.",
+      "description": "Solvero helps businesses improve operations, introduce new capabilities and make delivery teams more effective through analysis, process changes and practical implementation.",
       "email": "solutions@solvero.co.za",
       "address": {
         "@type": "PostalAddress",
@@ -66,7 +66,7 @@
       "@id": "https://solvero.co.za/#webpage",
       "url": "https://solvero.co.za/",
       "name": "Solvero - Business Process Improvement & Solution Delivery",
-      "description": "Reduce manual effort, delays and rework. We analyse processes, simplify workflows and deliver practical software, integrations and automation.",
+      "description": "Improve business operations, deliver new capabilities and help delivery teams work better. Solvero combines business analysis with practical implementation.",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
@@ -188,7 +188,9 @@
     }
 
     #mobile-menu.show {
-      max-height: 24rem;
+      max-height: min(24rem, calc(100dvh - 92px));
+      overflow-y: auto;
+      overscroll-behavior: contain;
       transform: translateY(0);
       padding: 1rem 1.5rem;
     }
@@ -216,7 +218,7 @@
 
     /* Technology marks are sized by visible artwork, not identical file heights. */
     #technology { scroll-margin-top: 124px; }
-    .technology-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 16px; row-gap: 28px; max-width: 1100px; margin: 3rem auto 0; padding: 0; list-style: none; }
+    .technology-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 16px; row-gap: 28px; max-width: 1100px; margin: 0 auto; padding: 0; list-style: none; }
     .technology-item { display: grid; grid-template-rows: 56px auto; gap: 10px; justify-items: center; align-content: start; text-align: center; color: #4b5563; font-size: .875rem; line-height: 1.4; }
     .technology-art { display: flex; align-items: center; justify-content: center; width: 100%; height: 56px; }
     .technology-art img { display: block; width: var(--logo-width); height: var(--logo-height); max-width: 100%; object-fit: contain; }
@@ -236,27 +238,27 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=e7db5fc6796b" />
+  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
 </head>
 
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
     <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
-      <a class="flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
+      <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
         <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
-        <a class="text-gray-600 hover:text-brand-primary" href="#services">Services</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="#about">About Us</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="#expertise">Expertise</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="/blog/">Blog</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="#services">Services</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="#about">About Us</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="#expertise">Expertise</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/blog/">Blog</a>
         </div>
-        <a class="bg-brand-primary text-white px-6 py-2 rounded-md hover-bg-brand-primary-darker transition duration-300 whitespace-nowrap"
+        <a class="site-nav-action bg-brand-primary text-white px-6 py-2 rounded-md hover-bg-brand-primary-darker transition duration-300 whitespace-nowrap"
           href="#contact">Get in Touch</a>
       </div>
-      <div class="lg:hidden">
+      <div class="shrink-0 lg:hidden">
         <button class="text-gray-600 focus:outline-none" id="mobile-menu-button" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false">
           <span class="material-icons hamburger-icon" aria-hidden="true">menu</span>
         </button>
@@ -264,11 +266,11 @@
     </div>
   </nav>
   <div class="lg:hidden space-y-4" id="mobile-menu">
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="#services">Services</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="#about">About Us</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="#expertise">Expertise</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/blog/">Blog</a>
-    <a class="block w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="#services">Services</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="#about">About Us</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="#expertise">Expertise</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/blog/">Blog</a>
+    <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="#contact">Get in Touch</a>
   </div>
   <main id="main-content">
@@ -279,30 +281,48 @@
         <h1 class="text-2xl md:text-4xl lg:text-5xl font-semibold mb-6 md:mb-8 leading-tight">
           Get work done with less effort and fewer delays.
         </h1>
-        <p class="text-lg md:text-xl mb-8 md:mb-12">We map how work happens, simplify the process and implement the agreed changes. <a class="underline underline-offset-4" href="#approach">See how we work.</a></p>
-        <a class="bg-white text-brand-primary font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 text-lg"
-          href="#contact">Discuss your challenge</a>
+        <p class="text-lg md:text-xl mb-8 md:mb-12">We improve processes, connect systems and build the tools your business needs. <a class="underline underline-offset-4" href="#approach">See how we work.</a></p>
+        <a class="inline-flex max-w-full items-center justify-center bg-white text-brand-primary font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 text-lg"
+          href="#contact">Discuss your goal</a>
       </div>
     </div>
   </header>
   <section class="py-16 md:py-24 bg-white" id="services">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Business improvement and solution delivery</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center flex flex-col">
-          <div class="flex items-center justify-center bg-brand-primary text-white rounded-full w-16 h-16 mb-6 mx-auto"><span class="material-icons text-3xl" aria-hidden="true">analytics</span></div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Improve how your business operates</h3>
-          <p class="text-gray-600 mb-6">Help your team get work done with fewer delays and repeated steps. We examine the process, decisions and supporting systems, then implement the changes that will make a useful difference.</p>
-          <p class="mt-auto"><a class="text-brand-primary underline font-semibold" href="/services/business-operations-improvement/">See how we improve business operations</a></p>
-        </div><div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center flex flex-col">
-          <div class="flex items-center justify-center bg-brand-secondary text-white rounded-full w-16 h-16 mb-6 mx-auto"><span class="material-icons text-3xl" aria-hidden="true">account_tree</span></div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Deliver new business capabilities</h3>
-          <p class="text-gray-600 mb-6">Put the processes and technology in place to support your next business goal. We define what is needed, assess the options and deliver the agreed tools, integrations or software through testing and handover.</p>
-          <p class="mt-auto"><a class="text-brand-primary underline font-semibold" href="/services/new-business-capabilities/">See how we deliver new capabilities</a></p>
-        </div><div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center flex flex-col">
-          <div class="flex items-center justify-center bg-brand-tertiary text-white rounded-full w-16 h-16 mb-6 mx-auto"><span class="material-icons text-3xl" aria-hidden="true">groups</span></div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Make your delivery team more effective</h3>
-          <p class="text-gray-600 mb-6">Help your team spend less time chasing updates and waiting for answers. We improve delivery workflows and communication so everyone can see what needs doing, who owns it and where work is blocked.</p>
-          <p class="mt-auto"><a class="text-brand-primary underline font-semibold" href="/services/delivery-team-effectiveness/">See how we help delivery teams work better</a></p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8 md:mb-12">How we can help your business</h2>
+      <div class="service-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="service-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-left">
+          <div class="service-card-icon service-card-icon--primary flex items-center justify-center w-16 h-16 mb-6"><img src="/images/services/operations-growth.svg" alt="" aria-hidden="true" width="40" height="40" decoding="async" /></div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Improve how your business operates</h3>
+          <p class="service-card-description text-left text-gray-600 mb-6">Make existing operations easier to run, with shorter turnaround times and less repeated work. We examine the process, decisions and supporting systems, then implement improvements across working practices, tools and automation where useful.</p>
+          <div class="service-card-examples border-t border-gray-200 pt-6 mb-6">
+            <ul role="list" class="space-y-2 text-left text-sm leading-relaxed text-gray-700"><li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>Approval routing &amp; escalation workflows</span></li>
+<li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>Customer onboarding &amp; document checks</span></li>
+<li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>Recurring reports &amp; data collection</span></li></ul>
+            <p class="mt-3 pl-6 text-left text-sm text-gray-600">and more</p>
+          </div>
+          <p class="text-sm leading-relaxed"><a class="text-brand-primary underline font-semibold" href="/services/business-operations-improvement/">See how we improve business operations</a></p>
+        </div><div class="service-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-left">
+          <div class="service-card-icon service-card-icon--primary-dark flex items-center justify-center w-16 h-16 mb-6"><img src="/images/services/capabilities-dashboard.svg" alt="" aria-hidden="true" width="40" height="40" decoding="async" /></div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Deliver new business capabilities</h3>
+          <p class="service-card-description text-left text-gray-600 mb-6">Give your business a new way to serve customers, exchange information or complete work. We turn the business goal into a usable solution, whether that means a new process, a purpose-built tool or connections between existing systems.</p>
+          <div class="service-card-examples border-t border-gray-200 pt-6 mb-6">
+            <ul role="list" class="space-y-2 text-left text-sm leading-relaxed text-gray-700"><li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>Customer self-service portals</span></li>
+<li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>API &amp; business-system integrations</span></li>
+<li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>Custom internal tools &amp; applications</span></li></ul>
+            <p class="mt-3 pl-6 text-left text-sm text-gray-600">and more</p>
+          </div>
+          <p class="text-sm leading-relaxed"><a class="text-brand-primary underline font-semibold" href="/services/new-business-capabilities/">See how we deliver new capabilities</a></p>
+        </div><div class="service-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-left">
+          <div class="service-card-icon service-card-icon--tertiary flex items-center justify-center w-16 h-16 mb-6"><img src="/images/services/delivery-team.svg" alt="" aria-hidden="true" width="44" height="44" decoding="async" /></div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Improve delivery team effectiveness</h3>
+          <p class="service-card-description text-left text-gray-600 mb-6">Help your delivery team coordinate work, share information and resolve blockers with less chasing. We improve how priorities, decisions and responsibilities are managed, so people have the context they need to move work through to completion.</p>
+          <div class="service-card-examples border-t border-gray-200 pt-6 mb-6">
+            <ul role="list" class="space-y-2 text-left text-sm leading-relaxed text-gray-700"><li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>Task boards &amp; delivery dashboards</span></li>
+<li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>Team knowledge bases &amp; decision logs</span></li>
+<li class="flex items-start gap-2"><svg class="w-4 h-4 shrink-0 mt-0.5 text-brand-primary-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6" /></svg><span>Requirements &amp; acceptance templates</span></li></ul>
+            <p class="mt-3 pl-6 text-left text-sm text-gray-600">and more</p>
+          </div>
+          <p class="text-sm leading-relaxed"><a class="text-brand-primary underline font-semibold" href="/services/delivery-team-effectiveness/">See how we help delivery teams work better</a></p>
         </div></div>
     </div>
   </section>
@@ -315,10 +335,10 @@
         </div>
         <div class="md:w-1/2">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Solvero</h2>
-          <p class="text-gray-700 text-lg mb-4">We help businesses make work easier to complete and put practical solutions into use. We bring business analysis and technical delivery together, so the improvement reflects how your people and systems actually work.</p>
-          <p class="text-gray-700 text-lg mb-6">Based in Johannesburg, we work remotely with businesses internationally. Our experience includes banking and insurance workflows, reporting and system integrations. We apply that experience to investigate the problem, agree a useful change and carry it through implementation.</p>
-          <a class="bg-brand-primary text-white px-8 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-lg"
-            href="#contact">Discuss your challenge</a>
+          <p class="text-gray-700 text-lg mb-4">We bring business analysis, systems design and software delivery together. You work with us from the first discussion through testing and handover, keeping business decisions and technical work connected.</p>
+          <p class="text-gray-700 text-lg mb-6">Based in Johannesburg, we work remotely with businesses internationally. We agree the scope, responsibilities and delivery milestones with you before implementation begins.</p>
+          <a class="inline-flex max-w-full items-center justify-center text-center bg-brand-primary text-white px-8 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-lg"
+            href="#contact">Discuss your goal</a>
         </div>
       </div>
     </div>
@@ -326,7 +346,7 @@
 
   <section class="py-16 md:py-24 bg-white" id="expertise">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Where we bring practical experience</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8 md:mb-12">Where we bring practical experience</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="rounded-lg overflow-hidden shadow-lg group">
           <div class="w-full h-64 overflow-hidden">
@@ -336,7 +356,7 @@
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Financial Services Expertise</h3>
-            <p class="text-gray-600 text-sm mb-4">15 years of experience in the financial services industry. Apply specialist knowledge of corporate and institutional credit, credit-risk and economic capital reporting, and insurance policy administration. We turn complex product rules, data flows and legacy-system dependencies into clear requirements, practical designs and tested changes.</p>
+            <p class="text-gray-600 text-sm mb-4">15 years of experience in the financial services industry, spanning corporate and institutional credit, credit-risk and economic capital reporting, and insurance policy administration. We account for product rules and legacy-system dependencies when designing changes.</p>
           </div>
         </div>
         <div class="rounded-lg overflow-hidden shadow-lg group">
@@ -347,7 +367,7 @@
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Integrate Disparate Systems</h3>
-            <p class="text-gray-600 text-sm mb-4">Reduce repeated capture, conflicting records and updates that fall out of sync. We connect existing applications through APIs and agreed data flows, with clear ownership, matching rules and exception handling. This supports initiatives such as a Single View of Party or Master Client Record.</p>
+            <p class="text-gray-600 text-sm mb-4">Bring records from separate applications into a consistent view. Initiatives such as Single View of Party and Master Client Record need clear record ownership, matching rules and reliable updates between systems. We design and implement those connections.</p>
           </div>
         </div>
         <div class="rounded-lg overflow-hidden shadow-lg group">
@@ -358,7 +378,7 @@
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Process Improvement</h3>
-            <p class="text-gray-600 text-sm mb-4">Remove unnecessary steps, repeated work and difficult handoffs. We trace real cases with your team, agree a simpler process and clarify decision ownership. We then introduce the changes through working practices, tools or automation, test everyday and exception cases, and review the result.</p>
+            <p class="text-gray-600 text-sm mb-4">Examples include requests waiting in unowned inboxes, information being chased between teams and work returning for missed approvals. We clarify ownership and decision points to give work a more dependable route from request to completion.</p>
           </div>
         </div>
       </div>
@@ -388,15 +408,15 @@
 
   <section class="py-16 md:py-24 bg-brand-gradient text-white" id="approach">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">How we turn the problem into a working improvement</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">How an engagement works</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white bg-opacity-20 p-8 rounded-lg shadow-md backdrop-blur-md">
-          <h3 class="text-xl font-bold mb-4">Investigate and design the change</h3>
-          <p class="text-lg mb-4">We examine real examples with the people involved, map how work moves and investigate where effort or delays arise. We then agree what to simplify or build, who owns each decision and how the result will be checked.</p>
+          <h3 class="text-xl font-bold mb-4">Agree the outcome and scope</h3>
+          <p class="text-lg">We start with the result you want and examine real work with your team. You receive a recommendation on what to change, the priorities and dependencies, and how we will check the result.</p>
         </div>
         <div class="bg-white bg-opacity-20 p-8 rounded-lg shadow-md backdrop-blur-md">
-          <h3 class="text-xl font-bold mb-4">Implement, test and hand over</h3>
-          <p class="text-lg mb-4">We introduce the process change or build the agreed solution, test everyday and exception cases, and check it with your team. We document how it works, agree ongoing ownership and review the result against the chosen measures.</p>
+          <h3 class="text-xl font-bold mb-4">Deliver, test and hand over</h3>
+          <p class="text-lg">We implement the agreed changes, check everyday and exception cases, and work through acceptance with your team. You receive the working change, documentation and clear ownership for using and maintaining it.</p>
         </div>
       </div>
     </div>
@@ -404,7 +424,7 @@
 
   <section class="py-16 md:py-24 bg-white" id="contact">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">What is slowing your business down?</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8 md:mb-12">What would you like to achieve?</h2>
       <div class="max-w-3xl mx-auto bg-gray-50 p-8 md:p-12 rounded-lg shadow-xl">
         <form method="POST" id="contact-form">
           <input type="hidden" name="access_key" value="0313e0b7-0d98-4394-9bcd-fa200a69f94b">
@@ -425,7 +445,7 @@
             </div>
           </div>
           <div class="mb-6">
-            <label class="block text-gray-700 font-semibold mb-2" for="message">Tell us what takes too much effort or what you need to make possible.</label>
+            <label class="block text-gray-700 font-semibold mb-2" for="message">Tell us what you want to achieve or what is getting in the way.</label>
             <textarea
               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
               id="message" name="message" required="" rows="5"></textarea>

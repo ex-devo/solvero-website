@@ -68,7 +68,9 @@
     }
 
     #mobile-menu.show {
-      max-height: 24rem;
+      max-height: min(24rem, calc(100dvh - 92px));
+      overflow-y: auto;
+      overscroll-behavior: contain;
       transform: translateY(0);
       padding: 1rem 1.5rem;
     }
@@ -158,20 +160,20 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
     <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
-      <a class="flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
+      <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
         <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
-        <a class="text-gray-600 hover:text-brand-primary" href="/#services">Services</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="/#about">About Us</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="/#expertise">Expertise</a>
-        <a class="text-gray-600 hover:text-brand-primary" href="/blog/">Blog</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/#services">Services</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/#about">About Us</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/#expertise">Expertise</a>
+        <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark" href="/blog/">Blog</a>
         </div>
-        <a class="bg-brand-primary text-white px-6 py-2 rounded-md hover-bg-brand-primary-darker transition duration-300 whitespace-nowrap"
+        <a class="site-nav-action bg-brand-primary text-white px-6 py-2 rounded-md hover-bg-brand-primary-darker transition duration-300 whitespace-nowrap"
           href="/#contact">Get in Touch</a>
       </div>
-      <div class="lg:hidden">
+      <div class="shrink-0 lg:hidden">
         <button class="text-gray-600 focus:outline-none" id="mobile-menu-button" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false">
           <span class="material-icons hamburger-icon" aria-hidden="true">menu</span>
         </button>
@@ -179,11 +181,11 @@
     </div>
   </nav>
   <div class="lg:hidden space-y-4" id="mobile-menu">
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#services">Services</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#about">About Us</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/#expertise">Expertise</a>
-    <a class="block text-gray-600 hover:text-brand-primary text-lg" href="/blog/">Blog</a>
-    <a class="block w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/#services">Services</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/#about">About Us</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/#expertise">Expertise</a>
+    <a class="site-nav-link text-gray-600 hover:text-brand-primary-dark text-lg" href="/blog/">Blog</a>
+    <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
   <main id="main-content">{{MAIN}}</main>
