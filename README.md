@@ -56,3 +56,11 @@ After deployment, verify the public pages in Search Console and test a real enqu
 ## Development dependency status
 
 Tailwind 3 preserves the original site's utility behaviour. The October 2026 npm audit reports seven findings in its development dependency tree (five high, two moderate). No Node packages are served to visitors. Resolving these findings requires a separate build-tool update and visual regression check; the current branch does not claim a clean dependency audit.
+
+## Visitor analytics setup
+
+Analytics setup is in progress. `_content/tracking.json` holds the GA4 web-stream measurement ID; null keeps tracking markup absent until the actual stream is ready. The build adds versioned local tracking script and consent styles to all canonical pages once configured. Legacy redirect pages remain untracked.
+
+The tracking script runs only on solvero.co.za and www.solvero.co.za. It loads Google only after analytics consent, disables advertising features, records canonical page URLs without query strings or fragments and referrer origins without paths, and accepts only simple campaign identifiers. The footer lets visitors change their choice; withdrawal disables analytics in open tabs and clears this stream's analytics cookies. Choices are remembered for 180 days; GA cookies expire after 90 days.
+
+`page_view`, `contact_click` and `service_click` cover pages and meaningful actions. `generate_lead` is emitted only after Web3Forms accepts an enquiry; no form fields are included. Disable automatic enhanced measurement in the GA4 stream before activation to avoid duplicate or unfiltered form/link events. Sign-in, terms acceptance, stream creation, Search Console/Bing verification and the free dashboard are tracked in `docs/superpowers/plans/2026-10-24-free-analytics-seo.md`. Installed code, emitted requests and receipt in GA4 must each be verified separately.

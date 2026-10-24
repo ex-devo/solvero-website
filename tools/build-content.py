@@ -15,6 +15,26 @@ META = json.loads((CONTENT / 'blog/metadata.json').read_text())
 AUTHOR = json.loads((CONTENT / 'author.json').read_text())
 SERVICES = json.loads((CONTENT / 'services.json').read_text())
 REDIRECTS = json.loads((CONTENT / 'service-redirects.json').read_text())
+TRACKING = json.loads((CONTENT / 'tracking.json').read_text())
+MEASUREMENT_ID = TRACKING['ga4MeasurementId']
+if MEASUREMENT_ID is not None and not re.fullmatch(r'G-[A-Z0-9]{6,}', MEASUREMENT_ID):
+    raise ValueError('Use the actual GA4 web-stream measurement ID, or null while setup is pending')
+
+
+def analytics_markup(page):
+    page = re.sub(r'\n?<!-- ANALYTICS:START -->.*?<!-- ANALYTICS:END -->\n?', '\n', page, flags=re.S)
+    if MEASUREMENT_ID is None:
+        return page
+    script_version = hashlib.sha256((ROOT / 'assets/site-analytics.js').read_bytes()).hexdigest()[:12]
+    css_version = hashlib.sha256((ROOT / 'styles/analytics.css').read_bytes()).hexdigest()[:12]
+    markup = f'''<!-- ANALYTICS:START -->
+  <link rel="stylesheet" href="/styles/analytics.css?v={css_version}" />
+  <script src="/assets/site-analytics.js?v={script_version}" data-measurement-id="{MEASUREMENT_ID}" defer></script>
+<!-- ANALYTICS:END -->
+'''
+    return page.replace('</head>', markup + '</head>', 1)
+
+
 service_paths = {'/services/' + offer['slug'] + '/' for offer in SERVICES}
 if any(item['from'] in service_paths or item['to'] not in service_paths for item in REDIRECTS):
     raise ValueError('Legacy service URLs must redirect directly to an active service')
@@ -70,7 +90,7 @@ homepage = re.sub(r'(<script type="application/ld\+json">).*?(</script>)', lambd
 homepage, replacements = re.subn(r'<section\b[^>]*\bid="services"[^>]*>.*?</section>', lambda _: homepage_services(), homepage, count=1, flags=re.S)
 if replacements != 1:
     raise ValueError('The homepage must contain one services section')
-(ROOT / 'index.html').write_text(homepage)
+(ROOT / 'index.html').write_text(analytics_markup(homepage))
 shared = [copy.deepcopy(n) for n in graph if n['@type'] in ('Organization', 'WebSite')]
 person = {'@type': 'Person', '@id': AUTHOR['canonical'] + '#person', 'name': AUTHOR['name'], 'url': AUTHOR['canonical'], 'description': AUTHOR['biography'], 'sameAs': [AUTHOR['linkedin']]}
 
@@ -114,7 +134,7 @@ def write_page(relative, title, description, url, nodes, main, extra_head='', im
         page = page.replace('property="og:type" content="website"', 'property="og:type" content="article"')
     file = ROOT / relative
     file.parent.mkdir(parents=True, exist_ok=True)
-    file.write_text(page)
+    file.write_text(analytics_markup(page))
 
 
 def service_main(offer):

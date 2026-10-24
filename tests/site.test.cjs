@@ -221,11 +221,13 @@ function formHarness(fetch) {
   const script = [...window.document.scripts].find(item => item.textContent.includes('const contactForm'));
   window.eval(script.textContent);
   const form = window.document.querySelector('#contact-form');
+  const acceptedEvents = [];
+  window.document.addEventListener('solvero:enquiry-accepted', event => acceptedEvents.push(event));
   form.elements.name.value = 'Test enquiry';
   form.elements.email.value = 'test@example.com';
   form.elements.message.value = 'Reduce duplicate order entry.';
   return {
-    dom, form,
+    dom, form, acceptedEvents,
     button: form.querySelector('[type="submit"]'),
     result: window.document.querySelector('#form-result'),
     submit: () => form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }))
@@ -252,6 +254,7 @@ test('successful enquiries send the form once and clear it only after acceptance
   assert.equal(harness.form.elements.message.value, '');
   assert.equal(harness.button.disabled, false);
   assert.match(harness.result.textContent, /has been sent/);
+  assert.equal(harness.acceptedEvents.length, 1);
   harness.dom.window.close();
 });
 
@@ -270,6 +273,7 @@ for (const [failure, response] of [
     assert.equal(harness.form.elements.email.value, 'test@example.com');
     assert.equal(harness.button.disabled, false);
     assert.match(harness.result.textContent, /could not be sent/);
+    assert.equal(harness.acceptedEvents.length, 0);
     harness.submit();
     await settle();
     assert.equal(calls, 2);
@@ -284,6 +288,7 @@ test('invalid enquiries do not reach the submission endpoint', async () => {
   harness.submit();
   await settle();
   assert.equal(calls, 0);
+  assert.equal(harness.acceptedEvents.length, 0);
   assert.equal(harness.button.disabled, false);
   harness.dom.window.close();
 });
