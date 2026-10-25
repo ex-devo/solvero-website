@@ -7,8 +7,9 @@
 .analytics-consent summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; color: var(--brand-primary-dark); }
 .analytics-consent details p { margin-top: .5rem; }
 .analytics-consent-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
-.analytics-consent-actions button { min-height: 44px; padding: .625rem 1rem; color: var(--brand-primary-dark); background: white; border: 1px solid var(--brand-primary-dark); border-radius: .375rem; font-size: .9375rem; font-weight: 600; }
-.analytics-consent-actions button:hover { background: #eff6fb; }
+.analytics-consent-actions button { min-height: 44px; padding: .625rem 1rem; color: var(--brand-primary-dark); background: white; border: 1px solid var(--brand-primary-dark); border-radius: .375rem; font-size: .9375rem; font-weight: 600; cursor: pointer; }
+.analytics-consent-actions [data-analytics-allow] { color: white; background: var(--brand-primary-dark); }
+@media (hover: hover) { .analytics-consent-actions button:hover { background: #eff6fb; } .analytics-consent-actions [data-analytics-allow]:hover { background: #0f5683; border-color: #0f5683; } }
 .analytics-preferences { display: block; min-height: 44px; margin: 1rem auto 0; padding: .5rem 1rem; color: inherit; background: transparent; text-decoration: underline; text-underline-offset: 3px; font-size: .875rem; }
 .analytics-consent button:focus-visible, .analytics-consent summary:focus-visible, .analytics-preferences:focus-visible { outline: 3px solid var(--brand-primary); outline-offset: 3px; }
 @media (max-width: 767px) { .analytics-consent { flex-direction: column; align-items: stretch; gap: 1rem; } .analytics-consent-actions button { flex: 1; } }

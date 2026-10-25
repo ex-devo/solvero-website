@@ -25,7 +25,7 @@
   <meta name="twitter:description"
     content="Improve business operations, deliver new capabilities and help delivery teams work better. Solvero combines business analysis with practical implementation.">
   <meta name="twitter:image" content="https://solvero.co.za/images/brand/rubix/solvero-social.png">
-  <link rel="stylesheet" href="/assets/tailwind.css?v=8af37fd91f2f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=0b7a17ab4a5b" />
 
   <!-- Structured Data (Schema.org) -->
   <script type="application/ld+json">
@@ -241,8 +241,8 @@
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
   <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
 <!-- ANALYTICS:START -->
-  <link rel="stylesheet" href="/styles/analytics.css?v=8667fe9616d8" />
-  <script src="/assets/site-analytics.js?v=00f72bfcde13" data-measurement-id="G-HE5MVBPWQ4" defer></script>
+  <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
+  <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
 <!-- ANALYTICS:END -->
 </head>
 
@@ -429,9 +429,10 @@
 
   <section class="py-16 md:py-24 bg-white" id="contact">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8 md:mb-12">What would you like to achieve?</h2>
       <div class="max-w-3xl mx-auto bg-gray-50 p-8 md:p-12 rounded-lg shadow-xl">
-        <form method="POST" id="contact-form">
+        <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Let’s build something together</h2>
+        <p id="contact-intro" class="text-lg text-gray-600 mb-8">Tell us what you would like to achieve. We’ll help make it happen.</p>
+        <form method="POST" id="contact-form" aria-labelledby="contact-heading" aria-describedby="contact-intro">
           <input type="hidden" name="access_key" value="0313e0b7-0d98-4394-9bcd-fa200a69f94b">
           <input type="hidden" name="subject" value="New Submission from Solvero Website">
           <input type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true" style="display: none;">
@@ -448,6 +449,30 @@
                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
                 id="email" name="email" autocomplete="email" required="" type="email" />
             </div>
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 font-semibold mb-2" for="company">Company name</label>
+            <input
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
+              id="company" name="company" autocomplete="organization" type="text" />
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 font-semibold mb-2" for="enquiry-area">What would you like help with?</label>
+            <select
+              class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
+              id="enquiry-area" name="enquiry_area" required>
+              <option value="" disabled selected>Select an option</option>
+              <option>Business process review &amp; improvement</option>
+              <option>Workflow automation</option>
+              <option>System &amp; API integration</option>
+              <option>Data synchronisation &amp; master records</option>
+              <option>Custom software &amp; internal tools</option>
+              <option>Customer &amp; partner portals</option>
+              <option>Reporting &amp; dashboards</option>
+              <option>AI assistants &amp; knowledge search</option>
+              <option>Delivery team workflows &amp; tooling</option>
+              <option>Other / General enquiries</option>
+            </select>
           </div>
           <div class="mb-6">
             <label class="block text-gray-700 font-semibold mb-2" for="message">Tell us what you want to achieve or what is getting in the way.</label>

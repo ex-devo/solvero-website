@@ -97,7 +97,7 @@
   banner.className = 'analytics-consent';
   banner.dataset.analyticsConsent = '';
   banner.setAttribute('aria-labelledby', 'analytics-consent-heading');
-  banner.innerHTML = '<div class="analytics-consent-copy"><h2 id="analytics-consent-heading">Your analytics choice</h2><p>With your permission, Google Analytics measures visits and accepted enquiries to help us improve this site. We do not send contact-form contents or use analytics for advertising.</p><details><summary>What is stored?</summary><p>Analytics cookies can last up to 90 days. Your choice is saved in this browser for 180 days. You can change it using Analytics preferences in the footer.</p></details></div><div class="analytics-consent-actions"><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-reject>Reject analytics</button></div>';
+  banner.innerHTML = '<div class="analytics-consent-copy"><h2 id="analytics-consent-heading">Cookies &amp; analytics</h2><p>With your permission, we use Google Analytics cookies to measure visits and accepted enquiries and help us improve this site. We do not send contact-form contents or use analytics for advertising.</p><details><summary>What is stored?</summary><p>Analytics cookies can last up to 90 days. Your choice is saved in this browser for 180 days. You can change it using Analytics preferences in the footer.</p></details></div><div class="analytics-consent-actions"><button type="button" data-analytics-allow>Allow</button><button type="button" data-analytics-reject>Don’t allow</button></div>';
   document.body.append(banner);
   const preferences = document.createElement('button');
   preferences.type = 'button';

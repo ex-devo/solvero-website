@@ -225,6 +225,7 @@ function formHarness(fetch) {
   window.document.addEventListener('solvero:enquiry-accepted', event => acceptedEvents.push(event));
   form.elements.name.value = 'Test enquiry';
   form.elements.email.value = 'test@example.com';
+  form.elements.enquiry_area.value = 'Workflow automation';
   form.elements.message.value = 'Reduce duplicate order entry.';
   return {
     dom, form, acceptedEvents,
@@ -242,18 +243,43 @@ test('successful enquiries send the form once and clear it only after acceptance
     calls.push({ url, options });
     return new Promise(resolve => { accept = resolve; });
   });
+  harness.form.elements.company.value = 'Example company';
   harness.submit();
   harness.submit();
   assert.equal(calls.length, 1);
   assert.equal(calls[0].url, 'https://api.web3forms.com/submit');
   assert.equal(JSON.parse(calls[0].options.body).message, 'Reduce duplicate order entry.');
+  assert.equal(JSON.parse(calls[0].options.body).company, 'Example company');
+  assert.equal(JSON.parse(calls[0].options.body).enquiry_area, 'Workflow automation');
   assert.equal(harness.button.disabled, true);
   assert.equal(harness.form.elements.message.value, 'Reduce duplicate order entry.');
   accept({ ok: true, json: async () => ({ success: true }) });
   await settle();
   assert.equal(harness.form.elements.message.value, '');
+  assert.equal(harness.form.elements.company.value, '');
+  assert.equal(harness.form.elements.enquiry_area.value, '');
   assert.equal(harness.button.disabled, false);
   assert.match(harness.result.textContent, /has been sent/);
+  assert.equal(harness.acceptedEvents.length, 1);
+  harness.dom.window.close();
+});
+
+test('enquiries require a selected area and accept general enquiries without a company', async () => {
+  const calls = [];
+  const harness = formHarness(async (url, options) => {
+    calls.push(JSON.parse(options.body));
+    return { ok: true, json: async () => ({ success: true }) };
+  });
+  harness.form.elements.enquiry_area.value = '';
+  harness.submit();
+  await settle();
+  assert.equal(calls.length, 0, 'A visitor must choose an enquiry area');
+  harness.form.elements.enquiry_area.value = 'Other / General enquiries';
+  harness.submit();
+  await settle();
+  assert.equal(calls.length, 1);
+  assert.equal(calls[0].company, '');
+  assert.equal(calls[0].enquiry_area, 'Other / General enquiries');
   assert.equal(harness.acceptedEvents.length, 1);
   harness.dom.window.close();
 });
