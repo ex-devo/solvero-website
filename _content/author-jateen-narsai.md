@@ -1,12 +1,12 @@
 # Jateen Narsai
 
-Jateen Narsai is an IT professional with over 15 years’ experience in business and systems analysis, process improvement and software solution design. His work includes customer onboarding, approval workflows and reporting automation. He works across requirements, solution documentation, testing and implementation support, with a focus on reducing manual effort and making systems easier to use.
+Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.
 
 ## Experience
 
 Jateen has worked on business and technology problems across banking and insurance systems. His experience includes API rationalisation, data migration and the design of automated risk assessment workflows. These projects have involved translating business requirements into system rules, data structures and interfaces.
 
-He collaborates with developers, solution architects and test analysts to connect the intended business outcome with the delivered system. His approach combines targeted analysis with clear documentation and simple user experiences.
+His background includes hands-on development as well as analysis and design. He works with stakeholders, developers, architects and test analysts to turn requirements into decisions and designs that can be built and checked.
 
 [View Jateen’s LinkedIn profile](https://www.linkedin.com/in/jnarsai/).
 

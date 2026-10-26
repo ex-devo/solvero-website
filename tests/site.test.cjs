@@ -10,6 +10,16 @@ const offers = JSON.parse(fs.readFileSync(path.join(root, '_content/services.jso
 const pages = ['index.html', ...offers.map(o => `services/${o.slug}/index.html`), 'blog/index.html', ...articles.map(a => `blog/${a.slug}/index.html`), 'authors/jateen-narsai/index.html'];
 const source = file => fs.readFileSync(path.join(root, file), 'utf8');
 const urlFor = file => `https://solvero.co.za/${file.replace(/index\.html$/, '')}`;
+// Shared entities may be identified on another canonical page, such as the homepage catalogue.
+const canonicalEntityIds = new Set();
+for (const file of pages) {
+  const dom = new JSDOM(source(file));
+  const graph = JSON.parse(dom.window.document.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
+  for (const entity of graph) {
+    if (entity['@type'] && entity['@id']) canonicalEntityIds.add(entity['@id']);
+  }
+  dom.window.close();
+}
 
 for (const file of pages) {
   test(`${file}: search metadata and structured data describe the same page`, () => {
@@ -27,10 +37,9 @@ for (const file of pages) {
     assert.equal(page.url, urlFor(file));
     assert.equal(page.name, doc.title);
     assert.equal(page.description, description);
-    const ids = new Set(graph.map(item => item['@id']));
     function checkReferences(value) {
       if (!value || typeof value !== 'object') return;
-      if (value['@id']) assert.ok(ids.has(value['@id']), `Missing entity ${value['@id']}`);
+      if (value['@id']) assert.ok(canonicalEntityIds.has(value['@id']), `Missing entity ${value['@id']}`);
       for (const child of Object.values(value)) checkReferences(child);
     }
     checkReferences(graph);

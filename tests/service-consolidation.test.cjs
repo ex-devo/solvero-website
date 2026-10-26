@@ -35,6 +35,8 @@ test('homepage catalogue describes the three linked service pages', () => {
   const graph = JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
   const catalogue = graph.find(node => node['@type'] === 'OfferCatalog');
   assert.ok(catalogue, 'A homepage catalogue describes the actual service choices');
+  const organization = graph.find(node => node['@type'] === 'Organization');
+  assert.equal(organization.hasOfferCatalog['@id'], catalogue['@id'], 'The organization points to its actual catalogue');
   const serviceIds = catalogue.itemListElement.map(offer => offer.itemOffered['@id']);
   assert.equal(serviceIds.length, 3);
   const services = serviceIds.map(id => graph.find(node => node['@id'] === id));

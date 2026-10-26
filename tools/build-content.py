@@ -59,7 +59,7 @@ def homepage_services():
             <ul role="list" class="space-y-2 text-left text-sm leading-relaxed text-gray-700">{points}</ul>
             <p class="mt-3 pl-6 text-left text-sm text-gray-600">and more</p>
           </div>
-          <p class="text-sm leading-relaxed"><a class="text-brand-primary underline font-semibold" href="/services/{offer['slug']}/">{html.escape(offer['cardCta'])}</a></p>
+          <p class="text-sm leading-relaxed text-center"><a class="text-brand-primary underline font-semibold" href="/services/{offer['slug']}/">{html.escape(offer['cardCta'])}</a></p>
         </div>''')
     return f'''<section class="py-16 md:py-24 bg-white" id="services">
     <div class="container mx-auto px-6">
@@ -145,7 +145,7 @@ def service_main(offer):
     outputs = cards(offer['outputs'])
     steps = ''.join(f'<li><span class="text-brand-primary font-bold" aria-hidden="true">{i:02}</span><h3 class="text-xl font-bold mt-2 mb-4">{esc(heading)}</h3><p class="text-gray-700">{esc(text)}</p></li>' for i, (heading, text) in enumerate(offer['steps'], 1))
     questions = ''.join(f'<details class="faq-item"><summary>{esc(question)}</summary><p>{esc(answer)}</p></details>' for question, answer in offer['questions'])
-    questions += '<details class="faq-item"><summary>Can you work with our team internationally?</summary><p>Yes. We are based in Johannesburg and work remotely with English-speaking businesses internationally. We agree meeting times, a shared place for working documents and the people who can make decisions. Discovery uses recent examples and walkthroughs with your team. Access, testing, acceptance and handover are agreed for the scope.</p></details>'
+    questions += '<details class="faq-item"><summary>Can you work with our team internationally?</summary><p>Yes. We are based in Johannesburg and work remotely with English-speaking businesses internationally. We agree working times, decision-makers and a shared place for documents, then plan access, testing and handover around the engagement.</p></details>'
     guides = ''.join(f'<li><a class="text-brand-primary underline" href="/blog/{slug}/">{esc(label)}</a></li>' for slug, label in offer['guides'])
     related = ''.join(f'<li><a class="text-brand-primary underline" href="/services/{item["slug"]}/">{esc(item["name"])}</a></li>' for item in SERVICES if item['slug'] != offer['slug'])
     examples = ''
@@ -171,7 +171,7 @@ def service_main(offer):
     <section class="py-16 md:py-20 bg-white" id="delivery"><div class="container mx-auto px-6 max-w-6xl"><h2 class="text-3xl font-bold mb-10">How we work with your team.</h2><ol class="grid grid-cols-1 md:grid-cols-3 gap-8">{steps}</ol></div></section>
     <section class="py-16 md:py-20 bg-gray-100"><div class="container mx-auto px-6 max-w-4xl"><h2 class="text-3xl font-bold mb-6">{esc(offer['exampleHeading'])}</h2><p class="text-lg text-gray-700 mb-6">{esc(offer['examples'])}</p><p class="text-lg text-gray-700">{esc(offer['scope'])}</p>{support}</div></section>
     <section class="py-16 md:py-20 bg-white" id="questions"><div class="container mx-auto px-6 max-w-4xl"><h2 class="text-3xl font-bold mb-8">Plan the work with confidence.</h2><div class="space-y-4">{questions}</div></div></section>
-    <section class="py-16 md:py-20 bg-gray-100"><div class="container mx-auto px-6 max-w-4xl"><h2 class="text-3xl font-bold mb-6">Explore the problem before we talk.</h2><ul class="space-y-4">{guides}</ul><h3 class="text-xl font-semibold mt-10 mb-4">Related services</h3><ul class="space-y-4">{related}</ul></div></section>
+    <section class="py-16 md:py-20 bg-gray-100"><div class="container mx-auto px-6 max-w-4xl"><h2 class="text-3xl font-bold mb-6">Practical guides for planning your next step.</h2><ul class="space-y-4">{guides}</ul><h3 class="text-xl font-semibold mt-10 mb-4">Related services</h3><ul class="space-y-4">{related}</ul></div></section>
     <section class="py-16 md:py-20 bg-brand-gradient text-white"><div class="container mx-auto px-6 max-w-4xl text-center"><h2 class="text-3xl md:text-4xl font-bold mb-5">{esc(offer['closingHeading'])}</h2><p class="text-lg mb-8">{esc(offer['closingIntro'])}</p><a class="inline-block bg-white text-brand-primary font-semibold px-7 py-4 rounded-md hover:bg-gray-100" href="/#contact">{esc(offer['cta'])}</a><p class="mt-6">Or email <a class="underline underline-offset-4 break-all" href="mailto:solutions@solvero.co.za">solutions@solvero.co.za</a>.</p></div></section>'''
 
 
@@ -227,8 +227,8 @@ main = hero(AUTHOR['name'], 'Business and systems analysis · Process improvemen
 write_page('authors/jateen-narsai/index.html', profile['name'], AUTHOR['description'], url, [person, profile, breadcrumbs(url, AUTHOR['name'])], main)
 
 url = SITE + 'blog/'
-title = 'Business Improvement & Solution Delivery Guides | Solvero'
-description = 'Practical guides to finding bottlenecks, improving business processes and delivering useful solutions, with examples and worksheets to help plan the work.'
+title = 'Business & Technology Blog | Solvero'
+description = 'Ideas, insights and practical guides on business and technology, from improving operations and connecting systems to assessing new tools and approaches.'
 collection = {'@type': 'CollectionPage', '@id': url + '#webpage', 'url': url, 'name': title, 'description': description, 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'publisher': {'@id': SITE + '#organization'}, 'mainEntity': {'@id': url + '#articles'}}
 # Publication date controls the archive order; existing order breaks same-day ties.
 archive = sorted(META, key=lambda article: date.fromisoformat(article['datePublished']), reverse=True)
@@ -266,7 +266,7 @@ main = f'''<header class="editorial-hero blog-index-hero bg-brand-gradient text-
   <div class="blog-filters" data-blog-filters role="group" aria-label="Filter articles by topic" hidden><span class="blog-filter-label" aria-hidden="true">Topics</span>{topic_buttons}</div>
   <p class="blog-results" data-blog-results role="status" aria-live="polite" aria-atomic="true">{len(archive)} articles · Newest first</p>
   <div class="blog-grid" id="articles-grid">{cards}</div>
-</div></section>''' + '''<section class="bg-brand-gradient text-white py-16"><div class="mx-auto px-6 max-w-4xl text-center"><h2 class="text-3xl font-bold mb-5">What would you like your business to do better?</h2><p class="text-lg mb-8">We help you <a class="underline" href="/services/business-operations-improvement/">improve business operations</a>, <a class="underline" href="/services/new-business-capabilities/">deliver new capabilities</a> and <a class="underline" href="/services/delivery-team-effectiveness/">strengthen delivery teams</a>. Tell us the result you want and we can agree a practical starting point.</p><a class="inline-block bg-white text-brand-primary font-semibold px-7 py-4 rounded-md" href="/#contact">Discuss what you want to achieve</a></div></section>'''
+</div></section>''' + '''<section class="bg-brand-gradient text-white py-16"><div class="mx-auto px-6 max-w-4xl text-center"><h2 class="text-3xl font-bold mb-5">What would you like your business to do better?</h2><p class="text-lg mb-8">We help you <a class="underline" href="/services/business-operations-improvement/">improve business operations</a>, <a class="underline" href="/services/new-business-capabilities/">deliver new capabilities</a> and <a class="underline" href="/services/delivery-team-effectiveness/">strengthen delivery teams</a>. Tell us the result you want and we can agree a practical starting point.</p><a class="inline-block bg-white text-brand-primary font-semibold px-7 py-4 rounded-md" href="/#contact">Let’s discuss what we can optimise</a></div></section>'''
 filter_version = hashlib.sha256((ROOT / 'assets/blog-filters.js').read_bytes()).hexdigest()[:12]
 write_page('blog/index.html', title, description, url, [collection, listing], main, extra_head=f'<script src="/assets/blog-filters.js?v={filter_version}" defer></script>')
 urls = [SITE] + [SITE + 'services/' + offer['slug'] + '/' for offer in SERVICES] + [url] + [a['canonical'] for a in META] + [AUTHOR['canonical']]

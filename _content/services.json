@@ -1,18 +1,18 @@
 [
   {
     "slug": "business-operations-improvement",
-    "name": "Business Operations Improvement",
-    "title": "Business Operations & Process Improvement | Solvero",
-    "description": "Improve turnaround times, reduce repeated work and make business operations easier to run. We investigate, redesign and implement changes with your team.",
+    "name": "Business Process Improvement",
+    "title": "Business Process Improvement | Reduce Costs & Delays | Solvero",
+    "description": "Improve or redesign business processes to reduce delays, repeated work and costs. We use process mapping, requirements elicitation and practical implementation.",
     "cardHeading": "Improve how your business operates",
-    "cardDescription": "Make existing operations easier to run, with shorter turnaround times and less repeated work. We examine the process, decisions and supporting systems, then implement improvements across working practices, tools and automation where useful.",
+    "cardDescription": "Want faster customer responses and fewer delays? We use business analysis techniques such as process mapping, requirements elicitation and business rules analysis to identify useful changes, then improve the process or deliver the solution.",
     "cardCta": "See how we improve business operations",
     "icon": "/images/services/operations-growth.svg",
     "colour": "primary",
     "headline": "Help your business get work done with fewer delays.",
     "intro": "Improve the work your business already does, from responding to customer enquiries to completing approvals and preparing reports. We investigate how it happens, agree useful changes and implement them with the people doing the work.",
     "cta": "Discuss what you want to improve",
-    "problemHeading": "Start with the result you want from your operations.",
+    "problemHeading": "Know which improvements are worth making.",
     "problem": "You may want faster customer responses, shorter turnaround times or more capacity to handle demand. You do not need to know the cause of the delays or have a solution in mind. We help establish which changes could make the difference.",
     "investigation": "We follow real cases across people and systems, including the spreadsheets and workarounds that process notes can miss. We examine waiting, repeated checks, incomplete information and decision ownership. We weigh the likely benefit of each change against effort, dependencies and disruption before agreeing what to implement.",
     "outputsHeading": "An improvement your business can put into use.",
@@ -71,12 +71,12 @@
       }
     ],
     "exampleHeading": "Choose the change that fits the work.",
-    "examples": "A useful improvement may remove an unnecessary step, change the sequence of work or clarify who can make a decision. Better request forms, clearer handoffs and a more manageable queue can also reduce waiting and repeated effort.",
-    "scope": "Integration, automation or software may form part of the solution. We assess your existing systems and define how the change should behave, including ownership of information and how exceptions are handled. We agree the implementation responsibilities and any ongoing support before delivery.",
+    "examples": "We decide with your team whether to refine an existing process or redesign how the work moves from start to finish. The goal is a useful improvement in turnaround, effort, errors or cost, checked against measures agreed before implementation.",
+    "scope": "We define the process changes, business rules and system behaviour needed for the improvement. That can include forms, data checks, integrations or automation. We agree delivery responsibilities and how the result will be accepted before implementation.",
     "support": {
       "id": "improvement-methods",
-      "heading": "Analysis and review are part of the engagement.",
-      "text": "We help decide where to act, then carry the agreed improvement through design, implementation, testing and handover. The work can start with one business outcome or a focused process; the scope makes clear what we will deliver and what your team will own."
+      "heading": "Start with a review, or take the change through delivery.",
+      "text": "We use business analysis techniques such as process mapping and modelling, requirements elicitation, business rules analysis, gap analysis and use case modelling. These help clarify how work happens, what needs to change and how to check the result. You can engage us for the review and recommendations or carry the agreed change through delivery."
     },
     "questions": [
       [
@@ -122,32 +122,32 @@
   {
     "slug": "new-business-capabilities",
     "name": "New Business Capabilities",
-    "title": "New Business Capabilities & Solution Delivery | Solvero",
-    "description": "Put a new business capability into use. We define requirements, assess options and deliver the processes, tools, integrations or software your business needs.",
+    "title": "Systems Analysis & Solution Architecture | Solvero",
+    "description": "Define requirements and deliver software that fits your business through systems analysis, solution architecture, data mapping and integration.",
     "cardHeading": "Deliver new business capabilities",
-    "cardDescription": "Give your business a new way to serve customers, exchange information or complete work. We turn the business goal into a usable solution, whether that means a new process, a purpose-built tool or connections between existing systems.",
+    "cardDescription": "Introduce the service, tool or system connection your business needs next. Through systems analysis and solution architecture, we define how it should work and fit your existing systems. We then configure or build the agreed solution.",
     "cardCta": "See how we deliver new capabilities",
     "icon": "/images/services/capabilities-dashboard.svg",
     "colour": "primary-dark",
-    "headline": "Make something new possible for your business.",
-    "intro": "Introduce a service or way of working that your current processes and systems cannot support. We work with your team to define what is needed, design the solution and deliver the agreed capability through testing and handover.",
+    "headline": "Turn a business need into a working solution.",
+    "intro": "Give customers a new service, connect a partner or equip your team with an application it needs. We define the requirements, design how the solution will work and carry the agreed changes through implementation, testing and handover.",
     "cta": "Discuss the capability you need",
     "problemHeading": "Give your next business goal a practical route into use.",
-    "problem": "You may want customers to submit requests online, connect a new partner or support a new product. The goal is clear, but the required processes, information and technology still need to be worked out. We connect that ambition to a defined delivery scope.",
-    "investigation": "We establish who needs the capability, what they need to do and how success will be checked. We assess existing systems, business rules and dependencies, compare suitable options and define requirements and acceptance criteria with your team.",
+    "problem": "You may want customers to submit requests online, connect a new partner or support a new product. The goal is clear, but the required processes, information and technology still need to be worked out. We connect that objective to a defined delivery scope.",
+    "investigation": "We define the user journeys, business rules and system behaviour with your team. We map the data and interfaces, compare existing software and custom options, and design how the solution will fit your systems. Security, reliability, performance and expected growth inform the design and acceptance criteria.",
     "outputsHeading": "A capability defined, delivered and ready for its agreed use.",
     "outputs": [
       [
-        "A clear design and delivery plan",
-        "Agreed requirements, process and system responsibilities, dependencies and acceptance criteria. We identify the decisions and access needed before building."
+        "Requirements and a solution design",
+        "The business rules, system behaviour, data and interfaces the solution needs to support. We document the architecture decisions and acceptance criteria so business and technical teams can work from the same design."
       ],
       [
-        "The working capability",
-        "The agreed process, tool, integration or software change that lets the business do something new. We select a practical approach around the requirement and the systems it needs to work with."
+        "A working solution",
+        "The agreed process changes, configured software, custom application or integration, ready for the intended users. We build around the requirements and the systems the solution needs to work with."
       ],
       [
         "Testing and handover",
-        "Checks covering expected behaviour, missing information and important failure cases. We work through acceptance with your team and document how the capability is operated and supported."
+        "Checks covering expected behaviour, missing information and important failure cases. Your team reviews the result against the acceptance criteria, with documentation and clear ownership for using it."
       ]
     ],
     "steps": [
@@ -161,7 +161,7 @@
       ],
       [
         "Test and introduce it",
-        "Check the capability against the agreed scenarios, prepare the handover and work with the people who will use and own it. Define any further support in the scope."
+        "Check the solution against the agreed scenarios, resolve gaps and prepare the handover with the people who will use and own it."
       ]
     ],
     "useCasesHeading": "Turn a business goal into a capability people can use.",
@@ -180,17 +180,17 @@
         "text": "Enable a new exchange of information between your business and another system or partner. We agree record ownership, interfaces, permissions and the behaviour when an update fails."
       },
       {
-        "heading": "A new business tool",
-        "text": "Give your team a purpose-built way to capture information, prepare a report or complete a task it cannot currently support. We define and test the useful behaviour with its users."
+        "heading": "A new business application",
+        "text": "Give your team software for the work it needs to do, from capturing information to managing a complete workflow. We define the screens, rules, data and connections, then build and test the agreed application with its users."
       }
     ],
     "exampleHeading": "Build around the business requirement.",
-    "examples": "The capability may use an existing application feature, an integration, a purpose-built tool or a combination of process and software changes. AI can support suitable tasks when the inputs, checking effort and decision boundaries justify it. The required result guides the choice.",
-    "scope": "We can deliver an agreed scope or work alongside your existing delivery team. Responsibilities for environments, deployment, third-party services, acceptance and ongoing support are defined before implementation. The engagement can include analysis and planning where the goal is clear but the requirements still need to be established.",
+    "examples": "We compare existing software services (SaaS) with custom development, looking at fit, integration, cost and the ability to adapt as needs change. The solution may combine both.",
+    "scope": "You can engage us for business or systems analysis, solution architecture, implementation, or a combination. We can deliver a defined scope or work alongside your team. We agree who owns the decisions, development, testing and acceptance before work begins.",
     "support": {
       "id": "capability-planning",
-      "heading": "Work out what the business needs to be able to do.",
-      "text": "We assess the gap between the current operation and the capability you want to introduce. That includes the people, processes, information and systems involved, with dependencies and practical options made explicit. The resulting plan sets out how the agreed capability will be delivered."
+      "heading": "Business analysis, systems analysis and solution architecture.",
+      "text": "We use systems analysis techniques such as use case modelling, data modelling and interface analysis to define how the solution should behave. Our solution architecture work sets out how applications, APIs and data will fit together. The resulting requirements, data mappings and interface specifications give business and technical teams a shared design to review."
     },
     "questions": [
       [
@@ -199,11 +199,11 @@
       ],
       [
         "Can you work with our existing systems and development team?",
-        "We check the relevant interfaces, permissions and ownership before agreeing the design. Where your team is involved, we define responsibilities, resolve business questions and check acceptance together."
+        "Yes. We check the existing interfaces, permissions and system responsibilities, then agree how the solution will fit. We can own a defined part of the analysis, design or implementation and work through business decisions and acceptance with your team."
       ],
       [
-        "Will the solution use AI or automation?",
-        "We compare methods against the task. Existing application features, explicit rules, an integration, automation or AI may fit different parts of the capability. The choice follows the required result and operating constraints."
+        "Will we need new software, automation or AI?",
+        "We assess the requirement before recommending an approach. The solution might use existing software, a custom application, an integration or automation. Where AI is useful, we define the task and the checks its output needs."
       ],
       [
         "How do you agree cost and timing?",
@@ -222,6 +222,10 @@
       [
         "n8n-vs-power-automate",
         "Comparing platforms against real requirements"
+      ],
+      [
+        "reduce-duplicate-data-entry",
+        "Data ownership, record matching and integration checks"
       ]
     ],
     "closingHeading": "What would you like your business to be able to do?",
@@ -295,7 +299,7 @@
       },
       {
         "heading": "Requirements, feedback and acceptance",
-        "text": "Help people understand what needs to be delivered and how it will be accepted. Improve examples and acceptance criteria, and use timely feedback to reduce avoidable revisions."
+        "text": "Make requirements, system behaviour and acceptance criteria clear enough for business and technical people to check together. Use early feedback to resolve questions before they turn into repeated work."
       }
     ],
     "exampleHeading": "Improve the way your existing team works together.",
@@ -304,7 +308,7 @@
     "support": {
       "id": "delivery-practices",
       "heading": "Make visibility useful for everyday decisions.",
-      "text": "Task visibility should help the team act. We connect status information to clear responsibilities and ways to resolve blockers. The team can use that information to decide what needs attention next. The changes are introduced with the team and checked against the coordination problems they are meant to address."
+      "text": "Visibility should help someone make a decision or resolve a blocker. We connect task status to clear ownership, the information needed to act and a way to escalate unresolved issues."
     },
     "questions": [
       [
@@ -317,7 +321,7 @@
       ],
       [
         "Which teams can you work with?",
-        "We can work with business and technical people responsible for delivering change, including analysts, developers and testers. The engagement follows the work across the roles involved."
+        "We work with business and technical people responsible for delivering change, including analysts, architects, developers and testers. The engagement follows the work across the roles involved."
       ],
       [
         "How will we know whether the changes help?",
