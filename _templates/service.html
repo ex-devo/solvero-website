@@ -19,7 +19,7 @@
   <meta name="twitter:description" content="{{DESCRIPTION}}" />
   <meta name="twitter:image" content="https://solvero.co.za/images/brand/rubix/solvero-social.png" />
   <meta name="twitter:image:alt" content="Solvero logo" />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=e8db20972129" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">
 {{SCHEMA}}
 </script>
@@ -60,7 +60,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -68,7 +68,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -87,12 +87,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -154,14 +154,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 </head>
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -195,7 +195,7 @@
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

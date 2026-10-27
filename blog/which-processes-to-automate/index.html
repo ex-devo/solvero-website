@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Choose your first automation project with a practical scorecard covering process readiness, handling effort, exceptions and ownership. Includes a worked example." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp" />
   <meta name="twitter:image:alt" content="Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -79,9 +79,6 @@
       },
       "mainEntity": {
         "@id": "https://solvero.co.za/blog/which-processes-to-automate/#article"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/blog/which-processes-to-automate/#breadcrumb"
       }
     },
     {
@@ -104,39 +101,15 @@
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
       },
-      "datePublished": "2026-10-16",
-      "dateModified": "2026-10-19",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "dateModified": "2026-10-27T14:42:10+02:00",
       "image": {
         "@type": "ImageObject",
         "url": "https://solvero.co.za/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp",
         "width": 1536,
         "height": 1024,
-        "caption": "Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions."
+        "description": "Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions."
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/blog/which-processes-to-automate/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://solvero.co.za/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Which business processes should you automate first? A practical scorecard",
-          "item": "https://solvero.co.za/blog/which-processes-to-automate/"
-        }
-      ]
     }
   ]
 }</script>
@@ -177,7 +150,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -185,7 +158,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -204,12 +177,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -264,14 +237,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16T06:04:11+02:00" /><meta property="article:modified_time" content="2026-10-27T14:42:10+02:00" /><script src="/assets/article-navigation.js?v=cfe405c39317" defer></script><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -280,9 +253,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -309,34 +282,42 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
-        <h1 class="font-semibold mb-6">Which business processes should you automate first? A practical scorecard</h1>
-        <p class="text-lg leading-relaxed">Process improvement · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
-      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><figure><img src="/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp" alt="Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/which-processes-to-automate/which-processes-to-automate-featured-600.webp 600w, /images/blog/which-processes-to-automate/which-processes-to-automate-featured-960.webp 960w, /images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Choose a useful change whose prerequisites can be established.</figcaption></figure>
-<p>Start with a recurring process that has clear rules, usable inputs and an owner who can handle exceptions. Compare its potential value with the effort required to build and maintain it. A manageable first project gives you a way to test the approach before extending it to more work.</p>
+  <main id="main-content"><article class="editorial-article">
+      <header class="editorial-hero article-hero">
+        <div class="article-hero-inner">
+          <div class="article-heading">
+            <a class="article-blog-link" href="/blog/">Solvero Blog</a>
+            <p class="article-topic">Process improvement</p>
+            <h1>Which business processes should you automate first? A practical scorecard</h1>
+            <dl class="article-meta"><div class="article-meta-item"><dt>Author</dt><dd><a rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a></dd></div><div class="article-meta-item article-date article-updated"><dt>Updated</dt><dd><time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></dd></div></dl>
+          </div>
+          <div class="article-hero-media"><figure><img src="/images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp" alt="Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/which-processes-to-automate/which-processes-to-automate-featured-600.webp 600w, /images/blog/which-processes-to-automate/which-processes-to-automate-featured-960.webp 960w, /images/blog/which-processes-to-automate/which-processes-to-automate-featured-1536.webp 1536w" sizes="(min-width: 1024px) 384px, (min-width: 368px) 320px, calc(100vw - 48px)" decoding="async" /></figure></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <details class="article-mobile-contents"><summary>On this page</summary><nav aria-label="On this page"><ol><li><a href="#section-define-the-work-before-choosing-the-tool">Define the work before choosing the tool</a></li><li><a href="#section-check-five-conditions-before-scoring">Check five conditions before scoring</a></li><li><a href="#section-score-readiness-separately-from-value">Score readiness separately from value</a></li><li><a href="#section-compare-three-candidates">Compare three candidates</a></li><li><a href="#section-use-the-scorecard-in-a-planning-meeting">Use the scorecard in a planning meeting</a></li><li><a href="#section-define-success-before-implementing-the-pilot">Define success before implementing the pilot</a></li><li><a href="#section-need-help-choosing-the-first-workflow">Need help choosing the first workflow?</a></li></ol></nav></details>
+        <div class="article-body"><p>Start with a recurring process that has clear rules, usable inputs and an owner who can handle exceptions. Compare its potential value with the effort required to build and maintain it. A manageable first project gives you a way to test the approach before extending it to more work.</p>
 <p>The process consuming the most time may need to be simplified before it can be automated reliably. Use the scorecard below to separate three decisions: automate a bounded step, improve the process first, or defer it.</p>
 <p>The aim is to make work easier to complete. Choosing the first automation is one possible route to that improvement.</p>
-<h2>Define the work before choosing the tool</h2>
+<h2 id="section-define-the-work-before-choosing-the-tool">Define the work before choosing the tool</h2>
 <p>“Automate customer onboarding” can mean anything from sending a welcome email to checking contracts and creating accounts across several systems. That scope is too broad to compare with another opportunity.</p>
 <p>Write one sentence with a trigger, an action and a finishing condition:</p>
 <blockquote><p>When a customer account is approved in the CRM, create or update its billing record in the accounting system and confirm the result to the account owner.</p></blockquote>
 <p>This boundary makes volume, effort and failures easier to measure. It also exposes work that should remain with a person, such as resolving a disputed billing identity.</p>
 <p>Observe actual cases. Record the inputs people receive, the systems they touch and the reasons they stop. A process diagram based only on the intended procedure can miss the rework consuming the team&#x27;s time.</p>
-<h2>Check five conditions before scoring</h2>
+<h2 id="section-check-five-conditions-before-scoring">Check five conditions before scoring</h2>
 <figure><img src="/images/blog/which-processes-to-automate/choose-a-bounded-workflow.webp" alt="A large vague automation idea is narrowed into one defined trigger, action and finishing condition, ready for evaluation." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Define a manageable workflow before comparing readiness and value.</figcaption></figure>
 <p>Use these as gates. An unknown answer needs investigation before implementation.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Condition</th><th scope="col">Evidence to collect</th></tr></thead><tbody><tr><td>A named process owner</td><td>Someone can agree the rules and accept the result</td></tr><tr><td>A defined trigger and outcome</td><td>Recent cases show when work starts and what completion means</td></tr><tr><td>Agreed decision rules</td><td>The owner can explain ordinary cases and identify decisions needing judgement</td></tr><tr><td>Approved access to usable data</td><td>Required fields, access permissions and permitted data use are understood</td></tr><tr><td>A recovery route</td><td>A failed or uncertain action has a named reviewer and a safe next step</td></tr></tbody></table></div>
 <p>A failed gate does not make the idea worthless. It identifies preparation work. Missing customer details may call for a better form. Conflicting rules may need an operating decision. An unsuitable interface may require a different integration approach.</p>
-<h2>Score readiness separately from value</h2>
+<h2 id="section-score-readiness-separately-from-value">Score readiness separately from value</h2>
 <p>For each dimension, assign <strong>0, 1 or 2</strong> using evidence from the workflow. These are discussion aids, not validated industry benchmarks.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Dimension</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th></tr></thead><tbody><tr><td>Rules</td><td>Disputed or undefined</td><td>Partly agreed</td><td>Clear for the proposed scope</td></tr><tr><td>Data</td><td>Required inputs unavailable or unusable</td><td>Some cleanup or validation needed</td><td>Required inputs usable and checked</td></tr><tr><td>System access</td><td>No approved, workable interface established</td><td>Interface available with unresolved constraints</td><td>Approved approach verified for the scoped actions</td></tr><tr><td>Exceptions</td><td>Unknown or no recovery owner</td><td>Known, handling incomplete</td><td>Known cases have a recovery route and owner</td></tr><tr><td>Operation</td><td>No responsible owner</td><td>Owner identified, operating arrangements incomplete</td><td>Owner, monitoring and maintenance arrangements agreed</td></tr></tbody></table></div>
 <p>Add the five scores for a readiness total out of ten. A total should never cancel a failed gate. Ten out of ten also says nothing about whether a project is worth funding: a perfectly understood task may save too little effort to justify the investment.</p>
 <p>Estimate the current effort separately:</p>
 <p><strong>Monthly handling hours = cases per month × active handling minutes per case ÷ 60.</strong></p>
 <p>Use active work time here. Waiting time matters too, but reducing a two-day queue does not automatically release two days of staff capacity. Record waiting time as a separate service measure.</p>
-<h2>Compare three candidates</h2>
+<h2 id="section-compare-three-candidates">Compare three candidates</h2>
 <figure><img src="/images/blog/which-processes-to-automate/readiness-and-value.webp" alt="Readiness gates and business value are assessed separately before deciding whether to pilot, improve first or defer." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Readiness and value answer different questions; a high score cannot cancel a missing prerequisite.</figcaption></figure>
 <p><strong>Illustrative example with invented inputs:</strong> an equipment distributor compares three recurring workflows. The readiness scores assume the evidence described below has been collected; they are not client results.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Candidate</th><th scope="col">Monthly volume</th><th scope="col">Active minutes per case</th><th scope="col">Current handling hours</th><th scope="col">Readiness</th><th scope="col">First decision</th></tr></thead><tbody><tr><td>Check job-completion submissions</td><td>320</td><td>6</td><td>32</td><td>5/10</td><td>Standardise required inputs first</td></tr><tr><td>Transfer approved customer details to accounting</td><td>120</td><td>5</td><td>10</td><td>10/10</td><td>Scope a bounded pilot</td></tr><tr><td>Assemble a recurring management report</td><td>4</td><td>90</td><td>6</td><td>5/10</td><td>Agree definitions and simplify the report</td></tr></tbody></table></div>
@@ -344,32 +325,32 @@
 <p>The customer-data handoff has an agreed trigger, field ownership, approved system access and a recovery owner. Its smaller scope makes it a stronger pilot candidate in this example. The <a href="/blog/reduce-duplicate-data-entry/">companion data-entry guide</a> explains the matching and failure cases to resolve.</p>
 <p>The report has different definitions of the same measures. Automating its assembly would preserve that disagreement. Clarifying which decisions the report supports may also remove unnecessary sections.</p>
 <p>The ten current handling hours in the customer-data example are <strong>not ten promised hours saved</strong>. Review, exceptions and maintenance will remain. Add implementation and operating costs before making an investment decision.</p>
-<h2>Use the scorecard in a planning meeting</h2>
+<h2 id="section-use-the-scorecard-in-a-planning-meeting">Use the scorecard in a planning meeting</h2>
 <p>Download the <a href="/blog/downloads/automation-scorecard-blank.csv">blank scorecard</a> and <a href="/blog/downloads/automation-scorecard-worked.csv">completed illustrative scorecard</a>. Open them in a spreadsheet and replace the example inputs with observed work.</p>
 <p>Ask the people doing the work to challenge the numbers and assumptions. Include the process owner and whoever will support the automation. For each score, write down the evidence and what would have to change to improve readiness.</p>
 <p>Choose one next action for each candidate: define a pilot, fix an input or rule, investigate a dependency, or defer it. This produces a useful decision even when no automation is ready to build.</p>
-<h2>Define success before implementing the pilot</h2>
+<h2 id="section-define-success-before-implementing-the-pilot">Define success before implementing the pilot</h2>
 <figure><img src="/images/blog/which-processes-to-automate/which-processes-to-automate-section-1536.webp" alt="Compare the same kinds of cases before and during a pilot, including exceptions and completed outcomes." width="1536" height="1024" loading="lazy" srcset="/images/blog/which-processes-to-automate/which-processes-to-automate-section-600.webp 600w, /images/blog/which-processes-to-automate/which-processes-to-automate-section-960.webp 960w, /images/blog/which-processes-to-automate/which-processes-to-automate-section-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Check the pilot against a baseline that includes quality and remaining work.</figcaption></figure>
 <p>Set an observation period that includes ordinary cases and known exceptions. Agree what the workflow must do, who checks the outputs and when it should pause for review.</p>
 <p>Measure these separately:</p>
 <ul><li>Active handling time per completed case, including review and rework.</li><li>Elapsed time from trigger to completion, including waiting.</li><li>Failed, duplicate or incorrectly processed cases, alongside total volume.</li><li>Ongoing support effort and changes required to keep the workflow working.</li></ul>
 <p>Start with a controlled set of records or requests. Compare outcomes against the agreed rules before widening access. A successful run once is useful evidence; it does not establish that every failure mode has been covered.</p>
 <p>For decisions involving judgement or spending authority, define the human review explicitly. The <a href="/blog/approval-workflow-automation/">approval workflow guide</a> shows how to keep that authority visible in the design.</p>
-<h2>Need help choosing the first workflow?</h2>
+<h2 id="section-need-help-choosing-the-first-workflow">Need help choosing the first workflow?</h2>
 <p>Our operations improvement work helps you decide which changes are worth making and put them into use. We follow real cases with your team, investigate repeated effort and prioritise options against the result you need. A useful recommendation may be a simpler process, a clearer decision or a solution to build.</p>
 <p>When the change is agreed, we can help introduce it through process redesign, software or integration work, with testing and handover included in the scope. Bring two or three recurring processes and an example of where work gets stuck.</p>
 <p><a href="/services/business-operations-improvement/">See how we identify worthwhile improvements</a>, or explore our broader <a href="/#services">business improvement and solution delivery services</a>.</p>
-<p><a href="/#contact">Discuss the improvement you need</a>.</p>
-<h2>About the author</h2>
-<p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<p><a href="/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+<p><a href="/#contact">Discuss the improvement you need</a>.</p></div>
+        <aside class="article-sidebar"><div class="article-contents"><p class="article-contents-title">On this page</p><nav aria-label="On this page"><ol><li><a href="#section-define-the-work-before-choosing-the-tool">Define the work before choosing the tool</a></li><li><a href="#section-check-five-conditions-before-scoring">Check five conditions before scoring</a></li><li><a href="#section-score-readiness-separately-from-value">Score readiness separately from value</a></li><li><a href="#section-compare-three-candidates">Compare three candidates</a></li><li><a href="#section-use-the-scorecard-in-a-planning-meeting">Use the scorecard in a planning meeting</a></li><li><a href="#section-define-success-before-implementing-the-pilot">Define success before implementing the pilot</a></li><li><a href="#section-need-help-choosing-the-first-workflow">Need help choosing the first workflow?</a></li></ol></nav></div></aside>
+      </div>
+    </article></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

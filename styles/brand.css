@@ -4,6 +4,7 @@
   --brand-accent: #1dc5ff;
   --brand-tertiary: #35b0ed;
   --brand-primary-dark: #136aa1;
+  --site-header-height: 69px;
 }
 
 .bg-brand-gradient {
@@ -64,8 +65,25 @@
 }
 
 /* Navigation feedback keeps the same geometry on hover and keyboard focus. */
+nav[aria-label="Main navigation"] {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+nav[aria-label="Main navigation"] .site-nav-link,
+nav[aria-label="Main navigation"] .site-nav-action {
+  padding-block: .75rem;
+}
+
 .site-nav-logo {
-  max-width: calc(100% - 60px);
+  max-width: calc(100% - 52px);
+}
+
+.site-nav-logo-image {
+  display: block;
+  width: auto;
+  height: 44px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .site-nav-link {

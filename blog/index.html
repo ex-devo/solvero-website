@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Ideas, insights and practical guides on business and technology, from improving operations and connecting systems to assessing new tools and approaches." />
   <meta name="twitter:image" content="https://solvero.co.za/images/brand/rubix/solvero-social.png" />
   <meta name="twitter:image:alt" content="Solvero logo" />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -187,7 +187,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -195,7 +195,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -214,12 +214,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -274,14 +274,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
 <script src="/assets/blog-filters.js?v=a54effba8343" defer></script>
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -290,9 +290,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -327,101 +327,90 @@
   <p class="blog-results" data-blog-results role="status" aria-live="polite" aria-atomic="true">11 articles · Newest first</p>
   <div class="blog-grid" id="articles-grid"><article class="blog-card" data-blog-card data-topic="Process improvement">
       <a class="blog-card-link" href="/blog/ai-operating-model/" aria-labelledby="card-title-ai-operating-model">
-      <div class="blog-card-image"><img src="/images/blog/thumbnails/ai-operating-model-480.webp" srcset="/images/blog/thumbnails/ai-operating-model-480.webp 480w, /images/blog/thumbnails/ai-operating-model-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="AI speeds preparation while review remains queued; workflow redesign addresses validation, routing and completion." width="480" height="270" loading="eager" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Process improvement</p>
+      <div class="blog-card-image"><img src="/images/blog/thumbnails/ai-operating-model-480.webp" srcset="/images/blog/thumbnails/ai-operating-model-480.webp 480w, /images/blog/thumbnails/ai-operating-model-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="An incoming request moves through an AI gear and an approval gate to a completed-work tray, above a blueprint of the workflow." width="480" height="320" loading="eager" decoding="async" /></div>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Process improvement</p>
       <h3 id="card-title-ai-operating-model">Designing operations around AI: the organisational work behind productivity</h3>
       <p class="blog-card-description">Design operations around AI with clear ownership, connected systems and practical controls. Learn what organisational change turns faster tasks into business value.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-17">17 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Process improvement">
       <a class="blog-card-link" href="/blog/which-processes-to-automate/" aria-labelledby="card-title-which-processes-to-automate">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/which-processes-to-automate-480.webp" srcset="/images/blog/thumbnails/which-processes-to-automate-480.webp 480w, /images/blog/thumbnails/which-processes-to-automate-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="Three routes show an unfinished bridge, a ready pilot bridge and a route with unclear conditions." width="480" height="320" loading="eager" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Process improvement</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Process improvement</p>
       <h3 id="card-title-which-processes-to-automate">Which business processes should you automate first? A practical scorecard</h3>
       <p class="blog-card-description">Choose your first automation project with a practical scorecard covering process readiness, handling effort, exceptions and ownership. Includes a worked example.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Connected systems">
       <a class="blog-card-link" href="/blog/reduce-duplicate-data-entry/" aria-labelledby="card-title-reduce-duplicate-data-entry">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/reduce-duplicate-data-entry-480.webp" srcset="/images/blog/thumbnails/reduce-duplicate-data-entry-480.webp 480w, /images/blog/thumbnails/reduce-duplicate-data-entry-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys." width="480" height="320" loading="eager" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Connected systems</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Connected systems</p>
       <h3 id="card-title-reduce-duplicate-data-entry">How to reduce duplicate data entry between your CRM and accounting system</h3>
       <p class="blog-card-description">Reduce duplicate data entry between CRM and accounting systems with field ownership, record matching and failure handling. Includes editable planning worksheets.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Workflow automation">
       <a class="blog-card-link" href="/blog/approval-workflow-automation/" aria-labelledby="card-title-approval-workflow-automation">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/approval-workflow-automation-480.webp" srcset="/images/blog/thumbnails/approval-workflow-automation-480.webp 480w, /images/blog/thumbnails/approval-workflow-automation-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside." width="480" height="320" loading="lazy" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Workflow automation</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Workflow automation</p>
       <h3 id="card-title-approval-workflow-automation">How to automate approval workflows without losing control</h3>
       <p class="blog-card-description">Design approval workflows with clear authority, revision checks, delegation and exception handling. Includes an editable approval matrix and acceptance checklist.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Process improvement">
       <a class="blog-card-link" href="/blog/identify-process-bottlenecks/" aria-labelledby="card-title-identify-process-bottlenecks">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/identify-process-bottlenecks-480.webp" srcset="/images/blog/thumbnails/identify-process-bottlenecks-480.webp 480w, /images/blog/thumbnails/identify-process-bottlenecks-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="Document cards accumulate before a narrow bottle neck while a magnifier highlights the restriction." width="480" height="320" loading="lazy" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Process improvement</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Process improvement</p>
       <h3 id="card-title-identify-process-bottlenecks">How to find bottlenecks in a business process before automating it</h3>
       <p class="blog-card-description">Find process bottlenecks by separating work, waiting and rework. Use an observation worksheet and worked timeline to investigate delays before automating.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Process improvement">
       <a class="blog-card-link" href="/blog/workflow-automation-roi/" aria-labelledby="card-title-workflow-automation-roi">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/workflow-automation-roi-480.webp" srcset="/images/blog/thumbnails/workflow-automation-roi-480.webp 480w, /images/blog/thumbnails/workflow-automation-roi-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="A pool of time is divided into review, manual work, support and capacity released for other work." width="480" height="320" loading="lazy" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Process improvement</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Process improvement</p>
       <h3 id="card-title-workflow-automation-roi">Workflow automation ROI: how to build a realistic business case</h3>
       <p class="blog-card-description">Build an automation business case with a checked example covering remaining work, capacity, cash benefits and running costs. Includes editable scenario worksheets.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Workflow automation">
       <a class="blog-card-link" href="/blog/customer-onboarding-automation/" aria-labelledby="card-title-customer-onboarding-automation">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/customer-onboarding-automation-480.webp" srcset="/images/blog/thumbnails/customer-onboarding-automation-480.webp 480w, /images/blog/thumbnails/customer-onboarding-automation-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="A paper aeroplane waits beside checks for scope, billing, contacts, access and delivery acceptance." width="480" height="320" loading="lazy" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Workflow automation</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Workflow automation</p>
       <h3 id="card-title-customer-onboarding-automation">Customer onboarding automation: from signed agreement to a ready-to-start client</h3>
       <p class="blog-card-description">Design customer onboarding around readiness for delivery. Map required inputs, owners, follow-up and exceptions with editable worksheets and a worked example.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Workflow automation">
       <a class="blog-card-link" href="/blog/workflow-automation-project-cost/" aria-labelledby="card-title-workflow-automation-project-cost">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/workflow-automation-project-cost-480.webp" srcset="/images/blog/thumbnails/workflow-automation-project-cost-480.webp 480w, /images/blog/thumbnails/workflow-automation-project-cost-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="An iceberg shows the visible build above water and discovery, testing, handover and operation below." width="480" height="320" loading="lazy" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Workflow automation</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Workflow automation</p>
       <h3 id="card-title-workflow-automation-project-cost">What affects the cost of a workflow automation project?</h3>
       <p class="blog-card-description">Understand workflow automation cost drivers, compare two scopes and prepare a useful project brief. Includes worksheets for comparing proposals and operating costs.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Workflow automation">
       <a class="blog-card-link" href="/blog/quote-to-invoice-automation/" aria-labelledby="card-title-quote-to-invoice-automation">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/quote-to-invoice-automation-480.webp" srcset="/images/blog/thumbnails/quote-to-invoice-automation-480.webp 480w, /images/blog/thumbnails/quote-to-invoice-automation-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount." width="480" height="320" loading="lazy" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Workflow automation</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Workflow automation</p>
       <h3 id="card-title-quote-to-invoice-automation">Quote-to-invoice automation for service businesses: connect the handoffs</h3>
       <p class="blog-card-description">Connect accepted quotes, completed work and invoice readiness. Handle partial work, changes and duplicates with an editable handoff map and test checklist.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Workflow automation">
       <a class="blog-card-link" href="/blog/ai-vs-rules-based-automation/" aria-labelledby="card-title-ai-vs-rules-based-automation">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/ai-vs-rules-based-automation-480.webp" srcset="/images/blog/thumbnails/ai-vs-rules-based-automation-480.webp 480w, /images/blog/thumbnails/ai-vs-rules-based-automation-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools." width="480" height="320" loading="lazy" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Workflow automation</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Workflow automation</p>
       <h3 id="card-title-ai-vs-rules-based-automation">AI or rules-based automation? How to choose for each workflow step</h3>
       <p class="blog-card-description">Choose AI, rules or human review for each workflow step. Includes a task worksheet and labelled evaluation cases for testing extraction and handling uncertainty.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article><article class="blog-card" data-blog-card data-topic="Connected systems">
       <a class="blog-card-link" href="/blog/n8n-vs-power-automate/" aria-labelledby="card-title-n8n-vs-power-automate">
       <div class="blog-card-image"><img src="/images/blog/thumbnails/n8n-vs-power-automate-480.webp" srcset="/images/blog/thumbnails/n8n-vs-power-automate-480.webp 480w, /images/blog/thumbnails/n8n-vs-power-automate-960.webp 960w" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)" alt="Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership." width="480" height="320" loading="lazy" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">Connected systems</p>
+      <div class="blog-card-copy"><p class="blog-card-date">Updated: <time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></p><p class="blog-card-topic">Connected systems</p>
       <h3 id="card-title-n8n-vs-power-automate">n8n vs Power Automate: how to choose for your business workflow</h3>
       <p class="blog-card-description">Compare n8n and Power Automate against your systems, approvals, deployment and ownership. Includes a shared pilot brief and an editable evaluation matrix.</p>
-      <p class="blog-card-meta"><time datetime="2026-10-16">16 October 2026</time><span aria-hidden="true"> · </span>By Jateen Narsai</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article></div>
@@ -432,7 +421,7 @@
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

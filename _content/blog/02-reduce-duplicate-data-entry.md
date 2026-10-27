@@ -113,10 +113,3 @@ We can then build the agreed integration or adjust the workflow, test matching a
 [See how we reduce repeated work across your processes](/services/business-operations-improvement/). If the improvement needs a new connection, [see how we design and deliver system integrations](/services/new-business-capabilities/).
 
 [Discuss your repeated data entry with Solvero](/#contact).
-
-
-## About the author
-
-Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.
-
-[More about Jateen Narsai](author-jateen-narsai.md).

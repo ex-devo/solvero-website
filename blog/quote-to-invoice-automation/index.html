@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Connect accepted quotes, completed work and invoice readiness. Handle partial work, changes and duplicates with an editable handoff map and test checklist." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp" />
   <meta name="twitter:image:alt" content="A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -79,9 +79,6 @@
       },
       "mainEntity": {
         "@id": "https://solvero.co.za/blog/quote-to-invoice-automation/#article"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/blog/quote-to-invoice-automation/#breadcrumb"
       }
     },
     {
@@ -104,39 +101,15 @@
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
       },
-      "datePublished": "2026-10-16",
-      "dateModified": "2026-10-19",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "dateModified": "2026-10-27T14:42:10+02:00",
       "image": {
         "@type": "ImageObject",
         "url": "https://solvero.co.za/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp",
         "width": 1536,
         "height": 1024,
-        "caption": "A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount."
+        "description": "A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount."
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/blog/quote-to-invoice-automation/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://solvero.co.za/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Quote-to-invoice automation for service businesses: connect the handoffs",
-          "item": "https://solvero.co.za/blog/quote-to-invoice-automation/"
-        }
-      ]
     }
   ]
 }</script>
@@ -177,7 +150,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -185,7 +158,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -204,12 +177,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -264,14 +237,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16T06:04:11+02:00" /><meta property="article:modified_time" content="2026-10-27T14:42:10+02:00" /><script src="/assets/article-navigation.js?v=cfe405c39317" defer></script><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -280,9 +253,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -309,21 +282,29 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
-        <h1 class="font-semibold mb-6">Quote-to-invoice automation for service businesses: connect the handoffs</h1>
-        <p class="text-lg leading-relaxed">Workflow automation · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
-      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><figure><img src="/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp" alt="A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-600.webp 600w, /images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-960.webp 960w, /images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Evidence connects delivery to an invoice-ready amount.</figcaption></figure>
-<p>Quote-to-invoice automation connects agreed work, delivery evidence and billing preparation. Define when work becomes eligible for invoicing before connecting the tools, especially where jobs can be partly completed or changed.</p>
+  <main id="main-content"><article class="editorial-article">
+      <header class="editorial-hero article-hero">
+        <div class="article-hero-inner">
+          <div class="article-heading">
+            <a class="article-blog-link" href="/blog/">Solvero Blog</a>
+            <p class="article-topic">Workflow automation</p>
+            <h1>Quote-to-invoice automation for service businesses: connect the handoffs</h1>
+            <dl class="article-meta"><div class="article-meta-item"><dt>Author</dt><dd><a rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a></dd></div><div class="article-meta-item article-date article-updated"><dt>Updated</dt><dd><time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></dd></div></dl>
+          </div>
+          <div class="article-hero-media"><figure><img src="/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp" alt="A bridge from an accepted quote to an invoice draft is supported by scope, evidence and the unbilled amount." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-600.webp 600w, /images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-960.webp 960w, /images/blog/quote-to-invoice-automation/quote-to-invoice-automation-featured-1536.webp 1536w" sizes="(min-width: 1024px) 384px, (min-width: 368px) 320px, calc(100vw - 48px)" decoding="async" /></figure></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <details class="article-mobile-contents"><summary>On this page</summary><nav aria-label="On this page"><ol><li><a href="#section-define-the-work-and-the-billing-event">Define the work and the billing event</a></li><li><a href="#section-map-the-states-between-quote-and-invoice">Map the states between quote and invoice</a></li><li><a href="#section-decide-what-makes-an-item-invoice-ready">Decide what makes an item invoice-ready</a></li><li><a href="#section-preserve-the-quote-and-change-history">Preserve the quote and change history</a></li><li><a href="#section-handle-repeated-and-uncertain-events">Handle repeated and uncertain events</a></li><li><a href="#section-consider-a-simpler-system-arrangement">Consider a simpler system arrangement</a></li><li><a href="#section-measure-the-delay-you-can-influence">Measure the delay you can influence</a></li><li><a href="#section-connect-the-handoff-causing-repeated-chasing">Connect the handoff causing repeated chasing</a></li></ol></nav></details>
+        <div class="article-body"><p>Quote-to-invoice automation connects agreed work, delivery evidence and billing preparation. Define when work becomes eligible for invoicing before connecting the tools, especially where jobs can be partly completed or changed.</p>
 <p>An accepted quote gives the team a commercial reference. Whether it should produce a deposit request, a milestone invoice or a later completion invoice depends on the agreed terms. Keep that decision explicit in the workflow.</p>
 <p>Clear responsibilities and visible delivery evidence are part of the solution. Connecting the software follows those operating decisions.</p>
-<h2>Define the work and the billing event</h2>
+<h2 id="section-define-the-work-and-the-billing-event">Define the work and the billing event</h2>
 <figure><img src="/images/blog/quote-to-invoice-automation/evidence-before-invoice.webp" alt="An accepted quote leads to delivery and evidence checks before an eligible milestone becomes an invoice draft for billing review." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Connect agreed work and delivery evidence to a reviewed invoice.</figcaption></figure>
 <p>Start with one service type and one billing arrangement. Identify the quote version the customer accepted, the job or project it creates, and the evidence required for each billable event.</p>
 <p>Record the billing entity and relevant customer references alongside the work. An email address on a job note may identify a site contact rather than the organisation that should receive the invoice. The <a href="/blog/reduce-duplicate-data-entry/">customer-data guide</a> explains ownership and record matching across systems.</p>
 <p>Agree who can change the commercial scope, approve delivery evidence and release an invoice. Those decisions may belong to different roles.</p>
-<h2>Map the states between quote and invoice</h2>
+<h2 id="section-map-the-states-between-quote-and-invoice">Map the states between quote and invoice</h2>
 <p><strong>Illustrative example:</strong> a commercial flooring installation company records an accepted quote, schedules installation and prepares invoice drafts after approved delivery milestones. This is a design example, independent of any case study.</p>
 <pre><code>Quote accepted -&gt; Job created -&gt; Work scheduled -&gt; Work recorded
                                                      |
@@ -336,42 +317,42 @@
                                          Approved issue -&gt; Reconciliation</code></pre>
 <p>Cancellation, disputed work and missing evidence lead to a hold or review state. They should remain visible rather than being forced through the normal completion route.</p>
 <p>The <a href="/blog/downloads/quote-to-invoice-states.csv">state and handoff map</a> records the entry checks, owner and expected next state. It is a planning model; it needs agreement against the business&#x27;s actual contracts and operating rules.</p>
-<h2>Decide what makes an item invoice-ready</h2>
+<h2 id="section-decide-what-makes-an-item-invoice-ready">Decide what makes an item invoice-ready</h2>
 <p>For the flooring example, the billing reviewer needs the accepted scope, the completed milestone, recorded delivery evidence and the agreed amount for that milestone. Additional work needs its own approved reference before it becomes billable.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Situation</th><th scope="col">Required decision in this example</th></tr></thead><tbody><tr><td>Agreed milestone fully completed</td><td>Check evidence and remaining unbilled amount before drafting</td></tr><tr><td>Only part of a milestone completed</td><td>Review whether the agreement permits a partial bill; do not infer it from percentage complete</td></tr><tr><td>Extra work requested</td><td>Link an approved change to the relevant job and billing amount</td></tr><tr><td>Delivery sign-off missing</td><td>Hold the affected item for the responsible owner</td></tr><tr><td>Job cancelled or disputed</td><td>Route to the agreed review process before billing action</td></tr></tbody></table></div>
 <p>Invoice readiness is a state supported by evidence. A job being marked “done” does not establish that every commercial and billing check is complete.</p>
-<h2>Preserve the quote and change history</h2>
+<h2 id="section-preserve-the-quote-and-change-history">Preserve the quote and change history</h2>
 <figure><img src="/images/blog/quote-to-invoice-automation/approved-scope-changes.webp" alt="An original accepted quote and a separately approved change remain linked to the job, with already billed work tracked before preparing the next invoice." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Keep approved changes and amounts already billed visible before preparing the next invoice.</figcaption></figure>
 <p>Link work to the accepted quote revision. If the scope changes, record the new agreement and distinguish the revised amount from what has already been billed.</p>
 <p>An unapproved site note should not silently increase the invoice. The <a href="/blog/approval-workflow-automation/">approval workflow guide</a> describes how to bind an approval to the version of the request that was actually reviewed.</p>
 <p>Keep progress billing separate from final billing. The workflow should be able to identify the eligible amount, amounts already represented by invoice drafts or issued invoices, and any items requiring correction. Agree how cancelled drafts, credits and revised invoices affect that position in the accounting system.</p>
-<h2>Handle repeated and uncertain events</h2>
+<h2 id="section-handle-repeated-and-uncertain-events">Handle repeated and uncertain events</h2>
 <figure><img src="/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-1536.webp" alt="Repeated matching events lead to one invoice, while an uncertain event goes to a review tray." width="1536" height="1024" loading="lazy" srcset="/images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-600.webp 600w, /images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-960.webp 960w, /images/blog/quote-to-invoice-automation/quote-to-invoice-automation-section-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Repeated and uncertain events need different handling.</figcaption></figure>
 <p>A delivery event may be sent again after a retry, or two people may mark the same milestone complete. Use a stable reference for the job, milestone and billing revision so the same intended billing action produces one result.</p>
 <p>If invoice creation times out, reconcile whether the draft already exists before creating another. Keep the outcome uncertain until it can be established. Record the accounting-system reference once confirmed.</p>
 <p>The <a href="/blog/downloads/quote-to-invoice-tests.csv">acceptance checklist</a> includes partial completion, changed quotes, duplicate events and uncertain invoice creation. Actual test outcomes remain blank for the implementation team to record.</p>
-<h2>Consider a simpler system arrangement</h2>
+<h2 id="section-consider-a-simpler-system-arrangement">Consider a simpler system arrangement</h2>
 <p>Check whether the existing job-management or accounting product already supports the needed handoff. A configured native process may meet the requirement with less custom integration to operate.</p>
 <p>Where separate systems are needed, define which one owns each state and reference. Duplicating the full job lifecycle in several places creates more opportunities for contradictory status. Return only the billing information the delivery team needs to see.</p>
 <p>Evaluate the complete handoff, including exception review and reconciliation. A successful connector action does not establish that the invoice reflects the right milestone, amount or customer.</p>
-<h2>Measure the delay you can influence</h2>
+<h2 id="section-measure-the-delay-you-can-influence">Measure the delay you can influence</h2>
 <p>Record the time between approved delivery evidence and invoice readiness, and the further time to reviewed issue. Count missing-evidence cases, manual follow-ups and invoice corrections.</p>
 <p>Keep payment timing separate. Earlier invoice preparation may help the billing process, but this workflow alone cannot establish that customers will pay sooner. Use the <a href="/blog/identify-process-bottlenecks/">bottleneck method</a> to investigate the stage actually causing delay.</p>
-<h2>Connect the handoff causing repeated chasing</h2>
+<h2 id="section-connect-the-handoff-causing-repeated-chasing">Connect the handoff causing repeated chasing</h2>
 <p>We help reduce the chasing between accepted work, delivery and billing. We trace one job through the process, clarify who confirms completion and agree the evidence needed to make the work invoice-ready.</p>
 <p>We can then introduce the process changes and implement the agreed checks or system connections, with testing for partial work, changes and repeated events. Bring an accepted quote, a completed job record and the current billing preparation steps.</p>
 <p><a href="/services/business-operations-improvement/">See how we improve the handoff from accepted work to billing</a>, or explore our broader <a href="/#services">business improvement and solution delivery services</a>.</p>
-<p><a href="/#contact">Discuss your quote-to-invoice workflow with Solvero</a>.</p>
-<h2>About the author</h2>
-<p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<p><a href="/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+<p><a href="/#contact">Discuss your quote-to-invoice workflow with Solvero</a>.</p></div>
+        <aside class="article-sidebar"><div class="article-contents"><p class="article-contents-title">On this page</p><nav aria-label="On this page"><ol><li><a href="#section-define-the-work-and-the-billing-event">Define the work and the billing event</a></li><li><a href="#section-map-the-states-between-quote-and-invoice">Map the states between quote and invoice</a></li><li><a href="#section-decide-what-makes-an-item-invoice-ready">Decide what makes an item invoice-ready</a></li><li><a href="#section-preserve-the-quote-and-change-history">Preserve the quote and change history</a></li><li><a href="#section-handle-repeated-and-uncertain-events">Handle repeated and uncertain events</a></li><li><a href="#section-consider-a-simpler-system-arrangement">Consider a simpler system arrangement</a></li><li><a href="#section-measure-the-delay-you-can-influence">Measure the delay you can influence</a></li><li><a href="#section-connect-the-handoff-causing-repeated-chasing">Connect the handoff causing repeated chasing</a></li></ol></nav></div></aside>
+      </div>
+    </article></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

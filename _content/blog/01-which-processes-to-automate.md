@@ -120,10 +120,3 @@ When the change is agreed, we can help introduce it through process redesign, so
 [See how we identify worthwhile improvements](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss the improvement you need](/#contact).
-
-
-## About the author
-
-Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.
-
-[More about Jateen Narsai](author-jateen-narsai.md).

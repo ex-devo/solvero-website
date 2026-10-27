@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Design approval workflows with clear authority, revision checks, delegation and exception handling. Includes an editable approval matrix and acceptance checklist." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp" />
   <meta name="twitter:image:alt" content="A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -79,9 +79,6 @@
       },
       "mainEntity": {
         "@id": "https://solvero.co.za/blog/approval-workflow-automation/#article"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/blog/approval-workflow-automation/#breadcrumb"
       }
     },
     {
@@ -104,39 +101,15 @@
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
       },
-      "datePublished": "2026-10-16",
-      "dateModified": "2026-10-19",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "dateModified": "2026-10-27T14:42:10+02:00",
       "image": {
         "@type": "ImageObject",
         "url": "https://solvero.co.za/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp",
         "width": 1536,
         "height": 1024,
-        "caption": "A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside."
+        "description": "A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside."
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/blog/approval-workflow-automation/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://solvero.co.za/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "How to automate approval workflows without losing control",
-          "item": "https://solvero.co.za/blog/approval-workflow-automation/"
-        }
-      ]
     }
   ]
 }</script>
@@ -177,7 +150,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -185,7 +158,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -204,12 +177,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -264,14 +237,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16T06:04:11+02:00" /><meta property="article:modified_time" content="2026-10-27T14:42:10+02:00" /><script src="/assets/article-navigation.js?v=cfe405c39317" defer></script><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -280,9 +253,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -309,27 +282,35 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
-        <h1 class="font-semibold mb-6">How to automate approval workflows without losing control</h1>
-        <p class="text-lg leading-relaxed">Workflow automation · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
-      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><figure><img src="/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp" alt="A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/approval-workflow-automation/approval-workflow-automation-featured-600.webp 600w, /images/blog/approval-workflow-automation/approval-workflow-automation-featured-960.webp 960w, /images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>A reminder can prompt a decision; it cannot supply authority.</figcaption></figure>
-<p>Automate the routing, reminders and record keeping around an approval while keeping decision authority explicit. Define who can approve each request, what information they are approving and what happens when a request changes or gets stuck.</p>
+  <main id="main-content"><article class="editorial-article">
+      <header class="editorial-hero article-hero">
+        <div class="article-hero-inner">
+          <div class="article-heading">
+            <a class="article-blog-link" href="/blog/">Solvero Blog</a>
+            <p class="article-topic">Workflow automation</p>
+            <h1>How to automate approval workflows without losing control</h1>
+            <dl class="article-meta"><div class="article-meta-item"><dt>Author</dt><dd><a rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a></dd></div><div class="article-meta-item article-date article-updated"><dt>Updated</dt><dd><time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></dd></div></dl>
+          </div>
+          <div class="article-hero-media"><figure><img src="/images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp" alt="A request can pass an approval gate with the right authority key; a clock and reminder bell remain outside." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/approval-workflow-automation/approval-workflow-automation-featured-600.webp 600w, /images/blog/approval-workflow-automation/approval-workflow-automation-featured-960.webp 960w, /images/blog/approval-workflow-automation/approval-workflow-automation-featured-1536.webp 1536w" sizes="(min-width: 1024px) 384px, (min-width: 368px) 320px, calc(100vw - 48px)" decoding="async" /></figure></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <details class="article-mobile-contents"><summary>On this page</summary><nav aria-label="On this page"><ol><li><a href="#section-begin-with-one-decision">Begin with one decision</a></li><li><a href="#section-write-the-approval-matrix">Write the approval matrix</a></li><li><a href="#section-make-the-normal-route-visible">Make the normal route visible</a></li><li><a href="#section-bind-each-decision-to-a-request-revision">Bind each decision to a request revision</a></li><li><a href="#section-handle-absence-and-overdue-requests">Handle absence and overdue requests</a></li><li><a href="#section-keep-decisions-and-execution-traceable">Keep decisions and execution traceable</a></li><li><a href="#section-test-the-exceptions-that-affect-authority">Test the exceptions that affect authority</a></li><li><a href="#section-improve-one-approval-process-first">Improve one approval process first</a></li></ol></nav></details>
+        <div class="article-body"><p>Automate the routing, reminders and record keeping around an approval while keeping decision authority explicit. Define who can approve each request, what information they are approving and what happens when a request changes or gets stuck.</p>
 <p>Approval workflow automation works best when the policy can be translated into clear routes and exceptions. Email notifications alone leave important questions unanswered: whether a delegate has authority, whether all approvals are needed, and whether an old response still applies to a revised request.</p>
 <p>The improvement may start with removing a redundant handoff or clarifying a decision, before any software changes are made.</p>
-<h2>Begin with one decision</h2>
+<h2 id="section-begin-with-one-decision">Begin with one decision</h2>
 <p>Choose a bounded request, such as purchasing equipment. Specify what the approval authorises. Permission to buy equipment may be separate from supplier onboarding, release of payment or approval of a later invoice.</p>
 <p>For the initial request, agree the required information: requester, supplier, item or service, business reason, quote, currency, total and relevant budget. Define how tax, delivery and other charges enter that total according to the organisation&#x27;s policy.</p>
 <p>Incomplete requests should return to the requester with a specific reason. Sending them through the approval chain simply moves the missing-information problem to another person.</p>
-<h2>Write the approval matrix</h2>
+<h2 id="section-write-the-approval-matrix">Write the approval matrix</h2>
 <figure><img src="/images/blog/approval-workflow-automation/approval-route.webp" alt="A request is validated and routed to an authorised reviewer before the current revision is executed and its outcome recorded." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Automate the coordination around a decision while keeping authority explicit.</figcaption></figure>
 <p>The matrix below is an <strong>illustrative policy for an equipment purchase</strong>, not a statement of legal requirements or a client engagement. Each organisation must agree its own authority and controls.</p>
 <p>Here, <strong>L</strong> means the department&#x27;s configured spending limit in its base currency. The design uses the request&#x27;s agreed comparable total. Requests needing a currency conversion pause until the conversion rule and source are defined.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Request</th><th scope="col">Route</th><th scope="col">Completion rule</th></tr></thead><tbody><tr><td>Standard purchase at or below L</td><td>Department approver</td><td>Approver accepts the current request revision</td></tr><tr><td>Standard purchase above L</td><td>Department approver, then budget owner</td><td>Both accept the current revision in order</td></tr><tr><td>Purchase in a restricted category</td><td>Relevant specialist, then the normal amount-based route</td><td>Specialist acceptance and the remaining approvals</td></tr><tr><td>Requester would approve their own request</td><td>An authorised independent alternate replaces that role</td><td>Alternate has the required scope and spending authority</td></tr><tr><td>No eligible approver or unresolved currency rule</td><td>Process-owner review</td><td>Request stays on hold until a valid route is established</td></tr></tbody></table></div>
 <p>The <a href="/blog/downloads/approval-matrix.csv">editable approval matrix</a> provides space for your own limits and role definitions. It deliberately leaves policy values for the owner to supply.</p>
 <p>Choose whether multiple people approve in sequence, all must approve, or one response is enough. These are different rules. In <a href="https://learn.microsoft.com/en-us/power-automate/get-started-approvals">Microsoft&#x27;s approval documentation</a>, “Everyone must approve” waits for all approvals or a rejection, while “First to respond” completes with a response from any approver. The workflow configuration must reflect the actual authority policy.</p>
-<h2>Make the normal route visible</h2>
+<h2 id="section-make-the-normal-route-visible">Make the normal route visible</h2>
 <p>The normal purchase path can be described in five stages:</p>
 <ol><li>Validate the request and assign an identifier and revision.</li><li>Calculate the route using the agreed policy version.</li><li>Collect the required decisions for that revision.</li><li>Confirm the request is still current before carrying out the authorised action.</li><li>Record the outcome and notify the requester.</li></ol>
 <p>Here is the same route with its main exception paths:</p>
@@ -350,41 +331,41 @@ Current revision -&gt; Required decisions -&gt; All required approvals complete
                                                    |
                                          Record confirmed outcome</code></pre>
 <p>This diagram is a design aid. Detailed transitions still need to be agreed and tested in the implementation.</p>
-<h2>Bind each decision to a request revision</h2>
+<h2 id="section-bind-each-decision-to-a-request-revision">Bind each decision to a request revision</h2>
 <figure><img src="/images/blog/approval-workflow-automation/approval-revisions.webp" alt="Approval belongs to the exact request revision that was reviewed; a material change requires a new approval." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>An earlier approval cannot authorise a materially changed request.</figcaption></figure>
 <p>An approval should identify exactly what was accepted. Store the request revision, amount, supplier and quote reference presented to the approver.</p>
 <p>Suppose someone approves a request and its total is then increased. Under this example policy, a material change creates a new revision and invalidates the old approval route. A delayed response to the earlier revision cannot authorise the revised purchase.</p>
 <p>Agree which changes are material. A supplier change, revised scope or amount may require fresh approval; a corrected internal note may follow a different rule. Keep that distinction explicit rather than inferring it from whichever fields a form happens to update.</p>
 <p>If a request changes during execution, the system must prevent an outdated approval from triggering the purchase. The implementation needs a controlled check and transition around the authorised action, not just a check made when an email was sent.</p>
-<h2>Handle absence and overdue requests</h2>
+<h2 id="section-handle-absence-and-overdue-requests">Handle absence and overdue requests</h2>
 <figure><img src="/images/blog/approval-workflow-automation/approval-workflow-automation-section-1536.webp" alt="A waiting request is routed from an absent reviewer to an authorised backup while its history stays visible." width="1536" height="1024" loading="lazy" srcset="/images/blog/approval-workflow-automation/approval-workflow-automation-section-600.webp 600w, /images/blog/approval-workflow-automation/approval-workflow-automation-section-960.webp 960w, /images/blog/approval-workflow-automation/approval-workflow-automation-section-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Absence and escalation rules should preserve the authority behind the decision.</figcaption></figure>
 <p>Delegation needs an authority rule. Record who may delegate, the delegate&#x27;s scope and limit, and when that authority begins and ends. Forwarding an approval email does not establish those permissions.</p>
 <p>For an overdue request, decide when reminders occur, who receives escalation and when the request pauses. Set the working calendar and time zone used for those deadlines. A person in another time zone should see an unambiguous due time.</p>
 <p>In this example, elapsed time never counts as approval. A reminder can prompt a decision; it cannot supply one. Reassignment must also retain the record of who held the request and why it moved.</p>
-<h2>Keep decisions and execution traceable</h2>
+<h2 id="section-keep-decisions-and-execution-traceable">Keep decisions and execution traceable</h2>
 <p>Record the request identifier, revision, applicable policy version, assigned approvers, their authority, decisions and timestamps. Link the final action to those decisions. Give people access appropriate to their role and avoid copying sensitive documents into every notification.</p>
 <p>Approval and execution are separate outcomes. If the purchase record cannot be created after approval, mark execution as incomplete and assign recovery. A retry must recognise an already completed action so it does not create a second purchase. The <a href="/blog/reduce-duplicate-data-entry/">data-entry guide</a> explains repeated events and uncertain write results.</p>
-<h2>Test the exceptions that affect authority</h2>
+<h2 id="section-test-the-exceptions-that-affect-authority">Test the exceptions that affect authority</h2>
 <p>The <a href="/blog/downloads/approval-tests.csv">acceptance checklist</a> includes these review cases:</p>
 <ul><li>A request exactly at L follows the at-or-below route; one above L follows the additional approval route.</li><li>A requester cannot become their own alternate approver.</li><li>A delegate outside their authority or effective dates cannot decide.</li><li>An old approval response cannot release a changed request revision.</li><li>An overdue or approved-but-unexecuted request stays visible for recovery.</li></ul>
 <p>These are proposed tests, not completed platform tests. Run them with the actual policy, roles and selected system before extending the workflow.</p>
 <p>Measure waiting time by stage, requests returned for missing information, manual chasing and exceptions. Compare those measures with a recorded baseline. A faster notification is useful only if the decision and resulting action reach the right outcome.</p>
-<h2>Improve one approval process first</h2>
+<h2 id="section-improve-one-approval-process-first">Improve one approval process first</h2>
 <p>Use the <a href="/blog/which-processes-to-automate/">automation scorecard</a> if you need to choose between several approval processes. Start with a scope whose rules and owner can be established.</p>
 <p>We help teams spend less time chasing approvals by investigating where requests wait and what a reviewer needs to decide. We work with the process owner to simplify the route and clarify authority before implementing the agreed workflow.</p>
 <p>That can include clearer responsibilities, better request information, routing and system connections. We test ordinary and exception cases with your team and establish ownership for ongoing use. Bring one approval type, its current rules and a request that stalled.</p>
 <p><a href="/services/business-operations-improvement/">See how we improve decisions and handoffs</a>, or explore our broader <a href="/#services">business improvement and solution delivery services</a>.</p>
-<p><a href="/#contact">Discuss your approval workflow with Solvero</a>.</p>
-<h2>About the author</h2>
-<p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<p><a href="/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+<p><a href="/#contact">Discuss your approval workflow with Solvero</a>.</p></div>
+        <aside class="article-sidebar"><div class="article-contents"><p class="article-contents-title">On this page</p><nav aria-label="On this page"><ol><li><a href="#section-begin-with-one-decision">Begin with one decision</a></li><li><a href="#section-write-the-approval-matrix">Write the approval matrix</a></li><li><a href="#section-make-the-normal-route-visible">Make the normal route visible</a></li><li><a href="#section-bind-each-decision-to-a-request-revision">Bind each decision to a request revision</a></li><li><a href="#section-handle-absence-and-overdue-requests">Handle absence and overdue requests</a></li><li><a href="#section-keep-decisions-and-execution-traceable">Keep decisions and execution traceable</a></li><li><a href="#section-test-the-exceptions-that-affect-authority">Test the exceptions that affect authority</a></li><li><a href="#section-improve-one-approval-process-first">Improve one approval process first</a></li></ol></nav></div></aside>
+      </div>
+    </article></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

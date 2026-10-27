@@ -781,6 +781,60 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "ai-operating-model",
+      "targetImageCount": 7,
+      "featured": {
+        "file": "ai-operating-model-overview.png",
+        "alt": "An incoming request moves through an AI gear and an approval gate to a completed-work tray, above a blueprint of the workflow.",
+        "caption": "Design the workflow around the AI task, including the decisions needed to complete the work.",
+        "placement": "Article header and archive thumbnail"
+      },
+      "images": [
+        {
+          "kind": "featured",
+          "file": "ai-operating-model-overview.png",
+          "alt": "An incoming request moves through an AI gear and an approval gate to a completed-work tray, above a blueprint of the workflow.",
+          "caption": "Design the workflow around the AI task, including the decisions needed to complete the work.",
+          "width": 1536,
+          "height": 1024,
+          "variants": [
+            {
+              "src": "/images/blog/ai-operating-model/ai-operating-model-overview-600.webp",
+              "width": 600,
+              "height": 400
+            },
+            {
+              "src": "/images/blog/ai-operating-model/ai-operating-model-overview-960.webp",
+              "width": 960,
+              "height": 640
+            },
+            {
+              "src": "/images/blog/ai-operating-model/ai-operating-model-overview-1536.webp",
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        }
+      ],
+      "retainedSectionImages": [
+        "/images/blog/ai-operating-model/ai-bottleneck.webp",
+        "/images/blog/ai-operating-model/dont-pave-the-cow-paths.webp",
+        "/images/blog/ai-operating-model/electricity-and-factory-redesign.webp",
+        "/images/blog/ai-operating-model/productivity-j-curve.webp",
+        "/images/blog/ai-operating-model/automate-the-coordination.webp",
+        "/images/blog/ai-operating-model/human-contributions.webp"
+      ]
+    }
+  ],
+  "editorialUpdates": [
+    {
+      "date": "2026-10-27",
+      "article": "ai-operating-model",
+      "change": "Added a compact overview with Request, AI, Approve and Complete labels; all six explanatory illustrations remain in the article body.",
+      "promptSet": "docs/proposals/2026-10-27-editorial-refinements/image-prompt.json",
+      "labelEditPrompt": "docs/proposals/2026-10-27-editorial-refinements/image-label-edit-prompt.json"
     }
   ]
 }

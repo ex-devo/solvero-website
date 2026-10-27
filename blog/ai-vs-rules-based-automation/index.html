@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Choose AI, rules or human review for each workflow step. Includes a task worksheet and labelled evaluation cases for testing extraction and handling uncertainty." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp" />
   <meta name="twitter:image:alt" content="A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -79,9 +79,6 @@
       },
       "mainEntity": {
         "@id": "https://solvero.co.za/blog/ai-vs-rules-based-automation/#article"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/blog/ai-vs-rules-based-automation/#breadcrumb"
       }
     },
     {
@@ -104,39 +101,15 @@
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
       },
-      "datePublished": "2026-10-16",
-      "dateModified": "2026-10-19",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "dateModified": "2026-10-27T14:42:10+02:00",
       "image": {
         "@type": "ImageObject",
         "url": "https://solvero.co.za/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp",
         "width": 1536,
         "height": 1024,
-        "caption": "A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools."
+        "description": "A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools."
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/blog/ai-vs-rules-based-automation/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://solvero.co.za/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "AI or rules-based automation? How to choose for each workflow step",
-          "item": "https://solvero.co.za/blog/ai-vs-rules-based-automation/"
-        }
-      ]
     }
   ]
 }</script>
@@ -177,7 +150,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -185,7 +158,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -204,12 +177,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -264,14 +237,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16T06:04:11+02:00" /><meta property="article:modified_time" content="2026-10-27T14:42:10+02:00" /><script src="/assets/article-navigation.js?v=cfe405c39317" defer></script><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -280,9 +253,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -309,24 +282,32 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
-        <h1 class="font-semibold mb-6">AI or rules-based automation? How to choose for each workflow step</h1>
-        <p class="text-lg leading-relaxed">Workflow automation · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
-      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><figure><img src="/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp" alt="A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-600.webp 600w, /images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-960.webp 960w, /images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Match the method to the task and keep judgement explicit.</figcaption></figure>
-<p>Choose AI or rules-based automation at the level of a specific task. Explicit rules suit agreed calculations, field checks and decision boundaries. AI can help interpret varied language or documents when its output can be checked and an uncertain result has a clear review route.</p>
+  <main id="main-content"><article class="editorial-article">
+      <header class="editorial-hero article-hero">
+        <div class="article-hero-inner">
+          <div class="article-heading">
+            <a class="article-blog-link" href="/blog/">Solvero Blog</a>
+            <p class="article-topic">Workflow automation</p>
+            <h1>AI or rules-based automation? How to choose for each workflow step</h1>
+            <dl class="article-meta"><div class="article-meta-item"><dt>Author</dt><dd><a rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a></dd></div><div class="article-meta-item article-date article-updated"><dt>Updated</dt><dd><time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></dd></div></dl>
+          </div>
+          <div class="article-hero-media"><figure><img src="/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp" alt="A ruler, magnifying glass and compass illustrate rules, interpretation and human judgement as different tools." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-600.webp 600w, /images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-960.webp 960w, /images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-featured-1536.webp 1536w" sizes="(min-width: 1024px) 384px, (min-width: 368px) 320px, calc(100vw - 48px)" decoding="async" /></figure></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <details class="article-mobile-contents"><summary>On this page</summary><nav aria-label="On this page"><ol><li><a href="#section-separate-interpretation-from-authority">Separate interpretation from authority</a></li><li><a href="#section-compare-the-task-with-the-available-methods">Compare the task with the available methods</a></li><li><a href="#section-work-through-a-bounded-intake-example">Work through a bounded intake example</a></li><li><a href="#section-define-correctness-before-running-examples">Define correctness before running examples</a></li><li><a href="#section-use-a-test-set-that-challenges-the-design">Use a test set that challenges the design</a></li><li><a href="#section-measure-the-full-cost-of-using-the-result">Measure the full cost of using the result</a></li><li><a href="#section-choose-the-operating-boundary-deliberately">Choose the operating boundary deliberately</a></li><li><a href="#section-assess-the-task-before-choosing-the-technology">Assess the task before choosing the technology</a></li></ol></nav></details>
+        <div class="article-body"><p>Choose AI or rules-based automation at the level of a specific task. Explicit rules suit agreed calculations, field checks and decision boundaries. AI can help interpret varied language or documents when its output can be checked and an uncertain result has a clear review route.</p>
 <p>Many useful workflows combine both approaches. The business decision is whether a method improves the outcome after checking, correction and operating effort have been included.</p>
 <p>Process redesign belongs in that comparison too: clearer inputs or decision rules can remove the problem a new tool was meant to solve.</p>
-<h2>Separate interpretation from authority</h2>
+<h2 id="section-separate-interpretation-from-authority">Separate interpretation from authority</h2>
 <p>Consider an incoming service request. It may need to be read, categorised, linked to a customer, checked against the agreement and assigned to someone with the right responsibility.</p>
 <p>Reading varied descriptions is different from deciding whether an extra charge has been approved. An AI-generated category can be a suggestion. Spending authority should follow the organisation&#x27;s agreed policy and eligible decision makers.</p>
 <p>Write down the input, expected output and consequence of a mistake for each step. If those are unclear, clarify the process before selecting a model or platform.</p>
-<h2>Compare the task with the available methods</h2>
+<h2 id="section-compare-the-task-with-the-available-methods">Compare the task with the available methods</h2>
 <figure><img src="/images/blog/ai-vs-rules-based-automation/ai-rules-human.webp" alt="AI interprets varied information, explicit rules check agreed conditions, and an authorised person handles consequential judgement." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Choose the method for each task and keep decision authority explicit.</figcaption></figure>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Task</th><th scope="col">Starting approach to assess</th><th scope="col">What needs checking</th></tr></thead><tbody><tr><td>Confirm a required form field exists</td><td>Explicit validation rule</td><td>Empty values, permitted formats and error messages</td></tr><tr><td>Compare an approved amount with a limit</td><td>Deterministic rule</td><td>Currency, comparable total and policy version</td></tr><tr><td>Suggest a category from varied request text</td><td>AI-assisted classification</td><td>Allowed categories, wrong routes and review effort</td></tr><tr><td>Extract stated details from varied documents</td><td>AI-assisted extraction or a suitable document parser</td><td>Source evidence, missing values and ambiguous fields</td></tr><tr><td>Resolve a disputed request or conflicting authority</td><td>Responsible human decision</td><td>Evidence, decision rights and recorded outcome</td></tr></tbody></table></div>
 <p>A regular document format may be handled adequately by an existing parser. A clear request form may remove the need to classify an email at all. Include those options when comparing the value of AI.</p>
-<h2>Work through a bounded intake example</h2>
+<h2 id="section-work-through-a-bounded-intake-example">Work through a bounded intake example</h2>
 <p><strong>Illustrative design example:</strong> a service business receives purchase-order messages in different formats. The first proposed AI task extracts an order reference, a requested delivery date and the final total explicitly stated in the message. It also returns the supporting source text for each field.</p>
 <p>Rules then check required values, permitted formats and consistency with the receiving system. A person reviews the result during the pilot. Supplier approval, price agreement and payment authority remain separate decisions.</p>
 <pre><code>Incoming message -&gt; Preserve source and request reference
@@ -341,40 +322,40 @@
                        |
                 Approved mapped record -&gt; Confirmed system update</code></pre>
 <p>This is a proposed evaluation flow, not a report of an executed model test or client implementation. The <a href="/blog/downloads/ai-task-decision.csv">task-selection worksheet</a> helps define comparable tasks and review decisions.</p>
-<h2>Define correctness before running examples</h2>
+<h2 id="section-define-correctness-before-running-examples">Define correctness before running examples</h2>
 <figure><img src="/images/blog/ai-vs-rules-based-automation/extraction-with-evidence.webp" alt="An AI extraction proposal links each candidate field to source evidence, while missing or conflicting information is routed for review." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Require supporting evidence and a clear route for missing or conflicting information.</figcaption></figure>
 <p>For extraction, distinguish a value that appears in the source from a value someone could calculate or infer. If the task asks for the stated final total and none is present, a missing result may be correct.</p>
 <p>Decide how to represent missing and conflicting values. Define which errors require review and which make the whole result unusable. Include the supporting source text so the reviewer can check the claim without searching the entire document again.</p>
 <p>Structured output can help constrain the response format. It does not establish that the extracted content is correct. <a href="https://developers.openai.com/api/docs/guides/structured-outputs">OpenAI&#x27;s Structured Outputs documentation</a> explicitly notes that outputs can still contain mistakes. Treat format validation and content verification as separate checks.</p>
-<h2>Use a test set that challenges the design</h2>
+<h2 id="section-use-a-test-set-that-challenges-the-design">Use a test set that challenges the design</h2>
 <figure><img src="/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-1536.webp" alt="Clear, missing, conflicting and unexpected document inputs sit beside a magnifier and review tray." width="1536" height="1024" loading="lazy" srcset="/images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-600.webp 600w, /images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-960.webp 960w, /images/blog/ai-vs-rules-based-automation/ai-vs-rules-based-automation-section-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Include difficult inputs as well as the tidy example.</figcaption></figure>
 <p>The <a href="/blog/downloads/ai-intake-evaluation.csv">illustrative evaluation cases</a> contain invented messages and expected handling. They cover missing totals, conflicting references, ambiguous dates, irrelevant text and instructions embedded inside a document.</p>
 <p>The source message is data to inspect. A sentence telling the model to ignore its task or approve an order must not acquire authority over the workflow. Keep such cases in the evaluation and limit what an extraction step is allowed to do.</p>
 <p>The CSV leaves actual outputs and results empty. Run it against the chosen implementation, record the model and configuration, and compare with the expected outcomes. Use additional held-out examples that were not used to tune the instructions. A small demonstration set can reveal mistakes without establishing a reliable production error rate.</p>
 <p>Do not use the model&#x27;s own statement of confidence as proof of accuracy. Decide review thresholds and routing using observed performance on representative work and the consequence of an error.</p>
-<h2>Measure the full cost of using the result</h2>
+<h2 id="section-measure-the-full-cost-of-using-the-result">Measure the full cost of using the result</h2>
 <p>Compare the same scoped task using a rule or parser, AI assistance and manual handling where appropriate. Include the time needed to review, correct and recover from failures.</p>
 <p>Track the proportion of usable outputs, important errors missed by the checks, review minutes per case and operating cost. A fast response that requires longer correction can increase total work.</p>
 <p>Separate evaluation costs from recurring use. Platform charges, model usage, document processing and support may all contribute. The <a href="/blog/workflow-automation-roi/">automation business-case guide</a> provides a way to keep the assumptions visible.</p>
-<h2>Choose the operating boundary deliberately</h2>
+<h2 id="section-choose-the-operating-boundary-deliberately">Choose the operating boundary deliberately</h2>
 <p>After the pilot, decide which outputs can progress automatically, which require a person and which inputs should be excluded from the scope. Record how changes to the model, instructions or source format will be checked before release.</p>
 <p>If review remains necessary for every result, assess whether the assisted process still helps. A useful pilot can also show that a simpler form, a better rule or a manual decision is the appropriate outcome.</p>
 <p>For the surrounding workflow, the <a href="/blog/customer-onboarding-automation/">onboarding guide</a> explains readiness checks, while the <a href="/blog/approval-workflow-automation/">approval guide</a> explains decision authority.</p>
-<h2>Assess the task before choosing the technology</h2>
+<h2 id="section-assess-the-task-before-choosing-the-technology">Assess the task before choosing the technology</h2>
 <p>We help you choose a practical solution for the business task. We examine the input, the required outcome and the surrounding process, then compare approaches using examples your team recognises.</p>
 <p>We can build and test the agreed solution, including the review steps, integration and operating responsibilities it needs. Bring ordinary inputs, a difficult case and the current checking effort so the evaluation reflects the work people actually do.</p>
 <p><a href="/services/new-business-capabilities/">See how we design and deliver the right automation</a>, or explore our broader <a href="/#services">business improvement and solution delivery services</a>.</p>
-<p><a href="/#contact">Discuss where AI could help your workflow with Solvero</a>.</p>
-<h2>About the author</h2>
-<p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<p><a href="/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+<p><a href="/#contact">Discuss where AI could help your workflow with Solvero</a>.</p></div>
+        <aside class="article-sidebar"><div class="article-contents"><p class="article-contents-title">On this page</p><nav aria-label="On this page"><ol><li><a href="#section-separate-interpretation-from-authority">Separate interpretation from authority</a></li><li><a href="#section-compare-the-task-with-the-available-methods">Compare the task with the available methods</a></li><li><a href="#section-work-through-a-bounded-intake-example">Work through a bounded intake example</a></li><li><a href="#section-define-correctness-before-running-examples">Define correctness before running examples</a></li><li><a href="#section-use-a-test-set-that-challenges-the-design">Use a test set that challenges the design</a></li><li><a href="#section-measure-the-full-cost-of-using-the-result">Measure the full cost of using the result</a></li><li><a href="#section-choose-the-operating-boundary-deliberately">Choose the operating boundary deliberately</a></li><li><a href="#section-assess-the-task-before-choosing-the-technology">Assess the task before choosing the technology</a></li></ol></nav></div></aside>
+      </div>
+    </article></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

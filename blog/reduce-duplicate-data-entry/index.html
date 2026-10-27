@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Reduce duplicate data entry between CRM and accounting systems with field ownership, record matching and failure handling. Includes editable planning worksheets." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp" />
   <meta name="twitter:image:alt" content="Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -79,9 +79,6 @@
       },
       "mainEntity": {
         "@id": "https://solvero.co.za/blog/reduce-duplicate-data-entry/#article"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/blog/reduce-duplicate-data-entry/#breadcrumb"
       }
     },
     {
@@ -104,39 +101,15 @@
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
       },
-      "datePublished": "2026-10-16",
-      "dateModified": "2026-10-19",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "dateModified": "2026-10-27T14:42:10+02:00",
       "image": {
         "@type": "ImageObject",
         "url": "https://solvero.co.za/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp",
         "width": 1536,
         "height": 1024,
-        "caption": "Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys."
+        "description": "Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys."
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/blog/reduce-duplicate-data-entry/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://solvero.co.za/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "How to reduce duplicate data entry between your CRM and accounting system",
-          "item": "https://solvero.co.za/blog/reduce-duplicate-data-entry/"
-        }
-      ]
     }
   ]
 }</script>
@@ -177,7 +150,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -185,7 +158,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -204,12 +177,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -264,14 +237,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16T06:04:11+02:00" /><meta property="article:modified_time" content="2026-10-27T14:42:10+02:00" /><script src="/assets/article-navigation.js?v=cfe405c39317" defer></script><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -280,9 +253,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -309,66 +282,74 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
-        <h1 class="font-semibold mb-6">How to reduce duplicate data entry between your CRM and accounting system</h1>
-        <p class="text-lg leading-relaxed">Connected systems · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
-      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><figure><img src="/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp" alt="Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-600.webp 600w, /images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-960.webp 960w, /images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Link the customer records while keeping field ownership clear.</figcaption></figure>
-<p>To reduce duplicate data entry, define which system owns each field, agree how records will be matched, and automate a specific handoff. Include a way to detect failed or uncertain updates. Connecting two applications helps only when both agree which customer and which information an update refers to.</p>
+  <main id="main-content"><article class="editorial-article">
+      <header class="editorial-hero article-hero">
+        <div class="article-hero-inner">
+          <div class="article-heading">
+            <a class="article-blog-link" href="/blog/">Solvero Blog</a>
+            <p class="article-topic">Connected systems</p>
+            <h1>How to reduce duplicate data entry between your CRM and accounting system</h1>
+            <dl class="article-meta"><div class="article-meta-item"><dt>Author</dt><dd><a rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a></dd></div><div class="article-meta-item article-date article-updated"><dt>Updated</dt><dd><time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></dd></div></dl>
+          </div>
+          <div class="article-hero-media"><figure><img src="/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp" alt="Linked customer records sit in Sales and Finance folders, with separate information ownership represented by keys." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-600.webp 600w, /images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-960.webp 960w, /images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-featured-1536.webp 1536w" sizes="(min-width: 1024px) 384px, (min-width: 368px) 320px, calc(100vw - 48px)" decoding="async" /></figure></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <details class="article-mobile-contents"><summary>On this page</summary><nav aria-label="On this page"><ol><li><a href="#section-find-the-repeated-capture">Find the repeated capture</a></li><li><a href="#section-assign-ownership-at-field-level">Assign ownership at field level</a></li><li><a href="#section-match-records-using-an-explicit-relationship">Match records using an explicit relationship</a></li><li><a href="#section-design-for-a-repeated-event">Design for a repeated event</a></li><li><a href="#section-handle-uncertainty-before-retrying">Handle uncertainty before retrying</a></li><li><a href="#section-test-the-handoff-before-extending-it">Test the handoff before extending it</a></li><li><a href="#section-choose-the-handoff-with-the-clearest-value">Choose the handoff with the clearest value</a></li></ol></nav></details>
+        <div class="article-body"><p>To reduce duplicate data entry, define which system owns each field, agree how records will be matched, and automate a specific handoff. Include a way to detect failed or uncertain updates. Connecting two applications helps only when both agree which customer and which information an update refers to.</p>
 <p>Start with one repeated task, such as creating a billing record after a customer is approved. Expanding to every customer field and both directions at once makes ownership conflicts harder to resolve.</p>
 <p>A useful integration removes work from the whole handoff, including the checks and corrections people currently perform.</p>
-<h2>Find the repeated capture</h2>
+<h2 id="section-find-the-repeated-capture">Find the repeated capture</h2>
 <p>Follow several customer records from sales approval to billing. Note who enters each field, which information is checked and what corrections happen later.</p>
 <p>A repeated entry may serve a purpose. Finance may verify the billing identity or approve payment terms before an account can be used. Preserve that decision while removing the unnecessary copying around it.</p>
 <p>Distinguish the customer account from its contacts, delivery locations and billing entities. One trading relationship can involve several of each. Treating them as a single record can create errors even when the integration runs successfully.</p>
 <p>Define a starting scope such as:</p>
 <blockquote><p>An approved customer account in the CRM creates or updates the corresponding billing account. Finance retains ownership of verified billing details and payment terms.</p></blockquote>
-<h2>Assign ownership at field level</h2>
+<h2 id="section-assign-ownership-at-field-level">Assign ownership at field level</h2>
 <figure><img src="/images/blog/reduce-duplicate-data-entry/field-ownership.webp" alt="A CRM owns the account manager while accounting owns verified billing details and payment terms, linked by an explicit record relationship." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Agree ownership field by field before connecting customer records.</figcaption></figure>
 <p>“The CRM is the source of truth” leaves too much unspecified. Sales may own the account manager while finance owns payment terms. Name the owner of each field and decide which edits are allowed to travel between systems.</p>
 <p>The following is an <strong>illustrative mapping</strong>, not a configuration for a particular platform.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Information</th><th scope="col">Owner after handoff</th><th scope="col">Handoff rule</th></tr></thead><tbody><tr><td>Trading name</td><td>Sales, in CRM</td><td>Update the destination&#x27;s designated trading-name field where supported</td></tr><tr><td>Legal billing name</td><td>Finance, in accounting</td><td>CRM supplies a proposed value initially; finance verifies later corrections</td></tr><tr><td>Invoice address</td><td>Finance, in accounting</td><td>Validate the initial value; return approved changes only to a designated CRM field</td></tr><tr><td>Account manager</td><td>Sales, in CRM</td><td>Share only where there is an agreed business use and compatible field</td></tr><tr><td>Payment terms and credit status</td><td>Finance, in accounting</td><td>Expose an approved status to CRM users where appropriate; CRM edits cannot overwrite it</td></tr></tbody></table></div>
 <p>For each row, document required fields, permitted values and what happens when a value is blank. Clearing an optional field is different from accidentally receiving an empty value. Decide whether that event clears, preserves or rejects the destination value.</p>
 <p>Use the <a href="/blog/downloads/customer-field-ownership.csv">editable field-ownership map</a> to record these decisions before configuring a sync.</p>
-<h2>Match records using an explicit relationship</h2>
+<h2 id="section-match-records-using-an-explicit-relationship">Match records using an explicit relationship</h2>
 <p>After the first confirmed handoff, store a cross-reference between the two systems&#x27; record identifiers. Include the system, account or tenant, and record type so the identifiers retain their meaning.</p>
 <p>In a fictional example, CRM customer <code>C-1042</code> is linked to accounting customer <code>A-778</code>. Later changes use that established relationship. These are explanatory labels, not valid API identifiers for a named product.</p>
 <p>For a customer without a cross-reference, define a controlled matching process:</p>
 <ul><li><strong>No match:</strong> create a record only when the agreed checks permit it.</li><li><strong>One verified match:</strong> link the existing record and retain its identifier.</li><li><strong>Multiple plausible matches:</strong> send the case for review before writing.</li></ul>
 <p>Names and shared email addresses can be ambiguous. Decide which evidence establishes the billing entity rather than silently choosing the first search result.</p>
 <p>Platforms have their own matching behaviour. For example, <a href="https://knowledge.hubspot.com/import-and-export/understand-the-import-tool">HubSpot documents record IDs and other unique identifiers for imports</a>. That is an import-specific capability; an ongoing integration still needs its own documented matching and ownership rules.</p>
-<h2>Design for a repeated event</h2>
+<h2 id="section-design-for-a-repeated-event">Design for a repeated event</h2>
 <p>An integration can receive the same event twice. A user can also retry a task because the first response did not arrive. The intended business action should produce one result when it is repeated.</p>
 <p>This is commonly called <strong>idempotency</strong>. For a customer-creation handoff, keep a stored reference for the intended action and its outcome that survives a failed run. Use a platform&#x27;s documented idempotency mechanism where the relevant endpoint supports it, alongside a record of events the workflow has already processed.</p>
 <p>An update to the same customer may be a legitimate new action. Preserve the event or revision identity so the workflow can distinguish that update from a replay of an earlier request. Deal with concurrent events and out-of-order delivery explicitly; an older address must not overwrite an approved newer one.</p>
-<h2>Handle uncertainty before retrying</h2>
+<h2 id="section-handle-uncertainty-before-retrying">Handle uncertainty before retrying</h2>
 <figure><img src="/images/blog/reduce-duplicate-data-entry/uncertain-update.webp" alt="After a connection times out, the workflow checks whether the destination record already exists before deciding what to do next." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Confirm the first outcome before repeating a create action.</figcaption></figure>
 <p>Consider a timeout immediately after creating a billing record. The accounting system may have completed the write even though the workflow never received confirmation.</p>
 <p>Mark that case as uncertain. Reconcile the destination using the stored operation reference and supported lookup methods before attempting another create. If the result cannot be established safely, assign it for review. Repeating an unconfirmed create can produce the duplicate the integration was meant to prevent.</p>
 <p>Give exceptions a visible status and owner. A useful review item contains the customer reference, intended action, failure reason and last known outcome. Limit the customer information in notifications to what the reviewer needs.</p>
-<h2>Test the handoff before extending it</h2>
+<h2 id="section-test-the-handoff-before-extending-it">Test the handoff before extending it</h2>
 <figure><img src="/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-1536.webp" alt="A tester checks ordinary, repeated, mismatched and failed customer-record updates before extending an integration." width="1536" height="1024" loading="lazy" srcset="/images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-600.webp 600w, /images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-960.webp 960w, /images/blog/reduce-duplicate-data-entry/reduce-duplicate-data-entry-section-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Test normal and difficult handoffs before extending the connection.</figcaption></figure>
 <p>Use the <a href="/blog/downloads/customer-integration-tests.csv">acceptance checklist</a> with representative test records. It describes expected outcomes; it is not evidence that a live connector has passed them.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Scenario</th><th scope="col">Expected outcome</th></tr></thead><tbody><tr><td>New approved customer</td><td>One destination account, with its identifier recorded</td></tr><tr><td>Same creation event delivered again</td><td>The original result is recognised; no second account</td></tr><tr><td>Several possible existing accounts</td><td>Review required; no automatic create or update</td></tr><tr><td>Timeout after a successful write</td><td>Reconciliation finds the outcome before another write</td></tr><tr><td>CRM tries to alter finance-owned terms</td><td>The change is blocked or reviewed under the agreed ownership rule</td></tr></tbody></table></div>
 <p>Also test missing fields, expired access, cleared values and events arriving out of order. Confirm how the selected products, editions and permissions support each required action. A connector&#x27;s existence does not establish that every necessary field or operation is supported.</p>
 <p>Roll out the first handoff with reconciliation checks. Someone should be able to compare eligible source records with confirmed destination outcomes and see which cases need attention. Include support effort and corrections when measuring the reduction in manual handling.</p>
-<h2>Choose the handoff with the clearest value</h2>
+<h2 id="section-choose-the-handoff-with-the-clearest-value">Choose the handoff with the clearest value</h2>
 <p>If several repeated tasks compete for attention, use the <a href="/blog/which-processes-to-automate/">automation scorecard</a> to compare scope, readiness and effort. Where a customer change requires approval, define that decision using the <a href="/blog/approval-workflow-automation/">approval workflow guide</a>.</p>
 <p>We help reduce repeated capture by examining the process around the data as well as the applications. We map where information is created and checked, agree ownership with the business and define the handoff that needs to change.</p>
 <p>We can then build the agreed integration or adjust the workflow, test matching and exception cases, and hand over a process your team can operate. Bring the applications involved, the information entered twice and a recent example of a mismatch.</p>
 <p><a href="/services/business-operations-improvement/">See how we reduce repeated work across your processes</a>. If the improvement needs a new connection, <a href="/services/new-business-capabilities/">see how we design and deliver system integrations</a>.</p>
-<p><a href="/#contact">Discuss your repeated data entry with Solvero</a>.</p>
-<h2>About the author</h2>
-<p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<p><a href="/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+<p><a href="/#contact">Discuss your repeated data entry with Solvero</a>.</p></div>
+        <aside class="article-sidebar"><div class="article-contents"><p class="article-contents-title">On this page</p><nav aria-label="On this page"><ol><li><a href="#section-find-the-repeated-capture">Find the repeated capture</a></li><li><a href="#section-assign-ownership-at-field-level">Assign ownership at field level</a></li><li><a href="#section-match-records-using-an-explicit-relationship">Match records using an explicit relationship</a></li><li><a href="#section-design-for-a-repeated-event">Design for a repeated event</a></li><li><a href="#section-handle-uncertainty-before-retrying">Handle uncertainty before retrying</a></li><li><a href="#section-test-the-handoff-before-extending-it">Test the handoff before extending it</a></li><li><a href="#section-choose-the-handoff-with-the-clearest-value">Choose the handoff with the clearest value</a></li></ol></nav></div></aside>
+      </div>
+    </article></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

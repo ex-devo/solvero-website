@@ -5,8 +5,10 @@ import hashlib
 import html
 import importlib.util
 import json
+import math
 import re
-from datetime import date
+import xml.etree.ElementTree as ET
+from datetime import datetime
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / '_content'
@@ -45,6 +47,19 @@ def service_schema(offer):
     return {'@type': 'Service', '@id': url + '#service', 'url': url, 'name': offer['name'], 'serviceType': offer['name'], 'description': offer['description'], 'areaServed': 'Worldwide', 'provider': {'@id': SITE + '#organization'}}
 
 
+def publisher_logo():
+    svg = ET.fromstring((ROOT / 'images/brand/rubix/solvero-header.svg').read_text())
+    _, _, artwork_width, artwork_height = map(float, svg.attrib['viewBox'].split())
+    width = 1024
+    height = math.ceil(width * artwork_height / artwork_width)
+    svg.set('width', str(width))
+    svg.set('height', str(height))
+    ET.register_namespace('', 'http://www.w3.org/2000/svg')
+    path = 'images/brand/rubix/solvero-publisher.svg'
+    (ROOT / path).write_text(ET.tostring(svg, encoding='unicode') + '\n')
+    return {'@type': 'ImageObject', 'url': SITE + path, 'width': width, 'height': height}
+
+
 def homepage_services():
     cards = []
     for offer in SERVICES:
@@ -72,6 +87,9 @@ def homepage_services():
 spec = importlib.util.spec_from_file_location('renderer', ROOT / 'tools/content-renderer.py')
 renderer = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(renderer)
+layout_spec = importlib.util.spec_from_file_location('editorial_layout', ROOT / 'tools/editorial-layout.py')
+layout = importlib.util.module_from_spec(layout_spec)
+layout_spec.loader.exec_module(layout)
 renderer.LINKS = {a['file'] + '.md': '/blog/' + a['slug'] + '/' for a in META}
 renderer.LINKS['author-jateen-narsai.md'] = '/authors/jateen-narsai/'
 renderer.IMAGE_SIZES = {image['src']: (image['width'], image['height']) for a in META for image in a.get('images', [])}
@@ -79,6 +97,7 @@ renderer.IMAGE_META = {image['src']: image for a in META for image in a.get('ima
 template = (ROOT / '_templates/editorial.html').read_text()
 homepage = (ROOT / 'index.html').read_text()
 graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', homepage, re.S)[1])['@graph']
+next(node for node in graph if node['@type'] == 'Organization')['logo'] = publisher_logo()
 # The homepage cards, detailed pages and catalogue share the same three offers.
 graph = [node for node in graph if node['@type'] not in ('Service', 'OfferCatalog')]
 next(node for node in graph if node['@type'] == 'WebPage')['mainEntity'] = {'@id': SITE + '#services'}
@@ -105,22 +124,17 @@ def breadcrumbs(url, title, article=False):
         for i, (name, link) in enumerate(items, 1)]}
 
 
-def hero(title, subtitle, article=False, trail_label=None):
-    trail = '<a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> '
-    if article:
-        trail += '<a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> '
-    trail += '<span aria-current="page">' + ('Article' if article else html.escape(trail_label or title)) + '</span>'
-    return f'''<header class="editorial-hero bg-brand-gradient text-white">
+def hero(title, subtitle):
+    return f'''<header class="editorial-hero bg-white text-gray-800">
       <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto">{trail}</nav>
+        <a class="article-blog-link" href="/blog/">Solvero Blog</a>
         <h1 class="font-semibold mb-6">{html.escape(title)}</h1>
         <p class="text-lg leading-relaxed">{subtitle}</p>
       </div></header>'''
 
 
 def date_label(value):
-    parsed = date.fromisoformat(value)
-    return f'{parsed.day} {parsed.strftime("%B %Y")}'
+    return layout.date_label(value)
 
 
 def write_page(relative, title, description, url, nodes, main, extra_head='', image=None, page_template=None):
@@ -203,35 +217,33 @@ for redirect in REDIRECTS:
 ''')
 
 
+article_navigation_version = hashlib.sha256((ROOT / 'assets/article-navigation.js').read_bytes()).hexdigest()[:12]
 for a in META:
     url = a['canonical']
-    page = {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': a['title'], 'description': a['description'], 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'mainEntity': {'@id': url + '#article'}, 'breadcrumb': {'@id': url + '#breadcrumb'}}
+    page = {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': a['title'], 'description': a['description'], 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'mainEntity': {'@id': url + '#article'}}
     post = {'@type': 'BlogPosting', '@id': url + '#article', 'url': url, 'headline': a['headline'], 'description': a['description'], 'inLanguage': 'en', 'articleSection': a['section'], 'author': {'@id': person['@id']}, 'publisher': {'@id': SITE + '#organization'}, 'mainEntityOfPage': {'@id': page['@id']}, 'isPartOf': {'@id': SITE + '#website'}, 'datePublished': a['datePublished'], 'dateModified': a['dateModified']}
     if 'image' in a:
         lead_image = next(image for image in a['images'] if SITE.rstrip('/') + image['src'] == a['image'])
-        post['image'] = {'@type': 'ImageObject', 'url': a['image'], 'width': lead_image['width'], 'height': lead_image['height'], 'caption': a['image_alt']}
+        post['image'] = {'@type': 'ImageObject', 'url': a['image'], 'width': lead_image['width'], 'height': lead_image['height'], 'description': a['image_alt']}
     markdown = (CONTENT / 'blog' / (a['file'] + '.md')).read_text()
-    # The title and byline are displayed in the site's branded article header.
-    body = re.sub(r'^# .*?\n\nBy .*?\n\n', '', markdown, count=1)
-    subtitle = f'{html.escape(a["section"])} · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">{html.escape(AUTHOR["name"])}</a> · Published <time datetime="{a["datePublished"]}">{date_label(a["datePublished"])}</time>'
-    main = '<article>' + hero(a['headline'], subtitle, True) + '<div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl">' + renderer.render(body) + '</div></div></article>'
-    extra = f'<meta name="author" content="{html.escape(AUTHOR["name"])}" /><meta property="article:published_time" content="{a["datePublished"]}" /><meta property="article:modified_time" content="{a["dateModified"]}" />'
+    main = layout.article_main(a, {'name': AUTHOR['name'], 'url': '/authors/jateen-narsai/'}, markdown, renderer)
+    extra = f'<meta name="author" content="{html.escape(AUTHOR["name"])}" /><meta property="article:published_time" content="{a["datePublished"]}" /><meta property="article:modified_time" content="{a["dateModified"]}" /><script src="/assets/article-navigation.js?v={article_navigation_version}" defer></script>'
     if 'image' in a:
         extra += f'<meta property="og:image:width" content="{lead_image["width"]}" /><meta property="og:image:height" content="{lead_image["height"]}" />'
-    write_page('blog/' + a['slug'] + '/index.html', a['title'], a['description'], url, [person, page, post, breadcrumbs(url, a['headline'], True)], main, extra, image={'url': a['image'], 'alt': a['image_alt']} if 'image' in a else None)
+    write_page('blog/' + a['slug'] + '/index.html', a['title'], a['description'], url, [person, page, post], main, extra, image={'url': a['image'], 'alt': a['image_alt']} if 'image' in a else None)
 
 url = AUTHOR['canonical']
-profile = {'@type': 'ProfilePage', '@id': url + '#webpage', 'url': url, 'name': AUTHOR['name'] + ' | Solvero', 'description': AUTHOR['description'], 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'mainEntity': {'@id': person['@id']}, 'publisher': {'@id': SITE + '#organization'}, 'breadcrumb': {'@id': url + '#breadcrumb'}}
+profile = {'@type': 'ProfilePage', '@id': url + '#webpage', 'url': url, 'name': AUTHOR['name'] + ' | Solvero', 'description': AUTHOR['description'], 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'mainEntity': {'@id': person['@id']}, 'publisher': {'@id': SITE + '#organization'}}
 body = (CONTENT / 'author-jateen-narsai.md').read_text().split('\n', 1)[1]
 main = hero(AUTHOR['name'], 'Business and systems analysis · Process improvement · Software solution design') + '<div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl">' + renderer.render(body) + '</div></div>'
-write_page('authors/jateen-narsai/index.html', profile['name'], AUTHOR['description'], url, [person, profile, breadcrumbs(url, AUTHOR['name'])], main)
+write_page('authors/jateen-narsai/index.html', profile['name'], AUTHOR['description'], url, [person, profile], main)
 
 url = SITE + 'blog/'
 title = 'Business & Technology Blog | Solvero'
 description = 'Ideas, insights and practical guides on business and technology, from improving operations and connecting systems to assessing new tools and approaches.'
 collection = {'@type': 'CollectionPage', '@id': url + '#webpage', 'url': url, 'name': title, 'description': description, 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'publisher': {'@id': SITE + '#organization'}, 'mainEntity': {'@id': url + '#articles'}}
 # Publication date controls the archive order; existing order breaks same-day ties.
-archive = sorted(META, key=lambda article: date.fromisoformat(article['datePublished']), reverse=True)
+archive = sorted(META, key=lambda article: datetime.fromisoformat(article['datePublished']).date(), reverse=True)
 listing = {'@type': 'ItemList', '@id': url + '#articles', 'numberOfItems': len(archive), 'itemListOrder': 'https://schema.org/ItemListOrderDescending', 'itemListElement': [{'@type': 'ListItem', 'position': i, 'name': a['headline'], 'url': a['canonical']} for i, a in enumerate(archive, 1)]}
 
 
@@ -243,13 +255,15 @@ def archive_card(article, position):
     if variants:
         responsive = ' srcset="' + ', '.join(f'{variant["src"]} {variant["width"]}w' for variant in variants) + '" sizes="(min-width: 1200px) 363px, (min-width: 1024px) calc((100vw - 112px) / 3), (min-width: 640px) calc((100vw - 80px) / 2), calc(100vw - 48px)"'
     loading = 'eager' if position < 3 else 'lazy'
+    updated = article['dateModified'] > article['datePublished']
+    visible_date = article['dateModified'] if updated else article['datePublished']
+    date_kind = 'Updated' if updated else 'Published'
     return f'''<article class="blog-card" data-blog-card data-topic="{html.escape(article['section'], quote=True)}">
       <a class="blog-card-link" href="/blog/{article['slug']}/" aria-labelledby="card-title-{article['slug']}">
       <div class="blog-card-image"><img src="{thumb['src']}"{responsive} alt="{html.escape(article['image_alt'], quote=True)}" width="{thumb['width']}" height="{thumb['height']}" loading="{loading}" decoding="async" /></div>
-      <div class="blog-card-copy"><p class="blog-card-topic">{html.escape(article['section'])}</p>
+      <div class="blog-card-copy"><p class="blog-card-date">{date_kind}: <time datetime="{visible_date}">{date_label(visible_date)}</time></p><p class="blog-card-topic">{html.escape(article['section'])}</p>
       <h3 id="card-title-{article['slug']}">{html.escape(article['headline'])}</h3>
       <p class="blog-card-description">{html.escape(article['description'])}</p>
-      <p class="blog-card-meta"><time datetime="{article['datePublished']}">{date_label(article['datePublished'])}</time><span aria-hidden="true"> · </span>By {html.escape(AUTHOR['name'])}</p>
       <span class="blog-card-read-more" aria-hidden="true">Read more <svg class="blog-card-arrow" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7" /></svg></span></div>
       </a>
     </article>'''

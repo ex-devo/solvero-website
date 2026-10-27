@@ -26,12 +26,28 @@ function selectTopic(dom, topic) {
 test('blog archive shows newest publications first in cards and structured data', () => {
   const dom = new JSDOM(html), document = dom.window.document;
   const visibleCards = cards(document);
-  const dates = visibleCards.map(card => card.querySelector('time').dateTime);
+  const dates = visibleCards.map(card => metadata.find(a => cardLink(card).getAttribute('href') === `/blog/${a.slug}/`).datePublished);
   assert.deepEqual(dates, [...dates].sort().reverse());
   assert.equal(dates[0], [...metadata.map(a => a.datePublished)].sort().at(-1));
   const listing = JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent)['@graph'].find(n => n['@type'] === 'ItemList');
   assert.deepEqual(listing.itemListElement.map(item => new URL(item.url).pathname), visibleCards.map(card => cardLink(card).getAttribute('href')));
   assert.equal(visibleCards.length, metadata.length);
+  dom.window.close();
+});
+
+test('cards put a labelled current date before their topic and title', () => {
+  const dom = new JSDOM(html);
+  for (const card of cards(dom.window.document)) {
+    const article = metadata.find(a => cardLink(card).getAttribute('href') === `/blog/${a.slug}/`);
+    const copy = card.querySelector('.blog-card-copy');
+    const date = copy.firstElementChild;
+    const updated = article.dateModified > article.datePublished;
+    assert.ok(date.classList.contains('blog-card-date'));
+    assert.equal(date.querySelector('time').dateTime, updated ? article.dateModified : article.datePublished);
+    assert.match(date.textContent, updated ? /^Updated:/ : /^Published:/);
+    assert.equal(date.nextElementSibling, copy.querySelector('.blog-card-topic'));
+    assert.equal(date.nextElementSibling.nextElementSibling, copy.querySelector('h3'));
+  }
   dom.window.close();
 });
 

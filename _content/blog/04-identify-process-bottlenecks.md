@@ -99,10 +99,3 @@ We can help implement the chosen improvement, from clearer ownership and fewer s
 [See how we decide which improvements to prioritise](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss your process bottleneck with Solvero](/#contact).
-
-
-## About the author
-
-Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.
-
-[More about Jateen Narsai](author-jateen-narsai.md).

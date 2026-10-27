@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Build an automation business case with a checked example covering remaining work, capacity, cash benefits and running costs. Includes editable scenario worksheets." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp" />
   <meta name="twitter:image:alt" content="A pool of time is divided into review, manual work, support and capacity released for other work." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -79,9 +79,6 @@
       },
       "mainEntity": {
         "@id": "https://solvero.co.za/blog/workflow-automation-roi/#article"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/blog/workflow-automation-roi/#breadcrumb"
       }
     },
     {
@@ -104,39 +101,15 @@
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
       },
-      "datePublished": "2026-10-16",
-      "dateModified": "2026-10-19",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "dateModified": "2026-10-27T14:42:10+02:00",
       "image": {
         "@type": "ImageObject",
         "url": "https://solvero.co.za/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp",
         "width": 1536,
         "height": 1024,
-        "caption": "A pool of time is divided into review, manual work, support and capacity released for other work."
+        "description": "A pool of time is divided into review, manual work, support and capacity released for other work."
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/blog/workflow-automation-roi/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://solvero.co.za/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Workflow automation ROI: how to build a realistic business case",
-          "item": "https://solvero.co.za/blog/workflow-automation-roi/"
-        }
-      ]
     }
   ]
 }</script>
@@ -177,7 +150,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -185,7 +158,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -204,12 +177,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -264,14 +237,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16T06:04:11+02:00" /><meta property="article:modified_time" content="2026-10-27T14:42:10+02:00" /><script src="/assets/article-navigation.js?v=cfe405c39317" defer></script><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -280,9 +253,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -309,31 +282,39 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
-        <h1 class="font-semibold mb-6">Workflow automation ROI: how to build a realistic business case</h1>
-        <p class="text-lg leading-relaxed">Process improvement · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
-      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><figure><img src="/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp" alt="A pool of time is divided into review, manual work, support and capacity released for other work." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/workflow-automation-roi/workflow-automation-roi-featured-600.webp 600w, /images/blog/workflow-automation-roi/workflow-automation-roi-featured-960.webp 960w, /images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Count the work that remains before valuing the capacity released.</figcaption></figure>
-<p>Build a workflow automation business case from measured work, realistic remaining effort and the full cost of implementation and operation. Separate cash savings from staff capacity released. Both can matter, but they support different decisions.</p>
+  <main id="main-content"><article class="editorial-article">
+      <header class="editorial-hero article-hero">
+        <div class="article-hero-inner">
+          <div class="article-heading">
+            <a class="article-blog-link" href="/blog/">Solvero Blog</a>
+            <p class="article-topic">Process improvement</p>
+            <h1>Workflow automation ROI: how to build a realistic business case</h1>
+            <dl class="article-meta"><div class="article-meta-item"><dt>Author</dt><dd><a rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a></dd></div><div class="article-meta-item article-date article-updated"><dt>Updated</dt><dd><time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></dd></div></dl>
+          </div>
+          <div class="article-hero-media"><figure><img src="/images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp" alt="A pool of time is divided into review, manual work, support and capacity released for other work." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/workflow-automation-roi/workflow-automation-roi-featured-600.webp 600w, /images/blog/workflow-automation-roi/workflow-automation-roi-featured-960.webp 960w, /images/blog/workflow-automation-roi/workflow-automation-roi-featured-1536.webp 1536w" sizes="(min-width: 1024px) 384px, (min-width: 368px) 320px, calc(100vw - 48px)" decoding="async" /></figure></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <details class="article-mobile-contents"><summary>On this page</summary><nav aria-label="On this page"><ol><li><a href="#section-establish-a-baseline-you-can-explain">Establish a baseline you can explain</a></li><li><a href="#section-model-the-work-that-remains">Model the work that remains</a></li><li><a href="#section-keep-capacity-value-and-cash-benefit-separate">Keep capacity value and cash benefit separate</a></li><li><a href="#section-include-build-and-operating-costs">Include build and operating costs</a></li><li><a href="#section-test-the-assumptions-that-change-the-decision">Test the assumptions that change the decision</a></li><li><a href="#section-replace-projections-with-pilot-evidence">Replace projections with pilot evidence</a></li><li><a href="#section-discuss-the-assumptions-before-committing">Discuss the assumptions before committing</a></li></ol></nav></details>
+        <div class="article-body"><p>Build a workflow automation business case from measured work, realistic remaining effort and the full cost of implementation and operation. Separate cash savings from staff capacity released. Both can matter, but they support different decisions.</p>
 <p>A claim that a task currently takes eighty hours does not establish that automation will save eighty hours. Some cases may stay manual, people may review the outputs, and someone will maintain the workflow. The useful calculation starts after those activities have been included.</p>
 <p>Use the same discipline to compare a simpler process or a better handoff with a software build. The chosen improvement should earn its implementation effort.</p>
-<h2>Establish a baseline you can explain</h2>
+<h2 id="section-establish-a-baseline-you-can-explain">Establish a baseline you can explain</h2>
 <p>Record case volume, active handling time and rework for a defined period. Note how representative the period is. A seasonal peak or a batch of unusually difficult requests needs context.</p>
 <p>Define what the timing includes. If eight minutes already covers checking and correcting a record, do not add those same correction minutes as another benefit. Keep customer waiting time separate from staff effort.</p>
 <p>Use your own labour-cost assumptions. For planning, a loaded hourly cost can represent salary and agreed employer costs. Multiplying hours by that rate values capacity; it does not prove payroll or other cash spending will fall.</p>
-<h2>Model the work that remains</h2>
+<h2 id="section-model-the-work-that-remains">Model the work that remains</h2>
 <figure><img src="/images/blog/workflow-automation-roi/remaining-work.webp" alt="A realistic automation estimate subtracts the review, corrections, exception handling and support that remain from the current handling effort." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Estimate released capacity after accounting for the work that remains.</figcaption></figure>
 <p><strong>Illustrative example with invented inputs:</strong> a recurring administrative workflow processes 600 cases a month, each taking eight active minutes. Its baseline is 80 handling hours.</p>
 <p>The proposed scope covers 75% of cases. Those cases still need two minutes of review each. The remaining cases keep their original handling time, and the process needs five hours of internal support each month.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Component</th><th scope="col">Calculation</th><th scope="col">Monthly hours</th></tr></thead><tbody><tr><td>Covered cases with review</td><td>450 × 2 minutes ÷ 60</td><td>15</td></tr><tr><td>Cases remaining manual</td><td>150 × 8 minutes ÷ 60</td><td>20</td></tr><tr><td>Internal workflow support</td><td>Assumed and separately recorded</td><td>5</td></tr><tr><td>Total remaining effort</td><td>15 + 20 + 5</td><td>40</td></tr><tr><td>Capacity released</td><td>80 − 40</td><td>40</td></tr></tbody></table></div>
 <p>The released capacity is forty hours under these assumptions. It still needs a credible use: handle a backlog, improve service, accommodate growth or reduce a specific paid workload. Name that use and who will verify it.</p>
-<h2>Keep capacity value and cash benefit separate</h2>
+<h2 id="section-keep-capacity-value-and-cash-benefit-separate">Keep capacity value and cash benefit separate</h2>
 <p>At an invented planning rate of 25 currency units per hour, forty hours represents 1,000 units of monthly capacity value. Use any consistent currency; no exchange rate is assumed.</p>
 <p>If salaries and other spending stay unchanged, that 1,000 is not a cash saving. Cash benefit needs separate evidence, such as reduced paid overtime or an avoided external service cost. Do not claim both the full value of the released hours and an additional cash saving for those same hours.</p>
 <p>Faster invoicing, lower error rates and improved customer experience may be useful outcomes. Include them as measured non-cash outcomes unless there is a defensible way to estimate an additional financial effect. Avoid assigning an arbitrary price to reduced regulatory or operational risk.</p>
 <figure><img src="/images/blog/workflow-automation-roi/capacity-and-cash.webp" alt="Released staff capacity can be used for service or growth, while cash savings require an actual reduction in spending." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Capacity value and cash savings belong on separate lines in the business case.</figcaption></figure>
-<h2>Include build and operating costs</h2>
+<h2 id="section-include-build-and-operating-costs">Include build and operating costs</h2>
 <p>For this worked example, assume a one-time cost of 6,000 units and recurring external costs of 400 units a month. These are hypothetical inputs, not Solvero prices or market estimates.</p>
 <p>The one-time amount includes discovery, implementation and internal time for setup, testing and training. The recurring amount covers software and external support. The five internal support hours are already included in remaining effort above, so they are not deducted a second time.</p>
 <p>Use an explicit period and basis:</p>
@@ -341,30 +322,30 @@
 <p>With twelve full months at the modelled operating level, capacity-valued benefit is 12,000 units. Total cost is 6,000 + 12 × 400 = 10,800. The resulting capacity-valued return is approximately <strong>11.1%</strong>.</p>
 <p>The simple capacity-valued payback is 6,000 ÷ (1,000 − 400), or <strong>ten months</strong>. This simplified calculation assumes immediate steady operation and excludes financing and discounting. A slower rollout needs a month-by-month model.</p>
 <p>Under an unchanged-spending cash view, no cash benefit has yet been established. The example therefore has 10,800 units of additional first-year cash cost to fund. Keep that distinction visible when asking for approval.</p>
-<h2>Test the assumptions that change the decision</h2>
+<h2 id="section-test-the-assumptions-that-change-the-decision">Test the assumptions that change the decision</h2>
 <figure><img src="/images/blog/workflow-automation-roi/workflow-automation-roi-section-1536.webp" alt="Three labelled knobs for coverage, review effort and support connect to a basket of released capacity." width="1536" height="1024" loading="lazy" srcset="/images/blog/workflow-automation-roi/workflow-automation-roi-section-600.webp 600w, /images/blog/workflow-automation-roi/workflow-automation-roi-section-960.webp 960w, /images/blog/workflow-automation-roi/workflow-automation-roi-section-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Coverage, review effort and support change the capacity available.</figcaption></figure>
 <p>The <a href="/blog/downloads/automation-roi-scenarios.csv">editable scenario worksheet</a> contains these checked examples. All retain the same baseline, planning rate and cost assumptions.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Scenario</th><th scope="col">Coverage</th><th scope="col">Review minutes per covered case</th><th scope="col">Internal support hours</th><th scope="col">Capacity released per month</th><th scope="col">Monthly capacity value after external costs</th></tr></thead><tbody><tr><td>Conservative</td><td>50%</td><td>2</td><td>8</td><td>22 hours</td><td>150 units</td></tr><tr><td>Base</td><td>75%</td><td>2</td><td>5</td><td>40 hours</td><td>600 units</td></tr><tr><td>Optimistic</td><td>90%</td><td>1</td><td>4</td><td>59 hours</td><td>1,075 units</td></tr></tbody></table></div>
 <p>The conservative case takes forty months to recover the one-time cost on this capacity-valued basis. That difference is useful: coverage, review effort and support requirements deserve testing before commitment.</p>
 <p>The CSV contains values and explicit formulas as explanatory text; it is not a spreadsheet calculator. Replace the inputs, recalculate and have the owner check that benefits and costs use the same scope and period. The <a href="/blog/downloads/automation-roi-inputs.csv">input worksheet</a> records the evidence needed for each assumption.</p>
-<h2>Replace projections with pilot evidence</h2>
+<h2 id="section-replace-projections-with-pilot-evidence">Replace projections with pilot evidence</h2>
 <p>Measure remaining handling, exception volume, correction effort and support time during the pilot. Compare like-for-like cases, and record any change in monthly volume. Update both the capacity view and the cash view.</p>
 <p>If the business case depends on a benefit nobody can measure or use, narrow the scope or reconsider the project. The <a href="/blog/which-processes-to-automate/">process-selection guide</a> helps compare candidates; the <a href="/blog/workflow-automation-project-cost/">project-cost guide</a> helps identify scope assumptions behind an estimate.</p>
-<h2>Discuss the assumptions before committing</h2>
+<h2 id="section-discuss-the-assumptions-before-committing">Discuss the assumptions before committing</h2>
 <p>We help connect a proposed improvement to the work and costs behind its business case. We examine the current process, identify what would change and define a practical scope with assumptions your team can check.</p>
 <p>Where a pilot is worthwhile, we can design and implement the agreed process or system change, then compare the observed result with the baseline. Bring current volumes, handling steps, operating costs and the outcome you want to improve.</p>
 <p><a href="/services/business-operations-improvement/">See how we assess where to improve first</a>, or explore our broader <a href="/#services">business improvement and solution delivery services</a>.</p>
-<p><a href="/#contact">Discuss your automation business case with Solvero</a>.</p>
-<h2>About the author</h2>
-<p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<p><a href="/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+<p><a href="/#contact">Discuss your automation business case with Solvero</a>.</p></div>
+        <aside class="article-sidebar"><div class="article-contents"><p class="article-contents-title">On this page</p><nav aria-label="On this page"><ol><li><a href="#section-establish-a-baseline-you-can-explain">Establish a baseline you can explain</a></li><li><a href="#section-model-the-work-that-remains">Model the work that remains</a></li><li><a href="#section-keep-capacity-value-and-cash-benefit-separate">Keep capacity value and cash benefit separate</a></li><li><a href="#section-include-build-and-operating-costs">Include build and operating costs</a></li><li><a href="#section-test-the-assumptions-that-change-the-decision">Test the assumptions that change the decision</a></li><li><a href="#section-replace-projections-with-pilot-evidence">Replace projections with pilot evidence</a></li><li><a href="#section-discuss-the-assumptions-before-committing">Discuss the assumptions before committing</a></li></ol></nav></div></aside>
+      </div>
+    </article></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

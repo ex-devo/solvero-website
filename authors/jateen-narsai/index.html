@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Meet Solvero founder Jateen Narsai: business and systems analysis, solution design and delivery, informed by 15 years in financial services." />
   <meta name="twitter:image" content="https://solvero.co.za/images/brand/rubix/solvero-social.png" />
   <meta name="twitter:image:alt" content="Solvero logo" />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -82,28 +82,7 @@
       },
       "publisher": {
         "@id": "https://solvero.co.za/#organization"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/authors/jateen-narsai/#breadcrumb"
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/authors/jateen-narsai/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Jateen Narsai",
-          "item": "https://solvero.co.za/authors/jateen-narsai/"
-        }
-      ]
     }
   ]
 }</script>
@@ -144,7 +123,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -152,7 +131,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -171,12 +150,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -231,14 +210,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
 
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -247,9 +226,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -276,17 +255,17 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><header class="editorial-hero bg-brand-gradient text-white">
+  <main id="main-content"><header class="editorial-hero bg-white text-gray-800">
       <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Jateen Narsai</span></nav>
+        <a class="article-blog-link" href="/blog/">Solvero Blog</a>
         <h1 class="font-semibold mb-6">Jateen Narsai</h1>
         <p class="text-lg leading-relaxed">Business and systems analysis · Process improvement · Software solution design</p>
       </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<h2>Experience</h2>
+<h2 id="section-experience">Experience</h2>
 <p>Jateen has worked on business and technology problems across banking and insurance systems. His experience includes API rationalisation, data migration and the design of automated risk assessment workflows. These projects have involved translating business requirements into system rules, data structures and interfaces.</p>
 <p>His background includes hands-on development as well as analysis and design. He works with stakeholders, developers, architects and test analysts to turn requirements into decisions and designs that can be built and checked.</p>
 <p><a href="https://www.linkedin.com/in/jnarsai/">View Jateen’s LinkedIn profile</a>.</p>
-<h2>Articles</h2>
+<h2 id="section-articles">Articles</h2>
 <ul><li><a href="/blog/which-processes-to-automate/">Which business processes should you automate first? A practical scorecard</a></li><li><a href="/blog/reduce-duplicate-data-entry/">How to reduce duplicate data entry between your CRM and accounting system</a></li><li><a href="/blog/approval-workflow-automation/">How to automate approval workflows without losing control</a></li><li><a href="/blog/identify-process-bottlenecks/">How to find bottlenecks in a business process before automating it</a></li><li><a href="/blog/workflow-automation-roi/">Workflow automation ROI: how to build a realistic business case</a></li><li><a href="/blog/customer-onboarding-automation/">Customer onboarding automation: from signed agreement to a ready-to-start client</a></li><li><a href="/blog/workflow-automation-project-cost/">What affects the cost of a workflow automation project?</a></li><li><a href="/blog/quote-to-invoice-automation/">Quote-to-invoice automation for service businesses: connect the handoffs</a></li><li><a href="/blog/ai-vs-rules-based-automation/">AI or rules-based automation? How to choose for each workflow step</a></li><li><a href="/blog/n8n-vs-power-automate/">n8n vs Power Automate: how to choose for your business workflow</a></li><li><a href="/blog/ai-operating-model/">Designing operations around AI: the organisational work behind productivity</a></li></ul></div></div></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
@@ -294,7 +273,7 @@
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

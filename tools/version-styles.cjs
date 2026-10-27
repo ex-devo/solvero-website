@@ -20,7 +20,16 @@ function update(file) {
     /href="\/styles\/brand\.css(?:\?v=[a-f0-9]+)?"/g,
     `href="/styles/brand.css?v=${brandVersion}"`
   );
-  if (withBrand !== source) fs.writeFileSync(file, withBrand);
+  const withLogos = withBrand.replace(
+    /src="(\/images\/brand\/rubix\/solvero-(?:header|footer-white)\.svg)(?:\?v=[a-f0-9]+)?"/g,
+    (_, asset) => {
+      const assetVersion = createHash('sha256')
+        .update(fs.readFileSync(path.join(root, asset)))
+        .digest('hex').slice(0, 12);
+      return `src="${asset}?v=${assetVersion}"`;
+    }
+  );
+  if (withLogos !== source) fs.writeFileSync(file, withLogos);
 }
 
 function walk(directory) {
@@ -35,4 +44,5 @@ update(path.join(root, 'index.html'));
 walk(path.join(root, 'services'));
 walk(path.join(root, 'blog'));
 walk(path.join(root, 'authors'));
+walk(path.join(root, '_templates'));
 console.log(`Stylesheet version: ${version}`);

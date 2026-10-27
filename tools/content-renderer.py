@@ -1,9 +1,37 @@
 import html
 import re
+import unicodedata
 
 LINKS = {}
 IMAGE_SIZES = {}
 IMAGE_META = {}
+
+
+def heading_id(text, seen):
+    plain = html.unescape(re.sub(r'<[^>]+>', '', inline(text)))
+    normalised = unicodedata.normalize('NFKD', plain).encode('ascii', 'ignore').decode()
+    slug = re.sub(r'[^a-z0-9]+', '-', normalised.lower()).strip('-') or 'heading'
+    base = 'section-' + slug
+    identifier, suffix = base, 2
+    while identifier in seen:
+        identifier = f'{base}-{suffix}'
+        suffix += 1
+    seen[identifier] = True
+    return identifier
+
+
+def section_headings(markdown):
+    sections, seen, in_code = [], {}, False
+    for line in markdown.splitlines():
+        if line.startswith('```'):
+            in_code = not in_code
+        elif not in_code and line.startswith('#'):
+            level = len(line) - len(line.lstrip('#'))
+            text = line[level:].strip()
+            identifier = heading_id(text, seen)
+            if level == 2:
+                sections.append({'id': identifier, 'text': html.unescape(re.sub(r'<[^>]+>', '', inline(text)))})
+    return sections
 
 def inline(text):
     text = html.escape(text)
@@ -22,6 +50,7 @@ def inline(text):
 def render(markdown):
     lines = markdown.splitlines()
     out, i = [], 0
+    seen_headings = {}
     while i < len(lines):
         line = lines[i]
         if not line.strip():
@@ -65,7 +94,9 @@ def render(markdown):
             out.append('<div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table>' + header + body + '</table></div>')
         elif line.startswith('#'):
             level = len(line) - len(line.lstrip('#'))
-            out.append(f'<h{level}>' + inline(line[level:].strip()) + f'</h{level}>')
+            text = line[level:].strip()
+            identifier = heading_id(text, seen_headings)
+            out.append(f'<h{level} id="{identifier}">' + inline(text) + f'</h{level}>')
             i += 1
         elif line.startswith('> '):
             out.append('<blockquote><p>' + inline(line[2:]) + '</p></blockquote>')

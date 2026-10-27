@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Compare n8n and Power Automate against your systems, approvals, deployment and ownership. Includes a shared pilot brief and an editable evaluation matrix." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp" />
   <meta name="twitter:image:alt" content="Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -79,9 +79,6 @@
       },
       "mainEntity": {
         "@id": "https://solvero.co.za/blog/n8n-vs-power-automate/#article"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/blog/n8n-vs-power-automate/#breadcrumb"
       }
     },
     {
@@ -104,39 +101,15 @@
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
       },
-      "datePublished": "2026-10-16",
-      "dateModified": "2026-10-19",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "dateModified": "2026-10-27T14:42:10+02:00",
       "image": {
         "@type": "ImageObject",
         "url": "https://solvero.co.za/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp",
         "width": 1536,
         "height": 1024,
-        "caption": "Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership."
+        "description": "Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership."
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/blog/n8n-vs-power-automate/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://solvero.co.za/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "n8n vs Power Automate: how to choose for your business workflow",
-          "item": "https://solvero.co.za/blog/n8n-vs-power-automate/"
-        }
-      ]
     }
   ]
 }</script>
@@ -177,7 +150,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -185,7 +158,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -204,12 +177,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -264,14 +237,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16T06:04:11+02:00" /><meta property="article:modified_time" content="2026-10-27T14:42:10+02:00" /><script src="/assets/article-navigation.js?v=cfe405c39317" defer></script><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -280,9 +253,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -309,60 +282,68 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
-        <h1 class="font-semibold mb-6">n8n vs Power Automate: how to choose for your business workflow</h1>
-        <p class="text-lg leading-relaxed">Connected systems · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
-      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><figure><img src="/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp" alt="Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-600.webp 600w, /images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-960.webp 960w, /images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Choose for the workflow and the people who will operate it.</figcaption></figure>
-<p>Choose between n8n and Power Automate by comparing the same workflow against your required system actions, approval rules, operating arrangements and total cost. Both deserve evaluation where they fit those requirements; the choice depends on the actual design and the people who will support it.</p>
+  <main id="main-content"><article class="editorial-article">
+      <header class="editorial-hero article-hero">
+        <div class="article-hero-inner">
+          <div class="article-heading">
+            <a class="article-blog-link" href="/blog/">Solvero Blog</a>
+            <p class="article-topic">Connected systems</p>
+            <h1>n8n vs Power Automate: how to choose for your business workflow</h1>
+            <dl class="article-meta"><div class="article-meta-item"><dt>Author</dt><dd><a rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a></dd></div><div class="article-meta-item article-date article-updated"><dt>Updated</dt><dd><time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></dd></div></dl>
+          </div>
+          <div class="article-hero-media"><figure><img src="/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp" alt="Two toolboxes share one workflow brief and are considered for fit, maintenance and ownership." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-600.webp 600w, /images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-960.webp 960w, /images/blog/n8n-vs-power-automate/n8n-vs-power-automate-featured-1536.webp 1536w" sizes="(min-width: 1024px) 384px, (min-width: 368px) 320px, calc(100vw - 48px)" decoding="async" /></figure></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <details class="article-mobile-contents"><summary>On this page</summary><nav aria-label="On this page"><ol><li><a href="#section-write-one-workflow-brief-for-both-platforms">Write one workflow brief for both platforms</a></li><li><a href="#section-verify-actions-rather-than-counting-integrations">Verify actions rather than counting integrations</a></li><li><a href="#section-compare-the-operating-fit">Compare the operating fit</a></li><li><a href="#section-test-approvals-as-a-complete-experience">Test approvals as a complete experience</a></li><li><a href="#section-compare-cost-using-the-intended-configuration">Compare cost using the intended configuration</a></li><li><a href="#section-run-a-bounded-comparison">Run a bounded comparison</a></li><li><a href="#section-make-a-workflow-specific-decision">Make a workflow-specific decision</a></li><li><a href="#section-discuss-the-workflow-before-selecting-a-tool">Discuss the workflow before selecting a tool</a></li></ol></nav></details>
+        <div class="article-body"><p>Choose between n8n and Power Automate by comparing the same workflow against your required system actions, approval rules, operating arrangements and total cost. Both deserve evaluation where they fit those requirements; the choice depends on the actual design and the people who will support it.</p>
 <p>Power Automate is a practical candidate to assess when a workflow is closely tied to an existing Microsoft environment and its operating team. n8n is a practical candidate when its integration approach or self-hosting option matches the organisation&#x27;s needs. Those are starting hypotheses for a pilot, rather than a performance ranking.</p>
 <p>The useful result is a maintainable process that does what the business needs. Platform selection is one decision within that delivery.</p>
-<h2>Write one workflow brief for both platforms</h2>
+<h2 id="section-write-one-workflow-brief-for-both-platforms">Write one workflow brief for both platforms</h2>
 <figure><img src="/images/blog/n8n-vs-power-automate/compare-workflow-fit.webp" alt="n8n and Power Automate are evaluated against the same workflow, system actions, approvals, ownership and cost assumptions." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Compare both platforms against the same operating requirements.</figcaption></figure>
 <p>Define the trigger, inputs, finishing condition and manual decisions. Name the applications and the specific actions needed in each. Include the expected volume, peak demand, sensitive-data handling and recovery owner.</p>
 <p>For an <strong>illustrative evaluation</strong>, consider an equipment-purchase request that needs validation, one or more approvals, creation of a purchasing record and confirmation to the requester. It must also handle an absent approver, a changed amount and an uncertain system update.</p>
 <p>Use the same fields, authority matrix and acceptance cases in both versions. Comparing a simple notification in one platform with a complete approval process in the other will not help you choose.</p>
-<h2>Verify actions rather than counting integrations</h2>
+<h2 id="section-verify-actions-rather-than-counting-integrations">Verify actions rather than counting integrations</h2>
 <p>A connector or node name is a starting point. Confirm whether it supports the required operation, fields, authentication method and edition of the destination product.</p>
 <p>Where a required action needs an API call or another integration approach, include the setup, permissions and maintenance in the comparison. Check that a failed request can be detected and reconciled using the available interface.</p>
 <p>Use the <a href="/blog/downloads/platform-evaluation-matrix.csv">platform evaluation matrix</a> to record evidence and unresolved questions. Keep a mandatory requirement as a gate: a high overall preference score cannot compensate for a required action that has not been shown to work.</p>
-<h2>Compare the operating fit</h2>
+<h2 id="section-compare-the-operating-fit">Compare the operating fit</h2>
 <figure><img src="/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-1536.webp" alt="Business and technical colleagues agree workflow ownership using an error notification, execution history, access key and operating guide." width="1536" height="1024" loading="lazy" srcset="/images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-600.webp 600w, /images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-960.webp 960w, /images/blog/n8n-vs-power-automate/n8n-vs-power-automate-section-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Include ownership, access and recovery responsibilities in the platform decision.</figcaption></figure>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Consideration</th><th scope="col">n8n evaluation</th><th scope="col">Power Automate evaluation</th></tr></thead><tbody><tr><td>Existing systems</td><td>Verify required nodes or API operations and credentials</td><td>Verify required connectors or API operations and credentials</td></tr><tr><td>Deployment</td><td>Assess n8n Cloud or a self-hosted arrangement</td><td>Assess the Microsoft cloud-flow environment and any required local connectivity</td></tr><tr><td>Approvals</td><td>Assess the request, reviewer experience, authority checks and durable state</td><td>Assess supported approval actions and their fit with the authority policy</td></tr><tr><td>Ownership</td><td>Identify who can maintain workflows and, if applicable, hosting</td><td>Identify who can maintain flows, connections, environments and licensing</td></tr><tr><td>Cost</td><td>Model the selected edition, executions, hosting and external services</td><td>Model the selected licensing context, entitlements, capacity and external services</td></tr></tbody></table></div>
 <p><a href="https://docs.n8n.io/hosting/">n8n&#x27;s hosting documentation</a> describes self-hosting and the operational knowledge it requires. Self-hosting gives you infrastructure decisions to make, including updates, backups and recovery. It does not establish that every governance feature is included in every edition.</p>
 <p><a href="https://learn.microsoft.com/en-us/power-automate/getting-started">Microsoft&#x27;s getting-started documentation</a> is a starting point for Power Automate&#x27;s cloud-flow environment. Confirm local data access and administrator policies with the team responsible for your Microsoft environment. Local connectivity and the location of the orchestration service are separate requirements to check.</p>
-<h2>Test approvals as a complete experience</h2>
+<h2 id="section-test-approvals-as-a-complete-experience">Test approvals as a complete experience</h2>
 <p>Power Automate documents approval types such as everyone-must-approve, first-response and sequential decisions. Check the <a href="https://learn.microsoft.com/en-us/power-automate/get-started-approvals">approval documentation</a> against the policy you need to implement.</p>
 <p>n8n&#x27;s <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait.md">Wait node documentation</a> describes pausing and resuming execution. A paused workflow alone does not supply the full approval experience: the design still needs a way to identify eligible reviewers, show the correct request revision and record the decision.</p>
 <p>For either candidate, test what happens when someone changes an amount after approval, a delegate lacks authority or an old response arrives late. The <a href="/blog/approval-workflow-automation/">approval workflow guide</a> defines those business cases independently of the platform.</p>
-<h2>Compare cost using the intended configuration</h2>
+<h2 id="section-compare-cost-using-the-intended-configuration">Compare cost using the intended configuration</h2>
 <p><a href="https://n8n.io/pricing/">n8n&#x27;s pricing page</a> describes execution-based allowances for its paid plans. Confirm how the proposed workflow&#x27;s triggers, retries and operating pattern affect the applicable allowance, and add hosting and other service charges where relevant.</p>
 <p><a href="https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types">Microsoft&#x27;s licence types</a> distinguish user and capacity licensing and the entitlements available under different arrangements. Existing Microsoft subscriptions do not establish that every required connector or scenario is covered.</p>
 <p>Use the current vendor terms for the exact deployment and users involved. Include internal support effort, access administration and review work. No universal cost winner follows from the price of a single subscription. The <a href="/blog/workflow-automation-project-cost/">project-cost guide</a> helps compare the scope around those platform costs.</p>
-<h2>Run a bounded comparison</h2>
+<h2 id="section-run-a-bounded-comparison">Run a bounded comparison</h2>
 <p>The <a href="/blog/downloads/platform-pilot-tests.csv">shared pilot test brief</a> provides the same normal and exception scenarios for both platforms. It is an evaluation plan with blank actual-results fields, not an executed benchmark.</p>
 <p>For each candidate, record the configuration, required entitlements and evidence that the expected business outcome occurred. Measure operator effort and recovery steps as well as successful execution. Use representative test data and approved access rather than a demonstration that creates real purchasing commitments.</p>
 <p>Assess whether another team member can diagnose a failure and maintain a small change using the handover documentation. The maintainable choice depends on who will actually operate it after the initial builder has left.</p>
 <figure><img src="/images/blog/n8n-vs-power-automate/shared-pilot-tests.webp" alt="The same normal, repeated, incomplete and uncertain cases are tested on both platforms and their outcomes, review effort and support needs compared." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>A shared pilot produces evidence that a feature list cannot provide.</figcaption></figure>
-<h2>Make a workflow-specific decision</h2>
+<h2 id="section-make-a-workflow-specific-decision">Make a workflow-specific decision</h2>
 <p>An organisation with an established Microsoft operating team and a suitable approval pattern may find Power Automate a sensible option to pilot. A team needing an n8n-supported integration approach or a self-hosted runtime may find n8n worth piloting. Required capabilities, permissions and ongoing ownership must still be verified in either case.</p>
 <p>Document why the selected option fits the requirements and what remains unresolved. If neither meets the mandatory conditions within a practical scope, change the design before committing to the platform.</p>
-<h2>Discuss the workflow before selecting a tool</h2>
+<h2 id="section-discuss-the-workflow-before-selecting-a-tool">Discuss the workflow before selecting a tool</h2>
 <p>We help you turn a platform comparison into a decision about a working business solution. We define the workflow and acceptance criteria with your team, check the system actions and trial the options against the same cases.</p>
 <p>After the approach is agreed, we can implement the workflow or integration through testing and handover. Where your development team is involved, we make requirements, dependencies and acceptance decisions clear. Bring the systems, the required outcome and the people who will operate the solution.</p>
 <p><a href="/services/new-business-capabilities/">See how we build around your systems and requirements</a>, or explore our broader <a href="/#services">business improvement and solution delivery services</a>.</p>
-<p><a href="/#contact">Discuss your automation platform choice with Solvero</a>.</p>
-<h2>About the author</h2>
-<p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<p><a href="/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+<p><a href="/#contact">Discuss your automation platform choice with Solvero</a>.</p></div>
+        <aside class="article-sidebar"><div class="article-contents"><p class="article-contents-title">On this page</p><nav aria-label="On this page"><ol><li><a href="#section-write-one-workflow-brief-for-both-platforms">Write one workflow brief for both platforms</a></li><li><a href="#section-verify-actions-rather-than-counting-integrations">Verify actions rather than counting integrations</a></li><li><a href="#section-compare-the-operating-fit">Compare the operating fit</a></li><li><a href="#section-test-approvals-as-a-complete-experience">Test approvals as a complete experience</a></li><li><a href="#section-compare-cost-using-the-intended-configuration">Compare cost using the intended configuration</a></li><li><a href="#section-run-a-bounded-comparison">Run a bounded comparison</a></li><li><a href="#section-make-a-workflow-specific-decision">Make a workflow-specific decision</a></li><li><a href="#section-discuss-the-workflow-before-selecting-a-tool">Discuss the workflow before selecting a tool</a></li></ol></nav></div></aside>
+      </div>
+    </article></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

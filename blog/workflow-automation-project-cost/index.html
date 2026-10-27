@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Understand workflow automation cost drivers, compare two scopes and prepare a useful project brief. Includes worksheets for comparing proposals and operating costs." />
   <meta name="twitter:image" content="https://solvero.co.za/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp" />
   <meta name="twitter:image:alt" content="An iceberg shows the visible build above water and discovery, testing, handover and operation below." />
-  <link rel="stylesheet" href="/assets/tailwind.css?v=c3e78237be6f" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=74f4de20d533" />
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -32,9 +32,9 @@
       "url": "https://solvero.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
-        "width": 243.78,
-        "height": 66.2010526
+        "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+        "width": 1024,
+        "height": 241
       },
       "description": "Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.",
       "email": "solutions@solvero.co.za",
@@ -79,9 +79,6 @@
       },
       "mainEntity": {
         "@id": "https://solvero.co.za/blog/workflow-automation-project-cost/#article"
-      },
-      "breadcrumb": {
-        "@id": "https://solvero.co.za/blog/workflow-automation-project-cost/#breadcrumb"
       }
     },
     {
@@ -104,39 +101,15 @@
       "isPartOf": {
         "@id": "https://solvero.co.za/#website"
       },
-      "datePublished": "2026-10-16",
-      "dateModified": "2026-10-19",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "dateModified": "2026-10-27T14:42:10+02:00",
       "image": {
         "@type": "ImageObject",
         "url": "https://solvero.co.za/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp",
         "width": 1536,
         "height": 1024,
-        "caption": "An iceberg shows the visible build above water and discovery, testing, handover and operation below."
+        "description": "An iceberg shows the visible build above water and discovery, testing, handover and operation below."
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://solvero.co.za/blog/workflow-automation-project-cost/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://solvero.co.za/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://solvero.co.za/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "What affects the cost of a workflow automation project?",
-          "item": "https://solvero.co.za/blog/workflow-automation-project-cost/"
-        }
-      ]
     }
   ]
 }</script>
@@ -177,7 +150,7 @@
       padding: 0 1.5rem;
       text-align: center;
       position: fixed;
-      top: 92px;
+      top: var(--site-header-height);
       left: 0;
       right: 0;
       z-index: 40;
@@ -185,7 +158,7 @@
     }
 
     #mobile-menu.show {
-      max-height: min(24rem, calc(100dvh - 92px));
+      max-height: min(24rem, calc(100dvh - var(--site-header-height)));
       overflow-y: auto;
       overscroll-behavior: contain;
       transform: translateY(0);
@@ -204,12 +177,12 @@
     }
 
     /* Ensure consistent nav height across all screen sizes */
-    nav {
-      height: 92px;
+    nav[aria-label="Main navigation"] {
+      height: var(--site-header-height);
       position: relative;
     }
 
-    nav .container {
+    nav[aria-label="Main navigation"] .container {
       height: 100%;
     }
 
@@ -264,14 +237,14 @@
       .tech-carousel-track > [aria-hidden="true"] { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="/styles/editorial.css?v=d9d1e91525e6" />
-<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16" /><meta property="article:modified_time" content="2026-10-19" /><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
+  <link rel="stylesheet" href="/styles/editorial.css?v=e65bc918b625" />
+<meta name="author" content="Jateen Narsai" /><meta property="article:published_time" content="2026-10-16T06:04:11+02:00" /><meta property="article:modified_time" content="2026-10-27T14:42:10+02:00" /><script src="/assets/article-navigation.js?v=cfe405c39317" defer></script><meta property="og:image:width" content="1536" /><meta property="og:image:height" content="1024" />
   <link rel="icon" href="/images/brand/rubix/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/rubix/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/brand/rubix/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
-  <link rel="stylesheet" href="/styles/brand.css?v=a7274515777a" />
+  <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -280,9 +253,9 @@
 <body class="bg-gray-100">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="bg-white shadow-md z-50" aria-label="Main navigation">
-    <div class="container mx-auto px-6 py-1.5 min-h-[92px] flex justify-between items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <a class="site-nav-logo flex items-center shrink-0 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" href="/" aria-label="Solvero home">
-        <img alt="Solvero" class="w-56 sm:w-64 h-auto" src="/images/brand/rubix/solvero-header.svg" width="243.78" height="66.2010526" decoding="async" />
+        <img alt="Solvero" class="site-nav-logo-image" src="/images/brand/rubix/solvero-header.svg?v=1dd50e2ef09c" width="282.11127484" height="66.2010526" decoding="async" />
       </a>
       <div class="hidden lg:flex items-center gap-12">
         <div class="flex items-center gap-8">
@@ -309,62 +282,70 @@
     <a class="site-nav-action w-full bg-brand-primary text-white px-6 py-3 rounded-md hover-bg-brand-primary-darker transition duration-300 text-center text-lg"
       href="/#contact">Get in Touch</a>
   </div>
-  <main id="main-content"><article><header class="editorial-hero bg-brand-gradient text-white">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="mb-8 text-sm" style="height:auto"><a class="underline underline-offset-4" href="/">Home</a> <span aria-hidden="true">/</span> <a class="underline underline-offset-4" href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Article</span></nav>
-        <h1 class="font-semibold mb-6">What affects the cost of a workflow automation project?</h1>
-        <p class="text-lg leading-relaxed">Workflow automation · By <a class="underline underline-offset-4" rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a> · Published <time datetime="2026-10-16">16 October 2026</time></p>
-      </div></header><div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl"><figure><img src="/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp" alt="An iceberg shows the visible build above water and discovery, testing, handover and operation below." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-600.webp 600w, /images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-960.webp 960w, /images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>The visible build is one part of the work and commitment to plan.</figcaption></figure>
-<p>Workflow automation cost depends on the process boundary, the systems involved and the decisions and exceptions the solution must handle. A useful estimate also covers testing, handover and ongoing operation.</p>
+  <main id="main-content"><article class="editorial-article">
+      <header class="editorial-hero article-hero">
+        <div class="article-hero-inner">
+          <div class="article-heading">
+            <a class="article-blog-link" href="/blog/">Solvero Blog</a>
+            <p class="article-topic">Workflow automation</p>
+            <h1>What affects the cost of a workflow automation project?</h1>
+            <dl class="article-meta"><div class="article-meta-item"><dt>Author</dt><dd><a rel="author" href="/authors/jateen-narsai/">Jateen Narsai</a></dd></div><div class="article-meta-item article-date article-updated"><dt>Updated</dt><dd><time datetime="2026-10-27T14:42:10+02:00">27 October 2026</time></dd></div></dl>
+          </div>
+          <div class="article-hero-media"><figure><img src="/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp" alt="An iceberg shows the visible build above water and discovery, testing, handover and operation below." width="1536" height="1024" loading="eager" fetchpriority="high" srcset="/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-600.webp 600w, /images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-960.webp 960w, /images/blog/workflow-automation-project-cost/workflow-automation-project-cost-featured-1536.webp 1536w" sizes="(min-width: 1024px) 384px, (min-width: 368px) 320px, calc(100vw - 48px)" decoding="async" /></figure></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <details class="article-mobile-contents"><summary>On this page</summary><nav aria-label="On this page"><ol><li><a href="#section-define-an-outcome-a-provider-can-estimate">Define an outcome a provider can estimate</a></li><li><a href="#section-compare-two-scopes-with-the-same-headline">Compare two scopes with the same headline</a></li><li><a href="#section-identify-the-work-required-before-a-build">Identify the work required before a build</a></li><li><a href="#section-ask-what-implementation-includes">Ask what implementation includes</a></li><li><a href="#section-separate-setup-from-running-costs">Separate setup from running costs</a></li><li><a href="#section-prepare-a-brief-that-makes-proposals-comparable">Prepare a brief that makes proposals comparable</a></li><li><a href="#section-discuss-the-workflow-before-selecting-a-package">Discuss the workflow before selecting a package</a></li></ol></nav></details>
+        <div class="article-body"><p>Workflow automation cost depends on the process boundary, the systems involved and the decisions and exceptions the solution must handle. A useful estimate also covers testing, handover and ongoing operation.</p>
 <p>The phrase “connect our CRM to accounting” can describe very different projects. Before comparing prices, agree what starts the handoff, what counts as a successful result and who will deal with an uncertain or failed action.</p>
 <p>A clear scope also makes it easier to decide which improvements need software and which can be introduced through changes to the process.</p>
-<h2>Define an outcome a provider can estimate</h2>
+<h2 id="section-define-an-outcome-a-provider-can-estimate">Define an outcome a provider can estimate</h2>
 <p>Describe the work in plain language. Name the trigger, required inputs, destination and finishing condition. Include what should stay manual and the decisions that require approval.</p>
 <p>For example:</p>
 <blockquote><p>When a verified customer is approved, create or link its accounting record, return the confirmed identifier and assign any unresolved match to finance.</p></blockquote>
 <p>That statement exposes decisions a short feature list can hide. Does “verified” already exist as a reliable status? Can the systems store each other&#x27;s identifiers? Is the review queue part of the project or another team&#x27;s responsibility?</p>
 <p>Provide recent examples, including one that failed. Replace private customer data with representative test information before sharing it for scoping.</p>
-<h2>Compare two scopes with the same headline</h2>
+<h2 id="section-compare-two-scopes-with-the-same-headline">Compare two scopes with the same headline</h2>
 <figure><img src="/images/blog/workflow-automation-project-cost/same-headline-different-scope.webp" alt="Two projects described as a customer-data integration can have different scope because cleanup, return updates and unresolved rules add work." width="1671" height="941" loading="lazy" decoding="async" /><figcaption>Compare the full scope rather than the number of connectors.</figcaption></figure>
 <p><strong>Illustrative scope comparison:</strong> both projects are called “customer-data integration”. No prices, delivery times or client results are implied.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable planning table"><table><thead><tr><th scope="col">Dimension</th><th scope="col">Scope A</th><th scope="col">Scope B</th></tr></thead><tbody><tr><td>Records</td><td>New approved customers only</td><td>New records plus correction of historical duplicates</td></tr><tr><td>Data direction</td><td>Defined fields in one direction</td><td>Different field owners and approved return updates</td></tr><tr><td>Interfaces</td><td>Required actions verified through approved APIs</td><td>Some required actions still need interface investigation</td></tr><tr><td>Decisions</td><td>Agreed matching and exception route</td><td>Ownership and identity rules still disputed</td></tr><tr><td>Operation</td><td>Known reviewer and support arrangement</td><td>Review ownership and operational requirements need definition</td></tr></tbody></table></div>
 <p>Scope B contains additional analysis, cleanup and operating decisions. Counting connector names or workflow boxes will not show all that work. A smaller scope can still need thorough failure handling and acceptance testing.</p>
 <p>The <a href="/blog/downloads/automation-scope-comparison.csv">editable scope comparison</a> makes those differences visible. Use it to compare inclusions before deciding whether two proposals price the same outcome.</p>
-<h2>Identify the work required before a build</h2>
+<h2 id="section-identify-the-work-required-before-a-build">Identify the work required before a build</h2>
 <p>Some uncertainty can be resolved by inspecting existing documentation or testing an approved interface. Other uncertainty requires the business owner to decide a rule.</p>
 <p>Keep those activities separate in the scope. A provider cannot implement a stable approval route while the spending policy is still being negotiated. Likewise, assuming a connector supports every required action can shift a technical investigation into the build.</p>
 <p>Agree how unresolved questions will affect the estimate. A discovery phase may be useful where important dependencies are unknown. Its deliverables should be specific enough to help you decide the next step, such as an agreed process boundary, field map, technical findings and implementation scope.</p>
-<h2>Ask what implementation includes</h2>
+<h2 id="section-ask-what-implementation-includes">Ask what implementation includes</h2>
 <figure><img src="/images/blog/workflow-automation-project-cost/whole-project-cost.webp" alt="A workflow project includes definition, build, testing, handover and ongoing operation, rather than just connecting two systems." width="1672" height="941" loading="lazy" decoding="async" /><figcaption>Include preparation, acceptance and ongoing operation when comparing proposals.</figcaption></figure>
 <p>An implementation proposal should make the acceptance criteria understandable. “The workflow runs” is less useful than an agreed outcome for a new record, a repeated trigger, an ambiguous match and a failed update.</p>
 <p>Check that the proposed scope addresses the necessary areas:</p>
 <ul><li>Process rules, field ownership and system mappings.</li><li>Access setup, integrations and exception handling.</li><li>Representative testing and the agreed acceptance decision.</li><li>Operating documentation, handover and support responsibilities.</li></ul>
 <p>The exact deliverables should fit the project. A business user form, historical data cleanup or migration may need separate scope. The <a href="/blog/reduce-duplicate-data-entry/">data-entry guide</a> gives concrete test cases for a customer-record handoff.</p>
-<h2>Separate setup from running costs</h2>
+<h2 id="section-separate-setup-from-running-costs">Separate setup from running costs</h2>
 <figure><img src="/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-section-1536.webp" alt="Two labelled groups separate definition, build, testing and handover from usage, hosting, support and review." width="1536" height="1024" loading="lazy" srcset="/images/blog/workflow-automation-project-cost/workflow-automation-project-cost-section-600.webp 600w, /images/blog/workflow-automation-project-cost/workflow-automation-project-cost-section-960.webp 960w, /images/blog/workflow-automation-project-cost/workflow-automation-project-cost-section-1536.webp 1536w" sizes="(min-width: 896px) 848px, calc(100vw - 48px)" decoding="async" /><figcaption>Separate the setup commitment from the work and costs of running it.</figcaption></figure>
 <p>Implementation effort is only one part of the decision. Ask who will pay for platform subscriptions, usage, hosting and any external services the workflow needs.</p>
 <p>Then describe how the organisation will operate it. Someone needs to review exceptions, monitor failures, maintain access and assess changes to the connected systems. Self-hosting also creates infrastructure responsibilities; a managed service still needs an internal owner.</p>
 <p>Usage assumptions should reflect the selected platform&#x27;s billing model. For example, <a href="https://n8n.io/pricing/">n8n&#x27;s pricing</a> describes workflow-execution allowances, while <a href="https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types">Microsoft&#x27;s Power Automate licensing documentation</a> distinguishes user and capacity licensing. Check the required edition and entitlements for the actual design. A monthly case count alone is not a complete licence estimate.</p>
 <p>Keep internal staff effort visible. Interviews, data preparation, testing and learning the support process take time even when they are not on the supplier&#x27;s invoice. The <a href="/blog/workflow-automation-roi/">ROI guide</a> shows how to keep that effort from being counted twice.</p>
-<h2>Prepare a brief that makes proposals comparable</h2>
+<h2 id="section-prepare-a-brief-that-makes-proposals-comparable">Prepare a brief that makes proposals comparable</h2>
 <p>Use the <a href="/blog/downloads/automation-scoping-brief.csv">project scoping brief</a> to capture the current process, intended outcome, volumes, systems, exceptions and owner. Mark unknowns explicitly, and ask each provider to state their assumptions and exclusions against the same brief.</p>
 <p>Confirm who owns the accounts, workflow configuration and documentation after delivery. Agree how changes are requested and how ongoing support is arranged. Commercial terms, fees and delivery dates belong in the actual proposal rather than being inferred from a generic blog example.</p>
 <p>Our business improvement and solution delivery work uses that brief to connect the intended outcome with the work required. Commercial terms depend on the agreed scope; the examples in this guide do not set a package, fixed fee or delivery date.</p>
-<h2>Discuss the workflow before selecting a package</h2>
+<h2 id="section-discuss-the-workflow-before-selecting-a-package">Discuss the workflow before selecting a package</h2>
 <p>We connect the capability you need with a defined implementation, from requirements and solution design through delivery. We work through the required decisions, system dependencies and acceptance criteria so you can assess what the proposal will deliver.</p>
 <p>We can then implement the agreed process change, tool or integration through testing and handover. Bring one repeated process and a recent example of the problem; we can identify the investigation needed before agreeing scope and commercial terms.</p>
 <p><a href="/services/new-business-capabilities/">See how we scope, build and test automation</a>, or explore our broader <a href="/#services">business improvement and solution delivery services</a>.</p>
-<p><a href="/#contact">Discuss your workflow and project scope with Solvero</a>.</p>
-<h2>About the author</h2>
-<p>Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.</p>
-<p><a href="/authors/jateen-narsai/">More about Jateen Narsai</a>.</p></div></div></article></main>
+<p><a href="/#contact">Discuss your workflow and project scope with Solvero</a>.</p></div>
+        <aside class="article-sidebar"><div class="article-contents"><p class="article-contents-title">On this page</p><nav aria-label="On this page"><ol><li><a href="#section-define-an-outcome-a-provider-can-estimate">Define an outcome a provider can estimate</a></li><li><a href="#section-compare-two-scopes-with-the-same-headline">Compare two scopes with the same headline</a></li><li><a href="#section-identify-the-work-required-before-a-build">Identify the work required before a build</a></li><li><a href="#section-ask-what-implementation-includes">Ask what implementation includes</a></li><li><a href="#section-separate-setup-from-running-costs">Separate setup from running costs</a></li><li><a href="#section-prepare-a-brief-that-makes-proposals-comparable">Prepare a brief that makes proposals comparable</a></li><li><a href="#section-discuss-the-workflow-before-selecting-a-package">Discuss the workflow before selecting a package</a></li></ol></nav></div></aside>
+      </div>
+    </article></main>
   <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="mb-4">
             <img alt="Solvero — Technology, Solved." class="w-72 max-w-full h-auto mx-auto md:mx-0"
-              src="/images/brand/rubix/solvero-footer-white.svg" width="243.78" height="66.2010526" loading="lazy" decoding="async" />
+              src="/images/brand/rubix/solvero-footer-white.svg?v=c5c068fe90e3" width="250.78" height="66.2010526" loading="lazy" decoding="async" />
           </div>
         </div>
         <div>

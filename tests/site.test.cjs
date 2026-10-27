@@ -121,11 +121,15 @@ test('articles identify the visible author, publisher and actual publication dat
     assert.equal(person.name, author.name);
     assert.equal(person.url, author.canonical);
     assert.deepEqual(person.sameAs, [author.linkedin]);
-    assert.ok(doc.querySelector('.article-body').textContent.includes(person.description));
+    assert.ok(!doc.querySelector('.article-body').textContent.includes(person.description));
+    assert.equal(doc.getElementById('section-about-the-author'), null);
     assert.equal(doc.querySelector('[rel="author"]').getAttribute('href'), '/authors/jateen-narsai/');
     assert.equal(post.publisher['@id'], 'https://solvero.co.za/#organization');
     assert.notEqual(post.publisher['@id'], post.author['@id']);
-    assert.equal(post.datePublished, doc.querySelector('time').dateTime);
+    assert.equal(post.datePublished, article.datePublished);
+    assert.equal(post.dateModified, article.dateModified);
+    assert.equal(doc.querySelector('.article-meta time').dateTime, article.dateModified > article.datePublished ? article.dateModified : article.datePublished);
+    assert.equal(doc.querySelectorAll('.article-meta time').length, 1);
     assert.ok(Date.parse(post.datePublished) <= Date.now());
     assert.ok(Date.parse(post.dateModified) >= Date.parse(post.datePublished));
     assert.doesNotMatch(doc.body.textContent, /Draft for review|publication not approved|Planned URL:/i);
@@ -146,33 +150,58 @@ test('articles identify the visible author, publisher and actual publication dat
   for (const article of articles) assert.ok(index.querySelector(`.blog-card-link[href="/blog/${article.slug}/"] h3`));
 });
 
-test('article pages retain the shared hero standard and original internal gaps', () => {
+test('articles have a blog return link, separate author and dates, and working section navigation', () => {
   const blogPages = articles.map(a => `blog/${a.slug}/index.html`);
   for (const file of blogPages) {
     const dom = new JSDOM(source(file));
     const hero = dom.window.document.querySelector('main header.editorial-hero');
     assert.ok(hero, `${file}: shared editorial hero`);
-    assert.ok(hero.querySelector('[aria-label="Breadcrumb"]').classList.contains('mb-8'));
-    assert.ok(hero.querySelector('h1').classList.contains('mb-6'));
-    assert.doesNotMatch(hero.className, /py-14|py-20/);
+    const doc = dom.window.document;
+    const article = articles.find(a => file === `blog/${a.slug}/index.html`);
+    assert.equal(hero.querySelector('[aria-label="Breadcrumb"]'), null);
+    assert.equal(hero.querySelector('.article-blog-link').getAttribute('href'), '/blog/');
+    assert.equal(hero.querySelector('.article-blog-link').textContent, 'Solvero Blog');
+    assert.ok(hero.querySelector('.article-meta [rel="author"]'));
+    const updated = article.dateModified > article.datePublished;
+    assert.equal(hero.querySelector('.article-date dt').textContent, updated ? 'Updated' : 'Published');
+    assert.equal(hero.querySelector('.article-date time').dateTime, updated ? article.dateModified : article.datePublished);
+    assert.ok(hero.querySelector('figure img'), 'Lead illustration belongs to the article header');
+    assert.equal(hero.querySelector('figcaption'), null, 'Header illustration has no visible caption');
+    assert.equal(doc.querySelectorAll('.editorial-article figure').length, article.images.length);
+    const headings = [...doc.querySelectorAll('.article-body h2')];
+    const identifiers = [...doc.querySelectorAll('[id]')].map(node => node.id);
+    assert.equal(new Set(identifiers).size, identifiers.length, 'Anchor identifiers are unique');
+    for (const nav of doc.querySelectorAll('nav[aria-label="On this page"]')) {
+      const links = [...nav.querySelectorAll('a')];
+      assert.equal(links.length, headings.length);
+      links.forEach((link, index) => {
+        assert.equal(doc.getElementById(link.hash.slice(1)), headings[index]);
+        assert.equal(link.textContent, headings[index].textContent);
+      });
+    }
+    assert.equal(doc.querySelectorAll('nav[aria-label="On this page"]').length, 2, 'Desktop and mobile navigation share the same headings');
     dom.window.close();
   }
 });
 
-test('the AI operating model article publishes all six illustrations and matching image metadata', () => {
+test('the AI operating model article has a compact lead image and retains its six explanatory illustrations', () => {
   const article = articles.find(a => a.slug === 'ai-operating-model');
   assert.ok(article);
   const dom = new JSDOM(source(`blog/${article.slug}/index.html`));
   const doc = dom.window.document;
-  const figures = [...doc.querySelectorAll('.article-body figure')];
-  assert.equal(figures.length, 6);
+  const figures = [...doc.querySelectorAll('.editorial-article figure')];
+  assert.equal(figures.length, 7);
+  assert.ok(doc.querySelector('.article-hero-media img').getAttribute('src').includes('overview'));
+  assert.equal(doc.querySelectorAll('.article-body figure').length, 6);
+  assert.ok(doc.querySelector('.article-body img[src$="ai-bottleneck.webp"]'));
   assert.deepEqual(figures.map(f => f.querySelector('img').getAttribute('src')), article.images.map(i => i.src));
   for (const [i, figure] of figures.entries()) {
     const image = figure.querySelector('img');
     assert.ok(image.alt.length > 30);
     assert.equal(image.width, article.images[i].width);
     assert.equal(image.height, article.images[i].height);
-    assert.ok(figure.querySelector('figcaption').textContent.length > 20);
+    if (i === 0) assert.equal(figure.querySelector('figcaption'), null);
+    else assert.ok(figure.querySelector('figcaption').textContent.length > 20);
     assert.equal(figure.querySelector('a'), null);
   }
   assert.doesNotMatch(doc.querySelector('.article-body').textContent, /!\[|\*Improving|\*Investment/);
@@ -185,18 +214,19 @@ test('the AI operating model article publishes all six illustrations and matchin
   dom.window.close();
 });
 
-test('every article has topic illustrations with captions and matching social metadata', () => {
+test('every article has an uncaptioned lead, captioned section illustrations and matching social metadata', () => {
   for (const article of articles) {
-    assert.equal(article.images.length, article.slug === 'ai-operating-model' ? 6 : 4, `${article.slug}: planned illustration count`);
+    assert.equal(article.images.length, article.slug === 'ai-operating-model' ? 7 : 4, `${article.slug}: planned illustration count`);
     const dom = new JSDOM(source(`blog/${article.slug}/index.html`));
     const doc = dom.window.document;
-    const figures = [...doc.querySelectorAll('.article-body figure')];
+    const figures = [...doc.querySelectorAll('.editorial-article figure')];
     assert.equal(figures.length, article.images.length, article.slug);
     assert.deepEqual(figures.map(f => f.querySelector('img').getAttribute('src')), article.images.map(i => i.src));
     for (const [i, figure] of figures.entries()) {
       const image = figure.querySelector('img');
       assert.ok(image.alt.length > 30);
-      assert.ok(figure.querySelector('figcaption').textContent.length > 20);
+      if (i === 0) assert.equal(figure.querySelector('figcaption'), null);
+      else assert.ok(figure.querySelector('figcaption').textContent.length > 20);
       assert.equal(image.width, article.images[i].width);
       assert.equal(image.height, article.images[i].height);
       const featured = article.images[i].role === 'featured';

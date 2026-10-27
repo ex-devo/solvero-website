@@ -109,10 +109,3 @@ We can build and test the agreed solution, including the review steps, integrati
 [See how we design and deliver the right automation](/services/new-business-capabilities/), or explore our broader [business improvement and solution delivery services](/#services).
 
 [Discuss where AI could help your workflow with Solvero](/#contact).
-
-
-## About the author
-
-Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.
-
-[More about Jateen Narsai](author-jateen-narsai.md).

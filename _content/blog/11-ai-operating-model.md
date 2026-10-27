@@ -2,6 +2,10 @@
 
 By [Jateen Narsai](author-jateen-narsai.md)
 
+![An incoming request moves through an AI gear and an approval gate to a completed-work tray, above a blueprint of the workflow.](/images/blog/ai-operating-model/ai-operating-model-overview-1536.webp)
+
+*Design the workflow around the AI task, including the decisions needed to complete the work.*
+
 Designing operations around AI means changing how work moves, who can make decisions and how systems support delivery. A useful AI operating model connects people, automation, information and controls around a business outcome. Introducing the technology is one part of that work; the organisation also needs time, ownership and investment to change its processes.
 
 An AI tool might prepare a request in minutes. The customer can still wait days while someone checks it, finds an approver and copies the result into another system. The preparation step has improved, but the business has yet to deliver a faster service.
@@ -180,9 +184,3 @@ Our work can continue through process redesign, solution implementation, testing
 [See how we improve business operations](/services/business-operations-improvement/), [deliver new business capabilities](/services/new-business-capabilities/) or [help delivery teams work more effectively](/services/delivery-team-effectiveness/).
 
 [Discuss the improvement you need](/#contact).
-
-## About the author
-
-Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.
-
-[More about Jateen Narsai](/authors/jateen-narsai/).
