@@ -1,0 +1,95 @@
+{
+  "verifiedAt": "2026-10-27T13:47:03.936Z",
+  "pages": [
+    {
+      "url": "https://solvero.co.za/blog/which-processes-to-automate/",
+      "status": 200,
+      "date": "2026-10-01T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/reduce-duplicate-data-entry/",
+      "status": 200,
+      "date": "2026-10-02T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/approval-workflow-automation/",
+      "status": 200,
+      "date": "2026-10-03T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/identify-process-bottlenecks/",
+      "status": 200,
+      "date": "2026-10-04T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/workflow-automation-roi/",
+      "status": 200,
+      "date": "2026-10-05T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/customer-onboarding-automation/",
+      "status": 200,
+      "date": "2026-10-06T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/workflow-automation-project-cost/",
+      "status": 200,
+      "date": "2026-10-07T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/quote-to-invoice-automation/",
+      "status": 200,
+      "date": "2026-10-08T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/ai-vs-rules-based-automation/",
+      "status": 200,
+      "date": "2026-10-09T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/n8n-vs-power-automate/",
+      "status": 200,
+      "date": "2026-10-10T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/ai-operating-model/",
+      "status": 200,
+      "date": "2026-10-11T00:00:00+02:00",
+      "label": "Published",
+      "cardArticleSchemaOpenGraphAgreement": true,
+      "bodyMatchesLocal": true
+    }
+  ],
+  "archiveOrder": "newest first",
+  "bankZeroUnpublished": true
+}

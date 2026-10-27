@@ -7,4 +7,6 @@ The earlier historical-revision proposal is superseded by the owner's editorial 
 - [x] Record the owner-approved schedule and set matching source publication/modification dates.
 - [x] Update date guidance, rebuild and verify visible dates, schema, ordering and unchanged manuscripts.
 - [x] Review the correction and confirm the article wording is unchanged.
-- [ ] Commit and push the correction; verify GitHub Pages and the live blog dates.
+- [x] Commit and push the correction; verify GitHub Pages and the live blog dates.
+
+Evidence: [date correction report](../../proposals/2026-10-27-article-date-correction/README.md). Correction deployed as e224e70; 83 tests passed; all 11 live article/card/schema dates verified.
