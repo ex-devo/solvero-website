@@ -1,0 +1,186 @@
+{
+  "reviewDate": "2026-10-27",
+  "timezone": "Africa/Johannesburg",
+  "definition": "Last change to article explanations, examples, recommendations or technical content. Later author biography, promotional closing, link maintenance, illustration and layout changes do not refresh the article date.",
+  "reviewMethod": "Inspected the per-article Git history. Compared the instructional text before the final service CTA, excluding author biographies, image/caption blocks, link destinations and whitespace. Used the timestamp of the most recent commit changing that text. All current core content matches its recorded revision.",
+  "articles": [
+    {
+      "slug": "which-processes-to-automate",
+      "source": "_content/blog/01-which-processes-to-automate.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "a4fb82adb19c373b267b991920d53cb1be0a1d7ea0ec97bb8a4026289a418289",
+      "currentSourceSHA256": "107b70345acc6f48e4b868d5fa85cd3dd9f1f0971bc4e5d1dd3c1f06fa24f4b1"
+    },
+    {
+      "slug": "reduce-duplicate-data-entry",
+      "source": "_content/blog/02-reduce-duplicate-data-entry.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "96266d80b3c90fffe608ad1ea45257eeb45ebf864cb2590ca5881e2d0873f424",
+      "currentSourceSHA256": "9c682c6d12276e9dd35e0f6cc6ad6473c95e773cca330ab615e7ad79886a5423"
+    },
+    {
+      "slug": "approval-workflow-automation",
+      "source": "_content/blog/03-approval-workflow-automation.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "50d6cd703538aff309870a8086f111e7e9cd54c5fd82fe6568c1cb3a15038546",
+      "currentSourceSHA256": "51a9045907db79bd0c4fca9e923a9c5a7e7dc02149341e06d7f6a28b7ef7a0f1"
+    },
+    {
+      "slug": "identify-process-bottlenecks",
+      "source": "_content/blog/04-identify-process-bottlenecks.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "bfb8259d91521c2cc87ced4a8fdb0b91245b0a3d8e6ef100a4fda8427459cef5",
+      "currentSourceSHA256": "da58209637073d45e2f9b76e20b247379e81c986dc0caa2f02b48a7b806c39ab"
+    },
+    {
+      "slug": "workflow-automation-roi",
+      "source": "_content/blog/05-workflow-automation-roi.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "911a03217fbc2493a46f35e702e3f26197af8c70001ef5b083f9560d4f7688b8",
+      "currentSourceSHA256": "e24fbe637c9b915796a00c6c7993a16741462e6082f9f59121003462f57d8c10"
+    },
+    {
+      "slug": "customer-onboarding-automation",
+      "source": "_content/blog/06-customer-onboarding-automation.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "bc9fb712385475685fd851c3e2fdfcfd7c854c4e17dc124095a42b0d9b87f929",
+      "currentSourceSHA256": "0df4537e2c0aa4acd1b3b41ad213ecbeb4f3c5e8d2511ddc0388b37b1a6f4356"
+    },
+    {
+      "slug": "workflow-automation-project-cost",
+      "source": "_content/blog/07-workflow-automation-project-cost.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "12a332a55695829253f158e2c8334a224ba915eeb25ab0da6c2a1b5326e3ee58",
+      "currentSourceSHA256": "7ab24903cdc4aa094364a87b279c023f19a0f361a70256548754d017be23062b"
+    },
+    {
+      "slug": "quote-to-invoice-automation",
+      "source": "_content/blog/08-quote-to-invoice-automation.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "751a2f9983161773210364e5f6dbcb26f2373a74b257faf36cf0496ad280ede3",
+      "currentSourceSHA256": "f73b26f6f1cbc4a9b5258c8003f74e1f94e623cf2be65ea25567a284b227c519"
+    },
+    {
+      "slug": "ai-vs-rules-based-automation",
+      "source": "_content/blog/09-ai-vs-rules-based-automation.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "0bb97837f5a9885020c03be4971ac6e0abf6d42adacd70f7c0072792b1d143de",
+      "currentSourceSHA256": "06d6cbe5c68a18b2d75dc410ef9a3bca0799d01b1dde89d94b4cbee841dba66a"
+    },
+    {
+      "slug": "n8n-vs-power-automate",
+      "source": "_content/blog/10-n8n-vs-power-automate.md",
+      "datePublished": "2026-10-16T06:04:11+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-19T21:50:21+02:00",
+      "visibleLabel": "Updated",
+      "meaningfulContentCommit": "847898e6d9a0041af434d7af14c918c7f1f5b817",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447"
+      ],
+      "coreContentSHA256": "d7bade9cedc018c8a6c48fedc71a411b28a51b564ea5d4ad1f02c864d43bae03",
+      "currentSourceSHA256": "e9a51f46666be2a289a8147d23e840730394dd036f93eb0887bd9ce227948917"
+    },
+    {
+      "slug": "ai-operating-model",
+      "source": "_content/blog/11-ai-operating-model.md",
+      "datePublished": "2026-10-17T10:36:51+02:00",
+      "previousDateModified": "2026-10-27T14:42:10+02:00",
+      "dateModified": "2026-10-17T10:36:51+02:00",
+      "visibleLabel": "Published",
+      "meaningfulContentCommit": "545f6700219361df4b2d101c3e59d911b29f4855",
+      "reviewedLaterCommits": [
+        "820a6af00cf06397d58027f9460829f7751bdeac",
+        "e635b0a34652ab549a8d11493eefd3742091a601",
+        "5064f5a506e15b45740ef4b92f28b942aaecc447",
+        "847898e6d9a0041af434d7af14c918c7f1f5b817"
+      ],
+      "coreContentSHA256": "1e7270dccc0c1ef2c325e49bca9b0f42c8f17be757348e0729be20a2889316d0",
+      "currentSourceSHA256": "53547ae78cb36981cc3caeb8ff3457b04b9412ff4564b415a371eea5355fae55"
+    }
+  ],
+  "status": "Historical research only; superseded by the owner-approved dates in editorial-schedule.json before publication."
+}

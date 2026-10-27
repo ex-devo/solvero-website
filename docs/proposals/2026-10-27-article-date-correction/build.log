@@ -1,0 +1,13 @@
+
+> solvero-website@1.0.0 build
+> python3 -B tools/build-content.py && tailwindcss -i styles/tailwind.css -o assets/tailwind.css --minify && node tools/version-styles.cjs
+
+Generated 3 offer pages, 11 articles, the biography, blog index and 17-page sitemap.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+Rebuilding...
+
+Done in 198ms.
+Stylesheet version: 74f4de20d533

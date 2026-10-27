@@ -1,0 +1,119 @@
+{
+  "approvedOn": "2026-10-27",
+  "basis": "Owner requested daily editorial publication dates staggered from 1 October, first article to latest. This replaces the proposed historical-revision correction.",
+  "timezone": "Africa/Johannesburg",
+  "timeConvention": "Midnight normalises each approved calendar date to a timezone-aware timestamp; it is not a claim of a historically observed publication time.",
+  "articleOrder": "Existing numbered manuscript order, 01 through 11.",
+  "articles": [
+    {
+      "slug": "which-processes-to-automate",
+      "headline": "Which business processes should you automate first? A practical scorecard",
+      "datePublished": "2026-10-01T00:00:00+02:00",
+      "dateModified": "2026-10-01T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "107b70345acc6f48e4b868d5fa85cd3dd9f1f0971bc4e5d1dd3c1f06fa24f4b1"
+    },
+    {
+      "slug": "reduce-duplicate-data-entry",
+      "headline": "How to reduce duplicate data entry between your CRM and accounting system",
+      "datePublished": "2026-10-02T00:00:00+02:00",
+      "dateModified": "2026-10-02T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "9c682c6d12276e9dd35e0f6cc6ad6473c95e773cca330ab615e7ad79886a5423"
+    },
+    {
+      "slug": "approval-workflow-automation",
+      "headline": "How to automate approval workflows without losing control",
+      "datePublished": "2026-10-03T00:00:00+02:00",
+      "dateModified": "2026-10-03T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "51a9045907db79bd0c4fca9e923a9c5a7e7dc02149341e06d7f6a28b7ef7a0f1"
+    },
+    {
+      "slug": "identify-process-bottlenecks",
+      "headline": "How to find bottlenecks in a business process before automating it",
+      "datePublished": "2026-10-04T00:00:00+02:00",
+      "dateModified": "2026-10-04T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "da58209637073d45e2f9b76e20b247379e81c986dc0caa2f02b48a7b806c39ab"
+    },
+    {
+      "slug": "workflow-automation-roi",
+      "headline": "Workflow automation ROI: how to build a realistic business case",
+      "datePublished": "2026-10-05T00:00:00+02:00",
+      "dateModified": "2026-10-05T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "e24fbe637c9b915796a00c6c7993a16741462e6082f9f59121003462f57d8c10"
+    },
+    {
+      "slug": "customer-onboarding-automation",
+      "headline": "Customer onboarding automation: from signed agreement to a ready-to-start client",
+      "datePublished": "2026-10-06T00:00:00+02:00",
+      "dateModified": "2026-10-06T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "0df4537e2c0aa4acd1b3b41ad213ecbeb4f3c5e8d2511ddc0388b37b1a6f4356"
+    },
+    {
+      "slug": "workflow-automation-project-cost",
+      "headline": "What affects the cost of a workflow automation project?",
+      "datePublished": "2026-10-07T00:00:00+02:00",
+      "dateModified": "2026-10-07T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "7ab24903cdc4aa094364a87b279c023f19a0f361a70256548754d017be23062b"
+    },
+    {
+      "slug": "quote-to-invoice-automation",
+      "headline": "Quote-to-invoice automation for service businesses: connect the handoffs",
+      "datePublished": "2026-10-08T00:00:00+02:00",
+      "dateModified": "2026-10-08T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "f73b26f6f1cbc4a9b5258c8003f74e1f94e623cf2be65ea25567a284b227c519"
+    },
+    {
+      "slug": "ai-vs-rules-based-automation",
+      "headline": "AI or rules-based automation? How to choose for each workflow step",
+      "datePublished": "2026-10-09T00:00:00+02:00",
+      "dateModified": "2026-10-09T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "06d6cbe5c68a18b2d75dc410ef9a3bca0799d01b1dde89d94b4cbee841dba66a"
+    },
+    {
+      "slug": "n8n-vs-power-automate",
+      "headline": "n8n vs Power Automate: how to choose for your business workflow",
+      "datePublished": "2026-10-10T00:00:00+02:00",
+      "dateModified": "2026-10-10T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-16T06:04:11+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "e9a51f46666be2a289a8147d23e840730394dd036f93eb0887bd9ce227948917"
+    },
+    {
+      "slug": "ai-operating-model",
+      "headline": "Designing operations around AI: the organisational work behind productivity",
+      "datePublished": "2026-10-11T00:00:00+02:00",
+      "dateModified": "2026-10-11T00:00:00+02:00",
+      "visibleLabel": "Published",
+      "previousPublishedDate": "2026-10-17T10:36:51+02:00",
+      "previousModifiedDate": "2026-10-27T14:42:10+02:00",
+      "sourceSHA256": "53547ae78cb36981cc3caeb8ff3457b04b9412ff4564b415a371eea5355fae55"
+    }
+  ]
+}
