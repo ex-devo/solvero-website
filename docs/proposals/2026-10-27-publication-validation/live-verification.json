@@ -1,0 +1,152 @@
+{
+  "verifiedAt": "2026-10-27T13:09:40.720880+00:00",
+  "pages": [
+    {
+      "url": "https://solvero.co.za/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "1c0b95a2fb0a1e0d1339f42e6321c87706088baf1a65d8b85a83c7c3807877dd",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/services/business-operations-improvement/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "a334483638f56e29b5f238ec64e21ea4b9b63e9e85accd55786ffab07528afeb",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/services/new-business-capabilities/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "a484bf7bb04e0a2a0adbab9bfe3d2acc991dcbe63c756ec52ba8b76e9f818129",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/services/delivery-team-effectiveness/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "ce339c985c0e36333f540aa84a7fdc311cdc776ddf2f1f0505260625bb64fc8a",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "f0f502f590f7d65a0efc34f9a0febee99d07682a1aa5a4427351a9c74be80c2b",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/which-processes-to-automate/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "f821d7c870417ab3cad17acec67c2468110a1f816ee396754e283417b76f5c25",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/reduce-duplicate-data-entry/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "f044b6204311c6f363465622671b6f7e2542e9f3947a2679ae05151c93966d4e",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/approval-workflow-automation/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "ca03ed35914a89bfad84515f164c93e9b6e590d33f06817eccbb23a4dce64109",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/identify-process-bottlenecks/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "42d1fa4f0c24e4b1d3da248402e071931f63243390125b3ea6c444ad4e1addda",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/workflow-automation-roi/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "903443b2d108845109e680ea77086b666cd30987868b03f85e3c3835c7b6a522",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/customer-onboarding-automation/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "9a731dbe11276b03346cccef2588f25eb5780f6fa8defc8af0d8b51d34fb5ee6",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/workflow-automation-project-cost/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "ffdf8423eb3cbb193b68ac1fbddb24367cc51c8713408ae67ebbe493bd650a38",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/quote-to-invoice-automation/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "537b5a524d6ed306c0ff8a6dd50a42afda37bbaa418f28eb71cd0a901f2aa550",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/ai-vs-rules-based-automation/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "2741a8b05108e38c336d0eb56bbd91c73759dd7691d8965fc05e9487456a2e2f",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/n8n-vs-power-automate/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "df0188d20e901aabf4bf63ffe8ea112b12ffbd317c2908c7c4fa4b3075724552",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/blog/ai-operating-model/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "b5155e12184c4341f5ab86a189787ddb04a0d492a6351cb815db6fa9f4a65b25",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    },
+    {
+      "url": "https://solvero.co.za/authors/jateen-narsai/",
+      "httpStatus": 200,
+      "jsonLDSHA256": "44d5e8dad8fb5691ea673f4b0d385238a0e7959fa723edeb7bd88b653b53cf82",
+      "matchesGoogleTestedPayload": true,
+      "visibleContentMatchesLocal": true
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://solvero.co.za/images/brand/rubix/solvero-publisher.svg",
+      "httpStatus": 200,
+      "matchesLocalFile": true
+    },
+    {
+      "url": "https://solvero.co.za/images/brand/rubix/solvero-header.svg",
+      "httpStatus": 200,
+      "matchesLocalFile": true
+    },
+    {
+      "url": "https://solvero.co.za/assets/article-navigation.js",
+      "httpStatus": 200,
+      "matchesLocalFile": true
+    },
+    {
+      "url": "https://solvero.co.za/styles/editorial.css",
+      "httpStatus": 200,
+      "matchesLocalFile": true
+    },
+    {
+      "url": "https://solvero.co.za/images/blog/ai-operating-model/ai-operating-model-overview-1536.webp",
+      "httpStatus": 200,
+      "matchesLocalFile": true
+    }
+  ],
+  "bankZeroExcluded": true
+}

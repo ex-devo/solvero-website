@@ -1,0 +1,18 @@
+{
+  "url": "https://solvero.co.za/blog/ai-operating-model/",
+  "mode": "Live URL test after deployment",
+  "resultUrl": "https://search.google.com/test/rich-results/result?id=2EqPj2rAX575go-JhksmKw",
+  "validItems": 2,
+  "criticalErrors": 0,
+  "crawl": "Crawled successfully on 27 Oct 2026, 15:10:01",
+  "groups": [
+    {
+      "summary": "check_circle Articles 1 valid item detected ",
+      "url": "https://search.google.com/test/rich-results/result/r%2Farticles?id=2EqPj2rAX575go-JhksmKw"
+    },
+    {
+      "summary": "check_circle Organisation 1 valid item detected Non-critical issues detected ",
+      "url": "https://search.google.com/test/rich-results/result/r%2Forganization-info?id=2EqPj2rAX575go-JhksmKw"
+    }
+  ]
+}

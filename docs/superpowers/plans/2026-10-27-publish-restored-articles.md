@@ -6,5 +6,7 @@ User request: verify schema against restored article copy, rerun Google Rich Res
 - [x] Rebuild and test the final site; validate schema against visible restored content.
 - [x] Run Google Rich Results Test on every canonical page and inspect any findings.
 - [x] Review the final change and stage the approved publication files.
-- [ ] Commit and push the approved site to main.
-- [ ] Confirm GitHub Pages deployment and verify the public articles and schema.
+- [x] Commit and push the approved site to main.
+- [x] Confirm GitHub Pages deployment and verify the public articles and schema.
+
+Evidence: [publication checks](../../proposals/2026-10-27-publication-validation/README.md). Content deployed as 820a6af; all 17 public payloads and visible text match, and a live Google URL test passed. Bank Zero remains a local review draft.

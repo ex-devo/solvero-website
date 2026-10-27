@@ -1,6 +1,6 @@
 # Restored article publication checks
 
-Status: all pre-publication checks passed, 27 October 2026.
+Status: published and verified, 27 October 2026.
 
 Publication covers the 11 restored existing articles and agreed site changes. Bank Zero remains a local review draft at the owner’s request and is absent from the public index, sitemap and structured-data graph. Its proposal files are not part of the deployment commit.
 
@@ -44,4 +44,10 @@ Each article reports a valid Articles item. The author profile and service bread
 
 ## Deployment
 
-Commit, push, GitHub Pages completion and public verification are pending.
+The site was committed and pushed to main as `820a6af00cf06397d58027f9460829f7751bdeac`. [GitHub Pages](pages-deployment.json) completed successfully at 13:08:55 UTC on 27 October 2026.
+
+[Live verification](live-verification.json) confirmed that all 17 public pages match both the Google-tested JSON-LD hashes and the local visible text. Five changed assets also match their local files. Bank Zero remains absent from the public index and sitemap; none of its proposal files were included in the publication commit.
+
+A further [Google live URL test](https://search.google.com/test/rich-results/result?id=2EqPj2rAX575go-JhksmKw) successfully crawled the published AI article and detected 2 valid items with no critical errors. [Receipt](google-live-url.json), [screenshot](google-live-url.png). The same two optional organisation address recommendations remain.
+
+This confirms deployment and validation, without making a claim about search indexing or rankings.
