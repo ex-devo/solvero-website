@@ -1,6 +1,6 @@
 # Jateen Narsai
 
-Jateen Narsai is the founder of Solvero, with 15 years of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.
+Jateen is the founder of Solvero, with almost two decades of financial services experience across business and systems analysis, solution design and software delivery. He works through complex problems, connects business and technical teams, and carries agreed work from requirements through testing and handover.
 
 ## Experience
 

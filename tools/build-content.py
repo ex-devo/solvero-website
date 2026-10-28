@@ -235,7 +235,14 @@ for a in META:
 url = AUTHOR['canonical']
 profile = {'@type': 'ProfilePage', '@id': url + '#webpage', 'url': url, 'name': AUTHOR['name'] + ' | Solvero', 'description': AUTHOR['description'], 'inLanguage': 'en', 'isPartOf': {'@id': SITE + '#website'}, 'mainEntity': {'@id': person['@id']}, 'publisher': {'@id': SITE + '#organization'}}
 body = (CONTENT / 'author-jateen-narsai.md').read_text().split('\n', 1)[1]
-main = hero(AUTHOR['name'], 'Business and systems analysis · Process improvement · Software solution design') + '<div class="bg-white py-12 md:py-16"><div class="article-body mx-auto px-6 max-w-4xl">' + renderer.render(body) + '</div></div>'
+profile_body = renderer.render(body)
+linkedin_paragraph = f'<p><a href="{html.escape(AUTHOR["linkedin"], quote=True)}">View Jateen’s LinkedIn profile</a>.</p>'
+assert profile_body.count(linkedin_paragraph) == 1, 'Author profile must contain one LinkedIn profile link'
+linkedin_label = html.escape(f'View {AUTHOR["name"]}’s LinkedIn profile (opens in a new tab)', quote=True)
+linkedin_icon = f'<p class="author-social"><a class="author-linkedin" href="{html.escape(AUTHOR["linkedin"], quote=True)}" target="_blank" rel="noopener noreferrer" aria-label="{linkedin_label}" title="{linkedin_label}"><img src="/images/social/linkedin-in.svg" width="24" height="24" alt="" /></a></p>'
+profile_body = profile_body.replace(linkedin_paragraph, linkedin_icon)
+profile_header = f'<header class="editorial-hero author-hero bg-white text-gray-800"><div class="container mx-auto px-6 max-w-4xl"><a class="article-blog-link" href="/blog/">Solvero Blog</a><h1 class="font-semibold">{html.escape(AUTHOR["name"])}</h1></div></header>'
+main = profile_header + '<div class="author-profile-content bg-white"><div class="article-body mx-auto px-6 max-w-4xl">' + profile_body + '</div></div>'
 write_page('authors/jateen-narsai/index.html', profile['name'], AUTHOR['description'], url, [person, profile], main)
 
 url = SITE + 'blog/'

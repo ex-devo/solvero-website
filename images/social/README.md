@@ -1,0 +1,5 @@
+# Social profile icons
+
+`linkedin-in.svg` preserves the exact LinkedIn glyph used on [Bitwarden’s Ryan Luibrand author profile](https://bitwarden.com/blog/author/ryan-luibrand/), inspected on 28 October 2026. Their `.bwi.bwi-linkedin::before` selects U+F10D from `bwi-font`, displayed at 24px. The glyph outline was extracted without reshaping from [their served font](https://bitwarden.com/build/assets/bwi-font-CO6ha7Q-.ttf?9ce76988b4f091fd22b8d725ace67a3a), referenced by [their stylesheet](https://bitwarden.com/build/assets/app-qemHEcSX.css), and exported as a standalone SVG with its original 300-unit square bounds. The SVG uses LinkedIn blue (#0A66C2) on the site’s white background; the reference’s dark theme uses a lighter blue. LinkedIn remains the trademark owner.
+
+The link retains a 48px invisible clickable area, a descriptive accessible name, keyboard focus styling, a native tooltip and safe new-tab attributes. There is no visible border or button background. The author’s title-to-biography gap is 24px; no article-topic subtitle appears on the author page.

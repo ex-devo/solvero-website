@@ -23,6 +23,12 @@
 .article-body th, .article-body td { border: 1px solid #d1d5db; padding: .875rem; text-align: left; vertical-align: top; }
 .article-body th { background: #f3f4f6; color: #1f2937; }
 .article-body a:focus-visible, .article-body [tabindex]:focus-visible { outline: 3px solid var(--brand-primary); outline-offset: 4px; }
+.author-hero { padding-bottom: 0; }
+.author-hero h1 { margin-bottom: 0; }
+.author-profile-content { padding-top: 1.5rem; padding-bottom: 4rem; }
+.article-body .author-linkedin { display: inline-flex; align-items: center; width: 48px; height: 48px; text-decoration: none; vertical-align: middle; }
+.author-linkedin img { display: block; width: 24px; height: 24px; }
+.author-linkedin:hover { opacity: .8; }
 @media (max-width: 640px) { .article-body { font-size: 1.0625rem; } .article-body h2 { font-size: 1.5rem; } }
 
 .editorial-article { background: white; }
