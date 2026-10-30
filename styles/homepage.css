@@ -1,0 +1,77 @@
+/* Each discipline has its own reading space, with the full photograph intact. */
+.experience-rows {
+  display: grid;
+  gap: 80px;
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+.experience-row {
+  display: grid;
+  align-items: center;
+  gap: 24px;
+  min-width: 0;
+  max-width: 720px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.experience-media {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(17, 24, 39, .08);
+}
+
+.experience-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.experience-copy h3 {
+  margin-bottom: 16px;
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.experience-copy p {
+  max-width: 48ch;
+  color: #4b5563;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+@media (min-width: 1024px) {
+  /* Navigation and hero together occupy 85% of the initial viewport. */
+  #home.hero {
+    min-height: calc(85svh - var(--site-header-height));
+    display: grid;
+    align-items: center;
+    padding-block: 8rem;
+  }
+
+  .experience-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 64px;
+    max-width: none;
+  }
+
+  .experience-copy h3 { font-size: 1.75rem; }
+
+  .experience-row:nth-child(even) .experience-media {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .experience-row:nth-child(even) .experience-copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+/* Print includes every section even if its screen entrance is still pending. */
+@media print {
+  #main-content * { opacity: 1 !important; transform: none !important; }
+}

@@ -22,69 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-/* Initialize GSAP animations */
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof gsap !== 'undefined') {
-    /* Register ScrollTrigger plugin */
-    if (typeof ScrollTrigger !== 'undefined') {
-      gsap.registerPlugin(ScrollTrigger);
-    } else {
-      console.warn('ScrollTrigger plugin not found');
-    }
-    
-    /* Animate hero elements on load */
-    gsap.utils.toArray('.animate-fade-in-up').forEach((el) => {
-      const animProps = {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out"
-      };
-      
-      // Add ScrollTrigger if available
-      if (typeof ScrollTrigger !== 'undefined') {
-        animProps.scrollTrigger = { trigger: el, start: "top 80%" };
-      }
-      
-      gsap.fromTo(el, { opacity: 0, y: 20 }, animProps);
-    });
-
-    /* Scroll-triggered reveals for sections */
-    gsap.utils.toArray('section').forEach((section) => {
-      const animProps = {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out"
-      };
-      
-      // Add ScrollTrigger if available
-      if (typeof ScrollTrigger !== 'undefined') {
-        animProps.scrollTrigger = {
-          trigger: section,
-          start: "top 80%",
-        };
-      }
-      
-      gsap.from(section, {
-        opacity: 0,
-        y: 50,
-        ...animProps
-      });
-    });
-
-    /* Interactive service cards hover effect */
-    gsap.utils.toArray('.service-card').forEach((card) => {
-      card.addEventListener('mouseenter', () => {
-        gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" });
-      });
-      card.addEventListener('mouseleave', () => {
-        gsap.to(card, { scale: 1, duration: 0.3, ease: "power2.out" });
-      });
-    });
-  }
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   /* Optional: subtle cursor effect */
   document.addEventListener('mousemove', (e) => {

@@ -1,6 +1,6 @@
 # Solvero website marketing copy guide
 
-Status: website voice agreed. Updated 2026-10-26.
+Status: website voice agreed. Updated 2026-10-30.
 
 Apply this guidance when drafting, updating or refining website marketing copy. Article guidance lives in `article-writing-guide.md`. The voice is agreed; individual copy and presentation proposals retain the review status recorded below.
 
@@ -62,7 +62,9 @@ Agreed contact heading:
 
 Agreed contact introduction:
 
-> Start a conversation about your challenges or objectives. We’ll explore the options with you and help shape a practical way forward.
+> We’ll explore the options with you and help shape a practical way forward.
+
+Confirmed contact form wording, 30 October 2026: the dropdown asks “What would you like help with?” to identify the enquiry category. The message field asks “Tell us about your project” to invite the details behind that choice.
 
 Agreed first engagement step:
 

@@ -25,7 +25,7 @@
   <meta name="twitter:description"
     content="Improve operations, introduce new capabilities and strengthen delivery teams with Solvero’s business and systems analysis, solution design and implementation.">
   <meta name="twitter:image" content="https://solvero.co.za/images/brand/rubix/solvero-social.png">
-  <link rel="stylesheet" href="/assets/tailwind.css?v=dbdc0af487a9" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=7ec911299a7b" />
 
   <!-- Structured Data (Schema.org) -->
   <script type="application/ld+json">
@@ -243,6 +243,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/rubix/apple-touch-icon.png" />
   <link rel="manifest" href="/images/brand/rubix/site.webmanifest" />
   <link rel="stylesheet" href="/styles/brand.css?v=3bb030383440" />
+  <link rel="stylesheet" href="/styles/homepage.css?v=b24a53507a2c" />
 <!-- ANALYTICS:START -->
   <link rel="stylesheet" href="/styles/analytics.css?v=97520f566720" />
   <script src="/assets/site-analytics.js?v=aba86b1477f1" data-measurement-id="G-HE5MVBPWQ4" defer></script>
@@ -338,7 +339,7 @@
   <section class="py-16 md:py-24 bg-gray-100 scroll-mt-24" id="about" aria-labelledby="about-heading">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-        <div>
+        <div class="about-intro">
           <h2 id="about-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Solvero</h2>
           <p class="text-gray-700 text-lg">Solvero is a business and technology consultancy based in Johannesburg. We work remotely with businesses internationally, helping them make sense of complex problems and find a simpler way forward.</p>
           <div class="mt-8">
@@ -346,9 +347,9 @@
             <p class="text-gray-700 text-lg">To make complex business problems easier to understand and turn that understanding into practical improvements.</p>
           </div>
         </div>
-        <div><img alt="A process review workspace with a printed workflow, practical checklist and laptop." class="rounded-lg shadow-xl w-full" src="images/photography/about-solvero-process-review-900.webp" srcset="images/photography/about-solvero-process-review-600.webp 600w, images/photography/about-solvero-process-review-900.webp 900w, images/photography/about-solvero-process-review-1200.webp 1200w" sizes="(min-width: 1280px) 520px, (min-width: 1024px) 456px, (min-width: 768px) 720px, (min-width: 640px) 592px, calc(100vw - 48px)" width="1200" height="800" decoding="async" loading="lazy" /></div>
+        <div class="about-photo"><img alt="A process review workspace with a printed workflow, practical checklist and laptop." class="rounded-lg shadow-xl w-full" src="images/photography/about-solvero-process-review-900.webp" srcset="images/photography/about-solvero-process-review-600.webp 600w, images/photography/about-solvero-process-review-900.webp 900w, images/photography/about-solvero-process-review-1200.webp 1200w" sizes="(min-width: 1280px) 520px, (min-width: 1024px) 456px, (min-width: 768px) 720px, (min-width: 640px) 592px, calc(100vw - 48px)" width="1200" height="800" decoding="async" loading="lazy" /></div>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-12 md:mt-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-12 md:mt-16 about-details">
         <div aria-labelledby="about-ethos-heading">
           <h3 id="about-ethos-heading" class="text-xl font-semibold text-gray-800 mb-4">Our ethos</h3>
           <div class="space-y-4">
@@ -373,40 +374,34 @@
   <section class="py-16 md:py-24 bg-white" id="expertise">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8 md:mb-12">Where we bring practical experience</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="rounded-lg overflow-hidden shadow-lg group">
-          <div class="w-full h-64 overflow-hidden">
-            <img alt="Corporate credit and credit-risk working papers beside an insurance policy administration folder."
-              class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
-              src="images/photography/financial-services-expertise-credit-risk-768.webp" srcset="images/photography/financial-services-expertise-credit-risk-480.webp 480w, images/photography/financial-services-expertise-credit-risk-768.webp 768w, images/photography/financial-services-expertise-credit-risk-960.webp 960w, images/photography/financial-services-expertise-credit-risk-1200.webp 1200w" sizes="(min-width: 1536px) 475px, (min-width: 1280px) 389px, (min-width: 1024px) 304px, (min-width: 768px) 344px, (min-width: 640px) 280px, calc(100vw - 48px)" width="1200" height="800" decoding="async" loading="lazy" />
+      <div class="experience-rows">
+        <article class="experience-row" aria-labelledby="experience-1-heading">
+          <div class="experience-media"><img alt="Corporate credit and credit-risk working papers beside an insurance policy administration folder."
+              class="experience-image"
+              src="images/photography/financial-services-expertise-credit-risk-768.webp" srcset="images/photography/financial-services-expertise-credit-risk-480.webp 480w, images/photography/financial-services-expertise-credit-risk-768.webp 768w, images/photography/financial-services-expertise-credit-risk-960.webp 960w, images/photography/financial-services-expertise-credit-risk-1200.webp 1200w" sizes="(min-width: 1280px) 528px, (min-width: 1024px) calc((100vw - 112px) / 2), (min-width: 768px) 720px, calc(100vw - 48px)" width="1200" height="800" decoding="async" loading="lazy" /></div>
+          <div class="experience-copy">
+            <h3 id="experience-1-heading">Financial services experience</h3>
+            <p>Our financial services experience spans corporate and institutional credit, credit-risk and economic capital reporting, and insurance policy administration. It informs how we work with complex business rules and existing systems.</p>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Financial services experience</h3>
-            <p class="text-gray-600 text-sm mb-4">Our financial services experience spans corporate and institutional credit, credit-risk and economic capital reporting, and insurance policy administration. It informs how we work with complex business rules and existing systems.</p>
+        </article>
+        <article class="experience-row" aria-labelledby="experience-2-heading">
+          <div class="experience-media"><img alt="A system integration design connects CRM, ERP and legacy applications with shared master data."
+              class="experience-image"
+              src="images/photography/integrate-disparate-systems-architecture-768.webp" srcset="images/photography/integrate-disparate-systems-architecture-480.webp 480w, images/photography/integrate-disparate-systems-architecture-768.webp 768w, images/photography/integrate-disparate-systems-architecture-960.webp 960w, images/photography/integrate-disparate-systems-architecture-1200.webp 1200w" sizes="(min-width: 1280px) 528px, (min-width: 1024px) calc((100vw - 112px) / 2), (min-width: 768px) 720px, calc(100vw - 48px)" width="1200" height="800" decoding="async" loading="lazy" /></div>
+          <div class="experience-copy">
+            <h3 id="experience-2-heading">Systems architecture and integration</h3>
+            <p>We design how applications, data and APIs work together, considering security, reliability and growth. Our integration work can support Single View of Party and Master Client Record initiatives, with clear record ownership, matching rules and dependable updates.</p>
           </div>
-        </div>
-        <div class="rounded-lg overflow-hidden shadow-lg group">
-          <div class="w-full h-64 overflow-hidden">
-            <img alt="A system integration design connects CRM, ERP and legacy applications with shared master data."
-              class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
-              src="images/photography/integrate-disparate-systems-architecture-768.webp" srcset="images/photography/integrate-disparate-systems-architecture-480.webp 480w, images/photography/integrate-disparate-systems-architecture-768.webp 768w, images/photography/integrate-disparate-systems-architecture-960.webp 960w, images/photography/integrate-disparate-systems-architecture-1200.webp 1200w" sizes="(min-width: 1536px) 475px, (min-width: 1280px) 389px, (min-width: 1024px) 304px, (min-width: 768px) 344px, (min-width: 640px) 280px, calc(100vw - 48px)" width="1200" height="800" decoding="async" loading="lazy" />
+        </article>
+        <article class="experience-row" aria-labelledby="experience-3-heading">
+          <div class="experience-media"><img alt="A workshop compares the current process with a proposed simpler route while retaining a review step."
+              class="experience-image"
+              src="images/photography/process-improvement-redesign-768.webp" srcset="images/photography/process-improvement-redesign-480.webp 480w, images/photography/process-improvement-redesign-768.webp 768w, images/photography/process-improvement-redesign-960.webp 960w, images/photography/process-improvement-redesign-1200.webp 1200w" sizes="(min-width: 1280px) 528px, (min-width: 1024px) calc((100vw - 112px) / 2), (min-width: 768px) 720px, calc(100vw - 48px)" width="1200" height="800" decoding="async" loading="lazy" /></div>
+          <div class="experience-copy">
+            <h3 id="experience-3-heading">Business and systems analysis</h3>
+            <p>We turn business needs into clear process models, rules and system requirements. We define how the solution should behave, what information it needs and how people will use it, so business and technical teams can review the same design before development.</p>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Systems architecture and integration</h3>
-            <p class="text-gray-600 text-sm mb-4">We design how applications, data and APIs work together, considering security, reliability and growth. Our integration work can support Single View of Party and Master Client Record initiatives, with clear record ownership, matching rules and dependable updates.</p>
-          </div>
-        </div>
-        <div class="rounded-lg overflow-hidden shadow-lg group">
-          <div class="w-full h-64 overflow-hidden">
-            <img alt="A workshop compares the current process with a proposed simpler route while retaining a review step."
-              class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
-              src="images/photography/process-improvement-redesign-768.webp" srcset="images/photography/process-improvement-redesign-480.webp 480w, images/photography/process-improvement-redesign-768.webp 768w, images/photography/process-improvement-redesign-960.webp 960w, images/photography/process-improvement-redesign-1200.webp 1200w" sizes="(min-width: 1536px) 475px, (min-width: 1280px) 389px, (min-width: 1024px) 304px, (min-width: 768px) 344px, (min-width: 640px) 280px, calc(100vw - 48px)" width="1200" height="800" decoding="async" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Business and systems analysis</h3>
-            <p class="text-gray-600 text-sm mb-4">We turn business needs into clear process models, rules and system requirements. We define how the solution should behave, what information it needs and how people will use it, so business and technical teams can review the same design before development.</p>
-          </div>
-        </div>
+        </article>
       </div>
       <div class="mt-16" id="technology">
         <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">Technology we use to deliver solutions</h3>
@@ -452,7 +447,7 @@
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto bg-gray-50 p-8 md:p-12 rounded-lg shadow-xl">
         <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Let’s discuss your project</h2>
-        <p id="contact-intro" class="text-lg text-gray-600 mb-8">Start a conversation about your challenges or objectives. We’ll explore the options with you and help shape a practical way forward.</p>
+        <p id="contact-intro" class="text-lg text-gray-600 mb-8">We’ll explore the options with you and help shape a practical way forward.</p>
         <form method="POST" id="contact-form" aria-labelledby="contact-heading" aria-describedby="contact-intro">
           <input type="hidden" name="access_key" value="0313e0b7-0d98-4394-9bcd-fa200a69f94b">
           <input type="hidden" name="subject" value="New Submission from Solvero Website">
@@ -497,7 +492,7 @@
             </select>
           </div>
           <div class="mb-6">
-            <label class="block text-gray-700 font-semibold mb-2" for="message">What would you like to improve or make possible?</label>
+            <label class="block text-gray-700 font-semibold mb-2" for="message">Tell us about your project</label>
             <textarea
               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
               id="message" name="message" required="" rows="5"></textarea>
@@ -554,6 +549,7 @@
   <script src="/assets/particles.js"></script>
   <!-- External JavaScript -->
   <script src="script.js"></script>
+  <script src="/assets/homepage-motion.js?v=8b83d56eb712"></script>
 
   <script>
     const mobileMenuButton = document.getElementById('mobile-menu-button');

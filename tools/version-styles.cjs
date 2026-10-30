@@ -29,7 +29,15 @@ function update(file) {
       return `src="${asset}?v=${assetVersion}"`;
     }
   );
-  if (withLogos !== source) fs.writeFileSync(file, withLogos);
+  let withHomepage = withLogos;
+  for (const asset of ['styles/homepage.css', 'assets/homepage-motion.js']) {
+    const assetVersion = createHash('sha256')
+      .update(fs.readFileSync(path.join(root, asset)))
+      .digest('hex').slice(0, 12);
+    const reference = new RegExp(`((?:href|src)="/${asset.replaceAll('.', '\\.')})(?:\\?v=[a-f0-9]+)?"`, 'g');
+    withHomepage = withHomepage.replace(reference, `$1?v=${assetVersion}"`);
+  }
+  if (withHomepage !== source) fs.writeFileSync(file, withHomepage);
 }
 
 function walk(directory) {
