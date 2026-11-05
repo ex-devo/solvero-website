@@ -52,7 +52,7 @@ test('homepage catalogue describes the three linked service pages', () => {
 test('legacy service URLs redirect directly to the appropriate current offer', () => {
   const sitemap = new JSDOM(read('sitemap.xml'), { contentType: 'text/xml' }).window.document;
   const urls = [...sitemap.querySelectorAll('loc')].map(item => item.textContent);
-  assert.equal(urls.length, 17);
+  assert.equal(urls.length, 3 + offers.length + articles.length);
   assert.equal(new Set(urls).size, urls.length);
   for (const [from, to] of legacyRoutes) {
     const document = doc(from.slice(1) + 'index.html');

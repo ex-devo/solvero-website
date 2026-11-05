@@ -1030,5 +1030,135 @@
         }
       ]
     }
+  },
+  {
+    "file": "12-bank-zero-enterprise-technology",
+    "slug": "bank-zero-enterprise-technology",
+    "title": "Bank Zero: Technology Lessons for Enterprises | Solvero",
+    "description": "What can established banks and insurers learn from Bank Zero? Explore its technology choices and practical ways to improve services within existing systems.",
+    "query": "what banks can learn from Bank Zero technology",
+    "section": "Process improvement",
+    "headline": "What established banks and insurers can learn from Bank Zero",
+    "canonical": "https://solvero.co.za/blog/bank-zero-enterprise-technology/",
+    "byline": "Jateen Narsai",
+    "language": "en",
+    "author_url": "https://solvero.co.za/authors/jateen-narsai/",
+    "datePublished": "2026-11-05T18:05:12+02:00",
+    "dateModified": "2026-11-05T18:05:12+02:00",
+    "images": [
+      {
+        "src": "/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "src": "/images/blog/bank-zero-enterprise-technology/business-payment-workflow-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/business-payment-workflow-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/business-payment-workflow-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/business-payment-workflow-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "src": "/images/blog/bank-zero-enterprise-technology/enterprise-service-transition-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/enterprise-service-transition-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/enterprise-service-transition-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/enterprise-service-transition-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "src": "/images/blog/bank-zero-enterprise-technology/improve-one-workflow-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/improve-one-workflow-600.webp",
+            "width": 600,
+            "height": 400
+          },
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/improve-one-workflow-960.webp",
+            "width": 960,
+            "height": 640
+          },
+          {
+            "src": "/images/blog/bank-zero-enterprise-technology/improve-one-workflow-1536.webp",
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-1536.webp",
+    "image_alt": "A single foundation labelled Built together supports a document, gear and phone, beside connected existing platforms labelled Improve in place.",
+    "offer": "new-business-capabilities",
+    "thumbnail": {
+      "source": "/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-1536.webp",
+      "src": "/images/blog/thumbnails/bank-zero-enterprise-technology-480.webp",
+      "width": 480,
+      "height": 320,
+      "variants": [
+        {
+          "src": "/images/blog/thumbnails/bank-zero-enterprise-technology-480.webp",
+          "width": 480,
+          "height": 320
+        },
+        {
+          "src": "/images/blog/thumbnails/bank-zero-enterprise-technology-960.webp",
+          "width": 960,
+          "height": 640
+        }
+      ]
+    }
   }
 ]

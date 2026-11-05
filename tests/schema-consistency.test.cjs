@@ -70,6 +70,6 @@ test('structured breadcrumbs match visible trails and drafts remain outside the 
     if (trail) {
       assert.deepEqual(breadcrumb.itemListElement.map(item => item.name), [...trail.querySelectorAll('li')].map(item => item.textContent.replace(/^\/\s*/, '').trim()), file);
     }
-    assert.ok(!JSON.stringify(nodes).includes('bank-zero'), 'Draft article is not part of the public graph');
+    assert.ok(!JSON.stringify(nodes).includes('/docs/proposals/'), 'Unpublished review previews are not part of the public graph');
   }
 });

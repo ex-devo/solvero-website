@@ -826,6 +826,127 @@
         "/images/blog/ai-operating-model/automate-the-coordination.webp",
         "/images/blog/ai-operating-model/human-contributions.webp"
       ]
+    },
+    {
+      "slug": "bank-zero-enterprise-technology",
+      "targetImageCount": 4,
+      "approvedOn": "2026-11-05",
+      "featured": {
+        "file": "bank-zero-enterprise-design.png",
+        "alt": "A single foundation labelled Built together supports a document, gear and phone, beside connected existing platforms labelled Improve in place.",
+        "caption": "An established institution can adapt the design principles of a purpose-built platform while working with its existing systems.",
+        "placement": "Article header and archive thumbnail"
+      },
+      "images": [
+        {
+          "kind": "featured",
+          "file": "bank-zero-enterprise-design.png",
+          "alt": "A single foundation labelled Built together supports a document, gear and phone, beside connected existing platforms labelled Improve in place.",
+          "caption": "An established institution can adapt the design principles of a purpose-built platform while working with its existing systems.",
+          "width": 1536,
+          "height": 1024,
+          "origin": "built-in imagegen, new for draft 2",
+          "masterSha256": "96fdd0c9e93c90a620a66616a9a1a73281a2ddc632d5b9fbd75630294679e68e",
+          "variants": [
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-600.webp",
+              "width": 600,
+              "height": 400
+            },
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-960.webp",
+              "width": 960,
+              "height": 640
+            },
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/bank-zero-enterprise-design-1536.webp",
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "business-payment-workflow.png",
+          "alt": "A payment request with supporting documents moves through Prepare, a gate labelled Approve, and a checked record labelled Confirm.",
+          "caption": "Keep preparation, authorisation and confirmation connected within the payment workflow. This is a conceptual illustration, not a view of Bank Zero's app.",
+          "width": 1536,
+          "height": 1024,
+          "origin": "reused existing illustration",
+          "masterSha256": "9c64330fb85b3076d4c9021a270741c7328d642bf5502f60bb4de1c46a84809f",
+          "variants": [
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/business-payment-workflow-600.webp",
+              "width": 600,
+              "height": 400
+            },
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/business-payment-workflow-960.webp",
+              "width": 960,
+              "height": 640
+            },
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/business-payment-workflow-1536.webp",
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "enterprise-service-transition.png",
+          "alt": "A service flows through Receive, Check and Record, with an owner assigned to one bounded change and a continuous foundation labelled Keep services running.",
+          "caption": "Define one service change, assign an owner and plan how connected systems will continue operating during the transition. The diagram illustrates the recommendation rather than a particular institution's architecture.",
+          "width": 1536,
+          "height": 1024,
+          "origin": "built-in imagegen, new for draft 2",
+          "masterSha256": "d6d08e8f023a526c579f0cc781ed0e393e09630a3769a6cded4f25bd368c5d87",
+          "variants": [
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/enterprise-service-transition-600.webp",
+              "width": 600,
+              "height": 400
+            },
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/enterprise-service-transition-960.webp",
+              "width": 960,
+              "height": 640
+            },
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/enterprise-service-transition-1536.webp",
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "improve-one-workflow.png",
+          "alt": "Email, form and document inputs feed a shared record with an owner; checked work reaches Completed, while unresolved cases follow a Resolve path back to review.",
+          "caption": "Keep documents and decisions with the shared record, assign responsibility and give unresolved cases a route back to review.",
+          "width": 1536,
+          "height": 1024,
+          "origin": "reused existing illustration",
+          "masterSha256": "cfa0913ecba63f018cbf20d24922442fd8ec1f7e5ec2a2c65f68e24f3d55118e",
+          "variants": [
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/improve-one-workflow-600.webp",
+              "width": 600,
+              "height": 400
+            },
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/improve-one-workflow-960.webp",
+              "width": 960,
+              "height": 640
+            },
+            {
+              "src": "/images/blog/bank-zero-enterprise-technology/improve-one-workflow-1536.webp",
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        }
+      ]
     }
   ],
   "editorialUpdates": [

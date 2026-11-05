@@ -100,6 +100,22 @@
       "point": "Separate the initial setup from running costs",
       "prompt": "Use case: illustration-story. Create a new original wide 3:2 editorial illustration for a Solvero business-improvement blog. The supplied image is a STYLE REFERENCE ONLY: slightly irregular black pen outlines, white background, gentle flat fills, blue accents #1985CE #1DC5FF #35B0ED, pale teal and restrained warm accents. Friendly hand-drawn explainer style, generous white space, bold readable forms. This is a creative visual metaphor or SIMPLE infographic to land one clear point for a business reader, not a technical diagram. No people, faces, human hands, code, screenshots, software UI, data charts, numeric metrics, dense tables, watermark, caveat or footer. Use only the exact short labels requested, in clean legible hand-lettering. Labels belong next to the relevant object; no paragraph captions or extra headline inside the image. Do not copy the reference composition. Scene: Two clearly separate transparent jars or baskets organise the commitment behind a workflow improvement. The left jar holds a small magnifier, a build tool, a test checklist and a handover booklet, representing the initial setup. The right jar holds a repeating circular arrow, a small hosting/server symbol, a maintenance wrench and a review tray, representing recurring operation. EXACT large labels: \"Setup\", \"Running\". EXACT smaller labels beside the left group: \"Define\", \"Build\", \"Test\", \"Hand over\". EXACT smaller labels beside the right group: \"Usage\", \"Hosting\", \"Support\", \"Review\". No currency signs, coins, people, numbers, actual prices or comparative jar size claims. Keep the two groups equal in visual importance, with short readable labels.",
       "source": "exec-4170978c-e345-4bff-90b5-63c2f57e4329.png"
+    },
+    {
+      "slug": "bank-zero-enterprise-technology",
+      "kind": "featured",
+      "id": "bank-zero-enterprise-design",
+      "prompt": "Use case: illustration-story.\nAsset type: bespoke Solvero article illustration, matching the supplied STYLE REFERENCE ONLY. This is a new composition, not an edit of the reference.\nStyle: warm professional hand-drawn editorial explainer, slightly irregular black pen outlines, restrained flat watercolour-like fills, pure white background, clear blue accents #1985CE and #35B0ED, pale teal and gentle warm ochre, bold simple forms, generous white margins. Landscape 3:2, approximately 1536x1024. No human figures, bank logos, code, screenshots, monetary amounts, metrics, promises of superiority, excessive decoration or invented architecture details. Text only as specified, spelled correctly. This is conceptual enterprise service design, not an actual depiction of a bank's internal systems.\nPrimary request: compact lead illustration for an article titled \"What established banks and insurers can learn from Bank Zero\". Communicate two different starting conditions for designing technology to support a service, with equal visual dignity.\nComposition: two calm, clearly separated groups side by side, joined by one subtle curved blue line suggesting a transferable idea. Left: one solid blue foundation supports a document, a small cog, and a simple upright phone showing one tick; the foundation is intentionally assembled as one coherent unit. Beneath it a single short label: \"Built together\". Right: three established pale-teal foundation blocks are connected by short blue bridges and support distinct document, record and cog symbols. One small ochre bridge is carefully fitted between the existing blocks, visibly completing a useful connection. Beneath this group the single short label: \"Improve in place\". Both groups are orderly, functional and equally substantial. No good-versus-bad framing, no chaos, no broken banks, no logos, no arrows implying one group migrates into the other. Keep objects bold and the concept readable at a 384px header size. Only the two labels, no title or further text.",
+      "source": "exec-21604fde-d6c9-43d6-a558-0d83ba1bb5e1.png",
+      "reference": "docs/proposals/2026-10-27-bank-zero-article/images/designed-together-960.webp"
+    },
+    {
+      "slug": "bank-zero-enterprise-technology",
+      "kind": "section",
+      "id": "enterprise-service-transition",
+      "prompt": "Use case: illustration-story.\nAsset type: bespoke Solvero article illustration, matching the supplied STYLE REFERENCE ONLY. This is a new composition, not an edit of the reference.\nStyle: warm professional hand-drawn editorial explainer, slightly irregular black pen outlines, restrained flat watercolour-like fills, pure white background, clear blue accents #1985CE and #35B0ED, pale teal and gentle warm ochre, bold simple forms, generous white margins. Landscape 3:2, approximately 1536x1024. No human figures, bank logos, code, screenshots, monetary amounts, metrics, promises of superiority, excessive decoration or invented architecture details. Text only as specified, spelled correctly. This is conceptual enterprise service design, not an actual depiction of a bank's internal systems.\nPrimary request: body illustration explaining how an established bank or insurer can improve one service while existing systems continue operating.\nComposition: a single coherent service path running left to right through three large pale-blue and pale-teal blocks, with a document input on left and a checked document on right. The left block is labelled \"Receive\", the centre \"Check\", and the right \"Record\". A clean blue route connects all three blocks. Around just the middle block, draw a restrained ochre outlined scope boundary, like a rounded rectangular planning frame, labelled \"One service change\". Below the centre frame, a small new blue connector is being fitted alongside a clearly drawn existing connection, using two short curved blue paths to communicate a managed transition without people or tools. Under the entire flow, one continuous sturdy pale-teal support strip labelled \"Keep services running\". The receiving and recording blocks remain firmly connected to that support. Include a small ownership tag attached to the bounded centre change with a key symbol and the single word \"Owner\". Keep the visual explanatory and uncluttered. No claim of automatic migration, no stopwatch, money or dramatic rebuilding. Exact text only: \"Receive\", \"Check\", \"Record\", \"One service change\", \"Keep services running\", \"Owner\".",
+      "source": "exec-5f4d58c6-0453-450c-81af-5a6922c434f8.png",
+      "reference": "docs/proposals/2026-10-27-bank-zero-article/images/designed-together-960.webp"
     }
   ],
   "retainedJobs": [
@@ -144,6 +160,22 @@
       "kind": "section",
       "prompt": "Use case: illustration-story. Asset type: featured editorial illustration immediately below an article title for Solvero, a business improvement and solution delivery consultancy. Generate an original wide landscape illustration, approximately 3:2. Style reference is ONLY visual style: approachable hand-drawn black marker outlines, simple adult cartoon business people, white background, generous whitespace, restrained flat fills, blue accents using #1985CE, #1DC5FF and #35B0ED, muted warm clothing and pale teal secondary fills. Crisp, readable visual story at mobile sizes. Match the existing supplied reference's hand-drawn editorial language, but do NOT copy its diagram or wording. Text: none. No labels, title, caveat, footer, caption, watermark, logo or invented metric. Avoid generic decorative stock scenes. Scene: Two business and technical colleagues agree ongoing workflow ownership beside a laptop showing a neutral automation route. The scene includes an error-notification bell, an execution-history notebook, a controlled access key and an operating guide handed to a named-role owner represented by a badge. Show responsibilities and recovery after deployment, with no platform logos.",
       "source": "exec-7656782a-73b4-4b08-990f-a9d05fd26d6b.png"
+    },
+    {
+      "slug": "bank-zero-enterprise-technology",
+      "kind": "section",
+      "id": "business-payment-workflow",
+      "source": "business-payment-workflow.png",
+      "masterSha256": "9c64330fb85b3076d4c9021a270741c7328d642bf5502f60bb4de1c46a84809f",
+      "note": "Existing conceptual illustration, reused with the approved draft 2 caption."
+    },
+    {
+      "slug": "bank-zero-enterprise-technology",
+      "kind": "section",
+      "id": "improve-one-workflow",
+      "source": "improve-one-workflow.png",
+      "masterSha256": "cfa0913ecba63f018cbf20d24922442fd8ec1f7e5ec2a2c65f68e24f3d55118e",
+      "note": "Existing conceptual illustration, reused with the approved draft 2 caption."
     }
   ],
   "refinements": [
