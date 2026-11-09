@@ -1,6 +1,6 @@
 # Solvero article writing guide
 
-Status: article voice agreed. Updated 2026-10-27.
+Status: article voice agreed. Updated 2026-11-09.
 
 Apply this guidance when drafting, updating or refining articles. Website marketing guidance lives in `website-copy-guide.md`.
 
@@ -16,11 +16,27 @@ Write for readers who understand their business. Explain unfamiliar process or t
 
 Use a direct, conversational voice that helps the reader think through the subject, with room for reasoning, examples and technical detail according to their needs. Open practical articles with a concrete observation, then develop the reasoning. An occasional memorable observation can give the writing character; explain its point concretely.
 
-For technology news and commentary, use a measured, curious voice. Explain what is known, explore the implications and include our assessment of what the development means for businesses. Clearly distinguish our interpretation from established facts.
+For technology news and commentary, use a measured, curious voice. Attribute reported facts and forecasts to their sources, explain the implications for businesses and state Solvero's recommendations directly. Keep interpretation distinct from established facts, using specific reasoning rather than phrases such as “our reading” or “our assessment”.
 
 Articles should provide useful advice in their own right. Connect the subject to Solvero's services in a restrained, relevant way where that connection follows naturally.
 
 Ground business descriptions and experience claims in the positioning and evidence requirements in `README.md`. Use “we” when describing Solvero's services, approach and work. Distinguish illustrative examples from verified results.
+
+## Conversational, professional voice
+
+Write as a knowledgeable colleague helping the reader think through a business problem. Use direct address, simple language and natural contractions such as “you're”, “doesn't”, “can't” and “we'll”. Contractions belong in the professional voice; expand them where emphasis or clarity requires it.
+
+Begin with a recognisable situation and acknowledge the reader's practical concerns, such as interrupted work, uncertain decisions or customers waiting for confirmation. Develop the advice from that situation.
+
+Use specific, relatable examples and simple analogies when they make an unfamiliar idea easier to understand. Personal experience, client work and results need confirmed evidence; label constructed scenarios as illustrative.
+
+Vary short, medium and longer sentences to suit the thought. Short sentences can give emphasis; longer sentences can develop reasoning and give the reader time to follow it.
+
+Read consecutive sentences for rhythm and vary their length and structure when the prose becomes monotonous. Keep each paragraph focused and within the existing 3-sentence ceiling.
+
+Use a brief aside, parenthesis or natural pause when it adds context or acknowledges a practical complication. An occasional ellipsis can convey a pause if it reads naturally. Keep these touches restrained so that warmth and personality support the explanation.
+
+Keep vocabulary precise and professional for enterprise readers. Edit casual expressions while retaining natural contractions and accessible explanations: “test exceptions and failure cases”, for example, names the work more clearly than “test the awkward cases”. Use specific actions such as completing a request or confirming a payment where a phrase such as “finish the job” leaves the outcome vague. Apply the same register to headings, captions, metadata and calls to action.
 
 ## Authentic Writing
 

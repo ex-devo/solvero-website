@@ -6,15 +6,15 @@ By [Jateen Narsai](/authors/jateen-narsai/)
 
 *An authorised agent needs a permitted route into the service and a result the customer can verify.*
 
-Take a routine supplier payment. The invoice is approved and the money's available. Someone in finance still has to open a portal, find the invoice and type in the payment details.
+Consider a routine supplier payment. The invoice is approved and the money's available. Someone in finance still has to open a portal, find the invoice and type in the payment details.
 
-If you're responsible for that process, it's an easy task to put on the automation list. You'd like the payment handled without another interruption, and you need to be certain the right supplier gets the right amount.
+If you're responsible for that process, it's a task you may want to automate. You'd like the payment handled without another interruption, and you need to be certain the right supplier gets the right amount.
 
 On 20 October 2026, Visa, BILL and Billtrust [announced a live pilot](https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22856.html) addressing that portal step. An authorised AI agent completes payments the buyer has already approved, while the supplier's portal recognises the agent and applies its acceptance policy.
 
 According to the announcement, participating businesses are already processing transactions through the pilot.
 
-For enterprise leaders, that raises a practical question: how do you serve a customer who sends an agent to complete a request? Start with one service, working through what the agent may do and how both businesses will know the job is finished.
+For enterprise leaders, that raises a practical question: how do you serve a customer who sends an agent to complete a request? Start with one service, working through what the agent may do and how both businesses will confirm completion.
 
 ## Your next customer request could come from software
 
@@ -26,9 +26,9 @@ The prediction is that more customers will delegate transactions this way. Maste
 
 Treat that as a forecast about online shopping. It gives enterprise leaders a possibility to plan for, with adoption in their own markets still uncertain.
 
-If customers begin delegating more business requests, your service will need to give their agents usable answers. Which invoices can be paid? What information is required, and what confirmation will the customer receive?
+If customers begin delegating more business requests, your service will need to provide the information their agents require. Which invoices can be paid? What information is required, and what confirmation will the customer receive?
 
-An account manager may be able to fill gaps in a conversation today. For an agent to complete the request reliably, those answers need to be available through the service itself.
+An account manager may be able to clarify missing details directly with the customer today. For an agent to complete the request reliably, those answers need to be available through the service itself.
 
 We recommend preparing one clearly defined request first. The invoice-payment example below is an illustrative design: the proposed permissions, system connections and tests are recommendations for an enterprise considering this capability.
 
@@ -36,7 +36,7 @@ We recommend preparing one clearly defined request first. The invoice-payment ex
 
 *Give an authorised agent clear information about eligible invoices, required details and the status of its payment request.*
 
-## Be clear about whose permission counts
+## Define what the agent may do
 
 Recognising an agent is a starting point. You also need to know which customer it represents and what that customer has allowed it to do.
 
@@ -44,26 +44,26 @@ Think about a colleague asking you to pay an invoice. Knowing the colleague does
 
 In our illustrative payment service, permission might cover a named invoice, an approved amount and an expiry time. The agent could settle that invoice within those limits; a different invoice or payment destination would need separate authority.
 
-Agree how permission will be checked and withdrawn. The service needs a way to verify approval, including when an agent's message confidently says the customer has already given it.
+Agree how permission will be checked and withdrawn. The service needs to verify the customer's approval before carrying out the payment.
 
-Understanding the customer's instructions takes care too. In [Project Swap](https://www.anthropic.com/research/project-swap), published in September 2026, Anthropic studied agents trading books for 201 employees. Missing information about people's preferences limited the results, even when the agents traded effectively.
+Check how accurately the agent represents the customer's instructions. In [Project Swap](https://www.anthropic.com/research/project-swap), published in September 2026, Anthropic studied agents trading books for 201 employees. Missing information about people's preferences limited the results, even when the agents traded effectively.
 
 The experiment was a controlled book exchange. It gives service designers a useful question to test: has the agent understood what its customer wants?
 
 For the invoice service, write down:
 
 - Which customer account and invoice the agent may access.
-- What it may do, for how much and until when, including how the customer can withdraw permission.
+- The permitted action, amount and time limit, including how the customer can withdraw permission.
 - What needs fresh approval. An invoice amount changing after the original instruction is one example.
 - What the agent receives when a request can't proceed, and which team takes over.
 
-Now you have rules that business and technical people can check together, including the point where the service should stop and ask for a decision.
+These rules let business and technical teams check the permitted actions and the conditions that require a decision.
 
 ![An approved instruction names the customer, invoice, amount and expiry; a permission check leads to a payment receipt or fresh approval.](/images/blog/customer-ai-agents/invoice-agent-permission-1536.webp)
 
 *Check the request against the customer’s permitted invoice, amount and time limit, with a route for fresh approval when needed.*
 
-## Make “done” mean the same thing on both sides
+## Confirm completion across both businesses
 
 The buyer wants to know the invoice is paid. Your systems need to give you enough evidence to confirm that outcome.
 
@@ -71,14 +71,14 @@ Follow the payment through the supplier's current process. Find the system holdi
 
 Some connections may already exist. An application programming interface, or API, lets software exchange information or request an action from another system; yours may support part of the payment journey already.
 
-Other steps may depend on someone comparing records or investigating a mismatch. Those steps need an owner and a way to pass on the information required to finish the job.
+Other steps may depend on someone comparing records or investigating a mismatch. Those steps need an owner and a way to pass on the information required to complete the request.
 
-Then test the awkward cases. That's where you'll find out whether the service is ready for use:
+Test exceptions and failure cases. You'll need these checks to establish whether the service is ready for use:
 
 - The agent receives no response and tries again. The service recognises the original request and avoids charging twice.
 - The invoice amount changes after approval. The request pauses for the required decision, with a clear explanation returned to the agent.
 - A payment is accepted, and the account update is delayed. The status explains what's been received and what's still waiting for confirmation.
-- Someone needs to investigate. The responsible team gets the invoice, permission details, transaction reference and failure information (without asking the customer to start again).
+- A request needs investigation. The responsible team receives the invoice, permission details, transaction reference and failure information (without asking the customer to resubmit the request).
 
 These are proposed tests for the illustrative service. The implementation will depend on your payment arrangements and the systems involved.
 
@@ -92,7 +92,7 @@ You'll need those results before deciding whether to extend the service.
 
 ## Next steps: prepare one service with Solvero
 
-Choose one customer request you'd like to make easier to complete. Bring a successful example, a difficult one and the person who can explain how the decisions get made.
+Choose one customer request you'd like to make easier to complete. Bring a successful request, a request that needed investigation and the person who can explain the decision rules.
 
 Through [Business Process Improvement](/services/business-operations-improvement/), we can follow the request through your business, clarify who can approve each action and work through the handoffs that cause delays. That establishes what needs to change before you commit to building it.
 
@@ -100,4 +100,4 @@ Our [New Business Capabilities](/services/new-business-capabilities/) work can t
 
 We'll agree the permitted actions, system responsibilities and acceptance criteria with the people who will own the service.
 
-[Bring Solvero one customer request](/#contact) you'd like an authorised agent to complete. We'll help you work out what the service needs and deliver the agreed change.
+[Contact Solvero](/#contact) about one customer request you'd like an authorised agent to complete. We'll help you define the service requirements and deliver the agreed change.
