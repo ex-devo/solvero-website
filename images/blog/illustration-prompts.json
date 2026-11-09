@@ -116,6 +116,34 @@
       "prompt": "Use case: illustration-story.\nAsset type: bespoke Solvero article illustration, matching the supplied STYLE REFERENCE ONLY. This is a new composition, not an edit of the reference.\nStyle: warm professional hand-drawn editorial explainer, slightly irregular black pen outlines, restrained flat watercolour-like fills, pure white background, clear blue accents #1985CE and #35B0ED, pale teal and gentle warm ochre, bold simple forms, generous white margins. Landscape 3:2, approximately 1536x1024. No human figures, bank logos, code, screenshots, monetary amounts, metrics, promises of superiority, excessive decoration or invented architecture details. Text only as specified, spelled correctly. This is conceptual enterprise service design, not an actual depiction of a bank's internal systems.\nPrimary request: body illustration explaining how an established bank or insurer can improve one service while existing systems continue operating.\nComposition: a single coherent service path running left to right through three large pale-blue and pale-teal blocks, with a document input on left and a checked document on right. The left block is labelled \"Receive\", the centre \"Check\", and the right \"Record\". A clean blue route connects all three blocks. Around just the middle block, draw a restrained ochre outlined scope boundary, like a rounded rectangular planning frame, labelled \"One service change\". Below the centre frame, a small new blue connector is being fitted alongside a clearly drawn existing connection, using two short curved blue paths to communicate a managed transition without people or tools. Under the entire flow, one continuous sturdy pale-teal support strip labelled \"Keep services running\". The receiving and recording blocks remain firmly connected to that support. Include a small ownership tag attached to the bounded centre change with a key symbol and the single word \"Owner\". Keep the visual explanatory and uncluttered. No claim of automatic migration, no stopwatch, money or dramatic rebuilding. Exact text only: \"Receive\", \"Check\", \"Record\", \"One service change\", \"Keep services running\", \"Owner\".",
       "source": "exec-5f4d58c6-0453-450c-81af-5a6922c434f8.png",
       "reference": "docs/proposals/2026-10-27-bank-zero-article/images/designed-together-960.webp"
+    },
+    {
+      "slug": "customer-ai-agents",
+      "kind": "featured",
+      "id": "customer-agent-overview",
+      "prompt": "Use case: infographic-diagram. Create a bespoke editorial illustration for Solvero's article 'When customers send AI agents: how enterprises should prepare'. Style: polished friendly hand-drawn black ink outlines with slightly irregular rounded strokes, soft watercolour fills, blue #1985CE and sky blue dominant, pale mint and small amber accents, pure white background. Warm professional business explainer, spacious 3:2 landscape composition, large simple readable handwritten black lettering. White margins all around. Conceptual illustration, not a screenshot, actual software architecture or a vendor-branded product. Avoid humanoid robots, faces, sci-fi imagery, logos, decorative plants, gradients, tiny labels or invented statistics. Asset: compact article lead image that must read well at 320px wide. Show a customer-held approved invoice card on the left, a small blue software-agent application tile carrying that invoice through a simple permission checkpoint in the centre, and an enterprise receipt with one large check on the right. One clear forward arrow through the checkpoint and one small return arrow carrying the confirmed receipt back toward the customer. Use only three labels verbatim: 'Customer', 'Check permission', 'Confirmed'. Keep the icons large, only a few elements and no title or subtitle.",
+      "source": "exec-1c752d1f-be65-4fd6-a337-6b981b840c8b.png"
+    },
+    {
+      "slug": "customer-ai-agents",
+      "kind": "section",
+      "id": "agent-service-information",
+      "prompt": "Use case: infographic-diagram. Create a bespoke editorial illustration for Solvero's article 'When customers send AI agents: how enterprises should prepare'. Style: polished friendly hand-drawn black ink outlines with slightly irregular rounded strokes, soft watercolour fills, blue #1985CE and sky blue dominant, pale mint and small amber accents, pure white background. Warm professional business explainer, spacious 3:2 landscape composition, large simple readable handwritten black lettering. White margins all around. Conceptual illustration, not a screenshot, actual software architecture or a vendor-branded product. Avoid humanoid robots, faces, sci-fi imagery, logos, decorative plants, gradients, tiny labels or invented statistics. Asset: article body explainer about information a customer's agent needs from an enterprise service. On left a simple blue software-agent application tile holds an invoice card and sends a request arrow to a supplier service window on the right. The window contains three neatly separated, large, simple cards with document, checklist and receipt icons. The only text is these exact four labels: 'Customer agent', 'Eligible invoices', 'Required details', 'Payment status'. The cards are the supplier's clear service information, not unrestricted access to internal systems. Balanced composition, clear left-to-right relationship, no extra symbols.",
+      "source": "exec-2b8676b0-264e-4dc9-b4df-23a1c855a987.png"
+    },
+    {
+      "slug": "customer-ai-agents",
+      "kind": "section",
+      "id": "invoice-agent-permission",
+      "prompt": "Use case: infographic-diagram. Create a bespoke editorial illustration for Solvero's article 'When customers send AI agents: how enterprises should prepare'. Style: polished friendly hand-drawn black ink outlines with slightly irregular rounded strokes, soft watercolour fills, blue #1985CE and sky blue dominant, pale mint and small amber accents, pure white background. Warm professional business explainer, spacious 3:2 landscape composition, large simple readable handwritten black lettering. White margins all around. Conceptual illustration, not a screenshot, actual software architecture or a vendor-branded product. Avoid humanoid robots, faces, sci-fi imagery, logos, decorative plants, gradients, tiny labels or invented statistics. Asset: article body explainer on permission for one invoice payment. Show a large approved instruction card clipped to an invoice, containing four large clearly separated rows with these exact labels: 'Customer', 'Invoice', 'Amount', 'Expires'. Beside it a small blue software-agent tile carries a matching invoice through a check gate towards a simple payment receipt. A restrained amber branch from the gate leads down to a human-review tray, showing that changed instructions need another decision. Additional exact labels only: 'Check permission' above gate and 'Fresh approval' below review tray. No currency values, no fabricated invoice numbers, no lock icon implying total security.",
+      "source": "exec-728b2d0e-7fb8-4ba5-bd4f-98a71203a5ce.png"
+    },
+    {
+      "slug": "customer-ai-agents",
+      "kind": "section",
+      "id": "payment-confirmation",
+      "prompt": "Use case: infographic-diagram. Create a bespoke editorial illustration for Solvero's article 'When customers send AI agents: how enterprises should prepare'. Style: polished friendly hand-drawn black ink outlines with slightly irregular rounded strokes, soft watercolour fills, blue #1985CE and sky blue dominant, pale mint and small amber accents, pure white background. Warm professional business explainer, spacious 3:2 landscape composition, large simple readable handwritten black lettering. White margins all around. Conceptual illustration, not a screenshot, actual software architecture or a vendor-branded product. Avoid humanoid robots, faces, sci-fi imagery, logos, decorative plants, gradients, tiny labels or invented statistics. Asset: article body explainer for payment receipt versus confirmed completion across existing systems. Three large stages across the canvas connected by forward arrows: an incoming request tray labelled 'Received', a payment system with a small amber clock labelled 'Updating account', and a completed account record with a large blue check labelled 'Confirmed'. A single shared transaction-reference strip runs beneath all three stages, labelled exactly 'One transaction reference'. Only the final stage has a check mark. The middle stage clearly shows progress still pending. Clean uncluttered conceptual flow, no timer values or claims about actual payment settlement times.",
+      "source": "exec-7ebe1213-1893-40d3-a2af-62770084ab08.png"
     }
   ],
   "retainedJobs": [
@@ -186,6 +214,20 @@
       "source": "exec-1fbdf467-0699-47ba-ab18-94146a84d859.png",
       "editTarget": "workflow-automation-roi-featured.png",
       "invariants": "Composition, labels, arrows, containers and hand-drawn style preserved; clock tokens distinguish time from money."
+    },
+    {
+      "slug": "customer-ai-agents",
+      "id": "customer-agent-overview",
+      "prompt": "Edit this Solvero editorial illustration. Simplify only the left customer illustration: replace the woman's face and body with a large simple approved invoice card held by one small hand, no face or body. Keep the exact label 'Customer' below that card. Preserve the rest of the image's business meaning, blue/mint/amber hand-drawn watercolour style, white background, software-agent window, permission gate, enterprise building and returned confirmation. Keep labels 'Check permission' and 'Confirmed' exactly. Maintain wide 3:2 composition with full white margins, uncluttered and readable when reduced to 384px wide. No additional text.",
+      "editTarget": "exec-b3f5d3c5-5c8a-4311-ae7c-ff833ef67322.png",
+      "source": "exec-1c752d1f-be65-4fd6-a337-6b981b840c8b.png"
+    },
+    {
+      "slug": "customer-ai-agents",
+      "id": "payment-confirmation",
+      "prompt": "Edit only the composition and text at the top of this editorial diagram. Remove the large article title 'When customers send AI agents: how enterprises should prepare' and remove the green subtitle 'Payment receipt versus confirmed completion across existing systems', leaving no title or subtitle. Enlarge and vertically centre the existing three-stage diagram to use the canvas well with comfortable white margins. Preserve the exact four labels 'Received', 'Updating account', 'Confirmed' and 'One transaction reference'. Preserve the left-to-right flow, amber clock in the middle and only one check mark at final stage, and the single reference strip connected to all three stages. Keep the same black ink hand-drawn blue watercolour style and white background, wide 3:2 canvas. No extra text or decorative elements.",
+      "editTarget": "exec-95bd810a-20f9-4fb2-bb0a-1e19208fe214.png",
+      "source": "exec-7ebe1213-1893-40d3-a2af-62770084ab08.png"
     }
   ]
 }

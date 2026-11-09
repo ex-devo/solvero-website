@@ -1160,5 +1160,135 @@
         }
       ]
     }
+  },
+  {
+    "file": "13-customer-ai-agents",
+    "slug": "customer-ai-agents",
+    "title": "Customer AI Agents: Preparing Enterprise Services | Solvero",
+    "description": "Prepare your enterprise for customer AI agents. Agree what they may do, connect your systems and check that each request reaches a confirmed result.",
+    "query": "customer AI agents",
+    "section": "AI and automation",
+    "headline": "When customers send AI agents: how enterprises should prepare",
+    "canonical": "https://solvero.co.za/blog/customer-ai-agents/",
+    "byline": "Jateen Narsai",
+    "language": "en",
+    "author_url": "https://solvero.co.za/authors/jateen-narsai/",
+    "datePublished": "2026-11-09T21:29:30+02:00",
+    "dateModified": "2026-11-09T21:29:30+02:00",
+    "images": [
+      {
+        "src": "/images/blog/customer-ai-agents/customer-agent-overview-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "featured",
+        "variants": [
+          {
+            "width": 600,
+            "height": 400,
+            "src": "/images/blog/customer-ai-agents/customer-agent-overview-600.webp"
+          },
+          {
+            "width": 960,
+            "height": 640,
+            "src": "/images/blog/customer-ai-agents/customer-agent-overview-960.webp"
+          },
+          {
+            "width": 1536,
+            "height": 1024,
+            "src": "/images/blog/customer-ai-agents/customer-agent-overview-1536.webp"
+          }
+        ]
+      },
+      {
+        "src": "/images/blog/customer-ai-agents/agent-service-information-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "width": 600,
+            "height": 400,
+            "src": "/images/blog/customer-ai-agents/agent-service-information-600.webp"
+          },
+          {
+            "width": 960,
+            "height": 640,
+            "src": "/images/blog/customer-ai-agents/agent-service-information-960.webp"
+          },
+          {
+            "width": 1536,
+            "height": 1024,
+            "src": "/images/blog/customer-ai-agents/agent-service-information-1536.webp"
+          }
+        ]
+      },
+      {
+        "src": "/images/blog/customer-ai-agents/invoice-agent-permission-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "width": 600,
+            "height": 400,
+            "src": "/images/blog/customer-ai-agents/invoice-agent-permission-600.webp"
+          },
+          {
+            "width": 960,
+            "height": 640,
+            "src": "/images/blog/customer-ai-agents/invoice-agent-permission-960.webp"
+          },
+          {
+            "width": 1536,
+            "height": 1024,
+            "src": "/images/blog/customer-ai-agents/invoice-agent-permission-1536.webp"
+          }
+        ]
+      },
+      {
+        "src": "/images/blog/customer-ai-agents/payment-confirmation-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "role": "section",
+        "variants": [
+          {
+            "width": 600,
+            "height": 400,
+            "src": "/images/blog/customer-ai-agents/payment-confirmation-600.webp"
+          },
+          {
+            "width": 960,
+            "height": 640,
+            "src": "/images/blog/customer-ai-agents/payment-confirmation-960.webp"
+          },
+          {
+            "width": 1536,
+            "height": 1024,
+            "src": "/images/blog/customer-ai-agents/payment-confirmation-1536.webp"
+          }
+        ]
+      }
+    ],
+    "image": "https://solvero.co.za/images/blog/customer-ai-agents/customer-agent-overview-1536.webp",
+    "image_alt": "A customer's approved invoice passes through a software agent and permission check to an enterprise, which returns confirmation.",
+    "offer": "new-business-capabilities",
+    "thumbnail": {
+      "source": "/images/blog/customer-ai-agents/customer-agent-overview-1536.webp",
+      "src": "/images/blog/thumbnails/customer-ai-agents-480.webp",
+      "width": 480,
+      "height": 320,
+      "variants": [
+        {
+          "src": "/images/blog/thumbnails/customer-ai-agents-480.webp",
+          "width": 480,
+          "height": 320
+        },
+        {
+          "src": "/images/blog/thumbnails/customer-ai-agents-960.webp",
+          "width": 960,
+          "height": 640
+        }
+      ]
+    }
   }
 ]

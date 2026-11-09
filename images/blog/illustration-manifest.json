@@ -947,6 +947,128 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "customer-ai-agents",
+      "targetImageCount": 4,
+      "approvedOn": "2026-11-09",
+      "note": "Conceptual service-design illustrations; they do not depict the Visa pilot or an implemented Solvero system.",
+      "featured": {
+        "file": "customer-agent-overview.png",
+        "alt": "A customer's approved invoice passes through a software agent and permission check to an enterprise, which returns confirmation.",
+        "caption": "An authorised agent needs a permitted route into the service and a result the customer can verify.",
+        "placement": "Article header and archive thumbnail"
+      },
+      "images": [
+        {
+          "kind": "featured",
+          "file": "customer-agent-overview.png",
+          "alt": "A customer's approved invoice passes through a software agent and permission check to an enterprise, which returns confirmation.",
+          "caption": "An authorised agent needs a permitted route into the service and a result the customer can verify.",
+          "width": 1536,
+          "height": 1024,
+          "origin": "built-in image_gen, bespoke for approved draft 2",
+          "masterSha256": "c34d976b55878c0e0f629eeb4c0198602047a88140d0482fed6ac54ef49023c7",
+          "variants": [
+            {
+              "width": 600,
+              "height": 400,
+              "src": "/images/blog/customer-ai-agents/customer-agent-overview-600.webp"
+            },
+            {
+              "width": 960,
+              "height": 640,
+              "src": "/images/blog/customer-ai-agents/customer-agent-overview-960.webp"
+            },
+            {
+              "width": 1536,
+              "height": 1024,
+              "src": "/images/blog/customer-ai-agents/customer-agent-overview-1536.webp"
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "agent-service-information.png",
+          "alt": "A customer agent submits an invoice to a supplier service showing eligible invoices, required details and payment status.",
+          "caption": "Give an authorised agent clear information about eligible invoices, required details and the status of its payment request.",
+          "width": 1536,
+          "height": 1024,
+          "origin": "built-in image_gen, bespoke for approved draft 2",
+          "masterSha256": "77e01f7f6fc573f7b691fe8b1b9eadfe53025316cd4eda72115398dcef4c0511",
+          "variants": [
+            {
+              "width": 600,
+              "height": 400,
+              "src": "/images/blog/customer-ai-agents/agent-service-information-600.webp"
+            },
+            {
+              "width": 960,
+              "height": 640,
+              "src": "/images/blog/customer-ai-agents/agent-service-information-960.webp"
+            },
+            {
+              "width": 1536,
+              "height": 1024,
+              "src": "/images/blog/customer-ai-agents/agent-service-information-1536.webp"
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "invoice-agent-permission.png",
+          "alt": "An approved instruction names the customer, invoice, amount and expiry; a permission check leads to a payment receipt or fresh approval.",
+          "caption": "Check the request against the customer’s permitted invoice, amount and time limit, with a route for fresh approval when needed.",
+          "width": 1536,
+          "height": 1024,
+          "origin": "built-in image_gen, bespoke for approved draft 2",
+          "masterSha256": "f6c753a9667b24d1c7adf35ce2fefd688993574faa704b99a8be1cd8056f29d8",
+          "variants": [
+            {
+              "width": 600,
+              "height": 400,
+              "src": "/images/blog/customer-ai-agents/invoice-agent-permission-600.webp"
+            },
+            {
+              "width": 960,
+              "height": 640,
+              "src": "/images/blog/customer-ai-agents/invoice-agent-permission-960.webp"
+            },
+            {
+              "width": 1536,
+              "height": 1024,
+              "src": "/images/blog/customer-ai-agents/invoice-agent-permission-1536.webp"
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "file": "payment-confirmation.png",
+          "alt": "A payment moves from Received through Updating account to Confirmed, with one transaction reference connecting all 3 stages.",
+          "caption": "Keep receipt, account updates and confirmed completion distinct, using one reference to follow the request across systems.",
+          "width": 1536,
+          "height": 1024,
+          "origin": "built-in image_gen, bespoke for approved draft 2",
+          "masterSha256": "24ecbfae155d0b7ba781358b3c398ace6d08aee952d766f3104e5dd2cdc0e9c3",
+          "variants": [
+            {
+              "width": 600,
+              "height": 400,
+              "src": "/images/blog/customer-ai-agents/payment-confirmation-600.webp"
+            },
+            {
+              "width": 960,
+              "height": 640,
+              "src": "/images/blog/customer-ai-agents/payment-confirmation-960.webp"
+            },
+            {
+              "width": 1536,
+              "height": 1024,
+              "src": "/images/blog/customer-ai-agents/payment-confirmation-1536.webp"
+            }
+          ]
+        }
+      ]
     }
   ],
   "editorialUpdates": [
