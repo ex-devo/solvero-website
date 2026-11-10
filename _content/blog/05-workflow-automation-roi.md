@@ -6,19 +6,19 @@ By [Jateen Narsai](author-jateen-narsai.md)
 
 *Count the work that remains before valuing the capacity released.*
 
-Build a workflow automation business case from measured work, realistic remaining effort and the full cost of implementation and operation. Separate cash savings from staff capacity released. Both can matter, but they support different decisions.
+If you're preparing a workflow automation proposal, you'll need to explain how much work your team will still do after implementation. Build the business case from measured work, realistic remaining effort and the full cost of implementation and operation.
 
-A claim that a task currently takes eighty hours does not establish that automation will save eighty hours. Some cases may stay manual, people may review the outputs, and someone will maintain the workflow. The useful calculation starts after those activities have been included.
+A task that currently takes eighty hours won't necessarily release eighty hours. Some cases may stay manual, people may review the outputs, and someone will maintain the workflow. Include those activities before calculating the benefit.
 
-Use the same discipline to compare a simpler process or a better handoff with a software build. The chosen improvement should earn its implementation effort.
+Keep cash savings and staff capacity released separate; both can matter, but they support different decisions. Use the same discipline to compare a simpler process or a better handoff with a software build, so the chosen improvement justifies its implementation effort.
 
 ## Establish a baseline you can explain
 
-Record case volume, active handling time and rework for a defined period. Note how representative the period is. A seasonal peak or a batch of unusually difficult requests needs context.
+Record case volume, active handling time and rework for a defined period, and explain how representative it is. A seasonal peak or a batch of unusually difficult requests needs context.
 
-Define what the timing includes. If eight minutes already covers checking and correcting a record, do not add those same correction minutes as another benefit. Keep customer waiting time separate from staff effort.
+Define what the timing includes. If eight minutes already covers checking and correcting a record, adding those correction minutes as another benefit would count them twice. Keep customer waiting time separate from staff effort.
 
-Use your own labour-cost assumptions. For planning, a loaded hourly cost can represent salary and agreed employer costs. Multiplying hours by that rate values capacity; it does not prove payroll or other cash spending will fall.
+Use your own labour-cost assumptions. For planning, a loaded hourly cost can represent salary and agreed employer costs. Multiplying hours by that rate values capacity; any reduction in payroll or other cash spending needs separate evidence.
 
 ## Model the work that remains
 
@@ -44,7 +44,7 @@ The released capacity is forty hours under these assumptions. It still needs a c
 
 At an invented planning rate of 25 currency units per hour, forty hours represents 1,000 units of monthly capacity value. Use any consistent currency; no exchange rate is assumed.
 
-If salaries and other spending stay unchanged, that 1,000 is not a cash saving. Cash benefit needs separate evidence, such as reduced paid overtime or an avoided external service cost. Do not claim both the full value of the released hours and an additional cash saving for those same hours.
+If salaries and other spending stay unchanged, you haven't saved that 1,000 in cash. Cash benefit needs separate evidence, such as reduced paid overtime or an avoided external service cost. Claiming both the full value of the released hours and an additional cash saving for those same hours would count them twice.
 
 Faster invoicing, lower error rates and improved customer experience may be useful outcomes. Include them as measured non-cash outcomes unless there is a defensible way to estimate an additional financial effect. Avoid assigning an arbitrary price to reduced regulatory or operational risk.
 
@@ -56,7 +56,9 @@ Faster invoicing, lower error rates and improved customer experience may be usef
 
 For this worked example, assume a one-time cost of 6,000 units and recurring external costs of 400 units a month. These are hypothetical inputs, not Solvero prices or market estimates.
 
-The one-time amount includes discovery, implementation and internal time for setup, testing and training. The recurring amount covers software and external support. The five internal support hours are already included in remaining effort above, so they are not deducted a second time.
+The one-time amount includes discovery, implementation and internal time for setup, testing and training. The recurring amount covers software and external support.
+
+The five internal support hours are already included in remaining effort above, so don't deduct them again.
 
 Use an explicit period and basis:
 
@@ -82,7 +84,7 @@ The [editable scenario worksheet](assets/automation-roi-scenarios.csv) contains 
 | Base | 75% | 2 | 5 | 40 hours | 600 units |
 | Optimistic | 90% | 1 | 4 | 59 hours | 1,075 units |
 
-The conservative case takes forty months to recover the one-time cost on this capacity-valued basis. That difference is useful: coverage, review effort and support requirements deserve testing before commitment.
+The conservative case takes forty months to recover the one-time cost on this capacity-valued basis. Test coverage, review effort and support requirements before committing, because they change whether the proposal is worthwhile.
 
 The CSV contains values and explicit formulas as explanatory text; it is not a spreadsheet calculator. Replace the inputs, recalculate and have the owner check that benefits and costs use the same scope and period. The [input worksheet](assets/automation-roi-inputs.csv) records the evidence needed for each assumption.
 
@@ -94,7 +96,7 @@ If the business case depends on a benefit nobody can measure or use, narrow the 
 
 ## Discuss the assumptions before committing
 
-We help connect a proposed improvement to the work and costs behind its business case. We examine the current process, identify what would change and define a practical scope with assumptions your team can check.
+We help you test the assumptions behind a proposed automation business case. We examine the current process, identify what would change and define a practical scope with assumptions your team can check.
 
 Where a pilot is worthwhile, we can design and implement the agreed process or system change, then compare the observed result with the baseline. Bring current volumes, handling steps, operating costs and the outcome you want to improve.
 

@@ -6,19 +6,19 @@ By [Jateen Narsai](author-jateen-narsai.md)
 
 *A reminder can prompt a decision; it cannot supply authority.*
 
-Automate the routing, reminders and record keeping around an approval while keeping decision authority explicit. Define who can approve each request, what information they are approving and what happens when a request changes or gets stuck.
+An approval request can leave your team chasing a decision while the customer waits. Automate the routing, reminders and record keeping while keeping decision authority explicit. Define who can approve each request, what information they're approving and what happens when a request changes or is delayed.
 
-Approval workflow automation works best when the policy can be translated into clear routes and exceptions. Email notifications alone leave important questions unanswered: whether a delegate has authority, whether all approvals are needed, and whether an old response still applies to a revised request.
+Approval workflow automation works best when the policy can be translated into clear routes and exceptions. Email notifications alone don't resolve whether a delegate has authority, whether all approvals are needed or whether an old response still applies to a revised request.
 
-The improvement may start with removing a redundant handoff or clarifying a decision, before any software changes are made.
+You may be able to remove a redundant handoff or clarify a decision before making any software changes.
 
 ## Begin with one decision
 
-Choose a bounded request, such as purchasing equipment. Specify what the approval authorises. Permission to buy equipment may be separate from supplier onboarding, release of payment or approval of a later invoice.
+Start with one request type, such as purchasing equipment, and specify what the approval authorises. Permission to buy equipment may be separate from supplier onboarding, release of payment or approval of a later invoice.
 
 For the initial request, agree the required information: requester, supplier, item or service, business reason, quote, currency, total and relevant budget. Define how tax, delivery and other charges enter that total according to the organisation's policy.
 
-Incomplete requests should return to the requester with a specific reason. Sending them through the approval chain simply moves the missing-information problem to another person.
+Incomplete requests should return to the requester with a specific reason. If you send them through the approval chain, the next reviewer still has to obtain the missing information.
 
 ## Write the approval matrix
 
@@ -40,7 +40,9 @@ Here, **L** means the department's configured spending limit in its base currenc
 
 The [editable approval matrix](assets/approval-matrix.csv) provides space for your own limits and role definitions. It deliberately leaves policy values for the owner to supply.
 
-Choose whether multiple people approve in sequence, all must approve, or one response is enough. These are different rules. In [Microsoft's approval documentation](https://learn.microsoft.com/en-us/power-automate/get-started-approvals), “Everyone must approve” waits for all approvals or a rejection, while “First to respond” completes with a response from any approver. The workflow configuration must reflect the actual authority policy.
+Decide whether approvals must follow a sequence, whether everyone must approve or whether one response is enough. These rules need different configurations.
+
+In [Microsoft's approval documentation](https://learn.microsoft.com/en-us/power-automate/get-started-approvals), “Everyone must approve” waits for all approvals or a rejection, while “First to respond” completes with a response from any approver. The workflow configuration must reflect the actual authority policy.
 
 ## Make the normal route visible
 
@@ -52,7 +54,7 @@ The normal purchase path can be described in five stages:
 4. Confirm the request is still current before carrying out the authorised action.
 5. Record the outcome and notify the requester.
 
-Here is the same route with its main exception paths:
+Here's the same route with its main exception paths:
 
 ```text
 Submitted request -> Validate inputs -> Determine eligible approvers
@@ -73,7 +75,7 @@ Current revision -> Required decisions -> All required approvals complete
                                          Record confirmed outcome
 ```
 
-This diagram is a design aid. Detailed transitions still need to be agreed and tested in the implementation.
+This diagram is a design aid. You'll still need to agree and test the detailed transitions in the implementation.
 
 ## Bind each decision to a request revision
 
@@ -83,11 +85,11 @@ This diagram is a design aid. Detailed transitions still need to be agreed and t
 
 An approval should identify exactly what was accepted. Store the request revision, amount, supplier and quote reference presented to the approver.
 
-Suppose someone approves a request and its total is then increased. Under this example policy, a material change creates a new revision and invalidates the old approval route. A delayed response to the earlier revision cannot authorise the revised purchase.
+Suppose someone approves a request and its total is then increased. Under this example policy, a material change creates a new revision and invalidates the old approval route. A delayed response to the earlier revision can't authorise the revised purchase.
 
 Agree which changes are material. A supplier change, revised scope or amount may require fresh approval; a corrected internal note may follow a different rule. Keep that distinction explicit rather than inferring it from whichever fields a form happens to update.
 
-If a request changes during execution, the system must prevent an outdated approval from triggering the purchase. The implementation needs a controlled check and transition around the authorised action, not just a check made when an email was sent.
+If a request changes during execution, the system must prevent an outdated approval from triggering the purchase. Use a controlled check and transition around the authorised action. A check made when an email was sent is insufficient.
 
 ## Handle absence and overdue requests
 
@@ -95,7 +97,7 @@ If a request changes during execution, the system must prevent an outdated appro
 
 *Absence and escalation rules should preserve the authority behind the decision.*
 
-Delegation needs an authority rule. Record who may delegate, the delegate's scope and limit, and when that authority begins and ends. Forwarding an approval email does not establish those permissions.
+Delegation needs an authority rule. Record who may delegate, the delegate's scope and limit, and when that authority begins and ends. Forwarding an approval email doesn't establish those permissions.
 
 For an overdue request, decide when reminders occur, who receives escalation and when the request pauses. Set the working calendar and time zone used for those deadlines. A person in another time zone should see an unambiguous due time.
 
@@ -105,7 +107,9 @@ In this example, elapsed time never counts as approval. A reminder can prompt a 
 
 Record the request identifier, revision, applicable policy version, assigned approvers, their authority, decisions and timestamps. Link the final action to those decisions. Give people access appropriate to their role and avoid copying sensitive documents into every notification.
 
-Approval and execution are separate outcomes. If the purchase record cannot be created after approval, mark execution as incomplete and assign recovery. A retry must recognise an already completed action so it does not create a second purchase. The [data-entry guide](02-reduce-duplicate-data-entry.md) explains repeated events and uncertain write results.
+Approval and execution are separate outcomes. If the purchase record can't be created after approval, mark execution as incomplete and assign recovery.
+
+A retry must recognise an already completed action so it doesn't create a second purchase. The [data-entry guide](02-reduce-duplicate-data-entry.md) explains repeated events and uncertain write results.
 
 ## Test the exceptions that affect authority
 
@@ -117,9 +121,9 @@ The [acceptance checklist](assets/approval-tests.csv) includes these review case
 - An old approval response cannot release a changed request revision.
 - An overdue or approved-but-unexecuted request stays visible for recovery.
 
-These are proposed tests, not completed platform tests. Run them with the actual policy, roles and selected system before extending the workflow.
+These are proposed tests. They don't represent completed platform testing. Run them with the actual policy, roles and selected system before extending the workflow.
 
-Measure waiting time by stage, requests returned for missing information, manual chasing and exceptions. Compare those measures with a recorded baseline. A faster notification is useful only if the decision and resulting action reach the right outcome.
+Measure waiting time by stage, requests returned for missing information, manual chasing and exceptions. Compare those measures with a recorded baseline. Check that faster notifications lead to the correct decision and resulting action.
 
 ## Improve one approval process first
 
@@ -127,7 +131,7 @@ Use the [automation scorecard](01-which-processes-to-automate.md) if you need to
 
 We help teams spend less time chasing approvals by investigating where requests wait and what a reviewer needs to decide. We work with the process owner to simplify the route and clarify authority before implementing the agreed workflow.
 
-That can include clearer responsibilities, better request information, routing and system connections. We test ordinary and exception cases with your team and establish ownership for ongoing use. Bring one approval type, its current rules and a request that stalled.
+That can include clearer responsibilities, better request information, routing and system connections. We test ordinary and exception cases with your team and establish ownership for ongoing use. Bring one approval type, its current rules and a recent request that was delayed.
 
 [See how we improve decisions and handoffs](/services/business-operations-improvement/), or explore our broader [business improvement and solution delivery services](/#services).
 

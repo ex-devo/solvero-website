@@ -6,11 +6,11 @@ By [Jateen Narsai](author-jateen-narsai.md)
 
 *Evidence connects delivery to an invoice-ready amount.*
 
-Quote-to-invoice automation connects agreed work, delivery evidence and billing preparation. Define when work becomes eligible for invoicing before connecting the tools, especially where jobs can be partly completed or changed.
+Your team may have an accepted quote and a completed job, yet still be waiting for the evidence needed to prepare an invoice. Quote-to-invoice automation connects agreed work, delivery evidence and billing preparation.
 
 An accepted quote gives the team a commercial reference. Whether it should produce a deposit request, a milestone invoice or a later completion invoice depends on the agreed terms. Keep that decision explicit in the workflow.
 
-Clear responsibilities and visible delivery evidence are part of the solution. Connecting the software follows those operating decisions.
+Define when work becomes eligible for invoicing, including partial completion and changes, and agree who confirms the required evidence. Those operating decisions give you the basis for connecting the tools.
 
 ## Define the work and the billing event
 
@@ -42,7 +42,7 @@ Quote accepted -> Job created -> Work scheduled -> Work recorded
 
 Cancellation, disputed work and missing evidence lead to a hold or review state. They should remain visible rather than being forced through the normal completion route.
 
-The [state and handoff map](assets/quote-to-invoice-states.csv) records the entry checks, owner and expected next state. It is a planning model; it needs agreement against the business's actual contracts and operating rules.
+The [state and handoff map](assets/quote-to-invoice-states.csv) records the entry checks, owner and expected next state. It's a planning model that needs agreement against the business's actual contracts and operating rules.
 
 ## Decide what makes an item invoice-ready
 
@@ -56,7 +56,7 @@ For the flooring example, the billing reviewer needs the accepted scope, the com
 | Delivery sign-off missing | Hold the affected item for the responsible owner |
 | Job cancelled or disputed | Route to the agreed review process before billing action |
 
-Invoice readiness is a state supported by evidence. A job being marked “done” does not establish that every commercial and billing check is complete.
+Invoice readiness needs evidence that the commercial and billing checks are complete. A job marked “done” doesn't establish that on its own.
 
 ## Preserve the quote and change history
 
@@ -66,7 +66,7 @@ Invoice readiness is a state supported by evidence. A job being marked “done�
 
 Link work to the accepted quote revision. If the scope changes, record the new agreement and distinguish the revised amount from what has already been billed.
 
-An unapproved site note should not silently increase the invoice. The [approval workflow guide](03-approval-workflow-automation.md) describes how to bind an approval to the version of the request that was actually reviewed.
+An unapproved site note shouldn't increase the invoice. The [approval workflow guide](03-approval-workflow-automation.md) explains how to link approval to the version of the request that was reviewed.
 
 Keep progress billing separate from final billing. The workflow should be able to identify the eligible amount, amounts already represented by invoice drafts or issued invoices, and any items requiring correction. Agree how cancelled drafts, credits and revised invoices affect that position in the accounting system.
 
@@ -86,19 +86,19 @@ The [acceptance checklist](assets/quote-to-invoice-tests.csv) includes partial c
 
 Check whether the existing job-management or accounting product already supports the needed handoff. A configured native process may meet the requirement with less custom integration to operate.
 
-Where separate systems are needed, define which one owns each state and reference. Duplicating the full job lifecycle in several places creates more opportunities for contradictory status. Return only the billing information the delivery team needs to see.
+Where separate systems are needed, define which one owns each state and reference. Duplicating the full job lifecycle in several places increases the chance of conflicting statuses. Return only the billing information the delivery team needs to see.
 
-Evaluate the complete handoff, including exception review and reconciliation. A successful connector action does not establish that the invoice reflects the right milestone, amount or customer.
+Evaluate the complete handoff, including exception review and reconciliation. A successful connector action doesn't establish that the invoice reflects the right milestone, amount or customer.
 
 ## Measure the delay you can influence
 
 Record the time between approved delivery evidence and invoice readiness, and the further time to reviewed issue. Count missing-evidence cases, manual follow-ups and invoice corrections.
 
-Keep payment timing separate. Earlier invoice preparation may help the billing process, but this workflow alone cannot establish that customers will pay sooner. Use the [bottleneck method](04-identify-process-bottlenecks.md) to investigate the stage actually causing delay.
+Keep payment timing separate. Earlier invoice preparation may help the billing process, but this workflow alone can't establish that customers will pay sooner. Use the [bottleneck method](04-identify-process-bottlenecks.md) to investigate which stage is causing the delay.
 
-## Connect the handoff causing repeated chasing
+## Connect the handoff that needs repeated follow-up
 
-We help reduce the chasing between accepted work, delivery and billing. We trace one job through the process, clarify who confirms completion and agree the evidence needed to make the work invoice-ready.
+We help reduce repeated follow-up between accepted work, delivery and billing. We trace one job through the process, clarify who confirms completion and agree the evidence needed to make the work invoice-ready.
 
 We can then introduce the process changes and implement the agreed checks or system connections, with testing for partial work, changes and repeated events. Bring an accepted quote, a completed job record and the current billing preparation steps.
 

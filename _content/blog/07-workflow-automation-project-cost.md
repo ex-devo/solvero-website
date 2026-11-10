@@ -6,21 +6,23 @@ By [Jateen Narsai](author-jateen-narsai.md)
 
 *The visible build is one part of the work and commitment to plan.*
 
-Workflow automation cost depends on the process boundary, the systems involved and the decisions and exceptions the solution must handle. A useful estimate also covers testing, handover and ongoing operation.
+If you're comparing prices for “connect our CRM to accounting”, check that each provider is estimating the same outcome. The phrase can describe very different projects.
 
-The phrase “connect our CRM to accounting” can describe very different projects. Before comparing prices, agree what starts the handoff, what counts as a successful result and who will deal with an uncertain or failed action.
+Costs depend on the process boundary, the systems involved and the decisions and exceptions the solution must handle. Agree what starts the handoff, what counts as a successful result and who will deal with an uncertain or failed action.
 
-A clear scope also makes it easier to decide which improvements need software and which can be introduced through changes to the process.
+Include testing, handover and ongoing operation in the estimate. A clear scope also helps you decide which improvements need software and which can be introduced through changes to the process.
 
 ## Define an outcome a provider can estimate
 
-Describe the work in plain language. Name the trigger, required inputs, destination and finishing condition. Include what should stay manual and the decisions that require approval.
+Describe the work in plain language. Name the trigger, required inputs, destination and what must be confirmed before the work is complete. Include what should stay manual and the decisions that require approval.
 
 For example:
 
 > When a verified customer is approved, create or link its accounting record, return the confirmed identifier and assign any unresolved match to finance.
 
-That statement exposes decisions a short feature list can hide. Does “verified” already exist as a reliable status? Can the systems store each other's identifiers? Is the review queue part of the project or another team's responsibility?
+A short feature list can leave these decisions unclear.
+
+Does “verified” already exist as a reliable status? Can the systems store each other's identifiers? Is the review queue part of the project or another team's responsibility?
 
 Provide recent examples, including one that failed. Replace private customer data with representative test information before sharing it for scoping.
 
@@ -40,7 +42,9 @@ Provide recent examples, including one that failed. Replace private customer dat
 | Decisions | Agreed matching and exception route | Ownership and identity rules still disputed |
 | Operation | Known reviewer and support arrangement | Review ownership and operational requirements need definition |
 
-Scope B contains additional analysis, cleanup and operating decisions. Counting connector names or workflow boxes will not show all that work. A smaller scope can still need thorough failure handling and acceptance testing.
+Scope B contains additional analysis, cleanup and operating decisions. Connector names and workflow boxes don't show all that work.
+
+A smaller scope can still need thorough failure handling and acceptance testing.
 
 The [editable scope comparison](assets/automation-scope-comparison.csv) makes those differences visible. Use it to compare inclusions before deciding whether two proposals price the same outcome.
 
@@ -48,7 +52,7 @@ The [editable scope comparison](assets/automation-scope-comparison.csv) makes th
 
 Some uncertainty can be resolved by inspecting existing documentation or testing an approved interface. Other uncertainty requires the business owner to decide a rule.
 
-Keep those activities separate in the scope. A provider cannot implement a stable approval route while the spending policy is still being negotiated. Likewise, assuming a connector supports every required action can shift a technical investigation into the build.
+Keep those activities separate in the scope. A provider can't implement a stable approval route while the spending policy is still being negotiated. Assuming a connector supports every required action can leave technical investigation to be done during the build.
 
 Agree how unresolved questions will affect the estimate. A discovery phase may be useful where important dependencies are unknown. Its deliverables should be specific enough to help you decide the next step, such as an agreed process boundary, field map, technical findings and implementation scope.
 
@@ -75,13 +79,15 @@ The exact deliverables should fit the project. A business user form, historical 
 
 *Separate the setup commitment from the work and costs of running it.*
 
-Implementation effort is only one part of the decision. Ask who will pay for platform subscriptions, usage, hosting and any external services the workflow needs.
+Include operating costs alongside implementation effort. Ask who will pay for platform subscriptions, usage, hosting and any external services the workflow needs.
 
 Then describe how the organisation will operate it. Someone needs to review exceptions, monitor failures, maintain access and assess changes to the connected systems. Self-hosting also creates infrastructure responsibilities; a managed service still needs an internal owner.
 
-Usage assumptions should reflect the selected platform's billing model. For example, [n8n's pricing](https://n8n.io/pricing/) describes workflow-execution allowances, while [Microsoft's Power Automate licensing documentation](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types) distinguishes user and capacity licensing. Check the required edition and entitlements for the actual design. A monthly case count alone is not a complete licence estimate.
+Usage assumptions should reflect the selected platform's billing model. For example, [n8n's pricing](https://n8n.io/pricing/) describes workflow-execution allowances, while [Microsoft's Power Automate licensing documentation](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types) distinguishes user and capacity licensing.
 
-Keep internal staff effort visible. Interviews, data preparation, testing and learning the support process take time even when they are not on the supplier's invoice. The [ROI guide](05-workflow-automation-roi.md) shows how to keep that effort from being counted twice.
+Check the required edition and entitlements for the actual design. A monthly case count alone is not a complete licence estimate.
+
+Keep internal staff effort visible. Interviews, data preparation, testing and learning the support process take time even when they aren't on the supplier's invoice. The [ROI guide](05-workflow-automation-roi.md) explains how to avoid counting that effort twice.
 
 ## Prepare a brief that makes proposals comparable
 
@@ -89,11 +95,11 @@ Use the [project scoping brief](assets/automation-scoping-brief.csv) to capture 
 
 Confirm who owns the accounts, workflow configuration and documentation after delivery. Agree how changes are requested and how ongoing support is arranged. Commercial terms, fees and delivery dates belong in the actual proposal rather than being inferred from a generic blog example.
 
-Our business improvement and solution delivery work uses that brief to connect the intended outcome with the work required. Commercial terms depend on the agreed scope; the examples in this guide do not set a package, fixed fee or delivery date.
+We use that brief in our business improvement and solution delivery work to connect the intended outcome with the work required. Commercial terms depend on the agreed scope; the examples in this guide don't set a package, fixed fee or delivery date.
 
-## Discuss the workflow before selecting a package
+## Discuss the scope before comparing proposals
 
-We connect the capability you need with a defined implementation, from requirements and solution design through delivery. We work through the required decisions, system dependencies and acceptance criteria so you can assess what the proposal will deliver.
+We help turn the capability you need into a defined project, from requirements and solution design through delivery. We work through the required decisions, system dependencies and acceptance criteria so you can assess what the proposal will deliver.
 
 We can then implement the agreed process change, tool or integration through testing and handover. Bring one repeated process and a recent example of the problem; we can identify the investigation needed before agreeing scope and commercial terms.
 

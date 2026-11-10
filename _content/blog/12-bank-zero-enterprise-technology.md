@@ -6,27 +6,25 @@ By [Jateen Narsai](/authors/jateen-narsai/)
 
 *An established institution can adapt the design principles of a purpose-built platform while working with its existing systems.*
 
-The December 2021 case study reported that 2 people managed Bank Zero's LinuxONE platform.
+If you're improving a service in an established bank or insurer, consider which of Bank Zero's choices could help you reduce operating effort. You'll need to examine what the bank made possible, how its technology supported the service and what changes when you already have customers and systems to maintain.
 
-[IBM's account](https://www.ibm.com/case-studies/bank-zero) connects the small platform-management team to the bank's low-fee model.
-
-For an established bank or insurer, the question is which of Bank Zero's choices could help it deliver a service with less operating effort. Answering that requires looking at what the bank made possible, how its technology choices supported the banking service and what changes when an institution already has customers and systems to maintain.
+The December 2021 case study reported that 2 people managed Bank Zero's LinuxONE platform. [IBM's account](https://www.ibm.com/case-studies/bank-zero) connects that small platform-management team to the bank's low-fee model.
 
 ## What Bank Zero made possible
 
 Bank Zero put a branchless banking service into operation for individuals and businesses, with zero monthly account fees and free basic transactions.
 
-Bank Zero also gives business customers control over payment preparation and authorisation. Bank Zero describes configurable authorisation chains, bulk payment uploads and a direct Xero connection for importing transaction data. These business features bring approval and accounting connections into the service customers use to move money.
+Bank Zero gives business customers control over payment preparation and authorisation. Bank Zero describes configurable authorisation chains, bulk payment uploads and a direct Xero connection for importing transaction data. These business features bring approval and accounting connections into the service customers use to move money.
 
 ![A payment request with supporting documents moves through Prepare, a gate labelled Approve, and a checked record labelled Confirm.](/images/blog/bank-zero-enterprise-technology/business-payment-workflow-1536.webp)
 
 *Keep preparation, authorisation and confirmation connected within the payment workflow. This is a conceptual illustration, not a view of Bank Zero's app.*
 
-We recommend assessing the account fee alongside the payment controls and the administration customers still need to perform.
+Assess the account fee alongside the payment controls and the administration customers still need to perform.
 
 In September 2026, Bank Zero reported reaching its first monthly break-even result in August. [ITWeb's report](https://www.itweb.co.za/article/bank-zero-reaches-break-even-after-nearly-five-years/LPwQ57lbVQzqNgkj) also records the bank's expectation of uneven monthly earnings afterwards. The milestone supports a discussion about its operating model; it doesn't establish sustained profitability or isolate the financial contribution of its technology.
 
-For established institutions, we recommend designing the customer service and the work required to operate it together.
+For your institution, design the customer service and the work required to operate it together.
 
 ## Why its technology approach supported the model
 
@@ -34,13 +32,13 @@ Bank Zero could design its banking platform around the service it intended to of
 
 That gave it responsibility for the software and control over its design. Open-source components supplied part of the foundation; the bank still had to build, test, secure and operate the complete service.
 
-For an enterprise, we recommend designing payment initiation, authorisation, recording and operational handling as one workflow. Removing unnecessary handoffs can reduce the work people must perform and support.
+Design payment initiation, authorisation, recording and operational handling as one workflow. Removing unnecessary handoffs can reduce the work people must perform and support.
 
 Infrastructure decisions followed the intended operation too. IBM's historical case study describes testing alternatives against performance requirements, choosing LinuxONE with Ubuntu and using platform automation to keep management effort low. IBM's case study reports the bank's experience; it doesn't provide an independent cost comparison with other banks.
 
 IBM's account describes cost and ease of management as requirements for choosing the platform.
 
-When assessing a new capability, we recommend considering operating effort alongside functionality. Ask how many people must intervene, which systems must exchange or reconcile information and what happens when processing fails. Include the continuing work of support, reconciliation and change in the decision.
+When you assess a new capability, consider operating effort alongside functionality. Ask how many people must intervene, which systems must exchange or reconcile information and what happens when processing fails. Include the continuing work of support, reconciliation and change in the decision.
 
 Building software internally is one possible response to those requirements. An existing product or a well-designed integration may fit them better elsewhere. The decision needs to account for the skills, maintenance and control each option requires.
 
@@ -52,7 +50,7 @@ Bank Zero's own FAQ says it doesn't offer credit. A bank with lending products t
 
 The [Federal Reserve Bank of Kansas City's review of core banking modernisation](https://www.kansascityfed.org/research/payments-system-research-briefings/core-banking-systems-and-options-for-modernization/) describes full replacement, component replacement and augmentation of existing systems. It identifies migration and service-continuity risks, as well as the integration and maintenance costs that can remain when systems run alongside each other.
 
-Which service could the institution redesign from request to completion, and which systems must keep exchanging information during the change?
+Choose a service to examine from request to completion, and identify which systems must keep exchanging information during the change.
 
 | Bank Zero's starting point | An established institution's question |
 |---|---|
@@ -69,9 +67,9 @@ These questions apply to a defined part of the institution. An insurer could exa
 
 ## Adopt the design discipline within one service
 
-We recommend starting with a service where the intended outcome is clear and the operating effort can be observed. Trace recent requests through it and establish what customers receive, where people intervene and which system holds the authoritative record.
+Start with a service whose intended outcome is clear and whose operating effort you can observe. Trace recent requests through it to establish what customers receive, where people intervene and which system holds the authoritative record.
 
-Consider an illustrative claims-document service. A customer uploads a document, a handler checks an inbox, someone matches it to a claim and another person updates the claims system. The upload works, while staff still perform much of the coordination.
+Consider an illustrative claims-document service. A customer uploads a document, a handler checks an inbox, someone matches it to a claim and another person updates the claims system. Once the document is uploaded, staff still perform much of the coordination.
 
 Designing the complete service means deciding how the document is matched, what makes it acceptable, who handles uncertainty and when the customer sees an accurate status. Those decisions establish what the software must do and where human judgement remains necessary.
 
@@ -87,15 +85,15 @@ Plan how the old and new systems will operate during the transition. Establish w
 
 If a temporary connection is required, name its owner and specify when it can be removed. Include the cost of supporting it when comparing implementation options.
 
-The intended benefit is less staff handling to complete the service. Compare handling effort and cost before and after the change to establish the actual improvement.
+The aim is to reduce the staff handling needed to complete the service. Compare handling effort and cost before and after the change to establish the improvement achieved.
 
 For the claims example, useful measures include elapsed time to an accepted document, staff handling effort, incorrect matches and time spent resolving failed updates. Compare similar cases so a change in the work mix doesn't obscure the result.
 
-Include ongoing support and the effort of maintaining the new connection. A quicker customer interaction can still leave an expensive operation behind it. The improvement is established when the completed service becomes easier to deliver at the required level of control and reliability.
+Include ongoing support and the effort of maintaining the new connection. A quicker customer interaction can still require costly processing and support. The improvement is established when the completed service becomes easier to deliver at the required level of control and reliability.
 
 ## How Solvero can help put this into practice
 
-At Solvero, we connect the business objective to the process, information and technology changes needed to deliver it. We can work with a service's business owners and technical team to define, implement, test and introduce the agreed changes.
+We connect your business objective to the process, information and technology changes needed to deliver it. We can work with a service's business owners and technical team to define, implement, test and introduce the agreed changes.
 
 Through [Business Process Improvement](/services/business-operations-improvement/), we examine the current journey, clarify business rules and decision responsibilities, and agree how the improvement will be assessed. The work can include redesigning handoffs and implementing suitable checks, integrations or automation.
 

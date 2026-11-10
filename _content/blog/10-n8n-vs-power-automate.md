@@ -6,11 +6,11 @@ By [Jateen Narsai](author-jateen-narsai.md)
 
 *Choose for the workflow and the people who will operate it.*
 
-Choose between n8n and Power Automate by comparing the same workflow against your required system actions, approval rules, operating arrangements and total cost. Both deserve evaluation where they fit those requirements; the choice depends on the actual design and the people who will support it.
+Your workflow needs to carry out the required system actions, follow the approval policy and be manageable for the people supporting it. To choose between n8n and Power Automate, compare the same workflow against those requirements, its operating arrangements and total cost. Both deserve evaluation where they fit.
 
-Power Automate is a practical candidate to assess when a workflow is closely tied to an existing Microsoft environment and its operating team. n8n is a practical candidate when its integration approach or self-hosting option matches the organisation's needs. Those are starting hypotheses for a pilot, rather than a performance ranking.
+If your workflow is closely tied to an existing Microsoft environment and its operating team, Power Automate is a practical candidate to assess. Consider n8n when its integration approach or self-hosting option matches your organisation's needs. Treat these as starting hypotheses to test in a pilot; they don't establish a performance ranking.
 
-The useful result is a maintainable process that does what the business needs. Platform selection is one decision within that delivery.
+The aim is a maintainable process that does what your business needs. Platform selection is one decision within that delivery.
 
 ## Write one workflow brief for both platforms
 
@@ -22,7 +22,7 @@ Define the trigger, inputs, finishing condition and manual decisions. Name the a
 
 For an **illustrative evaluation**, consider an equipment-purchase request that needs validation, one or more approvals, creation of a purchasing record and confirmation to the requester. It must also handle an absent approver, a changed amount and an uncertain system update.
 
-Use the same fields, authority matrix and acceptance cases in both versions. Comparing a simple notification in one platform with a complete approval process in the other will not help you choose.
+Use the same fields, authority matrix and acceptance cases in both versions. Comparing a simple notification in one platform with a complete approval process in the other won't help you choose.
 
 ## Verify actions rather than counting integrations
 
@@ -30,7 +30,7 @@ A connector or node name is a starting point. Confirm whether it supports the re
 
 Where a required action needs an API call or another integration approach, include the setup, permissions and maintenance in the comparison. Check that a failed request can be detected and reconciled using the available interface.
 
-Use the [platform evaluation matrix](assets/platform-evaluation-matrix.csv) to record evidence and unresolved questions. Keep a mandatory requirement as a gate: a high overall preference score cannot compensate for a required action that has not been shown to work.
+Use the [platform evaluation matrix](assets/platform-evaluation-matrix.csv) to record evidence and unresolved questions. Treat each mandatory requirement as a pass-or-fail condition. A high overall preference score can't compensate for a required action that hasn't been shown to work.
 
 ## Compare the operating fit
 
@@ -46,7 +46,7 @@ Use the [platform evaluation matrix](assets/platform-evaluation-matrix.csv) to r
 | Ownership | Identify who can maintain workflows and, if applicable, hosting | Identify who can maintain flows, connections, environments and licensing |
 | Cost | Model the selected edition, executions, hosting and external services | Model the selected licensing context, entitlements, capacity and external services |
 
-[n8n's hosting documentation](https://docs.n8n.io/hosting/) describes self-hosting and the operational knowledge it requires. Self-hosting gives you infrastructure decisions to make, including updates, backups and recovery. It does not establish that every governance feature is included in every edition.
+[n8n's hosting documentation](https://docs.n8n.io/hosting/) describes self-hosting and the operational knowledge it requires. With self-hosting, you'll need to plan updates, backups and recovery. Check the edition too: self-hosting doesn't establish that every governance feature is included.
 
 [Microsoft's getting-started documentation](https://learn.microsoft.com/en-us/power-automate/getting-started) is a starting point for Power Automate's cloud-flow environment. Confirm local data access and administrator policies with the team responsible for your Microsoft environment. Local connectivity and the location of the orchestration service are separate requirements to check.
 
@@ -54,7 +54,7 @@ Use the [platform evaluation matrix](assets/platform-evaluation-matrix.csv) to r
 
 Power Automate documents approval types such as everyone-must-approve, first-response and sequential decisions. Check the [approval documentation](https://learn.microsoft.com/en-us/power-automate/get-started-approvals) against the policy you need to implement.
 
-n8n's [Wait node documentation](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait.md) describes pausing and resuming execution. A paused workflow alone does not supply the full approval experience: the design still needs a way to identify eligible reviewers, show the correct request revision and record the decision.
+n8n's [Wait node documentation](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait.md) describes pausing and resuming execution. A paused workflow still needs the surrounding approval design. You'll need to identify eligible reviewers, show the correct request revision and record the decision.
 
 For either candidate, test what happens when someone changes an amount after approval, a delegate lacks authority or an old response arrives late. The [approval workflow guide](03-approval-workflow-automation.md) defines those business cases independently of the platform.
 
@@ -62,17 +62,19 @@ For either candidate, test what happens when someone changes an amount after app
 
 [n8n's pricing page](https://n8n.io/pricing/) describes execution-based allowances for its paid plans. Confirm how the proposed workflow's triggers, retries and operating pattern affect the applicable allowance, and add hosting and other service charges where relevant.
 
-[Microsoft's licence types](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types) distinguish user and capacity licensing and the entitlements available under different arrangements. Existing Microsoft subscriptions do not establish that every required connector or scenario is covered.
+[Microsoft's licence types](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types) distinguish user and capacity licensing and the entitlements available under different arrangements. Don't assume an existing Microsoft subscription covers every required connector or scenario.
 
-Use the current vendor terms for the exact deployment and users involved. Include internal support effort, access administration and review work. No universal cost winner follows from the price of a single subscription. The [project-cost guide](07-workflow-automation-project-cost.md) helps compare the scope around those platform costs.
+Use the current vendor terms for the exact deployment and users involved. Include internal support effort, access administration and review work.
+
+A single subscription price can't establish which platform will cost less overall. The [project-cost guide](07-workflow-automation-project-cost.md) helps compare the scope around those platform costs.
 
 ## Run a bounded comparison
 
-The [shared pilot test brief](assets/platform-pilot-tests.csv) provides the same normal and exception scenarios for both platforms. It is an evaluation plan with blank actual-results fields, not an executed benchmark.
+The [shared pilot test brief](assets/platform-pilot-tests.csv) provides the same normal and exception scenarios for both platforms. This evaluation plan has blank actual-results fields. It hasn't been run as a benchmark.
 
-For each candidate, record the configuration, required entitlements and evidence that the expected business outcome occurred. Measure operator effort and recovery steps as well as successful execution. Use representative test data and approved access rather than a demonstration that creates real purchasing commitments.
+For each candidate, record the configuration, required entitlements and evidence that the expected business outcome occurred. Measure operator effort and recovery steps as well as successful execution. Use representative test data and approved access, with safeguards against creating purchasing commitments during the demonstration.
 
-Assess whether another team member can diagnose a failure and maintain a small change using the handover documentation. The maintainable choice depends on who will actually operate it after the initial builder has left.
+Assess whether another team member can diagnose a failure and maintain a small change using the handover documentation. The maintainable choice depends on who will operate it after the initial builder has left.
 
 ![The same normal, repeated, incomplete and uncertain cases are tested on both platforms and their outcomes, review effort and support needs compared.](/images/blog/n8n-vs-power-automate/shared-pilot-tests.webp)
 
@@ -88,7 +90,7 @@ Document why the selected option fits the requirements and what remains unresolv
 
 We help you turn a platform comparison into a decision about a working business solution. We define the workflow and acceptance criteria with your team, check the system actions and trial the options against the same cases.
 
-After the approach is agreed, we can implement the workflow or integration through testing and handover. Where your development team is involved, we make requirements, dependencies and acceptance decisions clear. Bring the systems, the required outcome and the people who will operate the solution.
+After the approach is agreed, we can implement the workflow or integration through testing and handover. If your development team is involved, we'll make requirements, dependencies and acceptance decisions clear. Bring the systems, the required outcome and the people who will operate the solution.
 
 [See how we build around your systems and requirements](/services/new-business-capabilities/), or explore our broader [business improvement and solution delivery services](/#services).
 

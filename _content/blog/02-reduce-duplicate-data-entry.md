@@ -6,17 +6,17 @@ By [Jateen Narsai](author-jateen-narsai.md)
 
 *Link the customer records while keeping field ownership clear.*
 
-To reduce duplicate data entry, define which system owns each field, agree how records will be matched, and automate a specific handoff. Include a way to detect failed or uncertain updates. Connecting two applications helps only when both agree which customer and which information an update refers to.
+If your team enters the same customer details in the CRM and accounting system, start by agreeing which system owns each field and how records will be matched. Automate a specific handoff, including a way to detect failed or uncertain updates. Both applications need to identify the customer and the information each update refers to.
 
 Start with one repeated task, such as creating a billing record after a customer is approved. Expanding to every customer field and both directions at once makes ownership conflicts harder to resolve.
 
-A useful integration removes work from the whole handoff, including the checks and corrections people currently perform.
+Measure the work removed across the whole handoff, including the checks and corrections people currently perform.
 
 ## Find the repeated capture
 
 Follow several customer records from sales approval to billing. Note who enters each field, which information is checked and what corrections happen later.
 
-A repeated entry may serve a purpose. Finance may verify the billing identity or approve payment terms before an account can be used. Preserve that decision while removing the unnecessary copying around it.
+A repeated entry may include a necessary check: finance may verify the billing identity or approve payment terms before an account can be used. Preserve that decision while removing the unnecessary copying around it.
 
 Distinguish the customer account from its contacts, delivery locations and billing entities. One trading relationship can involve several of each. Treating them as a single record can create errors even when the integration runs successfully.
 
@@ -30,7 +30,7 @@ Define a starting scope such as:
 
 *Agree ownership field by field before connecting customer records.*
 
-“The CRM is the source of truth” leaves too much unspecified. Sales may own the account manager while finance owns payment terms. Name the owner of each field and decide which edits are allowed to travel between systems.
+“The CRM is the source of truth” leaves field ownership unspecified. Sales may own the account manager while finance owns payment terms. Name the owner of each field and decide which edits can pass between systems.
 
 The following is an **illustrative mapping**, not a configuration for a particular platform.
 
@@ -60,15 +60,17 @@ For a customer without a cross-reference, define a controlled matching process:
 
 Names and shared email addresses can be ambiguous. Decide which evidence establishes the billing entity rather than silently choosing the first search result.
 
-Platforms have their own matching behaviour. For example, [HubSpot documents record IDs and other unique identifiers for imports](https://knowledge.hubspot.com/import-and-export/understand-the-import-tool). That is an import-specific capability; an ongoing integration still needs its own documented matching and ownership rules.
+Platforms have their own matching behaviour. For example, [HubSpot documents record IDs and other unique identifiers for imports](https://knowledge.hubspot.com/import-and-export/understand-the-import-tool). That's an import-specific capability; an ongoing integration still needs its own documented matching and ownership rules.
 
 ## Design for a repeated event
 
-An integration can receive the same event twice. A user can also retry a task because the first response did not arrive. The intended business action should produce one result when it is repeated.
+An integration can receive the same event twice, or a user may retry a task because the first response didn't arrive. The intended business action should produce one result when it's repeated.
 
 This is commonly called **idempotency**. For a customer-creation handoff, keep a stored reference for the intended action and its outcome that survives a failed run. Use a platform's documented idempotency mechanism where the relevant endpoint supports it, alongside a record of events the workflow has already processed.
 
-An update to the same customer may be a legitimate new action. Preserve the event or revision identity so the workflow can distinguish that update from a replay of an earlier request. Deal with concurrent events and out-of-order delivery explicitly; an older address must not overwrite an approved newer one.
+An update to the same customer may be a legitimate new action. Preserve the event or revision identity so the workflow can distinguish that update from a replay of an earlier request.
+
+Define how you'll handle concurrent events and out-of-order delivery. An older address must not overwrite an approved newer one.
 
 ## Handle uncertainty before retrying
 
@@ -78,7 +80,9 @@ An update to the same customer may be a legitimate new action. Preserve the even
 
 Consider a timeout immediately after creating a billing record. The accounting system may have completed the write even though the workflow never received confirmation.
 
-Mark that case as uncertain. Reconcile the destination using the stored operation reference and supported lookup methods before attempting another create. If the result cannot be established safely, assign it for review. Repeating an unconfirmed create can produce the duplicate the integration was meant to prevent.
+Mark that case as uncertain. Reconcile the destination using the stored operation reference and supported lookup methods before attempting another create.
+
+If you can't establish the result safely, assign it for review. Repeating an unconfirmed create can produce the duplicate the integration was meant to prevent.
 
 Give exceptions a visible status and owner. A useful review item contains the customer reference, intended action, failure reason and last known outcome. Limit the customer information in notifications to what the reviewer needs.
 
@@ -98,9 +102,9 @@ Use the [acceptance checklist](assets/customer-integration-tests.csv) with repre
 | Timeout after a successful write | Reconciliation finds the outcome before another write |
 | CRM tries to alter finance-owned terms | The change is blocked or reviewed under the agreed ownership rule |
 
-Also test missing fields, expired access, cleared values and events arriving out of order. Confirm how the selected products, editions and permissions support each required action. A connector's existence does not establish that every necessary field or operation is supported.
+Also test missing fields, expired access, cleared values and events arriving out of order. Confirm how the selected products, editions and permissions support each required action. A connector's existence doesn't establish that every necessary field or operation is supported.
 
-Roll out the first handoff with reconciliation checks. Someone should be able to compare eligible source records with confirmed destination outcomes and see which cases need attention. Include support effort and corrections when measuring the reduction in manual handling.
+Roll out the first handoff with reconciliation checks. Your team should be able to compare eligible source records with confirmed destination outcomes and see which cases need attention. Include support effort and corrections when measuring the reduction in manual handling.
 
 ## Choose the handoff with the clearest value
 
@@ -108,7 +112,7 @@ If several repeated tasks compete for attention, use the [automation scorecard](
 
 We help reduce repeated capture by examining the process around the data as well as the applications. We map where information is created and checked, agree ownership with the business and define the handoff that needs to change.
 
-We can then build the agreed integration or adjust the workflow, test matching and exception cases, and hand over a process your team can operate. Bring the applications involved, the information entered twice and a recent example of a mismatch.
+We can then build the agreed integration or adjust the workflow, test matching and exception cases, and hand over a process your team can operate. Tell us which applications are involved and which information you're entering twice. Bring a recent example of a mismatch.
 
 [See how we reduce repeated work across your processes](/services/business-operations-improvement/). If the improvement needs a new connection, [see how we design and deliver system integrations](/services/new-business-capabilities/).
 

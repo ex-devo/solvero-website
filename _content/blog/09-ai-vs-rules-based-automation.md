@@ -6,9 +6,9 @@ By [Jateen Narsai](author-jateen-narsai.md)
 
 *Match the method to the task and keep judgement explicit.*
 
-Choose AI or rules-based automation at the level of a specific task. Explicit rules suit agreed calculations, field checks and decision boundaries. AI can help interpret varied language or documents when its output can be checked and an uncertain result has a clear review route.
+An incoming request may need someone to interpret its wording, check an amount and decide who can approve it. Each task needs its own choice of method. Explicit rules suit agreed calculations, field checks and decision boundaries; AI can help interpret varied language or documents when you can check its output and route uncertain results for review.
 
-Many useful workflows combine both approaches. The business decision is whether a method improves the outcome after checking, correction and operating effort have been included.
+Many useful workflows combine both approaches. To judge whether either method improves the outcome, include the effort of checking, correction and ongoing operation.
 
 Process redesign belongs in that comparison too: clearer inputs or decision rules can remove the problem a new tool was meant to solve.
 
@@ -16,9 +16,9 @@ Process redesign belongs in that comparison too: clearer inputs or decision rule
 
 Consider an incoming service request. It may need to be read, categorised, linked to a customer, checked against the agreement and assigned to someone with the right responsibility.
 
-Reading varied descriptions is different from deciding whether an extra charge has been approved. An AI-generated category can be a suggestion. Spending authority should follow the organisation's agreed policy and eligible decision makers.
+AI can suggest a category from a varied description. Approval of an extra charge needs to follow the organisation's agreed policy and sit with eligible decision makers.
 
-Write down the input, expected output and consequence of a mistake for each step. If those are unclear, clarify the process before selecting a model or platform.
+Write down the input, expected output and consequence of a mistake for each step. If those aren't clear, clarify the process before selecting a model or platform.
 
 ## Compare the task with the available methods
 
@@ -68,7 +68,9 @@ For extraction, distinguish a value that appears in the source from a value some
 
 Decide how to represent missing and conflicting values. Define which errors require review and which make the whole result unusable. Include the supporting source text so the reviewer can check the claim without searching the entire document again.
 
-Structured output can help constrain the response format. It does not establish that the extracted content is correct. [OpenAI's Structured Outputs documentation](https://developers.openai.com/api/docs/guides/structured-outputs) explicitly notes that outputs can still contain mistakes. Treat format validation and content verification as separate checks.
+Structured output can help constrain the response format. You'll still need to verify the extracted content.
+
+[OpenAI's Structured Outputs documentation](https://developers.openai.com/api/docs/guides/structured-outputs) explicitly notes that outputs can still contain mistakes. Treat format validation and content verification as separate checks.
 
 ## Use a test set that challenges the design
 
@@ -78,11 +80,13 @@ Structured output can help constrain the response format. It does not establish 
 
 The [illustrative evaluation cases](assets/ai-intake-evaluation.csv) contain invented messages and expected handling. They cover missing totals, conflicting references, ambiguous dates, irrelevant text and instructions embedded inside a document.
 
-The source message is data to inspect. A sentence telling the model to ignore its task or approve an order must not acquire authority over the workflow. Keep such cases in the evaluation and limit what an extraction step is allowed to do.
+Treat the source message as data to inspect. A sentence telling the model to ignore its task or approve an order must not acquire authority over the workflow. Keep such cases in the evaluation and limit what an extraction step is allowed to do.
 
-The CSV leaves actual outputs and results empty. Run it against the chosen implementation, record the model and configuration, and compare with the expected outcomes. Use additional held-out examples that were not used to tune the instructions. A small demonstration set can reveal mistakes without establishing a reliable production error rate.
+The CSV leaves actual outputs and results empty. Run it against the chosen implementation, record the model and configuration, and compare with the expected outcomes.
 
-Do not use the model's own statement of confidence as proof of accuracy. Decide review thresholds and routing using observed performance on representative work and the consequence of an error.
+Use additional held-out examples that weren't used to tune the instructions. A small demonstration set can reveal mistakes without establishing a reliable production error rate.
+
+Don't use the model's own statement of confidence as proof of accuracy. Decide review thresholds and routing using observed performance on representative work and the consequence of an error.
 
 ## Measure the full cost of using the result
 
@@ -96,13 +100,13 @@ Separate evaluation costs from recurring use. Platform charges, model usage, doc
 
 After the pilot, decide which outputs can progress automatically, which require a person and which inputs should be excluded from the scope. Record how changes to the model, instructions or source format will be checked before release.
 
-If review remains necessary for every result, assess whether the assisted process still helps. A useful pilot can also show that a simpler form, a better rule or a manual decision is the appropriate outcome.
+If every result still needs review, assess whether the assisted process improves the overall outcome. A useful pilot can also show that a simpler form, a better rule or a manual decision is the appropriate outcome.
 
 For the surrounding workflow, the [onboarding guide](06-customer-onboarding-automation.md) explains readiness checks, while the [approval guide](03-approval-workflow-automation.md) explains decision authority.
 
 ## Assess the task before choosing the technology
 
-We help you choose a practical solution for the business task. We examine the input, the required outcome and the surrounding process, then compare approaches using examples your team recognises.
+We examine the input, the required outcome and the surrounding process to help you choose a practical solution. Then we compare approaches using examples your team recognises.
 
 We can build and test the agreed solution, including the review steps, integration and operating responsibilities it needs. Bring ordinary inputs, a difficult case and the current checking effort so the evaluation reflects the work people actually do.
 
